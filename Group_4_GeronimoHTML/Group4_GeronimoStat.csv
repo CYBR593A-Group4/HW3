@@ -1,0 +1,61 @@
+Developer,Date,Dev#,Msg,File,Action,LoC+,LoC-,REF,BUG,FCount,FJavaCount
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,.idea/scopes/scope_settings.xml, A,5,0,FALSE,FALSE,1,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,],FALSE,FALSE,1,0,,,
+ mj, 2023-06-25 23:02,2, Modified Main.java<br />,bin/.gitignore, A,1,0,FALSE,FALSE,1,0
+ mj, 2023-06-25 23:02,2, Modified Main.java<br />,],FALSE,FALSE,1,0,,,
+ mj, 2023-06-25 23:02,2, Modified Main.java<br />,bin/CMF/Main.class, M,10,9,FALSE,FALSE,1,0
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,bin/CMF/Main.class, A,40,0,FALSE,FALSE,2,0
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, bin/CMF/StatsvnExtractor.class, A,111,0,FALSE,FALSE,2,0
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,],FALSE,FALSE,2,0,,,
+ mj, 2023-06-25 23:02,2, Modified Main.java<br />,src/CMF/Main.java, M,1,1,FALSE,FALSE,1,1
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,src/CMF/Main.java, A,96,0,FALSE,FALSE,2,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, src/CMF/StatsvnExtractor.java, A,326,0,FALSE,FALSE,2,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,],FALSE,FALSE,2,2,,,
+mj, 2023-06-25 23:02,2, Modified Main.java<br />,bin/.gitignore, A,1,0,FALSE,FALSE,3,1
+mj, 2023-06-25 23:02,2, Modified Main.java<br />, bin/CMF/Main.class, M,10,9,FALSE,FALSE,3,1
+mj, 2023-06-25 23:02,2, Modified Main.java<br />, src/CMF/Main.java, M,1,1,FALSE,FALSE,3,1
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,.classpath, A,6,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .project, A,17,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/.name, A,1,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/compiler.xml, A,24,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/encodings.xml, A,6,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/misc.xml, A,35,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/modules.xml, A,8,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/workspace.xml, A,948,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/copyright/profiles_settings.xml, A,3,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/scopes/scope_settings.xml, A,5,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, bin/CMF/Main.class, A,40,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, bin/CMF/StatsvnExtractor.class, A,111,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, src/CMF/Main.java, A,96,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, src/CMF/StatsvnExtractor.java, A,326,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,],FALSE,FALSE,14,2,,,
+mj, 2023-06-25 23:02,2, Modified Main.java<br />,bin/.gitignore, A,1,0,FALSE,FALSE,3,1
+mj, 2023-06-25 23:02,2, Modified Main.java<br />, bin/CMF/Main.class, M,10,9,FALSE,FALSE,3,1
+mj, 2023-06-25 23:02,2, Modified Main.java<br />, src/CMF/Main.java, M,1,1,FALSE,FALSE,3,1
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,.classpath, A,6,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .project, A,17,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/.name, A,1,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/compiler.xml, A,24,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/encodings.xml, A,6,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/misc.xml, A,35,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/modules.xml, A,8,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/workspace.xml, A,948,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/copyright/profiles_settings.xml, A,3,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/scopes/scope_settings.xml, A,5,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, bin/CMF/Main.class, A,40,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, bin/CMF/StatsvnExtractor.class, A,111,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, src/CMF/Main.java, A,96,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, src/CMF/StatsvnExtractor.java, A,326,0,FALSE,FALSE,14,2
+mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,],FALSE,FALSE,14,2,,,
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,.classpath, A,6,0,FALSE,FALSE,2,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .project, A,17,0,FALSE,FALSE,2,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,],FALSE,FALSE,2,0,,,
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,.idea/.name, A,1,0,FALSE,FALSE,6,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/compiler.xml, A,24,0,FALSE,FALSE,6,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/encodings.xml, A,6,0,FALSE,FALSE,6,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/misc.xml, A,35,0,FALSE,FALSE,6,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/modules.xml, A,8,0,FALSE,FALSE,6,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />, .idea/workspace.xml, A,948,0,FALSE,FALSE,6,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,],FALSE,FALSE,6,0,,,
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,.idea/copyright/profiles_settings.xml, A,3,0,FALSE,FALSE,1,0
+ mj, 2023-06-25 22:25,1, Added java program for HW #3<br />,],FALSE,FALSE,1,0,,,

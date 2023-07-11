@@ -1,0 +1,5 @@
+
+cd <foldername>
+svn log -v --xml > <logfile.log>
+java -jar statsvn.jar <logfile> <checked out folder>
+

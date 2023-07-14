@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2006-09-27 18:45</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2008-01-20 16:18</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>4</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_maven-plugins.html">maven-plugins</a>/<a href="dir_maven-plugins_geronimo-maven-plugin.html">geronimo-maven-plugin</a>/<a href="dir_maven-plugins_geronimo-maven-plugin_src.html">src</a>/<a href="dir_maven-plugins_geronimo-maven-plugin_src_main.html">main</a>/<a href="dir_maven-plugins_geronimo-maven-plugin_src_main_java.html">java</a>/<a href="dir_maven-plugins_geronimo-maven-plugin_src_main_java_org.html">org</a>/<a href="dir_maven-plugins_geronimo-maven-plugin_src_main_java_org_apache.html">apache</a>/<a href="dir_maven-plugins_geronimo-maven-plugin_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_maven-plugins_geronimo-maven-plugin_src_main_java_org_apache_geronimo_mavenplugins.html">mavenplugins</a>/<a href="dir_maven-plugins_geronimo-maven-plugin_src_main_java_org_apache_geronimo_mavenplugins_geronimo.html">geronimo</a>/<strong>reporting</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_maven-plugins_geronimo-maven-plugin_src_main_java_org_apache_geronimo_mavenplugins_geronimo_reporting.png" alt="maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>18 (100.0%)</td>
+        <td>178 (100.0%)</td>
+        <td>9.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>12 (66.7%)</td>
+        <td>79 (44.4%)</td>
+        <td>6.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>4 (22.2%)</td>
+        <td>60 (33.7%)</td>
+        <td>15.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>2 (11.1%)</td>
+        <td>39 (21.9%)</td>
+        <td>19.5</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="9"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-01-20 16:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">613667</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3771) Moved maven-plugins/* to buildsupport/*, updated groupId to org.apache.geronimo.buildsupport<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        Reportable.java&#160;<span class="del">(del)</span>,
+        Reporter.java&#160;<span class="del">(del)</span>,
+        ReportingMojoSupport.java&#160;<span class="del">(del)</span>,
+        SurefireReporter.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-06-15 15:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">547772</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Make some files canonical<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        ReportingMojoSupport.java&#160;<span class="change">(+8&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-04-10 16:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527279</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix formating<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        ReportingMojoSupport.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2006-12-15 13:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">487604</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+* a failed deployment would stop the tests for everybody.<br />
+* stopOnFailure config option will now let the tests proceed even if one bad deployment took place.
+    </p>
+    <p class="commitdetails"><strong>36</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        ReportingMojoSupport.java&#160;<span class="change">(+36&#160;-22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-11-17 02:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476061</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Update the src headers in the non-module files. They need to be compliant with the new ASF src header and copyright policy (<a href="http://www.apache.org/legal/src">http://www.apache.org/legal/src</a>-headers.html). I also did some cleanup of the src headers and tried to get them in a consistent format
+    </p>
+    <p class="commitdetails"><strong>60</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        Reportable.java&#160;<span class="change">(+15&#160;-15)</span>,
+        Reporter.java&#160;<span class="change">(+15&#160;-15)</span>,
+        ReportingMojoSupport.java&#160;<span class="change">(+15&#160;-15)</span>,
+        SurefireReporter.java&#160;<span class="change">(+15&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2006-11-10 00:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">473185</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+renamed getGoalName to getFullClassName to refelect the previous change.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        ReportingMojoSupport.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-09-29 14:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">451383</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixed debug log NPE when no reporters are configured<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        ReportingMojoSupport.java&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-09-27 20:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">450652</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove invalid html tag, causes plugin reports to puke<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        ReportingMojoSupport.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-09-27 18:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">450613</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-2419) Enabling logging for start-server, hooked up reporters API for exception handling, Adding a Surefire reporter which will output reports in a surefire manner, so we can re-use the surefire html report fluff to visualize<br />
+Massaged from reporters.patch by Prasad<br />
+
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>maven-plugins/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/reporting</strong>:
+        Reportable.java&#160;<span class="new">(new&#160;15)</span>,
+        Reporter.java&#160;<span class="new">(new&#160;15)</span>,
+        ReportingMojoSupport.java&#160;<span class="new">(new&#160;17)</span>,
+        SurefireReporter.java&#160;<span class="new">(new&#160;15)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

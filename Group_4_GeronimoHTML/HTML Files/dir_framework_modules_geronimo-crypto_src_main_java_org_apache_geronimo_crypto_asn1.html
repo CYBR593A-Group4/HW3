@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>51</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>6492</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_framework.html">framework</a>/<a href="dir_framework_modules.html">modules</a>/<a href="dir_framework_modules_geronimo-crypto.html">geronimo-crypto</a>/<a href="dir_framework_modules_geronimo-crypto_src.html">src</a>/<a href="dir_framework_modules_geronimo-crypto_src_main.html">main</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java.html">java</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org.html">org</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache.html">apache</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto.html">crypto</a>/<strong>asn1</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_cryptopro.html">cryptopro</a> 
+(1 files, 62 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_misc.html">misc</a> 
+(4 files, 188 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_oiw.html">oiw</a> 
+(1 files, 35 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_pkcs.html">pkcs</a> 
+(6 files, 921 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_sec.html">sec</a> 
+(1 files, 71 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_util.html">util</a> 
+(3 files, 396 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_x509.html">x509</a> 
+(57 files, 8265 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_x9.html">x9</a> 
+(1 files, 123 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1.png" alt="framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>411 (100.0%)</td>
+        <td>13191 (100.0%)</td>
+        <td>32.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>204 (49.6%)</td>
+        <td>6645 (50.4%)</td>
+        <td>32.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>102 (24.8%)</td>
+        <td>6492 (49.2%)</td>
+        <td>63.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>102 (24.8%)</td>
+        <td>51 (0.4%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>3 (0.7%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="8"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-07-08 09:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1144307</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6058 Replace StringBuffer usage with StringBuilder
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1</strong>:
+        DERBitString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERObjectIdentifier.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERUniversalString.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-16 16:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">826073</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4916 step 2 move sandbox osgi framework into trunk
+    </p>
+    <p class="commitdetails"><strong>6492</strong> lines of code changed in <span class="files">51 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1</strong>:
+        ASN1Choice.java&#160;<span class="new">(new&#160;31)</span>,
+        ASN1Encodable.java&#160;<span class="new">(new&#160;61)</span>,
+        ASN1EncodableVector.java&#160;<span class="new">(new&#160;27)</span>,
+        ASN1InputStream.java&#160;<span class="new">(new&#160;495)</span>,
+        ASN1Null.java&#160;<span class="new">(new&#160;50)</span>,
+        ASN1OctetString.java&#160;<span class="new">(new&#160;158)</span>,
+        ASN1OutputStream.java&#160;<span class="new">(new&#160;53)</span>,
+        ASN1Sequence.java&#160;<span class="new">(new&#160;202)</span>,
+        ASN1Set.java&#160;<span class="new">(new&#160;304)</span>,
+        ASN1TaggedObject.java&#160;<span class="new">(new&#160;178)</span>,
+        BERConstructedOctetString.java&#160;<span class="new">(new&#160;189)</span>,
+        BERConstructedSequence.java&#160;<span class="new">(new&#160;54)</span>,
+        BERInputStream.java&#160;<span class="new">(new&#160;225)</span>,
+        BERNull.java&#160;<span class="new">(new&#160;45)</span>,
+        BEROutputStream.java&#160;<span class="new">(new&#160;53)</span>,
+        BERSequence.java&#160;<span class="new">(new&#160;76)</span>,
+        BERSet.java&#160;<span class="new">(new&#160;86)</span>,
+        BERTaggedObject.java&#160;<span class="new">(new&#160;136)</span>,
+        DERApplicationSpecific.java&#160;<span class="new">(new&#160;128)</span>,
+        DERBMPString.java&#160;<span class="new">(new&#160;138)</span>,
+        DERBitString.java&#160;<span class="new">(new&#160;301)</span>,
+        DERBoolean.java&#160;<span class="new">(new&#160;125)</span>,
+        DERConstructedSequence.java&#160;<span class="new">(new&#160;70)</span>,
+        DERConstructedSet.java&#160;<span class="new">(new&#160;96)</span>,
+        DEREncodable.java&#160;<span class="new">(new&#160;23)</span>,
+        DEREncodableVector.java&#160;<span class="new">(new&#160;47)</span>,
+        DEREnumerated.java&#160;<span class="new">(new&#160;130)</span>,
+        DERGeneralString.java&#160;<span class="new">(new&#160;104)</span>,
+        DERGeneralizedTime.java&#160;<span class="new">(new&#160;219)</span>,
+        DERIA5String.java&#160;<span class="new">(new&#160;140)</span>,
+        DERInputStream.java&#160;<span class="new">(new&#160;289)</span>,
+        DERInteger.java&#160;<span class="new">(new&#160;146)</span>,
+        DERNull.java&#160;<span class="new">(new&#160;56)</span>,
+        DERNumericString.java&#160;<span class="new">(new&#160;140)</span>,
+        DERObject.java&#160;<span class="new">(new&#160;37)</span>,
+        DERObjectIdentifier.java&#160;<span class="new">(new&#160;225)</span>,
+        DEROctetString.java&#160;<span class="new">(new&#160;46)</span>,
+        DEROutputStream.java&#160;<span class="new">(new&#160;98)</span>,
+        DERPrintableString.java&#160;<span class="new">(new&#160;140)</span>,
+        DERSequence.java&#160;<span class="new">(new&#160;96)</span>,
+        DERSet.java&#160;<span class="new">(new&#160;116)</span>,
+        DERString.java&#160;<span class="new">(new&#160;26)</span>,
+        DERT61String.java&#160;<span class="new">(new&#160;138)</span>,
+        DERTaggedObject.java&#160;<span class="new">(new&#160;105)</span>,
+        DERTags.java&#160;<span class="new">(new&#160;53)</span>,
+        DERUTCTime.java&#160;<span class="new">(new&#160;205)</span>,
+        DERUTF8String.java&#160;<span class="new">(new&#160;194)</span>,
+        DERUniversalString.java&#160;<span class="new">(new&#160;132)</span>,
+        DERUnknownTag.java&#160;<span class="new">(new&#160;103)</span>,
+        DERVisibleString.java&#160;<span class="new">(new&#160;138)</span>,
+        OIDTokenizer.java&#160;<span class="new">(new&#160;65)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-16 16:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">826072</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4916 step 1 remove old framwork
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">51 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1</strong>:
+        ASN1Choice.java&#160;<span class="del">(del)</span>,
+        ASN1Encodable.java&#160;<span class="del">(del)</span>,
+        ASN1EncodableVector.java&#160;<span class="del">(del)</span>,
+        ASN1InputStream.java&#160;<span class="del">(del)</span>,
+        ASN1Null.java&#160;<span class="del">(del)</span>,
+        ASN1OctetString.java&#160;<span class="del">(del)</span>,
+        ASN1OutputStream.java&#160;<span class="del">(del)</span>,
+        ASN1Sequence.java&#160;<span class="del">(del)</span>,
+        ASN1Set.java&#160;<span class="del">(del)</span>,
+        ASN1TaggedObject.java&#160;<span class="del">(del)</span>,
+        BERConstructedOctetString.java&#160;<span class="del">(del)</span>,
+        BERConstructedSequence.java&#160;<span class="del">(del)</span>,
+        BERInputStream.java&#160;<span class="del">(del)</span>,
+        BERNull.java&#160;<span class="del">(del)</span>,
+        BEROutputStream.java&#160;<span class="del">(del)</span>,
+        BERSequence.java&#160;<span class="del">(del)</span>,
+        BERSet.java&#160;<span class="del">(del)</span>,
+        BERTaggedObject.java&#160;<span class="del">(del)</span>,
+        DERApplicationSpecific.java&#160;<span class="del">(del)</span>,
+        DERBMPString.java&#160;<span class="del">(del)</span>,
+        DERBitString.java&#160;<span class="del">(del)</span>,
+        DERBoolean.java&#160;<span class="del">(del)</span>,
+        DERConstructedSequence.java&#160;<span class="del">(del)</span>,
+        DERConstructedSet.java&#160;<span class="del">(del)</span>,
+        DEREncodable.java&#160;<span class="del">(del)</span>,
+        DEREncodableVector.java&#160;<span class="del">(del)</span>,
+        DEREnumerated.java&#160;<span class="del">(del)</span>,
+        DERGeneralString.java&#160;<span class="del">(del)</span>,
+        DERGeneralizedTime.java&#160;<span class="del">(del)</span>,
+        DERIA5String.java&#160;<span class="del">(del)</span>,
+        DERInputStream.java&#160;<span class="del">(del)</span>,
+        DERInteger.java&#160;<span class="del">(del)</span>,
+        DERNull.java&#160;<span class="del">(del)</span>,
+        DERNumericString.java&#160;<span class="del">(del)</span>,
+        DERObject.java&#160;<span class="del">(del)</span>,
+        DERObjectIdentifier.java&#160;<span class="del">(del)</span>,
+        DEROctetString.java&#160;<span class="del">(del)</span>,
+        DEROutputStream.java&#160;<span class="del">(del)</span>,
+        DERPrintableString.java&#160;<span class="del">(del)</span>,
+        DERSequence.java&#160;<span class="del">(del)</span>,
+        DERSet.java&#160;<span class="del">(del)</span>,
+        DERString.java&#160;<span class="del">(del)</span>,
+        DERT61String.java&#160;<span class="del">(del)</span>,
+        DERTaggedObject.java&#160;<span class="del">(del)</span>,
+        DERTags.java&#160;<span class="del">(del)</span>,
+        DERUTCTime.java&#160;<span class="del">(del)</span>,
+        DERUTF8String.java&#160;<span class="del">(del)</span>,
+        DERUniversalString.java&#160;<span class="del">(del)</span>,
+        DERUnknownTag.java&#160;<span class="del">(del)</span>,
+        DERVisibleString.java&#160;<span class="del">(del)</span>,
+        OIDTokenizer.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-02-01 21:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617737</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+svn props.  In spite of setting svn props explicitly before the previous commit, the properties were not committed for some files.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">51 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1</strong>:
+        ASN1Choice.java&#160;<span class="change">(changed)</span>,
+        ASN1Encodable.java&#160;<span class="change">(changed)</span>,
+        ASN1EncodableVector.java&#160;<span class="change">(changed)</span>,
+        ASN1InputStream.java&#160;<span class="change">(changed)</span>,
+        ASN1Null.java&#160;<span class="change">(changed)</span>,
+        ASN1OctetString.java&#160;<span class="change">(changed)</span>,
+        ASN1OutputStream.java&#160;<span class="change">(changed)</span>,
+        ASN1Sequence.java&#160;<span class="change">(changed)</span>,
+        ASN1Set.java&#160;<span class="change">(changed)</span>,
+        ASN1TaggedObject.java&#160;<span class="change">(changed)</span>,
+        BERConstructedOctetString.java&#160;<span class="change">(changed)</span>,
+        BERConstructedSequence.java&#160;<span class="change">(changed)</span>,
+        BERInputStream.java&#160;<span class="change">(changed)</span>,
+        BERNull.java&#160;<span class="change">(changed)</span>,
+        BEROutputStream.java&#160;<span class="change">(changed)</span>,
+        BERSequence.java&#160;<span class="change">(changed)</span>,
+        BERSet.java&#160;<span class="change">(changed)</span>,
+        BERTaggedObject.java&#160;<span class="change">(changed)</span>,
+        DERApplicationSpecific.java&#160;<span class="change">(changed)</span>,
+        DERBMPString.java&#160;<span class="change">(changed)</span>,
+        DERBitString.java&#160;<span class="change">(changed)</span>,
+        DERBoolean.java&#160;<span class="change">(changed)</span>,
+        DERConstructedSequence.java&#160;<span class="change">(changed)</span>,
+        DERConstructedSet.java&#160;<span class="change">(changed)</span>,
+        DEREncodable.java&#160;<span class="change">(changed)</span>,
+        DEREncodableVector.java&#160;<span class="change">(changed)</span>,
+        DEREnumerated.java&#160;<span class="change">(changed)</span>,
+        DERGeneralString.java&#160;<span class="change">(changed)</span>,
+        DERGeneralizedTime.java&#160;<span class="change">(changed)</span>,
+        DERIA5String.java&#160;<span class="change">(changed)</span>,
+        DERInputStream.java&#160;<span class="change">(changed)</span>,
+        DERInteger.java&#160;<span class="change">(changed)</span>,
+        DERNull.java&#160;<span class="change">(changed)</span>,
+        DERNumericString.java&#160;<span class="change">(changed)</span>,
+        DERObject.java&#160;<span class="change">(changed)</span>,
+        DERObjectIdentifier.java&#160;<span class="change">(changed)</span>,
+        DEROctetString.java&#160;<span class="change">(changed)</span>,
+        DEROutputStream.java&#160;<span class="change">(changed)</span>,
+        DERPrintableString.java&#160;<span class="change">(changed)</span>,
+        DERSequence.java&#160;<span class="change">(changed)</span>,
+        DERSet.java&#160;<span class="change">(changed)</span>,
+        DERString.java&#160;<span class="change">(changed)</span>,
+        DERT61String.java&#160;<span class="change">(changed)</span>,
+        DERTaggedObject.java&#160;<span class="change">(changed)</span>,
+        DERTags.java&#160;<span class="change">(changed)</span>,
+        DERUTCTime.java&#160;<span class="change">(changed)</span>,
+        DERUTF8String.java&#160;<span class="change">(changed)</span>,
+        DERUniversalString.java&#160;<span class="change">(changed)</span>,
+        DERUnknownTag.java&#160;<span class="change">(changed)</span>,
+        DERVisibleString.java&#160;<span class="change">(changed)</span>,
+        OIDTokenizer.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-02-01 21:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617735</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Attempt to preserve svn history. Damage control for revs 617595 and 617610.
+    </p>
+    <p class="commitdetails"><strong>51</strong> lines of code changed in <span class="files">51 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1</strong>:
+        ASN1Choice.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1Encodable.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1EncodableVector.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1InputStream.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1Null.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1OctetString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1OutputStream.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1Sequence.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1Set.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ASN1TaggedObject.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BERConstructedOctetString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BERConstructedSequence.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BERInputStream.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BERNull.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BEROutputStream.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BERSequence.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BERSet.java&#160;<span class="change">(+1&#160;-1)</span>,
+        BERTaggedObject.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERApplicationSpecific.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERBMPString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERBitString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERBoolean.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERConstructedSequence.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERConstructedSet.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DEREncodable.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DEREncodableVector.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DEREnumerated.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERGeneralString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERGeneralizedTime.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERIA5String.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERInputStream.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERInteger.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERNull.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERNumericString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERObject.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERObjectIdentifier.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DEROctetString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DEROutputStream.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERPrintableString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERSequence.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERSet.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERT61String.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERTaggedObject.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERTags.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERUTCTime.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERUTF8String.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERUniversalString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERUnknownTag.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DERVisibleString.java&#160;<span class="change">(+1&#160;-1)</span>,
+        OIDTokenizer.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-01 15:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617610</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1761 the svn mv util crypto got lost from my commit. this is adding the directory and files back. there only changes to the files were updates to the package name
+    </p>
+    <p class="commitdetails"><strong>6645</strong> lines of code changed in <span class="files">51 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1</strong>:
+        ASN1Choice.java&#160;<span class="change">(+34)</span>,
+        ASN1Encodable.java&#160;<span class="change">(+64)</span>,
+        ASN1EncodableVector.java&#160;<span class="change">(+30)</span>,
+        ASN1InputStream.java&#160;<span class="change">(+498)</span>,
+        ASN1Null.java&#160;<span class="change">(+53)</span>,
+        ASN1OctetString.java&#160;<span class="change">(+161)</span>,
+        ASN1OutputStream.java&#160;<span class="change">(+56)</span>,
+        ASN1Sequence.java&#160;<span class="change">(+205)</span>,
+        ASN1Set.java&#160;<span class="change">(+307)</span>,
+        ASN1TaggedObject.java&#160;<span class="change">(+181)</span>,
+        BERConstructedOctetString.java&#160;<span class="change">(+192)</span>,
+        BERConstructedSequence.java&#160;<span class="change">(+57)</span>,
+        BERInputStream.java&#160;<span class="change">(+228)</span>,
+        BERNull.java&#160;<span class="change">(+48)</span>,
+        BEROutputStream.java&#160;<span class="change">(+56)</span>,
+        BERSequence.java&#160;<span class="change">(+79)</span>,
+        BERSet.java&#160;<span class="change">(+89)</span>,
+        BERTaggedObject.java&#160;<span class="change">(+139)</span>,
+        DERApplicationSpecific.java&#160;<span class="change">(+131)</span>,
+        DERBMPString.java&#160;<span class="change">(+141)</span>,
+        DERBitString.java&#160;<span class="change">(+304)</span>,
+        DERBoolean.java&#160;<span class="change">(+128)</span>,
+        DERConstructedSequence.java&#160;<span class="change">(+73)</span>,
+        DERConstructedSet.java&#160;<span class="change">(+99)</span>,
+        DEREncodable.java&#160;<span class="change">(+26)</span>,
+        DEREncodableVector.java&#160;<span class="change">(+50)</span>,
+        DEREnumerated.java&#160;<span class="change">(+133)</span>,
+        DERGeneralString.java&#160;<span class="change">(+107)</span>,
+        DERGeneralizedTime.java&#160;<span class="change">(+222)</span>,
+        DERIA5String.java&#160;<span class="change">(+143)</span>,
+        DERInputStream.java&#160;<span class="change">(+292)</span>,
+        DERInteger.java&#160;<span class="change">(+149)</span>,
+        DERNull.java&#160;<span class="change">(+59)</span>,
+        DERNumericString.java&#160;<span class="change">(+143)</span>,
+        DERObject.java&#160;<span class="change">(+40)</span>,
+        DERObjectIdentifier.java&#160;<span class="change">(+228)</span>,
+        DEROctetString.java&#160;<span class="change">(+49)</span>,
+        DEROutputStream.java&#160;<span class="change">(+101)</span>,
+        DERPrintableString.java&#160;<span class="change">(+143)</span>,
+        DERSequence.java&#160;<span class="change">(+99)</span>,
+        DERSet.java&#160;<span class="change">(+119)</span>,
+        DERString.java&#160;<span class="change">(+29)</span>,
+        DERT61String.java&#160;<span class="change">(+141)</span>,
+        DERTaggedObject.java&#160;<span class="change">(+108)</span>,
+        DERTags.java&#160;<span class="change">(+56)</span>,
+        DERUTCTime.java&#160;<span class="change">(+208)</span>,
+        DERUTF8String.java&#160;<span class="change">(+197)</span>,
+        DERUniversalString.java&#160;<span class="change">(+135)</span>,
+        DERUnknownTag.java&#160;<span class="change">(+106)</span>,
+        DERVisibleString.java&#160;<span class="change">(+141)</span>,
+        OIDTokenizer.java&#160;<span class="change">(+68)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-01 14:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617595</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1761 move util dir to crypto in test src. svn wouldn't let me move, earlier...
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">51 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1</strong>:
+        ASN1Choice.java&#160;<span class="change">(-34)</span>,
+        ASN1Encodable.java&#160;<span class="change">(-64)</span>,
+        ASN1EncodableVector.java&#160;<span class="change">(-30)</span>,
+        ASN1InputStream.java&#160;<span class="change">(-498)</span>,
+        ASN1Null.java&#160;<span class="change">(-53)</span>,
+        ASN1OctetString.java&#160;<span class="change">(-161)</span>,
+        ASN1OutputStream.java&#160;<span class="change">(-56)</span>,
+        ASN1Sequence.java&#160;<span class="change">(-205)</span>,
+        ASN1Set.java&#160;<span class="change">(-307)</span>,
+        ASN1TaggedObject.java&#160;<span class="change">(-181)</span>,
+        BERConstructedOctetString.java&#160;<span class="change">(-192)</span>,
+        BERConstructedSequence.java&#160;<span class="change">(-57)</span>,
+        BERInputStream.java&#160;<span class="change">(-228)</span>,
+        BERNull.java&#160;<span class="change">(-48)</span>,
+        BEROutputStream.java&#160;<span class="change">(-56)</span>,
+        BERSequence.java&#160;<span class="change">(-79)</span>,
+        BERSet.java&#160;<span class="change">(-89)</span>,
+        BERTaggedObject.java&#160;<span class="change">(-139)</span>,
+        DERApplicationSpecific.java&#160;<span class="change">(-131)</span>,
+        DERBMPString.java&#160;<span class="change">(-141)</span>,
+        DERBitString.java&#160;<span class="change">(-304)</span>,
+        DERBoolean.java&#160;<span class="change">(-128)</span>,
+        DERConstructedSequence.java&#160;<span class="change">(-73)</span>,
+        DERConstructedSet.java&#160;<span class="change">(-99)</span>,
+        DEREncodable.java&#160;<span class="change">(-26)</span>,
+        DEREncodableVector.java&#160;<span class="change">(-50)</span>,
+        DEREnumerated.java&#160;<span class="change">(-133)</span>,
+        DERGeneralString.java&#160;<span class="change">(-107)</span>,
+        DERGeneralizedTime.java&#160;<span class="change">(-222)</span>,
+        DERIA5String.java&#160;<span class="change">(-143)</span>,
+        DERInputStream.java&#160;<span class="change">(-292)</span>,
+        DERInteger.java&#160;<span class="change">(-149)</span>,
+        DERNull.java&#160;<span class="change">(-59)</span>,
+        DERNumericString.java&#160;<span class="change">(-143)</span>,
+        DERObject.java&#160;<span class="change">(-40)</span>,
+        DERObjectIdentifier.java&#160;<span class="change">(-228)</span>,
+        DEROctetString.java&#160;<span class="change">(-49)</span>,
+        DEROutputStream.java&#160;<span class="change">(-101)</span>,
+        DERPrintableString.java&#160;<span class="change">(-143)</span>,
+        DERSequence.java&#160;<span class="change">(-99)</span>,
+        DERSet.java&#160;<span class="change">(-119)</span>,
+        DERString.java&#160;<span class="change">(-29)</span>,
+        DERT61String.java&#160;<span class="change">(-141)</span>,
+        DERTaggedObject.java&#160;<span class="change">(-108)</span>,
+        DERTags.java&#160;<span class="change">(-56)</span>,
+        DERUTCTime.java&#160;<span class="change">(-208)</span>,
+        DERUTF8String.java&#160;<span class="change">(-197)</span>,
+        DERUniversalString.java&#160;<span class="change">(-135)</span>,
+        DERUnknownTag.java&#160;<span class="change">(-106)</span>,
+        DERVisibleString.java&#160;<span class="change">(-141)</span>,
+        OIDTokenizer.java&#160;<span class="change">(-68)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-01 14:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617588</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1761 move geronimo-util to geronimo-crypto. Still pending mv of one test directory that svn wouldn't let me move
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">102 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1</strong>:
+        ASN1Choice.java&#160;<span class="change">(changed)</span>,
+        ASN1Encodable.java&#160;<span class="new">(new)</span>,
+        ASN1EncodableVector.java&#160;<span class="new">(new)</span>,
+        ASN1InputStream.java&#160;<span class="new">(new)</span>,
+        ASN1Null.java&#160;<span class="new">(new)</span>,
+        ASN1OctetString.java&#160;<span class="change">(changed)</span>,
+        ASN1OutputStream.java&#160;<span class="new">(new)</span>,
+        ASN1Sequence.java&#160;<span class="change">(changed)</span>,
+        ASN1Set.java&#160;<span class="change">(changed)</span>,
+        ASN1TaggedObject.java&#160;<span class="change">(changed)</span>,
+        BERConstructedOctetString.java&#160;<span class="new">(new)</span>,
+        BERConstructedSequence.java&#160;<span class="change">(changed)</span>,
+        BERInputStream.java&#160;<span class="new">(new)</span>,
+        BERNull.java&#160;<span class="change">(changed)</span>,
+        BEROutputStream.java&#160;<span class="new">(new)</span>,
+        BERSequence.java&#160;<span class="new">(new)</span>,
+        BERSet.java&#160;<span class="new">(new)</span>,
+        BERTaggedObject.java&#160;<span class="change">(changed)</span>,
+        DERApplicationSpecific.java&#160;<span class="change">(changed)</span>,
+        DERBMPString.java&#160;<span class="new">(new)</span>,
+        DERBitString.java&#160;<span class="new">(new)</span>,
+        DERBoolean.java&#160;<span class="change">(changed)</span>,
+        DERConstructedSequence.java&#160;<span class="new">(new)</span>,
+        DERConstructedSet.java&#160;<span class="new">(new)</span>,
+        DEREncodable.java&#160;<span class="change">(changed)</span>,
+        DEREncodableVector.java&#160;<span class="new">(new)</span>,
+        DEREnumerated.java&#160;<span class="change">(changed)</span>,
+        DERGeneralString.java&#160;<span class="change">(changed)</span>,
+        DERGeneralizedTime.java&#160;<span class="change">(changed)</span>,
+        DERIA5String.java&#160;<span class="change">(changed)</span>,
+        DERInputStream.java&#160;<span class="change">(changed)</span>,
+        DERInteger.java&#160;<span class="change">(changed)</span>,
+        DERNull.java&#160;<span class="change">(changed)</span>,
+        DERNumericString.java&#160;<span class="new">(new)</span>,
+        DERObject.java&#160;<span class="change">(changed)</span>,
+        DERObjectIdentifier.java&#160;<span class="change">(changed)</span>,
+        DEROctetString.java&#160;<span class="change">(changed)</span>,
+        DEROutputStream.java&#160;<span class="new">(new)</span>,
+        DERPrintableString.java&#160;<span class="new">(new)</span>,
+        DERSequence.java&#160;<span class="change">(changed)</span>,
+        DERSet.java&#160;<span class="change">(changed)</span>,
+        DERString.java&#160;<span class="change">(changed)</span>,
+        DERT61String.java&#160;<span class="new">(new)</span>,
+        DERTaggedObject.java&#160;<span class="change">(changed)</span>,
+        DERTags.java&#160;<span class="new">(new)</span>,
+        DERUTCTime.java&#160;<span class="change">(changed)</span>,
+        DERUTF8String.java&#160;<span class="new">(new)</span>,
+        DERUniversalString.java&#160;<span class="change">(changed)</span>,
+        DERUnknownTag.java&#160;<span class="change">(changed)</span>,
+        DERVisibleString.java&#160;<span class="change">(changed)</span>,
+        OIDTokenizer.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

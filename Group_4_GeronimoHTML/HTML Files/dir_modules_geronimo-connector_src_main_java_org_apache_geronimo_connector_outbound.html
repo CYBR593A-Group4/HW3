@@ -1,0 +1,743 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>34</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<a href="dir_modules_geronimo-connector.html">geronimo-connector</a>/<a href="dir_modules_geronimo-connector_src.html">src</a>/<a href="dir_modules_geronimo-connector_src_main.html">main</a>/<a href="dir_modules_geronimo-connector_src_main_java.html">java</a>/<a href="dir_modules_geronimo-connector_src_main_java_org.html">org</a>/<a href="dir_modules_geronimo-connector_src_main_java_org_apache.html">apache</a>/<a href="dir_modules_geronimo-connector_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_modules_geronimo-connector_src_main_java_org_apache_geronimo_connector.html">connector</a>/<strong>outbound</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-connector_src_main_java_org_apache_geronimo_connector_outbound_connectionmanagerconfig.html">connectionmanagerconfig</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-connector_src_main_java_org_apache_geronimo_connector_outbound_connectiontracking.html">connectiontracking</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-connector_src_main_java_org_apache_geronimo_connector_outbound_security.html">security</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-connector_src_main_java_org_apache_geronimo_connector_outbound_transactionlog.html">transactionlog</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-connector_src_main_java_org_apache_geronimo_connector_outbound.png" alt="modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>158 (100.0%)</td>
+        <td>396 (100.0%)</td>
+        <td>2.5</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>35 (22.2%)</td>
+        <td>248 (62.6%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>72 (45.6%)</td>
+        <td>78 (19.7%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dain.html" class="author">dain</a></th>
+        <td>3 (1.9%)</td>
+        <td>25 (6.3%)</td>
+        <td>8.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jlaskowski.html" class="author">jlaskowski</a></th>
+        <td>4 (2.5%)</td>
+        <td>24 (6.1%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_akulshreshtha.html" class="author">akulshreshtha</a></th>
+        <td>3 (1.9%)</td>
+        <td>7 (1.8%)</td>
+        <td>2.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jbohn.html" class="author">jbohn</a></th>
+        <td>2 (1.3%)</td>
+        <td>6 (1.5%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>2 (1.3%)</td>
+        <td>4 (1.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>3 (1.9%)</td>
+        <td>4 (1.0%)</td>
+        <td>1.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>34 (21.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="26"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">34 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManager.java&#160;<span class="del">(del)</span>,
+        AbstractConnectionManagerGBean.java&#160;<span class="del">(del)</span>,
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="del">(del)</span>,
+        ConnectionFactorySource.java&#160;<span class="del">(del)</span>,
+        ConnectionHandleInterceptor.java&#160;<span class="del">(del)</span>,
+        ConnectionInfo.java&#160;<span class="del">(del)</span>,
+        ConnectionInterceptor.java&#160;<span class="del">(del)</span>,
+        ConnectionInterceptorSource.java&#160;<span class="del">(del)</span>,
+        ConnectionManagerContainer.java&#160;<span class="del">(del)</span>,
+        ConnectionReturnAction.java&#160;<span class="del">(del)</span>,
+        ConnectionTrackingInterceptor.java&#160;<span class="del">(del)</span>,
+        GenericConnectionManager.java&#160;<span class="del">(del)</span>,
+        GenericConnectionManagerGBean.java&#160;<span class="del">(del)</span>,
+        GeronimoConnectionEventListener.java&#160;<span class="del">(del)</span>,
+        JCAConnectionFactoryImpl.java&#160;<span class="del">(del)</span>,
+        JCAConnectionFactoryImplGBean.java&#160;<span class="del">(del)</span>,
+        LocalXAResource.java&#160;<span class="del">(del)</span>,
+        LocalXAResourceInsertionInterceptor.java&#160;<span class="del">(del)</span>,
+        MCFConnectionInterceptor.java&#160;<span class="del">(del)</span>,
+        ManagedConnectionFactoryWrapper.java&#160;<span class="del">(del)</span>,
+        ManagedConnectionFactoryWrapperGBean.java&#160;<span class="del">(del)</span>,
+        ManagedConnectionInfo.java&#160;<span class="del">(del)</span>,
+        MultiPoolConnectionInterceptor.java&#160;<span class="del">(del)</span>,
+        PoolIdleReleaserTimer.java&#160;<span class="del">(del)</span>,
+        PoolingAttributes.java&#160;<span class="del">(del)</span>,
+        SinglePoolConnectionInterceptor.java&#160;<span class="del">(del)</span>,
+        SinglePoolMatchAllConnectionInterceptor.java&#160;<span class="del">(del)</span>,
+        SubjectInterceptor.java&#160;<span class="del">(del)</span>,
+        TCCLInterceptor.java&#160;<span class="del">(del)</span>,
+        ThreadLocalCachingConnectionInterceptor.java&#160;<span class="del">(del)</span>,
+        TransactionCachingInterceptor.java&#160;<span class="del">(del)</span>,
+        TransactionEnlistingInterceptor.java&#160;<span class="del">(del)</span>,
+        TxUtil.java&#160;<span class="del">(del)</span>,
+        XAResourceInsertionInterceptor.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2007-10-15 08:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">584764</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2879 Change few more references to TM  (j2eeType=JTAResource)<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        GenericConnectionManagerGBean.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-25 02:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">559333</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3344 use functional jars for tx and connector, g server code just wraps in gbeans. This commit has versions for new jars in the wrong place, I will fix this shortly
+    </p>
+    <p class="commitdetails"><strong>34</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        GenericConnectionManagerGBean.java&#160;<span class="change">(+34&#160;-21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-06-25 12:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">550546</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-906  Component references involved in transaction recovery are backwards.  Unfortunately this change includes a lot of import optimizations, I hope they are not too confusing to review
+    </p>
+    <p class="commitdetails"><strong>61</strong> lines of code changed in <span class="files">14 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManager.java&#160;<span class="change">(+27&#160;-18)</span>,
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="change">(+7&#160;-7)</span>,
+        ConnectionManagerContainer.java&#160;<span class="change">(+1&#160;-72)</span>,
+        GenericConnectionManager.java&#160;<span class="change">(+5&#160;-4)</span>,
+        GenericConnectionManagerGBean.java&#160;<span class="change">(+3&#160;-2)</span>,
+        GeronimoConnectionEventListener.java&#160;<span class="change">(+1&#160;-1)</span>,
+        JCAConnectionFactoryImpl.java&#160;<span class="change">(+4&#160;-3)</span>,
+        ManagedConnectionFactoryWrapper.java&#160;<span class="change">(+2&#160;-18)</span>,
+        ManagedConnectionFactoryWrapperGBean.java&#160;<span class="change">(+1&#160;-6)</span>,
+        MultiPoolConnectionInterceptor.java&#160;<span class="change">(+1&#160;-1)</span>,
+        SinglePoolConnectionInterceptor.java&#160;<span class="change">(+2&#160;-1)</span>,
+        SinglePoolMatchAllConnectionInterceptor.java&#160;<span class="change">(+1)</span>,
+        TransactionCachingInterceptor.java&#160;<span class="change">(+4&#160;-3)</span>,
+        TxUtil.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-06-19 10:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">548733</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3083 fix j2ca container managed security
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        SubjectInterceptor.java&#160;<span class="change">(+8&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-06-15 12:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">547737</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3246 Cleanup exception handling so stack traces for first failures are not discarded.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="change">(+1&#160;-1)</span>,
+        LocalXAResource.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-06-12 04:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">546411</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3175 clean up some unused code left over from not proxying connection factories
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        ManagedConnectionFactoryWrapper.java&#160;<span class="change">(+18&#160;-60)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-23 18:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">541105</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3175 make connection managers serializable, move some references around.
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManager.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ConnectionManagerContainer.java&#160;<span class="change">(-2)</span>,
+        GenericConnectionManagerGBean.java&#160;<span class="change">(+58&#160;-9)</span>,
+        ManagedConnectionFactoryWrapper.java&#160;<span class="change">(+3&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-20 17:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">539952</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3175 Don't use proxies for connection factories. One bad side effect is that conection factories are not serializable
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        ConnectionFactorySource.java&#160;<span class="change">(+3&#160;-1)</span>,
+        ManagedConnectionFactoryWrapper.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-03-20 16:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520573</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ r6720@Bliss:  jason | 2007-03-20 01:48:14 -0700<br />
+ (GERONIMO-2995) Replace backport-util-concurrent usage with java.util.concurrent<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2007-03-05 22:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">514956</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2838 Fix transaction recovery errors. A few changes from the last go-round. One, derby configuration problems have been fixed. Also, in AbstractConnectionManager we now insure that we're using the correct ManagedConnectionInfo. Also added additional logging in MCFConnectionInterceptor to capture failure information.
+    </p>
+    <p class="commitdetails"><strong>36</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManager.java&#160;<span class="change">(+12&#160;-4)</span>,
+        GenericConnectionManager.java&#160;<span class="change">(+8&#160;-4)</span>,
+        MCFConnectionInterceptor.java&#160;<span class="change">(+16&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2007-03-05 17:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">514870</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2114 Log errors which occur during execution of TimerTasks. Otherwise, RuntimeException or Error kills the Timer thread. Only indication of error is when you attempt to schedule another TimerTask. This should capture the root cause of the problem
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_jbohn.html" class="author">jbohn</a>
+    <span class="date">2007-03-03 13:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">514194</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+revert 511313 to get some tck tests passing again
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManager.java&#160;<span class="change">(+3&#160;-7)</span>,
+        GenericConnectionManager.java&#160;<span class="change">(+3&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2007-02-24 13:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">511313</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2838 Initial fix for Transaction Recovery. Still some problems, but this enables the basic TR flows. This fix will identify a bug in AMQ. Until AMQ-1088 is fixed, expect to see an exception on startup
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManager.java&#160;<span class="change">(+7&#160;-3)</span>,
+        GenericConnectionManager.java&#160;<span class="change">(+7&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_dain.html" class="author">dain</a>
+    <span class="date">2007-01-09 14:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">494503</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2715 Added support for Connector Lazy Activation
+    </p>
+    <p class="commitdetails"><strong>25</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManager.java&#160;<span class="change">(+5&#160;-1)</span>,
+        ConnectionInfo.java&#160;<span class="change">(+9)</span>,
+        ConnectionTrackingInterceptor.java&#160;<span class="change">(+11&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2006-12-12 11:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">486195</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2607 reverted 485524
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        ManagedConnectionFactoryWrapperGBean.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2006-12-11 02:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">485524</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERGERONIMO-2607 Updated all GBeans to use new GBeanInfoBuilder.addOperation(..) method<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        ManagedConnectionFactoryWrapperGBean.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-12-09 10:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">484989</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2641 Add license headers to files. Thanks Jarek! 
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        ConnectionInterceptorSource.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-12-06 20:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">483310</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2632 Only try to destroy a connection once as a result of a ConnectionError event.  Don't try to cleanup connections we're about to destroy
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        GeronimoConnectionEventListener.java&#160;<span class="change">(+8&#160;-3)</span>,
+        SinglePoolConnectionInterceptor.java&#160;<span class="change">(+6&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-11-17 00:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476049</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Update the src headers in server/trunk/modules to be compliant with the new ASF src header and copyright policy (<a href="http://www.apache.org/legal/src">http://www.apache.org/legal/src</a>-headers.html). I also did some cleanup of the src headers and tried to make them all a consistent format
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">58 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManager.java&#160;<span class="new">(new)</span>,
+        AbstractConnectionManagerGBean.java&#160;<span class="change">(changed)</span>,
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="change">(-1)</span>,
+        ConnectionFactorySource.java&#160;<span class="new">(new)</span>,
+        ConnectionHandleInterceptor.java&#160;<span class="new">(new)</span>,
+        ConnectionInfo.java&#160;<span class="change">(changed)</span>,
+        ConnectionInterceptor.java&#160;<span class="new">(new)</span>,
+        ConnectionManagerContainer.java&#160;<span class="new">(new)</span>,
+        ConnectionReturnAction.java&#160;<span class="change">(changed)</span>,
+        ConnectionTrackingInterceptor.java&#160;<span class="new">(new)</span>,
+        GenericConnectionManager.java&#160;<span class="change">(+6&#160;-6)</span>,
+        GenericConnectionManagerGBean.java&#160;<span class="change">(changed)</span>,
+        GeronimoConnectionEventListener.java&#160;<span class="change">(+6&#160;-6)</span>,
+        JCAConnectionFactoryImpl.java&#160;<span class="change">(changed)</span>,
+        JCAConnectionFactoryImplGBean.java&#160;<span class="new">(new)</span>,
+        LocalXAResource.java&#160;<span class="change">(changed)</span>,
+        LocalXAResourceInsertionInterceptor.java&#160;<span class="new">(new)</span>,
+        MCFConnectionInterceptor.java&#160;<span class="new">(new)</span>,
+        ManagedConnectionFactoryWrapper.java&#160;<span class="change">(changed)</span>,
+        ManagedConnectionFactoryWrapperGBean.java&#160;<span class="new">(new)</span>,
+        ManagedConnectionInfo.java&#160;<span class="new">(new)</span>,
+        MultiPoolConnectionInterceptor.java&#160;<span class="change">(-1)</span>,
+        PoolIdleReleaserTimer.java&#160;<span class="change">(changed)</span>,
+        PoolingAttributes.java&#160;<span class="new">(new)</span>,
+        SinglePoolConnectionInterceptor.java&#160;<span class="change">(+6&#160;-6)</span>,
+        SinglePoolMatchAllConnectionInterceptor.java&#160;<span class="new">(new)</span>,
+        SubjectInterceptor.java&#160;<span class="change">(-1)</span>,
+        TCCLInterceptor.java&#160;<span class="change">(changed)</span>,
+        ThreadLocalCachingConnectionInterceptor.java&#160;<span class="change">(changed)</span>,
+        TransactionCachingInterceptor.java&#160;<span class="change">(-1)</span>,
+        TransactionEnlistingInterceptor.java&#160;<span class="new">(new)</span>,
+        TxUtil.java&#160;<span class="change">(+6&#160;-6)</span>,
+        XAResourceInsertionInterceptor.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-11-16 17:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">475936</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2573 Be more careful about registering Synchronization with non-active tx. Also add a lot of trace level logging to help with the next connection leak.
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="change">(+9&#160;-3)</span>,
+        GenericConnectionManager.java&#160;<span class="new">(new)</span>,
+        GeronimoConnectionEventListener.java&#160;<span class="change">(changed)</span>,
+        SinglePoolConnectionInterceptor.java&#160;<span class="change">(changed)</span>,
+        TransactionCachingInterceptor.java&#160;<span class="change">(+33)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_jlaskowski.html" class="author">jlaskowski</a>
+    <span class="date">2006-11-02 19:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">470597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Partial fix for GERONIMO-2537 All Geronimo source files must be brought in line with the new ASF source header and copyright notice policy<br />
+<br />
+The modules directory is supposed to be migrated. There're some issues with some files, but they'll be handled manually<br />
+
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="change">(+6&#160;-5)</span>,
+        MultiPoolConnectionInterceptor.java&#160;<span class="change">(+6&#160;-5)</span>,
+        SubjectInterceptor.java&#160;<span class="change">(+6&#160;-5)</span>,
+        TransactionCachingInterceptor.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-10-28 14:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">468719</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2529 track connections closed in afterCompletion better
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        TransactionCachingInterceptor.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-09-12 22:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">442795</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2313 Merge security fixes onto trunk. Insure that the Context contains the appropriate caller.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        SubjectInterceptor.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-09-11 16:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">442323</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2354 Replace concurrent with backport-concurrent-util package
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractSinglePoolConnectionInterceptor.java&#160;<span class="change">(changed)</span>,
+        MultiPoolConnectionInterceptor.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-08-26 20:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">437254</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Apply standard properties<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        TxUtil.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

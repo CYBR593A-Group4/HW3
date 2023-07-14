@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>6</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>715</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_cxf.html">cxf</a>/<a href="dir_plugins_cxf_geronimo-cxf-ejb.html">geronimo-cxf-ejb</a>/<a href="dir_plugins_cxf_geronimo-cxf-ejb_src.html">src</a>/<a href="dir_plugins_cxf_geronimo-cxf-ejb_src_main.html">main</a>/<a href="dir_plugins_cxf_geronimo-cxf-ejb_src_main_java.html">java</a>/<a href="dir_plugins_cxf_geronimo-cxf-ejb_src_main_java_org.html">org</a>/<a href="dir_plugins_cxf_geronimo-cxf-ejb_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_cxf_geronimo-cxf-ejb_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_plugins_cxf_geronimo-cxf-ejb_src_main_java_org_apache_geronimo_cxf.html">cxf</a>/<strong>ejb</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_cxf_geronimo-cxf-ejb_src_main_java_org_apache_geronimo_cxf_ejb.png" alt="plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>32 (100.0%)</td>
+        <td>344 (100.0%)</td>
+        <td>10.7</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>16 (50.0%)</td>
+        <td>205 (59.6%)</td>
+        <td>12.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>4 (12.5%)</td>
+        <td>92 (26.7%)</td>
+        <td>23.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>4 (12.5%)</td>
+        <td>32 (9.3%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dblevins.html" class="author">dblevins</a></th>
+        <td>3 (9.4%)</td>
+        <td>14 (4.1%)</td>
+        <td>4.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>5 (15.6%)</td>
+        <td>1 (0.3%)</td>
+        <td>0.2</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="19"></a>
+    <a href="user_dblevins.html" class="author">dblevins</a>
+    <span class="date">2010-09-14 03:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">996776</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updates corresponding to OPENEJB-1354: Internal CoreDeploymentInfo class renamed to BeanContext<br />
+
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBEndpoint.java&#160;<span class="change">(+4&#160;-4)</span>,
+        EJBMethodInvoker.java&#160;<span class="change">(+7&#160;-7)</span>,
+        EJBWebServiceGBean.java&#160;<span class="change">(+3&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-06-09 00:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">952899</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Identify the interface type while exposing EJB as web service, or OpenEJB could not determine the current invocation type while the same interface is used for both business interface and endpointInterface
+    </p>
+    <p class="commitdetails"><strong>34</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBMethodInvoker.java&#160;<span class="change">(+34&#160;-33)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-05-24 23:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">947901</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a. remove the use of configurationUrl \n b. Add a BundleAwareReference interface
+    </p>
+    <p class="commitdetails"><strong>58</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBEndpoint.java&#160;<span class="change">(+31&#160;-32)</span>,
+        EJBWebServiceContainer.java&#160;<span class="change">(+6&#160;-9)</span>,
+        EJBWebServiceGBean.java&#160;<span class="change">(+21&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-05-22 03:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">947262</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix compile problem
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBWebServiceGBean.java&#160;<span class="change">(+5&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-08-13 03:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">803799</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4645 use jacc ejb ws auth for jetty6, simplify SOAPHandler interface
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBWebServiceGBean.java&#160;<span class="change">(+1&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-10 03:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">792824</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4645 Make ejb ws security more jacc friendly, implement transport guarantees for jetty7 using jacc. See jira for more comments
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBWebServiceGBean.java&#160;<span class="change">(+20&#160;-52)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-07-07 01:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">791703</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+prefer openejb-jar.xml instead of geronimo-openejb.xml descriptor in ejb ws deployer and pass additional properties object to SoapHandlers
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBWebServiceGBean.java&#160;<span class="change">(+7&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-05-26 10:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">778726</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4553 Make web use of security realms depend on plugin visibility; make console expose the 'global' attribute for configuration (renamed from 'publish'). Also merges in geronimo-security changes from sandbox branches.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBWebServiceGBean.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-03-04 18:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">750189</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Don't rely on config substitution properties in ejb jax-ws deployers (GERONIMO-4554)
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBWebServiceGBean.java&#160;<span class="change">(+13&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-01-16 20:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">735186</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Support OASIS catalogs with Axis2 (GERONIMO-4501)
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBWebServiceGBean.java&#160;<span class="change">(+9&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-01-07 00:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">732217</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+support for specifying a list of http methods that should be secured for ejb-based web services (GERONIMO-4015)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBWebServiceGBean.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-09-29 19:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">700309</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+switch to AbstractJAXWSMethodInvoker to reuse more code
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBMethodInvoker.java&#160;<span class="change">(+21&#160;-37)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-09-29 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">700172</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+implementation of some jaxws 2.1 api for ejbs
+    </p>
+    <p class="commitdetails"><strong>134</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBInterceptor.java&#160;<span class="change">(+9&#160;-7)</span>,
+        EJBMessageContext.java&#160;<span class="new">(new&#160;62)</span>,
+        EJBMethodInvoker.java&#160;<span class="change">(+63&#160;-55)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-09-08 11:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">693137</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+quick fix to get trunk building again
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBMethodInvoker.java&#160;<span class="change">(+5&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-08-27 18:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">689648</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Make sure WebServiceContext.getEPR() returns right service address (part of GERONIMO-4263)
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBEndpoint.java&#160;<span class="change">(+4&#160;-12)</span>,
+        EJBWebServiceContainer.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-08-13 21:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">685741</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upgrade to jax-ws api 2.1 (GERONIMO-4242)
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBEndpoint.java&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-06 10:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">653782</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More loggers back to static<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBMethodInvoker.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-25 15:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">651684</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3985) Use SLF4J as the primary logging facade for Geronimo<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBInterceptor.java&#160;<span class="new">(new)</span>,
+        EJBMethodInvoker.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-11-14 17:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">595080</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+let webservices.xml overwrite service endpoint interface attribute of the annotation (GERONIMO-3602)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb/src/main/java/org/apache/geronimo/cxf/ejb</strong>:
+        EJBEndpoint.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

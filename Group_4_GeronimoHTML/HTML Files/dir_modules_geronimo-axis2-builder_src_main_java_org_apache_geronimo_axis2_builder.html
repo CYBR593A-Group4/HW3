@@ -1,0 +1,900 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2007-01-10 09:36</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>4</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<a href="dir_modules_geronimo-axis2-builder.html">geronimo-axis2-builder</a>/<a href="dir_modules_geronimo-axis2-builder_src.html">src</a>/<a href="dir_modules_geronimo-axis2-builder_src_main.html">main</a>/<a href="dir_modules_geronimo-axis2-builder_src_main_java.html">java</a>/<a href="dir_modules_geronimo-axis2-builder_src_main_java_org.html">org</a>/<a href="dir_modules_geronimo-axis2-builder_src_main_java_org_apache.html">apache</a>/<a href="dir_modules_geronimo-axis2-builder_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_modules_geronimo-axis2-builder_src_main_java_org_apache_geronimo_axis2.html">axis2</a>/<strong>builder</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-axis2-builder_src_main_java_org_apache_geronimo_axis2_builder.png" alt="modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>54 (100.0%)</td>
+        <td>1653 (100.0%)</td>
+        <td>30.6</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_dims.html" class="author">dims</a></th>
+        <td>25 (46.3%)</td>
+        <td>1247 (75.4%)</td>
+        <td>49.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>18 (33.3%)</td>
+        <td>347 (21.0%)</td>
+        <td>19.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>3 (5.6%)</td>
+        <td>28 (1.7%)</td>
+        <td>9.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_linsun.html" class="author">linsun</a></th>
+        <td>1 (1.9%)</td>
+        <td>26 (1.6%)</td>
+        <td>26.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jgenender.html" class="author">jgenender</a></th>
+        <td>2 (3.7%)</td>
+        <td>4 (0.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>1 (1.9%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>4 (7.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="del">(del)</span>,
+        Axis2BuilderUtil.java&#160;<span class="del">(del)</span>,
+        Axis2EJBBuilder.java&#160;<span class="del">(del)</span>,
+        Axis2ServiceRefBuilder.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-10-04 23:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">582070</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+got ridd of initContextRoot() method that wasn't thread safe (GERONIMO-3495)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+1&#160;-56)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-10-02 13:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">581318</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+making axis2 intergration more modular: separated ejb bits from servlet bits.
+    </p>
+    <p class="commitdetails"><strong>48</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(-54)</span>,
+        Axis2ServiceRefBuilder.java&#160;<span class="change">(+48&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-09-28 12:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">580407</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix minor bugs discovered by FindBugs
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-09-27 13:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">580112</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+making cxf intergration more modular: separated ejb bits from servlet bits.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+2)</span>,
+        Axis2EJBBuilder.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-07-30 16:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">561108</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+dos-&gt;unix
+    </p>
+    <p class="commitdetails"><strong>104</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2ServiceRefBuilder.java&#160;<span class="change">(+104&#160;-104)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-07-30 16:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">561107</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+let each module have its own ClientConfiguration (might need to scope it more in the future)
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2ServiceRefBuilder.java&#160;<span class="change">(+27)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-06-28 17:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">551698</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+indicate when we don't actaully use the descriptors. will make things less confusing
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-06-18 22:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">548564</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+clean up
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-06-11 00:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">546000</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+untabify plus other improvements
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+27&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-06-05 22:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">544714</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+port name is not necessary so pass only when specified in the dd
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2007-05-29 22:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">542726</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-3197 Axis2: don't call wsgen tool if BindingType is HTTP_Binding
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+26&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-05-23 21:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">541126</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+set proper service and port name
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-05-23 15:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">541042</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+revert some changes
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-05-23 14:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">541020</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+pass service name hint
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+2&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-05-22 22:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">540822</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+switched axis2 to use the common wsdl generator code
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+35&#160;-68)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-05-16 11:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">538622</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3124 Switch Axis2 stack back to axis2-saaj from Sun SAAJ Impl
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2BuilderUtil.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-22 16:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">531260</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+forgot to switch from axis2-saaj to saajri jar
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2BuilderUtil.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-16 10:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">529257</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-3100 - Axis2: remove hardcoded 12 jars in Axis2BuilderUtil
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+7&#160;-4)</span>,
+        Axis2BuilderUtil.java&#160;<span class="change">(+28&#160;-22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-12 17:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">528250</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-3092 - Axis2: after wsgen tool, need to scan the directory for the generated wsdl file
+    </p>
+    <p class="commitdetails"><strong>113</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+29&#160;-49)</span>,
+        Axis2BuilderUtil.java&#160;<span class="change">(+84&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-12 13:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">528061</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for (GERONIMO-3094) Axis2: need to build the classpath and pass it onto wsgen
+    </p>
+    <p class="commitdetails"><strong>39</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+11&#160;-3)</span>,
+        Axis2BuilderUtil.java&#160;<span class="change">(+28&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-11 21:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527738</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+oops! i should call the static newInstance method of the WSToolsObjectFactory class
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+23&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-11 09:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527495</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Let's see if we can get rid of NCDFE for com/sun/mirror/apt/AnnotationProcessorFactory by explicitly creating a classloader (with system class loader as parent).<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>49</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+20&#160;-12)</span>,
+        Axis2BuilderUtil.java&#160;<span class="change">(+29&#160;-31)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-10 21:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527355</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+drop the SNAPSHOT for jaxws rt and tools
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2BuilderUtil.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-10 13:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527215</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2988 - Axis2: needs to support optional wsdl file
+    </p>
+    <p class="commitdetails"><strong>110</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+79&#160;-1)</span>,
+        Axis2BuilderUtil.java&#160;<span class="new">(new&#160;31)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-04-03 23:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">525383</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+applied patch for G3045
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+62&#160;-50)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-03-23 14:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">521834</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+applied GERONIMO-3005 bug fix
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+23&#160;-18)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-03-20 18:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520641</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add/update headers<br />
+
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+11&#160;-11)</span>,
+        Axis2ServiceRefBuilder.java&#160;<span class="change">(+17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-03-20 16:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520561</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+oops! forgot to update these (to remove jaxb generated code)
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+31&#160;-48)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-03-02 00:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">513612</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2913 - minor changes to JettyEJBWebServiceContext and TomcatEJBWebServiceContext for Axis2<br />
+Fix for GERONIMO-2914 - Axis2: a few changes to set the servicepath, contextroot correctly in EJB to allow getWSDL() test working correctly<br />
+Fix for GERONIMO-2894 - Restructure geronimo-axis2 code to split between EJB and POJO containers<br />
+<br />
+Thanks a ton Lin.<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_jgenender.html" class="author">jgenender</a>
+    <span class="date">2007-02-28 17:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">512990</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2882 patch committed
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+2&#160;-1)</span>,
+        Axis2ServiceRefBuilder.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-26 16:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">511987</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2876 - Initial web service EJB support for Axis2
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+21&#160;-49)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-02-21 00:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">509886</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-2858) Applied condition change from Jarek, only change to use props[''] syntax when default not needed<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-17 17:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">508812</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2842 - Geronimo Axis2 - JAXWS Web Services are not working for WSDL provided situation<br />
+Fix for GERONIMO-2845 - Axis2 JAXWS handle document style WSDLs<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+27&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-12 02:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">506309</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Initial port of the serviceref and handler chain support (needs a lot of work/testing!)
+    </p>
+    <p class="commitdetails"><strong>109</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+50&#160;-9)</span>,
+        Axis2ServiceRefBuilder.java&#160;<span class="new">(new&#160;59)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-11 15:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">506103</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- Ability to specify the ws impl from a system property, example:<br />
+  -Djavax.xml.ws.spi.Provider=org.apache.axis2.jaxws.spi.Provider<br />
+- Default is CXF as per last email from Jarek. So if the system property<br />
+  is absent, then the first deployer will kick in (which is cxf)<br />
+- Ran into a class loader issue because wsdl4j is loaded by multiple<br />
+  class loaders, so move it into webservices-common config.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>30</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+30&#160;-27)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-10 06:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">505671</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Get deployment and ?wsdl to work when wsdl is absent
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+19&#160;-38)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-07 10:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">504557</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2798 - Axis2 Integration - User JAXWS common module to implementation
+    </p>
+    <p class="commitdetails"><strong>149</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+149&#160;-132)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-01-31 18:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">502017</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for   GERONIMO-2789 - allow users to specify something other than services in url-pattern in axis2 jax-ws wars
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+32&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-01-31 08:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">501827</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for   GERONIMO-2776 - Axis2 Integration - Replace RPCMessageReciever with JAXWSMessageReciever
+    </p>
+    <p class="commitdetails"><strong>245</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+245&#160;-208)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(1 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

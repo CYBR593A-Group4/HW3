@@ -1,0 +1,976 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-axis2/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-axis2/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2007-01-10 09:36</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>3</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<strong>geronimo-axis2</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src.html">src</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main.html">main</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_generated.html">generated</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_generated_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_generated_org_apache.html">apache</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_generated_org_apache_axis2.html">axis2</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_generated_org_apache_axis2_jaxws.html">jaxws</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_generated_org_apache_axis2_jaxws_javaee.html">javaee</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java.html">java</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java_org_apache.html">apache</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo.html">geronimo</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2.html">axis2</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2_client.html">client</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2_ejb.html">ejb</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2_pojo.html">pojo</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2_util.html">util</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_resources.html">resources</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_main_resources_META-INF.html">META-INF</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test.html">test</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java.html">java</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache.html">apache</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo.html">geronimo</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2.html">axis2</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2_testdata.html">testdata</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2_testdata_doclitbare.html">doclitbare</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2_testdata_rpclit.html">rpclit</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2_testdata_simple.html">simple</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache_hello_control.html">hello_control</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_java_org_apache_hello_control_types.html">types</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-axis2_src_test_resources.html">resources</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-axis2.png" alt="modules/geronimo-axis2/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>48 (100.0%)</td>
+        <td>1261 (100.0%)</td>
+        <td>26.2</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_dims.html" class="author">dims</a></th>
+        <td>28 (58.3%)</td>
+        <td>982 (77.9%)</td>
+        <td>35.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>7 (14.6%)</td>
+        <td>258 (20.5%)</td>
+        <td>36.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>5 (10.4%)</td>
+        <td>9 (0.7%)</td>
+        <td>1.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_hogstrom.html" class="author">hogstrom</a></th>
+        <td>2 (4.2%)</td>
+        <td>5 (0.4%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>1 (2.1%)</td>
+        <td>4 (0.3%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>1 (2.1%)</td>
+        <td>2 (0.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>4 (8.3%)</td>
+        <td>1 (0.1%)</td>
+        <td>0.2</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        LICENSE.txt&#160;<span class="del">(del)</span>,
+        NOTICE.txt&#160;<span class="del">(del)</span>,
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-10-12 14:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">584227</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+axis2 just needs javaee5 schemas
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-10-02 13:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">581318</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+making axis2 intergration more modular: separated ejb bits from servlet bits.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-08-14 11:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">565797</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+merged in Kevan's change from 2.0.0 r562994
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-08-01 11:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">561838</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+* updated copyright date to 2007
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        NOTICE.txt&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_hogstrom.html" class="author">hogstrom</a>
+    <span class="date">2007-07-23 11:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">558782</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Changed trunk to 2.1-SNAPSHOT 
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-20 20:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">558204</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3339 Upgrade to xmlbeans 2.3.0, improve dir structure
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-06-11 13:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">546210</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove unneeded dependencies
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-06-11 13:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">546207</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove JAXB dependencies (GERONIMO-3019)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-76)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-23 16:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">531585</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+better change the scope to test just in case
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-23 16:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">531584</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add woodstox dependency
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-20 01:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530651</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+don't need xalan
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-19 13:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530502</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+cleanup axis2 pom's/plan's
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+10&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-10 23:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527381</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-3086 - Axis2: wsgen tool needs axis2-jaxws-api-SNAPSHOT.jar at runtime
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-10 06:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527089</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+need latest XmlSchema SNAPSHOT for Axis2
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-05 12:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">525866</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+woden is an optional jar for axis2. Removing it so that we rely on one less snapshot
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-02 10:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">524789</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for   GERONIMO-3055 - Fix build break on axis2 (Revision: 524748)
+    </p>
+    <p class="commitdetails"><strong>108</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+108&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-03-31 22:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">524516</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+cleanup axis2 pom's
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+10&#160;-108)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-03-21 00:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520747</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+No need for a separate config for surefire plugin
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-03-21 00:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520746</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Get failing test to work. When trying to load HandlerChainsType, we have to use HandlerChainsDocument's Factory to parse the xml 
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-03-20 18:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520630</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Clean up after removed src/main/generated stuff<br />
+Disable Axis2HandlerResolverTest for now... cause its not happy<br />
+
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+13&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-03-20 17:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520610</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a hack to disable axis2 tests
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-03-20 16:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520575</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ r12576@Bliss:  jason | 2007-03-20 13:42:34 -0700<br />
+ Re-remove backport after merge<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-03-20 16:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520574</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ r12575@Bliss:  jason | 2007-03-20 13:42:21 -0700<br />
+ Re-format after merge<br />
+
+    </p>
+    <p class="commitdetails"><strong>237</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+237&#160;-233)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-03-20 16:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520573</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ r6720@Bliss:  jason | 2007-03-20 01:48:14 -0700<br />
+ (GERONIMO-2995) Replace backport-util-concurrent usage with java.util.concurrent<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-03-20 16:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520571</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ r6718@Bliss:  jason | 2007-03-20 01:41:32 -0700<br />
+ Don't specify versions for plugins here<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2007-03-20 16:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520570</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ r6717@Bliss:  jason | 2007-03-20 01:40:13 -0700<br />
+ Reformat<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-03-20 16:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520551</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove jaxb generated code, use the xmlbeans code generated from the j2ee 5 schema instead
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-03-18 16:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">519683</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2979 - More improvements to the Geronimo Axis2 Integration
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+14&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_hogstrom.html" class="author">hogstrom</a>
+    <span class="date">2007-03-13 22:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">517973</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updating from stax-api to geronimo-stax-api_1.0_spec to correct incorrect method signatures
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-26 16:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">511987</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2876 - Initial web service EJB support for Axis2
+    </p>
+    <p class="commitdetails"><strong>119</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+119&#160;-116)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-26 08:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">511793</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2888 - Axis2WebServiceContainerTest getting failed due to missing libraries in the classpath &amp; GERONIMO-2877 - Minor improvement to Axis2 Jaxws Integration
+    </p>
+    <p class="commitdetails"><strong>121</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+121)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-21 15:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">510164</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove generated test code from svn. generate it under target and add the sources using the mojo plugin
+    </p>
+    <p class="commitdetails"><strong>80</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+80&#160;-76)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-20 19:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">509808</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+running dos2unix and set svn:eol-style native ONLY (no code changes)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-20 19:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">509806</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2852 - Test Case to Axis2WebServiceContainer
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+26)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-07 10:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">504557</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2798 - Axis2 Integration - User JAXWS common module to implementation
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-02 02:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">502516</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Clean up time :) get rid of m1 repo for axis2
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-131)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-01-31 08:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">501827</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for   GERONIMO-2776 - Axis2 Integration - Replace RPCMessageReciever with JAXWSMessageReciever
+    </p>
+    <p class="commitdetails"><strong>203</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+203&#160;-199)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-01-30 12:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">501461</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+oops! forgot to change back to the old dependency
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-01-30 12:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">501452</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Roll back changes - Need to get builds working again!
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(4 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

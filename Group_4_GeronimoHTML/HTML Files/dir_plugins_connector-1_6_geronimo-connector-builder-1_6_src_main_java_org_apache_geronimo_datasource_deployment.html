@@ -1,0 +1,479 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2010-04-07 11:19</span></dd>
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>363</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_connector-1_6.html">connector-1_6</a>/<a href="dir_plugins_connector-1_6_geronimo-connector-builder-1_6.html">geronimo-connector-builder-1_6</a>/<a href="dir_plugins_connector-1_6_geronimo-connector-builder-1_6_src.html">src</a>/<a href="dir_plugins_connector-1_6_geronimo-connector-builder-1_6_src_main.html">main</a>/<a href="dir_plugins_connector-1_6_geronimo-connector-builder-1_6_src_main_java.html">java</a>/<a href="dir_plugins_connector-1_6_geronimo-connector-builder-1_6_src_main_java_org.html">org</a>/<a href="dir_plugins_connector-1_6_geronimo-connector-builder-1_6_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_connector-1_6_geronimo-connector-builder-1_6_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_plugins_connector-1_6_geronimo-connector-builder-1_6_src_main_java_org_apache_geronimo_datasource.html">datasource</a>/<strong>deployment</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_connector-1_6_geronimo-connector-builder-1_6_src_main_java_org_apache_geronimo_datasource_deployment.png" alt="plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>20 (100.0%)</td>
+        <td>658 (100.0%)</td>
+        <td>32.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>7 (35.0%)</td>
+        <td>416 (63.2%)</td>
+        <td>59.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>10 (50.0%)</td>
+        <td>187 (28.4%)</td>
+        <td>18.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>3 (15.0%)</td>
+        <td>55 (8.4%)</td>
+        <td>18.3</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-09-14 23:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1170946</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update codes due to getInjectionTargets return value type changed to Set
+    </p>
+    <p class="commitdetails"><strong>53</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+53&#160;-53)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-08-30 03:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1163108</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+The datasource url property is not configured
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-06-28 04:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1140479</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6022 Support use the @Resource(name="java:global/env/abc") for environment entry injection
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-06-27 18:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1140357</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5066 Use naming Reference to set up Datasources and use them to get global scope datasources from server to app client
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+27&#160;-62)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-01-27 22:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1064433</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-162 update to genericed xbean-finder apis
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-08-10 16:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">984199</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ensure DataSourceBuilder executes before ResourceRefBuilder and it creates unique GBeans
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+13&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-08-06 20:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">983157</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+jndi normalization fixes
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-08-05 03:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">982493</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5066 Fix a lot of problems with jndi including wrong finders and inconsistent adding of injections
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+6&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-07-27 00:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">979526</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+yet another regression
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-07-15 13:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">964490</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5445 use osgi jndi links for datasource annotations
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+3&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-27 13:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">958398</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use the classfinder from the module that knows what the relevant classes are when looking for DataSource annotations
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+18&#160;-26)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-27 12:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">958395</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix translation between Connection flags and jaxb tree isolation level
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-24 14:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">957655</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5190 use openejb-jee jaxb tree for spec dds
+    </p>
+    <p class="commitdetails"><strong>110</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+110&#160;-104)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-15 19:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">955091</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5380 Allow exposing gbeans as osgi services (or service factories).  Replace the specialized code in connector with this new generic code.  This is not serialziation compatible with old GBeanInfo and GBeanData
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-02 03:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">950397</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5025, GERONIMO-5117. Make jndi supported directly by Modules and straighten out which contexts are shared when.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+3&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-26 22:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">938294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-148 use new xbean-bundleutils
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-13 14:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">933722</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5232: Support @Resource.lookup for env-entry, resource-ref, resource-env-ref, and message-destination-ref. Also fixes java:app jndi namespace
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+1&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-07 15:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">931658</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5113: Support (or at least try to support) transaction isolation level &amp; url properties
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+15&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-07 11:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">931596</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5113: Do little string trimming just in case
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="change">(+8&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-07 11:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">931583</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5113: Mostly complete support for @DataSourceDefinition(s) annotations
+    </p>
+    <p class="commitdetails"><strong>377</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/datasource/deployment</strong>:
+        DataSourceBuilder.java&#160;<span class="new">(new&#160;377)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

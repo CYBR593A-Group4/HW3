@@ -1,0 +1,512 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/console/console-tomcat/src/main/history/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/console/console-tomcat/src/main/history/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2008-08-15 13:25</span></dd>
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>94</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_console.html">console</a>/<a href="dir_plugins_console_console-tomcat.html">console-tomcat</a>/<a href="dir_plugins_console_console-tomcat_src.html">src</a>/<a href="dir_plugins_console_console-tomcat_src_main.html">main</a>/<strong>history</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_console_console-tomcat_src_main_history.png" alt="plugins/console/console-tomcat/src/main/history/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>20 (100.0%)</td>
+        <td>167 (100.0%)</td>
+        <td>8.3</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>8 (40.0%)</td>
+        <td>119 (71.3%)</td>
+        <td>14.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>4 (20.0%)</td>
+        <td>20 (12.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>3 (15.0%)</td>
+        <td>16 (9.6%)</td>
+        <td>5.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>3 (15.0%)</td>
+        <td>10 (6.0%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>1 (5.0%)</td>
+        <td>2 (1.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rwonly.html" class="author">rwonly</a></th>
+        <td>1 (5.0%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-12-20 14:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1221400</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6240 Modify configs so that they use features as the bootstrap, and fix a few compile and test errors.  Servers build but do not fully start
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-08-30 02:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1163096</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update dependencies.xml file, including bval and commons-jexl changes
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-07-15 01:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1146965</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5586 Modified the previous code logic so that it can work and add the ability to install library cli
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-06-22 22:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1138711</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5674 Dojo related improvement.   Patch from Xiao Yi to replace the full dojo with a customized dojo.<br />
+<br />
+1, DojoHowToCompress/**/* files are the build script to build geronimo customized dojo.<br />
+2, dojo/**/* files are the customized dojo files for geronimo.<br />
+3, dojo-tomcat and dojo-jetty modules are removed.<br />
+4, customized dojo files are put into console-portal-driver webapp so that other jsp can reference the dojo<br />
+files with /console/dojo/xxx<br />
+5, also updated all dojo references in all jsps to the new dojo location.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-06-22 12:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1138523</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+changed dependencies.xml after a clean build.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-10-28 09:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1028286</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+switch to released version of activemq
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-10-08 10:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1005852</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5230 Add Bean Validation Support to the connector 1.6 implementation. <br />
+<br />
+Changes to Geronimo base. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-04-08 08:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">931908</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5242 Make spec version naming conventions consistent. <br />
+<br />
+Updating trunk to new spec numbering rules. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-21 04:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901598</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+The admin console is depending on dojo because of the new navigation tree.  --- the dojo dependencies should be added to console-tomcat/jetty instead of plugin-console-tomcat/jetty
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-12-14 05:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">890252</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4980 Try to finish some more of the tomcat6 to tomcat7 upgrade
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-12-10 05:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">889157</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4965 Get pluto 2 running as osgi blueprint service.  Base console sort of works. Fix a bug in jetty single-bundle-ear support for locating resources
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-12-03 04:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">886703</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use bundleized dwr.  Start trying to not use spring in pluto. Mysterious linkage error building console-tomcat
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+2&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-12-02 13:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">886217</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix problem in EarConfigBuilder when constructing sub-configurations for wars. Rename DeploymentContext.getBundle to getDependencyBundle to try to make it clearer that it is temporary and not always available.  Start updating pluto/console stuff for pluto 2.
+    </p>
+    <p class="commitdetails"><strong>25</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2009-11-02 15:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">832076</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix up of the system-database plugin
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-27 20:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">830411</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4658 Editor for artifact aliases.  original patch from Victor Fang, with modifications. Merge from 2.2 with little attempt to fix problems
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-08-20 09:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">806161</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update other XML files with embedded versions from 2.2-SNAPSHOT to 3.0-SNAPSHOT
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-17 03:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">785491</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4692 sort dependencies.xml, except for connector-1_6
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+17&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-01-07 14:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">732412</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4484 Extraction, localization and display of messages generated in portlets.  Applied common-message-plugin.patch from Gang Yin, along with removing Tomcat API depends introduced in early patch.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-01-07 13:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">732398</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4484 Extraction, localization and display of messages generated in portlets.  Applied common-message-base.patch and common-message-core.patch from Gang Yin, with some minor updates.
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-08-15 13:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">686287</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4248 Add dependency history files
+    </p>
+    <p class="commitdetails"><strong>49</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;49)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

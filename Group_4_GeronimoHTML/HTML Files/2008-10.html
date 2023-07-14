@@ -1,0 +1,3639 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - October 2008 Commit Log</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>October 2008 Commit Log</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+
+<div id="nav" class="section">
+<h2>Commit Logs</h2>
+<ul>
+    <li><a href="commitlog.html">March 2013</a></li>
+    <li><a href="2013-02.html">February 2013</a></li>
+    <li><a href="2013-01.html">January 2013</a></li>
+    <li><a href="2012-12.html">December 2012</a></li>
+    <li><a href="2012-11.html">November 2012</a></li>
+    <li><a href="2012-10.html">October 2012</a></li>
+    <li><a href="2012-09.html">September 2012</a></li>
+    <li><a href="2012-08.html">August 2012</a></li>
+    <li><a href="2012-07.html">July 2012</a></li>
+    <li><a href="2012-06.html">June 2012</a></li>
+    <li><a href="2012-05.html">May 2012</a></li>
+    <li><a href="2012-04.html">April 2012</a></li>
+    <li><a href="2012-03.html">March 2012</a></li>
+    <li><a href="2012-02.html">February 2012</a></li>
+    <li><a href="2012-01.html">January 2012</a></li>
+    <li><a href="2011-12.html">December 2011</a></li>
+    <li><a href="2011-11.html">November 2011</a></li>
+    <li><a href="2011-10.html">October 2011</a></li>
+    <li><a href="2011-09.html">September 2011</a></li>
+    <li><a href="2011-08.html">August 2011</a></li>
+    <li><a href="2011-07.html">July 2011</a></li>
+    <li><a href="2011-06.html">June 2011</a></li>
+    <li><a href="2011-05.html">May 2011</a></li>
+    <li><a href="2011-04.html">April 2011</a></li>
+    <li><a href="2011-03.html">March 2011</a></li>
+    <li><a href="2011-02.html">February 2011</a></li>
+    <li><a href="2011-01.html">January 2011</a></li>
+    <li><a href="2010-12.html">December 2010</a></li>
+    <li><a href="2010-11.html">November 2010</a></li>
+    <li><a href="2010-10.html">October 2010</a></li>
+    <li><a href="2010-09.html">September 2010</a></li>
+    <li><a href="2010-08.html">August 2010</a></li>
+    <li><a href="2010-07.html">July 2010</a></li>
+    <li><a href="2010-06.html">June 2010</a></li>
+    <li><a href="2010-05.html">May 2010</a></li>
+    <li><a href="2010-04.html">April 2010</a></li>
+    <li><a href="2010-03.html">March 2010</a></li>
+    <li><a href="2010-02.html">February 2010</a></li>
+    <li><a href="2010-01.html">January 2010</a></li>
+    <li><a href="2009-12.html">December 2009</a></li>
+    <li><a href="2009-11.html">November 2009</a></li>
+    <li><a href="2009-10.html">October 2009</a></li>
+    <li><a href="2009-09.html">September 2009</a></li>
+    <li><a href="2009-08.html">August 2009</a></li>
+    <li><a href="2009-07.html">July 2009</a></li>
+    <li><a href="2009-06.html">June 2009</a></li>
+    <li><a href="2009-05.html">May 2009</a></li>
+    <li><a href="2009-04.html">April 2009</a></li>
+    <li><a href="2009-03.html">March 2009</a></li>
+    <li><a href="2009-02.html">February 2009</a></li>
+    <li><a href="2009-01.html">January 2009</a></li>
+    <li><a href="2008-12.html">December 2008</a></li>
+    <li><a href="2008-11.html">November 2008</a></li>
+    <li><span class="here">October 2008</span></li>
+    <li><a href="2008-09.html">September 2008</a></li>
+    <li><a href="2008-08.html">August 2008</a></li>
+    <li><a href="2008-07.html">July 2008</a></li>
+    <li><a href="2008-06.html">June 2008</a></li>
+    <li><a href="2008-05.html">May 2008</a></li>
+    <li><a href="2008-04.html">April 2008</a></li>
+    <li><a href="2008-03.html">March 2008</a></li>
+    <li><a href="2008-02.html">February 2008</a></li>
+    <li><a href="2008-01.html">January 2008</a></li>
+    <li><a href="2007-12.html">December 2007</a></li>
+    <li><a href="2007-11.html">November 2007</a></li>
+    <li><a href="2007-10.html">October 2007</a></li>
+    <li><a href="2007-09.html">September 2007</a></li>
+    <li><a href="2007-08.html">August 2007</a></li>
+    <li><a href="2007-07.html">July 2007</a></li>
+    <li><a href="2007-06.html">June 2007</a></li>
+    <li><a href="2007-05.html">May 2007</a></li>
+    <li><a href="2007-04.html">April 2007</a></li>
+    <li><a href="2007-03.html">March 2007</a></li>
+    <li><a href="2007-02.html">February 2007</a></li>
+    <li><a href="2007-01.html">January 2007</a></li>
+    <li><a href="2006-12.html">December 2006</a></li>
+    <li><a href="2006-11.html">November 2006</a></li>
+    <li><a href="2006-10.html">October 2006</a></li>
+    <li><a href="2006-09.html">September 2006</a></li>
+    <li><a href="2006-08.html">August 2006</a></li>
+</ul>
+</div><dl class="attributes">
+    <dt>Number of Commits:</dt>
+    <dd>102</dd>
+    <dt>Number of Active Developers:</dt>
+    <dd>8</dd>
+</dl>
+<dl class="commitlist">
+  <dt><a name="102"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-31 16:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#102">#102</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">709552</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+switch to cxf 2.1.3 release
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="101"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-31 12:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#101">#101</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">709461</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4391 Upgrade to ANT v1.7.1
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/underlay/contents/etc</strong>:
+        gsh-classworlds.conf&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="100"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-31 09:53</span>
+    <a class="permalink" title="Permalink to this commit" href="#100">#100</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">709417</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4390 Upgrade to SLF4J v1.5.5
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">21 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/assembly</strong>:
+        boilerplate.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/underlay/contents/etc</strong>:
+        gsh-classworlds.conf&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/configs/client-system</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/configs/j2ee-system</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/configs/j2ee-system/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/configs/jsr88-deploymentfactory</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/configs/online-deployer</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/configs/shutdown</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/geronimo-clustering-wadi</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/concurrent/geronimo-concurrent-core</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/connector/geronimo-connector</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-sun-tools</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/openjpa/geronimo-persistence-jpa10</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6-builder</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/webservices/geronimo-webservices</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/concurrent-testsuite/concurrent-basic/concurrent-war</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="99"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-30 20:06</span>
+    <a class="permalink" title="Permalink to this commit" href="#99">#99</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">709302</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+install JUL to SLF4J bridge (GERONIMO-4321)
+    </p>
+    <p class="commitdetails"><strong>39</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>framework/configs/client-system</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>framework/configs/client-system/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>framework/configs/client-system/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>framework/configs/j2ee-system</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>framework/configs/j2ee-system/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>framework/configs/j2ee-system/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/logging/jul</strong>:
+        JULBridgeGBean.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="98"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-30 15:03</span>
+    <a class="permalink" title="Permalink to this commit" href="#98">#98</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">709226</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4386 rmi-naming should use  in config-substitutions.properties for binding, instead of the default value of 0.0.0.0 in the source
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="97"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-29 12:49</span>
+    <a class="permalink" title="Permalink to this commit" href="#97">#97</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">708938</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4382 Use plugin installing to create a new server instance in a geronimo installation.  Also requires separating boilerplate into the installation and server (var) bits (add groovy command omitted in first commit) 
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-commands/src/main/groovy/org/apache/geronimo/commands</strong>:
+        NewServerInstanceCommand.groovy&#160;<span class="new">(new&#160;3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="96"></a>
+    <a href="user_manugeorge.html" class="author">manugeorge</a>
+    <span class="date">2008-10-29 04:01</span>
+    <a class="permalink" title="Permalink to this commit" href="#96">#96</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">708815</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Merging patch for GERONIMO-3811 EjbServer Portlet.
+    </p>
+    <p class="commitdetails"><strong>1918</strong> lines of code changed in <span class="files">31 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/javaee5-jetty</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp/WEB-INF</strong>:
+        web.xml&#160;<span class="change">(+21)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb</strong>:
+        pom.xml&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/geronimo-openejb/src/main/java/org/apache/geronimo/openejb</strong>:
+        BmpContainerGBean.java&#160;<span class="change">(+3&#160;-3)</span>,
+        OpenEjbSystem.java&#160;<span class="new">(new)</span>,
+        OpenEjbSystemGBean.java&#160;<span class="change">(+22&#160;-5)</span>,
+        StatefulContainerGBean.java&#160;<span class="change">(+3&#160;-3)</span>,
+        StatelessContainerGBean.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-console-jetty</strong>:
+        pom.xml&#160;<span class="new">(new&#160;126)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-console-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;29)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;44)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-console-tomcat</strong>:
+        pom.xml&#160;<span class="new">(new&#160;129)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;29)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;46)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-portlets</strong>:
+        pom.xml&#160;<span class="new">(new&#160;159)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-portlets/src/main/java/org/apache/geronimo/console/ejbserver</strong>:
+        EJBServerPortlet.java&#160;<span class="new">(new&#160;110)</span>,
+        EjbHelper.java&#160;<span class="new">(new&#160;530)</span>,
+        EjbInformation.java&#160;<span class="new">(new&#160;74)</span>,
+        Status.java&#160;<span class="new">(new)</span>,
+        Tree.java&#160;<span class="new">(new)</span>,
+        TreeEntry.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-portlets/src/main/resources</strong>:
+        openejb-portlet.properties&#160;<span class="new">(new&#160;101)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-portlets/src/main/webapp/WEB-INF</strong>:
+        portlet.xml&#160;<span class="new">(new&#160;49)</span>,
+        web.xml&#160;<span class="new">(new&#160;103)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-portlets/src/main/webapp/WEB-INF/view/ejbserver</strong>:
+        help.jsp&#160;<span class="new">(new&#160;76)</span>,
+        view.jsp&#160;<span class="new">(new&#160;210)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb</strong>:
+        pom.xml&#160;<span class="change">(+24&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="95"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-28 15:48</span>
+    <a class="permalink" title="Permalink to this commit" href="#95">#95</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">708650</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4382 Use plugin installing to create a new server instance in a geronimo installation.  Also requires separating boilerplate into the installation and server (var) bits
+    </p>
+    <p class="commitdetails"><strong>542</strong> lines of code changed in <span class="files">36 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>assemblies/geronimo-boilerplate</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/assembly</strong>:
+        boilerplate.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/underlay/contents</strong>:
+        DISCLAIMER&#160;<span class="new">(new)</span>,
+        LICENSE&#160;<span class="new">(new)</span>,
+        NOTICE&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/underlay/contents/bin</strong>:
+        client.bat&#160;<span class="new">(new&#160;178)</span>,
+        client.sh&#160;<span class="new">(new&#160;15)</span>,
+        deploy.bat&#160;<span class="new">(new&#160;15)</span>,
+        deploy.sh&#160;<span class="new">(new&#160;15)</span>,
+        geronimo.bat&#160;<span class="new">(new&#160;15)</span>,
+        geronimo.sh&#160;<span class="new">(new&#160;35)</span>,
+        gsh&#160;<span class="new">(new)</span>,
+        gsh.bat&#160;<span class="new">(new&#160;3)</span>,
+        setjavaenv.bat&#160;<span class="new">(new&#160;2)</span>,
+        setjavaenv.sh&#160;<span class="new">(new)</span>,
+        shutdown.bat&#160;<span class="new">(new&#160;4)</span>,
+        shutdown.sh&#160;<span class="new">(new)</span>,
+        start-server&#160;<span class="new">(new)</span>,
+        start-server.bat&#160;<span class="new">(new&#160;3)</span>,
+        startup.bat&#160;<span class="new">(new&#160;4)</span>,
+        startup.sh&#160;<span class="new">(new)</span>,
+        stop-server&#160;<span class="new">(new)</span>,
+        stop-server.bat&#160;<span class="new">(new&#160;3)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/underlay/contents/etc</strong>:
+        META-INF&#160;<span class="new">(new)</span>,
+        gsh-classworlds.conf&#160;<span class="new">(new&#160;1)</span>,
+        gsh-log4j.properties&#160;<span class="new">(new)</span>,
+        layout.xml&#160;<span class="new">(new)</span>,
+        rc.d&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/underlay/instance/var</strong>:
+        config&#160;<span class="new">(new)</span>,
+        temp&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>framework/configs/plugin/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+16)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        NewServerInstance.java&#160;<span class="new">(new&#160;28)</span>,
+        NewServerInstanceGBean.java&#160;<span class="new">(new&#160;114)</span>,
+        PluginInstallerGBean.java&#160;<span class="change">(+69&#160;-12)</span>,
+        ServerInstanceData.java&#160;<span class="change">(+11)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/serverinfo</strong>:
+        BasicServerInfo.java&#160;<span class="change">(+9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="94"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-25 02:19</span>
+    <a class="permalink" title="Permalink to this commit" href="#94">#94</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">707819</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4378 Remove accidental support for -s option
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-commands/src/main/groovy/org/apache/geronimo/commands</strong>:
+        StartServerCommand.groovy&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="93"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-24 14:47</span>
+    <a class="permalink" title="Permalink to this commit" href="#93">#93</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">707714</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4360 security modifications for connector 1.6
+    </p>
+    <p class="commitdetails"><strong>109</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-security/src/main/java/org/apache/geronimo/security</strong>:
+        Context.java&#160;<span class="new">(new&#160;66)</span>,
+        ContextManager.java&#160;<span class="change">(+32&#160;-29)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/main/java/org/apache/geronimo/connector/work</strong>:
+        ConnectorCallbackHandler.java&#160;<span class="new">(new)</span>,
+        SecurityInflowContextHandler.java&#160;<span class="new">(new&#160;11)</span>,
+        pool&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="92"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-24 14:42</span>
+    <a class="permalink" title="Permalink to this commit" href="#92">#92</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">707709</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4375 xbean upgrade requires asm upgrade.  GERONIMO-4360 minor build fix to increase tm version independence
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+4&#160;-20)</span>
+      </li>
+      <li>
+        <strong>framework/configs/geronimo-gbean-deployer/src/it/j2ee-system</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>framework/configs/geronimo-gbean-deployer/src/it/j2ee-system/src/test/resources/META-INF</strong>:
+        geronimo-plugin.xml&#160;<span class="change">(+2&#160;-2)</span>,
+        plan.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/classloader</strong>:
+        TemporaryClassLoader.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/concurrent</strong>:
+        pom.xml&#160;<span class="change">(+11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="91"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-24 10:40</span>
+    <a class="permalink" title="Permalink to this commit" href="#91">#91</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">707646</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added license headers, improved formatting
+    </p>
+    <p class="commitdetails"><strong>98</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/classloaders</strong>:
+        pom.xml&#160;<span class="change">(+19&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/classloaders/geronimo-javaee-deployment_1.1MR3_spec</strong>:
+        pom.xml&#160;<span class="change">(+17&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/classloaders/geronimo-schema-jee_5</strong>:
+        pom.xml&#160;<span class="change">(+34&#160;-15)</span>
+      </li>
+      <li>
+        <strong>plugins/classloaders/xbean-finder</strong>:
+        pom.xml&#160;<span class="change">(+28&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="90"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-23 11:49</span>
+    <a class="permalink" title="Permalink to this commit" href="#90">#90</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">707400</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+not needed anymore
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="89"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-23 11:13</span>
+    <a class="permalink" title="Permalink to this commit" href="#89">#89</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">707387</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add necessary log4j dep after xbean version change
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-system</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="88"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-22 20:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#88">#88</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">707233</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4375 fix rebind of entry originating from deepBind.  See XBEAN-115
+    </p>
+    <p class="commitdetails"><strong>36</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/test/java/org/apache/geronimo/gjndi</strong>:
+        JavaCompContextTest.java&#160;<span class="new">(new)</span>,
+        KernelContextGBeanTest.java&#160;<span class="change">(changed)</span>,
+        MockResourceSource.java&#160;<span class="new">(new&#160;35)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="87"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-21 16:03</span>
+    <a class="permalink" title="Permalink to this commit" href="#87">#87</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706741</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add missing org.apache.geronimo.components.* into dependency list, as these are being used under framework and plugins now
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+18)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="86"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-20 21:48</span>
+    <a class="permalink" title="Permalink to this commit" href="#86">#86</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706491</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4371 remove unnecessary plugin groups
+    </p>
+    <p class="commitdetails"><strong>229</strong> lines of code changed in <span class="files">17 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups</strong>:
+        pom.xml&#160;<span class="change">(-4)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-jetty</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-jetty/src/main</strong>:
+        plan&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-tomcat</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-tomcat/src/main</strong>:
+        plan&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty</strong>:
+        pom.xml&#160;<span class="change">(+71&#160;-19)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+39&#160;-9)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+70&#160;-19)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+47&#160;-12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jms</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jms/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jms/src/main/plan</strong>:
+        plan.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf/src/main</strong>:
+        plan&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="85"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-20 19:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#85">#85</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706448</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4360 set up some flags for easy switching between connector versions
+    </p>
+    <p class="commitdetails"><strong>70</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+10&#160;-26)</span>
+      </li>
+      <li>
+        <strong>framework/configs/jee-specs</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6</strong>:
+        pom.xml&#160;<span class="change">(+24)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/main/java/org/apache/geronimo/connector/work</strong>:
+        GeronimoWorkManagerGBean.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/connector</strong>:
+        pom.xml&#160;<span class="change">(+31)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="84"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-20 16:51</span>
+    <a class="permalink" title="Permalink to this commit" href="#84">#84</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706407</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4363 Update plugin group's metadata (especially category) to represent function of a plugin group
+    </p>
+    <p class="commitdetails"><strong>150</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/client</strong>:
+        pom.xml&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-jetty</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/ejb</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/framework</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty</strong>:
+        pom.xml&#160;<span class="change">(+14&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+14&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugingroups/persistence</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-jetty</strong>:
+        pom.xml&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-axis2</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-cxf</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="83"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-20 14:33</span>
+    <a class="permalink" title="Permalink to this commit" href="#83">#83</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706361</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4324 Upgrade to MyFaces v1.2.4
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="82"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-20 14:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#82">#82</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706357</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4360 make copy of connector plugin area for 1.6 spec implementation work.  Hopefully the diff part of this change can be reverted when we actually move to 1.6 spec
+    </p>
+    <p class="commitdetails"><strong>12960</strong> lines of code changed in <span class="files">137 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6</strong>:
+        client-transaction&#160;<span class="del">(del)</span>,
+        connector-deployer&#160;<span class="del">(del)</span>,
+        geronimo-connector&#160;<span class="del">(del)</span>,
+        geronimo-connector-builder&#160;<span class="del">(del)</span>,
+        geronimo-transaction&#160;<span class="del">(del)</span>,
+        pom.xml&#160;<span class="change">(changed)</span>,
+        transaction&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/client-transaction-1_6</strong>:
+        pom.xml&#160;<span class="new">(new&#160;115)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/client-transaction-1_6/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;44)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/client-transaction-1_6/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;74)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/connector-deployer-1_6</strong>:
+        pom.xml&#160;<span class="new">(new&#160;161)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/connector-deployer-1_6/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;24)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/connector-deployer-1_6/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;103)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6</strong>:
+        pom.xml&#160;<span class="new">(new&#160;101)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/main/java/org/apache/geronimo/connector</strong>:
+        ActivationSpecWrapperGBean.java&#160;<span class="new">(new)</span>,
+        AdminObjectWrapper.java&#160;<span class="new">(new)</span>,
+        AdminObjectWrapperGBean.java&#160;<span class="new">(new)</span>,
+        DatabaseInitializationGBean.java&#160;<span class="new">(new)</span>,
+        GeronimoBootstrapContextGBean.java&#160;<span class="new">(new)</span>,
+        JCAResourceImpl.java&#160;<span class="new">(new)</span>,
+        JCAResourceImplGBean.java&#160;<span class="new">(new)</span>,
+        ResourceAdapterImpl.java&#160;<span class="new">(new)</span>,
+        ResourceAdapterImplGBean.java&#160;<span class="new">(new)</span>,
+        ResourceAdapterModuleImpl.java&#160;<span class="new">(new)</span>,
+        ResourceAdapterModuleImplGBean.java&#160;<span class="new">(new)</span>,
+        ResourceAdapterWrapperGBean.java&#160;<span class="new">(new&#160;32)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        AbstractConnectionManagerGBean.java&#160;<span class="new">(new)</span>,
+        GenericConnectionManagerGBean.java&#160;<span class="new">(new)</span>,
+        JCAConnectionFactoryImpl.java&#160;<span class="new">(new)</span>,
+        JCAConnectionFactoryImplGBean.java&#160;<span class="new">(new)</span>,
+        ManagedConnectionFactoryWrapper.java&#160;<span class="new">(new)</span>,
+        ManagedConnectionFactoryWrapperGBean.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/main/java/org/apache/geronimo/connector/outbound/connectiontracking</strong>:
+        ConnectionTrackingCoordinatorGBean.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/main/java/org/apache/geronimo/connector/outbound/security</strong>:
+        CallerIdentityPasswordCredentialLoginModule.java&#160;<span class="new">(new)</span>,
+        PasswordCredentialLoginModuleWrapper.java&#160;<span class="new">(new)</span>,
+        PasswordCredentialLoginModuleWrapperGBean.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/main/java/org/apache/geronimo/connector/outbound/transactionlog</strong>:
+        JDBCLog.java&#160;<span class="new">(new)</span>,
+        JDBCLogGBean.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/main/java/org/apache/geronimo/connector/work</strong>:
+        GeronimoWorkManagerGBean.java&#160;<span class="new">(new&#160;32)</span>,
+        pool&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/test/java/org/apache/geronimo/connector</strong>:
+        AdminObjectWrapperTest.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/test/java/org/apache/geronimo/connector/outbound</strong>:
+        GenericConnectionManagerGBeanSerializationTest.java&#160;<span class="new">(new)</span>,
+        ManagedConnectionFactoryWrapperTest.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-1_6/src/test/java/org/apache/geronimo/connector/outbound/security</strong>:
+        GBeanTest.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6</strong>:
+        pom.xml&#160;<span class="new">(new&#160;148)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/connector/deployment</strong>:
+        AdminObjectRefBuilder.java&#160;<span class="new">(new&#160;508)</span>,
+        ConnectorModuleBuilder.java&#160;<span class="new">(new&#160;1078)</span>,
+        ConnectorPlanRectifier.java&#160;<span class="new">(new&#160;83)</span>,
+        RARConfiguration.java&#160;<span class="new">(new&#160;36)</span>,
+        RARConfigurer.java&#160;<span class="new">(new&#160;70)</span>,
+        ResourceRefBuilder.java&#160;<span class="new">(new&#160;425)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/connector/deployment/dconfigbean</strong>:
+        AdminObjectDConfigBean.java&#160;<span class="new">(new&#160;106)</span>,
+        AdminObjectInstance.java&#160;<span class="new">(new&#160;114)</span>,
+        ConfigPropertiesHelper.java&#160;<span class="new">(new&#160;155)</span>,
+        ConfigPropertySettingDConfigBean.java&#160;<span class="new">(new&#160;74)</span>,
+        ConfigPropertySettings.java&#160;<span class="new">(new&#160;141)</span>,
+        ConnectionDefinitionDConfigBean.java&#160;<span class="new">(new&#160;102)</span>,
+        ConnectionDefinitionDConfigBeanBeanInfo.java&#160;<span class="new">(new&#160;153)</span>,
+        ConnectionDefinitionInstance.java&#160;<span class="new">(new&#160;219)</span>,
+        ConnectionDefinitionInstanceBeanInfo.java&#160;<span class="new">(new&#160;159)</span>,
+        ResourceAdapterDConfigBean.java&#160;<span class="new">(new&#160;231)</span>,
+        ResourceAdapterDConfigRoot.java&#160;<span class="new">(new&#160;110)</span>,
+        ResourceAdapter_1_0DConfigRoot.java&#160;<span class="new">(new&#160;83)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/connector/deployment/jsr88</strong>:
+        AdminObjectDCB.java&#160;<span class="new">(new&#160;116)</span>,
+        AdminObjectInstance.java&#160;<span class="new">(new&#160;82)</span>,
+        ConfigHolder.java&#160;<span class="new">(new&#160;144)</span>,
+        ConfigPropertySetting.java&#160;<span class="new">(new&#160;103)</span>,
+        ConnectionDefinition.java&#160;<span class="new">(new&#160;160)</span>,
+        ConnectionDefinitionInstance.java&#160;<span class="new">(new&#160;130)</span>,
+        ConnectionManager.java&#160;<span class="new">(new&#160;299)</span>,
+        Connector15DCBRoot.java&#160;<span class="new">(new&#160;182)</span>,
+        ConnectorDCB.java&#160;<span class="new">(new&#160;290)</span>,
+        PartitionedPool.java&#160;<span class="new">(new&#160;81)</span>,
+        ResourceAdapter.java&#160;<span class="new">(new&#160;161)</span>,
+        ResourceAdapterInstance.java&#160;<span class="new">(new&#160;107)</span>,
+        SinglePool.java&#160;<span class="new">(new&#160;179)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/xsd</strong>:
+        geronimo-connector-1.2.xsd&#160;<span class="new">(new&#160;756)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/xsdconfig</strong>:
+        xmlconfig.xml&#160;<span class="new">(new&#160;26)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/java/org/apache/geronimo/connector/deployment</strong>:
+        ConnectorModuleBuilderTest.java&#160;<span class="new">(new&#160;584)</span>,
+        MessageDestinationTest.java&#160;<span class="new">(new&#160;175)</span>,
+        MockRARDeployable.java&#160;<span class="new">(new&#160;82)</span>,
+        PlanParsingTest.java&#160;<span class="new">(new&#160;119)</span>,
+        RAR_1_0DConfigBeanTest.java&#160;<span class="new">(new&#160;120)</span>,
+        RAR_1_5DConfigBeanTest.java&#160;<span class="new">(new&#160;189)</span>,
+        SchemaConversionTest.java&#160;<span class="new">(new&#160;67)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/java/org/apache/geronimo/connector/deployment/annotation</strong>:
+        AnnotationHelperTest.java&#160;<span class="new">(new&#160;93)</span>,
+        ResourceAnnotationTest.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/java/org/apache/geronimo/connector/deployment/jsr88</strong>:
+        Connector15DCBTest.java&#160;<span class="new">(new&#160;558)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/java/org/apache/geronimo/connector/mock</strong>:
+        ConnectionFactoryExtension.java&#160;<span class="new">(new&#160;30)</span>,
+        MockActivationSpec.java&#160;<span class="new">(new&#160;41)</span>,
+        MockAdminObject.java&#160;<span class="new">(new&#160;36)</span>,
+        MockAdminObjectImpl.java&#160;<span class="new">(new&#160;41)</span>,
+        MockCCILocalTransaction.java&#160;<span class="new">(new&#160;51)</span>,
+        MockConnection.java&#160;<span class="new">(new&#160;98)</span>,
+        MockConnectionFactory.java&#160;<span class="new">(new&#160;74)</span>,
+        MockConnectionRequestInfo.java&#160;<span class="new">(new&#160;30)</span>,
+        MockManagedConnection.java&#160;<span class="new">(new&#160;199)</span>,
+        MockManagedConnectionFactory.java&#160;<span class="new">(new&#160;153)</span>,
+        MockResourceAdapter.java&#160;<span class="new">(new&#160;69)</span>,
+        MockSPILocalTransaction.java&#160;<span class="new">(new&#160;80)</span>,
+        MockXAResource.java&#160;<span class="new">(new&#160;160)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources</strong>:
+        database.rar&#160;<span class="new">(new)</span>,
+        jms-plan.xml&#160;<span class="new">(new&#160;92)</span>,
+        jms.rar&#160;<span class="new">(new)</span>,
+        plan-with-nulls.xml&#160;<span class="new">(new&#160;62)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources/annotation</strong>:
+        empty-web-src.xml&#160;<span class="new">(new&#160;27)</span>,
+        resource-ref-expected.xml&#160;<span class="new">(new&#160;39)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources/connector_1_0</strong>:
+        geronimo-ra.xml&#160;<span class="new">(new&#160;92)</span>,
+        ra.xml&#160;<span class="new">(new&#160;68)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources/connector_1_5</strong>:
+        geronimo-ra.xml&#160;<span class="new">(new&#160;142)</span>,
+        ra.xml&#160;<span class="new">(new&#160;113)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources/connector_1_5_localtx</strong>:
+        geronimo-ra.xml&#160;<span class="new">(new&#160;141)</span>,
+        ra.xml&#160;<span class="new">(new&#160;113)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources/connector_1_5_notx</strong>:
+        geronimo-ra.xml&#160;<span class="new">(new&#160;127)</span>,
+        ra.xml&#160;<span class="new">(new&#160;113)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources/data</strong>:
+        dup-admin-object-name.xml&#160;<span class="new">(new&#160;56)</span>,
+        dup-connectionfactoryinstance-name.xml&#160;<span class="new">(new&#160;82)</span>,
+        dup-resourceadapter-name.xml&#160;<span class="new">(new&#160;38)</span>,
+        external-application-plan.xml&#160;<span class="new">(new&#160;222)</span>,
+        groups.properties&#160;<span class="new">(new&#160;22)</span>,
+        login.config&#160;<span class="new">(new&#160;24)</span>,
+        old-schema-plan.xml&#160;<span class="new">(new&#160;145)</span>,
+        users.properties&#160;<span class="new">(new&#160;23)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources/ear</strong>:
+        application.xml&#160;<span class="new">(new&#160;27)</span>,
+        geronimo-application.xml&#160;<span class="new">(new&#160;29)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/resources/j2ee_1_3dtd</strong>:
+        ra-10.xml&#160;<span class="new">(new&#160;73)</span>,
+        ra-15.xml&#160;<span class="new">(new&#160;70)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/script</strong>:
+        test-setup.xml&#160;<span class="new">(new&#160;95)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-transaction-1_6</strong>:
+        pom.xml&#160;<span class="new">(new&#160;73)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-transaction-1_6/src/main/java/org/apache/geronimo/transaction/log</strong>:
+        HOWLLogGBean.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-transaction-1_6/src/main/java/org/apache/geronimo/transaction/manager</strong>:
+        GeronimoTransactionManagerGBean.java&#160;<span class="new">(new)</span>,
+        TransactionManagerImplGBean.java&#160;<span class="new">(new)</span>,
+        XidFactoryImplGBean.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/transaction-1_6</strong>:
+        pom.xml&#160;<span class="new">(new&#160;144)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/transaction-1_6/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;49)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/transaction-1_6/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;113)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="81"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-20 10:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#81">#81</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706298</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4370 improve usage of default-repository in plugin catalog
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli</strong>:
+        CommandDeploy.java&#160;<span class="change">(+1&#160;-1)</span>,
+        CommandListConfigurations.java&#160;<span class="change">(+9)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        PluginInstallerGBean.java&#160;<span class="change">(+12&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="80"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-20 09:42</span>
+    <a class="permalink" title="Permalink to this commit" href="#80">#80</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706283</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+replace hardcoded value with message key
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car</strong>:
+        assemblyName.jsp&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="79"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-16 14:36</span>
+    <a class="permalink" title="Permalink to this commit" href="#79">#79</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">705317</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4364 Split the assemblylist page to 2 pages
+    </p>
+    <p class="commitdetails"><strong>199</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        AssemblyNameHandler.java&#160;<span class="new">(new&#160;93)</span>,
+        AssemblyPortlet.java&#160;<span class="change">(+1)</span>,
+        AssemblyViewHandler.java&#160;<span class="change">(+4&#160;-2)</span>,
+        BaseImportExportHandler.java&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/resources</strong>:
+        pluginportlets.properties&#160;<span class="change">(+3)</span>,
+        pluginportlets_zh.properties&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car</strong>:
+        assemblyConfirm.jsp&#160;<span class="change">(+1&#160;-1)</span>,
+        assemblyIndex.jsp&#160;<span class="change">(+1&#160;-1)</span>,
+        assemblyName.jsp&#160;<span class="new">(new&#160;82)</span>,
+        assemblylist.jsp&#160;<span class="change">(+10&#160;-48)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="78"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-16 14:29</span>
+    <a class="permalink" title="Permalink to this commit" href="#78">#78</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">705315</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+latest saaj spec jar is released
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="77"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-15 23:54</span>
+    <a class="permalink" title="Permalink to this commit" href="#77">#77</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">705134</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+reorganize code a bit and enable hover plugin to show desp of the plugin
+    </p>
+    <p class="commitdetails"><strong>65</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        AssemblyListHandler.java&#160;<span class="change">(+21&#160;-8)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car</strong>:
+        assemblylist.jsp&#160;<span class="change">(+43&#160;-102)</span>,
+        list.jsp&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="76"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-15 20:08</span>
+    <a class="permalink" title="Permalink to this commit" href="#76">#76</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">705102</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4360 connector 1.6 support for ResourceAdapter aware Admin objects.  Does not use 1.6 implementation features or api.  Also modifies our 1.2 vendor schema without changing the namespace
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector/geronimo-connector-builder/src/main/java/org/apache/geronimo/connector/deployment</strong>:
+        ConnectorModuleBuilder.java&#160;<span class="change">(+11&#160;-5)</span>
+      </li>
+      <li>
+        <strong>plugins/connector/geronimo-connector-builder/src/main/xsd</strong>:
+        geronimo-connector-1.2.xsd&#160;<span class="change">(+14)</span>
+      </li>
+      <li>
+        <strong>plugins/connector/geronimo-connector/src/main/java/org/apache/geronimo/connector</strong>:
+        AdminObjectWrapper.java&#160;<span class="change">(+35&#160;-14)</span>,
+        AdminObjectWrapperGBean.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/connector/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound</strong>:
+        ManagedConnectionFactoryWrapper.java&#160;<span class="change">(+2&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="75"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-15 14:00</span>
+    <a class="permalink" title="Permalink to this commit" href="#75">#75</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704973</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4362 Allow users to filter plugins on server assembly portlet &amp; allow users to turn on expert users mode
+    </p>
+    <p class="commitdetails"><strong>189</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car</strong>:
+        assemblyIndex.jsp&#160;<span class="change">(-1)</span>,
+        assemblylist.jsp&#160;<span class="change">(+189&#160;-46)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="74"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-15 13:39</span>
+    <a class="permalink" title="Permalink to this commit" href="#74">#74</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704968</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fixes for resource injection of simple env. entry types (GERONIMO-4361)
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-naming-builder/src/main/java/org/apache/geronimo/naming/deployment</strong>:
+        EnvironmentEntryBuilder.java&#160;<span class="change">(+12&#160;-7)</span>,
+        SwitchingServiceRefBuilder.java&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-naming-builder/src/test/resources/annotation</strong>:
+        env-entry-expected.xml&#160;<span class="new">(new)</span>,
+        service-ref-expected.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="73"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-15 09:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#73">#73</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704910</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 upgrade to AMQ 5.1.0 artifacts and removed console modules from the build until we have a replacement.  still doen't compile, but gives John a base to create patches against.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq5</strong>:
+        pom.xml&#160;<span class="change">(+6&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="72"></a>
+    <a href="user_jbohn.html" class="author">jbohn</a>
+    <span class="date">2008-10-14 16:01</span>
+    <a class="permalink" title="Permalink to this commit" href="#72">#72</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704650</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4356 - looks like just jsr88-cli is needed so I'm removing offline-deployer
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/framework</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+      <li>
+        <strong>plugingroups/framework/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+9&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="71"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-14 15:22</span>
+    <a class="permalink" title="Permalink to this commit" href="#71">#71</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704629</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upgrade ant-launcher (GERONIMO-4212)
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/underlay/etc</strong>:
+        gsh-classworlds.conf&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="70"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-14 14:54</span>
+    <a class="permalink" title="Permalink to this commit" href="#70">#70</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704617</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+perform cleanup at shutdown
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        Axis2WebServiceContainer.java&#160;<span class="change">(+7)</span>,
+        GeronimoConfigurator.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="69"></a>
+    <a href="user_jbohn.html" class="author">jbohn</a>
+    <span class="date">2008-10-14 13:03</span>
+    <a class="permalink" title="Permalink to this commit" href="#69">#69</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704580</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix description of the list-plugins command so that it says what it does - remotely related to GERONIMO-4356
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-commands/src/main/groovy/org/apache/geronimo/commands</strong>:
+        ListConfigurationsCommand.groovy&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="68"></a>
+    <a href="user_jbohn.html" class="author">jbohn</a>
+    <span class="date">2008-10-14 11:48</span>
+    <a class="permalink" title="Permalink to this commit" href="#68">#68</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704569</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4356 - fix cli for list-targets, list-modules, and search-plugins
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/framework</strong>:
+        pom.xml&#160;<span class="change">(+14)</span>
+      </li>
+      <li>
+        <strong>plugingroups/framework/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+18&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="67"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-13 17:01</span>
+    <a class="permalink" title="Permalink to this commit" href="#67">#67</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704247</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upgrade woodstox to latest 3.2.7 version
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/configs/geronimo-gbean-deployer/src/it/j2ee-system</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="66"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-13 13:49</span>
+    <a class="permalink" title="Permalink to this commit" href="#66">#66</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704183</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4249 Make it easier to switch between jetty6 and jetty7
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">19 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-jetty</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-jetty</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq/activemq-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/ca-helper/ca-helper-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-deployer</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-ejb-deployer</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/debugviews/debugviews-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-12)</span>
+      </li>
+      <li>
+        <strong>plugins/dojo-legacy/dojo-legacy-jetty6</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/dojo/dojo-jetty6</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/monitoring/mconsole-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/plancreator/plancreator-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/remote-deploy/remote-deploy-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-server/uddi-jetty6</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/welcome/welcome-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="65"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-13 13:45</span>
+    <a class="permalink" title="Permalink to this commit" href="#65">#65</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704181</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3417 new method to help with jaspi implementation
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-security/src/main/java/org/apache/geronimo/security</strong>:
+        ContextManager.java&#160;<span class="change">(+33)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="64"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-12 12:16</span>
+    <a class="permalink" title="Permalink to this commit" href="#64">#64</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703841</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+exclusion needed for ibm jdk
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="63"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-11 18:47</span>
+    <a class="permalink" title="Permalink to this commit" href="#63">#63</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703745</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove commented out obsolete plugin configuration
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>assemblies/geronimo-boilerplate</strong>:
+        pom.xml&#160;<span class="change">(-97)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="62"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-10 18:35</span>
+    <a class="permalink" title="Permalink to this commit" href="#62">#62</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703591</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove unnecessary dependencies: axis2-java2wsdl and axis2-adb (GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(-68)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2</strong>:
+        pom.xml&#160;<span class="change">(-10)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-10)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="61"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-10 15:35</span>
+    <a class="permalink" title="Permalink to this commit" href="#61">#61</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703564</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+refactor wsgen functionality into a separate plugin (part of GERONIMO-4351)
+    </p>
+    <p class="commitdetails"><strong>696</strong> lines of code changed in <span class="files">54 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/webservices-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-cxf</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-cxf/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-deployer</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-23)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+3&#160;-23)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-ejb-deployer</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-ejb-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+15&#160;-9)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2-ejb-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2EJBBuilder.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-deployer</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-ejb-deployer</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-ejb-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-builder/src/main/java/org/apache/geronimo/cxf/builder</strong>:
+        CXFBuilder.java&#160;<span class="change">(+15&#160;-11)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb-builder/src/main/java/org/apache/geronimo/cxf/builder</strong>:
+        CXFEJBBuilder.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws</strong>:
+        pom.xml&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-builder</strong>:
+        pom.xml&#160;<span class="change">(-22)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-builder/src/main/java/org/apache/geronimo/jaxws/builder</strong>:
+        JAXWSTools.java&#160;<span class="del">(del)</span>,
+        JAXWSToolsCLI.java&#160;<span class="del">(del)</span>,
+        WsdlGenerator.java&#160;<span class="del">(del)</span>,
+        WsgenCommand.java&#160;<span class="del">(del)</span>,
+        WsimportCommand.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-builder/src/main/java/org/apache/geronimo/jaxws/wsdl</strong>:
+        WsdlGenerator.java&#160;<span class="new">(new)</span>,
+        WsdlGeneratorOptions.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-builder/src/main/resources</strong>:
+        gsh-wsgen.properties&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-sun-tools</strong>:
+        pom.xml&#160;<span class="new">(new&#160;65)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-sun-tools/src/main/java/org/apache/geronimo/jaxws/builder</strong>:
+        JAXWSTools.java&#160;<span class="new">(new&#160;30)</span>,
+        JAXWSToolsCLI.java&#160;<span class="new">(new)</span>,
+        SunWsdlGenerator.java&#160;<span class="new">(new)</span>,
+        WsdlGenerator.java&#160;<span class="new">(new&#160;232)</span>,
+        WsgenCommand.java&#160;<span class="new">(new)</span>,
+        WsimportCommand.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-sun-tools/src/main/resources</strong>:
+        gsh-wsgen.properties&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-deployer</strong>:
+        pom.xml&#160;<span class="change">(-47)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-deployer/src/main</strong>:
+        resources&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-sun-tools</strong>:
+        pom.xml&#160;<span class="new">(new&#160;142)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-sun-tools/src/main/appended-resources/META-INF</strong>:
+        NOTICE.vm&#160;<span class="new">(new&#160;32)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-sun-tools/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;44)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-sun-tools/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;26)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-sun-tools/src/main/resources/META-INF</strong>:
+        startup-jar&#160;<span class="new">(new&#160;18)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-tools</strong>:
+        pom.xml&#160;<span class="change">(+14&#160;-31)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-tools/src/main/assembly</strong>:
+        bin.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-tools/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;14)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-tools/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="60"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-10 11:48</span>
+    <a class="permalink" title="Permalink to this commit" href="#60">#60</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703507</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update framework plugin group desp slightly
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/framework</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="59"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-10 11:45</span>
+    <a class="permalink" title="Permalink to this commit" href="#59">#59</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703504</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+select framework plugin group by default related to GERONIMO-4226
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/resources</strong>:
+        pluginportlets.properties&#160;<span class="change">(+1&#160;-1)</span>,
+        pluginportlets_zh.properties&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car</strong>:
+        assemblylist.jsp&#160;<span class="change">(+14&#160;-6)</span>,
+        viewForDownload.jsp&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="58"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-10 09:24</span>
+    <a class="permalink" title="Permalink to this commit" href="#58">#58</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703450</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4346 c-m-p leaves invalid plugin in plugin catalog and doesn't update plugin catalog when desp is updated
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>buildsupport/car-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/car</strong>:
+        UpdatePluginListMojo.java&#160;<span class="change">(+13&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        PluginInstallerGBean.java&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="57"></a>
+    <a href="user_jaydm.html" class="author">jaydm</a>
+    <span class="date">2008-10-09 19:34</span>
+    <a class="permalink" title="Permalink to this commit" href="#57">#57</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703291</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4325 Repackaged the mini release bundle.  Everything in the original bundle<br />
+was nested in an additional 'dojo' directory.  Removed the extra directory level so<br />
+that all existing references to the dojo.js file would not need to be touched.<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository/org/dojotoolkit/dojo-mini/1.1.1</strong>:
+        dojo-mini-1.1.1.zip&#160;<span class="change">(changed)</span>,
+        dojo-mini-1.1.1.zip.md5&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="56"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-09 14:42</span>
+    <a class="permalink" title="Permalink to this commit" href="#56">#56</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703224</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add desp for basic console portlet and plugin portlet
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="55"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-09 12:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#55">#55</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703199</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix InstallerMojoSupport to properly detect Geronimo installation directory after boilerplate.jar -&gt; boilerplate.car change (related to GERONIMO-4328)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>buildsupport/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/server</strong>:
+        InstallerMojoSupport.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="54"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-09 10:44</span>
+    <a class="permalink" title="Permalink to this commit" href="#54">#54</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703174</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+get wsgen working ok when invoked in non-forked mode
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-builder/src/main/java/org/apache/geronimo/jaxws/builder</strong>:
+        JAXWSTools.java&#160;<span class="change">(+19&#160;-4)</span>,
+        WsdlGenerator.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="53"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-08 22:41</span>
+    <a class="permalink" title="Permalink to this commit" href="#53">#53</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">703047</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove unneeded clustering plugin group as we split it to clustering-tomcat/jetty
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups</strong>:
+        pom.xml&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering/src/main/plan</strong>:
+        plan.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="52"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-08 17:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#52">#52</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702989</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+wsdl generation happens at deploy time so no need for axis2 plugin to have all these sun dependencies
+    </p>
+    <p class="commitdetails"><strong>59</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+8)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-deployer</strong>:
+        pom.xml&#160;<span class="change">(+26)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+25)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2</strong>:
+        pom.xml&#160;<span class="change">(-25)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-25)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="51"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-08 16:34</span>
+    <a class="permalink" title="Permalink to this commit" href="#51">#51</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702982</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update the name, description of mconsole slightly
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-ds</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/monitoring/mconsole-jetty</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="50"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-08 15:30</span>
+    <a class="permalink" title="Permalink to this commit" href="#50">#50</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702974</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update the name, description of sysdb-console slightly
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+6&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="49"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-08 14:31</span>
+    <a class="permalink" title="Permalink to this commit" href="#49">#49</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702956</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+enable jaxws-wsa-tests
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests</strong>:
+        goals.txt&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war/src/main/webapp/WEB-INF/wsdl</strong>:
+        calculator.wsdl&#160;<span class="change">(+12&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="48"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-08 14:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#48">#48</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702949</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+just reformat
+    </p>
+    <p class="commitdetails"><strong>52</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war/src/main/webapp/WEB-INF/wsdl</strong>:
+        calculator.wsdl&#160;<span class="change">(+52&#160;-52)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="47"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-08 14:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#47">#47</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702948</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update the name, description of plan creator slightly
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/plancreator</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/plancreator/plancreator-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/plancreator/plancreator-console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="46"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-08 13:50</span>
+    <a class="permalink" title="Permalink to this commit" href="#46">#46</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702938</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update the name, description of debugviews slightly
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/debugviews</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/debugviews/debugviews-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/debugviews/debugviews-console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="45"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-08 13:21</span>
+    <a class="permalink" title="Permalink to this commit" href="#45">#45</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702930</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add a test to check for wsa:Action attribute and wsa:UseAddressing element in WSDL
+    </p>
+    <p class="commitdetails"><strong>77</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-ear/src/test/java/org/apache/geronimo/jaxws/wsa</strong>:
+        WSATest.java&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-ejb/src/main/java/org/apache/geronimo/jaxws/test</strong>:
+        CalculatorBean.java&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war/src/main/java/org/apache/geronimo/jaxws/wsa</strong>:
+        TestServlet.java&#160;<span class="change">(+55&#160;-4)</span>,
+        TestUtils.java&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-war/src/main/java/org/apache/geronimo/jaxws/test</strong>:
+        CalculatorImpl.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="44"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-08 10:43</span>
+    <a class="permalink" title="Permalink to this commit" href="#44">#44</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702897</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+inform users that the .car module is already installed, introduced by changes of GERONIMO-4318
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        PluginInstallerGBean.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="43"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-07 16:52</span>
+    <a class="permalink" title="Permalink to this commit" href="#43">#43</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702631</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use jaxws-tools 2.1 to generate the wsdl (that needs extra CDDL libs such as stax-ex and streambuffer) and drop unneeded jaxen and annogen dependencies (GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>104</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        NOTICE.txt&#160;<span class="change">(+6&#160;-22)</span>,
+        pom.xml&#160;<span class="change">(+47&#160;-27)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-ejb</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2</strong>:
+        pom.xml&#160;<span class="change">(+15&#160;-10)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+10&#160;-10)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-11)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-ejb</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-builder/src/main/java/org/apache/geronimo/jaxws/builder</strong>:
+        JAXWSTools.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="42"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-07 16:37</span>
+    <a class="permalink" title="Permalink to this commit" href="#42">#42</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702621</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4316 Use plugin groups to construct javaee5 assemblies
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>assemblies/geronimo-jetty6-javaee5</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-620)</span>
+      </li>
+      <li>
+        <strong>assemblies/geronimo-tomcat6-javaee5</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-591)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="41"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-07 15:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#41">#41</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702598</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+take 2: send wsa:MessageID header - still not sure if it is required or not
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war/src/main/java/org/apache/geronimo/jaxws/wsa</strong>:
+        TestServlet.java&#160;<span class="change">(+15&#160;-12)</span>,
+        TestServletWeb.java&#160;<span class="new">(new)</span>,
+        TestUtils.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="40"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-07 15:29</span>
+    <a class="permalink" title="Permalink to this commit" href="#40">#40</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+send wsa:MessageID header - still not sure if it is required or not
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war/src/main/java/org/apache/geronimo/jaxws/wsa</strong>:
+        TestServletEJB.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-07 15:19</span>
+    <a class="permalink" title="Permalink to this commit" href="#39">#39</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702591</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+some modification to the javaee5 plugin groups and some format changes
+    </p>
+    <p class="commitdetails"><strong>87</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups</strong>:
+        pom.xml&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty</strong>:
+        pom.xml&#160;<span class="change">(+24&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+21&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+19&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+16&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugingroups/persistence</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-jetty</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-cxf</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-07 15:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#38">#38</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702588</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add the console-tomcat plugin group
+    </p>
+    <p class="commitdetails"><strong>123</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/console-tomcat</strong>:
+        pom.xml&#160;<span class="new">(new&#160;123)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-tomcat/src/main</strong>:
+        plan&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-07 15:09</span>
+    <a class="permalink" title="Permalink to this commit" href="#37">#37</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702586</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add the console-jetty plugin group
+    </p>
+    <p class="commitdetails"><strong>123</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/console-jetty</strong>:
+        pom.xml&#160;<span class="new">(new&#160;123)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-jetty/src/main</strong>:
+        plan&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-07 15:06</span>
+    <a class="permalink" title="Permalink to this commit" href="#36">#36</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702584</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add mejb to ejb plugin group
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/ejb</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/ejb/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_dblevins.html" class="author">dblevins</a>
+    <span class="date">2008-10-07 13:46</span>
+    <a class="permalink" title="Permalink to this commit" href="#35">#35</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702558</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Allow ClusterName, MulticastHost, and MulticastPort config substitutions to standardly apply to ejb discovery and failover as well.<br />
+
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb/src/main/java/org/apache/geronimo/openejb</strong>:
+        EjbDaemonGBean.java&#160;<span class="change">(+11)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_dblevins.html" class="author">dblevins</a>
+    <span class="date">2008-10-07 13:43</span>
+    <a class="permalink" title="Permalink to this commit" href="#34">#34</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702557</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use 239.255.3.2 as multicast host default<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/clustering/geronimo-farm/src/main/java/org/apache/geronimo/farm/discovery</strong>:
+        MulticastSearch.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_dblevins.html" class="author">dblevins</a>
+    <span class="date">2008-10-07 13:43</span>
+    <a class="permalink" title="Permalink to this commit" href="#33">#33</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702556</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Use ServerHostname for the RMI (i.e. JNDI) host address<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_dblevins.html" class="author">dblevins</a>
+    <span class="date">2008-10-07 13:40</span>
+    <a class="permalink" title="Permalink to this commit" href="#32">#32</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702555</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Print the repo URI when no connection can be made<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        RemoteSourceRepository.java&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-07 11:55</span>
+    <a class="permalink" title="Permalink to this commit" href="#31">#31</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702526</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+make sure MessageContext of WebServivceContext is updated with WSDL properties in thread safe way (GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>139</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/pojo</strong>:
+        POJOEndpointDispatcherFactory.java&#160;<span class="new">(new&#160;44)</span>,
+        POJOEndpointLifecycleManager.java&#160;<span class="change">(-4)</span>,
+        POJOProviderDispatcher.java&#160;<span class="new">(new&#160;41)</span>,
+        POJOServiceDispatcher.java&#160;<span class="new">(new&#160;41)</span>,
+        POJOWebServiceContainer.java&#160;<span class="change">(+8&#160;-2)</span>,
+        POJOWebServiceContext.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-07 00:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#30">#30</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702339</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+undo wsdl change
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war/src/main/webapp/WEB-INF/wsdl</strong>:
+        calculator.wsdl&#160;<span class="change">(+13&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-07 00:18</span>
+    <a class="permalink" title="Permalink to this commit" href="#29">#29</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702338</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more test with AddressingFeature off
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war/src/main/java/org/apache/geronimo/jaxws/wsa</strong>:
+        TestServlet.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war/src/main/webapp/WEB-INF/wsdl</strong>:
+        calculator.wsdl&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-06 16:38</span>
+    <a class="permalink" title="Permalink to this commit" href="#28">#28</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702254</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add javaee5 jetty and tomcat plugin groups (related to GERONIMO-4316)
+    </p>
+    <p class="commitdetails"><strong>52</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups</strong>:
+        pom.xml&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty</strong>:
+        pom.xml&#160;<span class="new">(new&#160;3)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty/src/main</strong>:
+        plan&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;6)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="new">(new&#160;11)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat/src/main</strong>:
+        plan&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;30)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-06 16:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#27">#27</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702253</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add clustering-tomcat and clustering-jetty plugin groups
+    </p>
+    <p class="commitdetails"><strong>197</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/clustering-jetty</strong>:
+        pom.xml&#160;<span class="new">(new&#160;69)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;29)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-tomcat</strong>:
+        pom.xml&#160;<span class="new">(new&#160;70)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;29)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-06 16:21</span>
+    <a class="permalink" title="Permalink to this commit" href="#26">#26</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702252</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add a JSF plugin group
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups</strong>:
+        pom.xml&#160;<span class="change">(+9&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf/src/main</strong>:
+        plan&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-05 22:02</span>
+    <a class="permalink" title="Permalink to this commit" href="#25">#25</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701913</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+get addressing somewhat working (GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/axis2/geronimo-axis2-ejb/src/main/java/org/apache/geronimo/axis2/ejb</strong>:
+        EJBMessageReceiver.java&#160;<span class="change">(+15&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        Axis2WebServiceContainer.java&#160;<span class="change">(+40&#160;-5)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/pojo</strong>:
+        POJOEndpointLifecycleManager.java&#160;<span class="change">(changed)</span>,
+        POJOWebServiceContext.java&#160;<span class="change">(+3&#160;-5)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/resources/META-INF</strong>:
+        geronimo-axis2.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-04 20:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#24">#24</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701730</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 move amq version info out of root pom
+    </p>
+    <p class="commitdetails"><strong>79</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(-34)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq</strong>:
+        pom.xml&#160;<span class="change">(+40)</span>
+      </li>
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+39)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-04 13:01</span>
+    <a class="permalink" title="Permalink to this commit" href="#23">#23</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701669</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 make the build work -- still used amq4
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">19 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq5/activemq5-broker</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-broker/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-console-jetty</strong>:
+        pom.xml&#160;<span class="new">(new&#160;2)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-console-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-console-tomcat</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-portlets</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-portlets/src/main/java/org/apache/geronimo/console/jmsmanager</strong>:
+        ManagementHelper.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-ra</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq5-ra/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/geronimo-activemq5-management</strong>:
+        pom.xml&#160;<span class="new">(new)</span>,
+        src&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/geronimo-activemq5-ra</strong>:
+        pom.xml&#160;<span class="new">(new&#160;1)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/geronimo-activemq5</strong>:
+        pom.xml&#160;<span class="new">(new&#160;2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-04 12:45</span>
+    <a class="permalink" title="Permalink to this commit" href="#22">#22</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701667</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 first renaming step -- does not build yet
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq5</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq-broker</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq-console-jetty</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq-console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq-portlets</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/activemq-ra</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/geronimo-activemq-management</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/geronimo-activemq-ra</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq5/geronimo-activemq</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-04 12:40</span>
+    <a class="permalink" title="Permalink to this commit" href="#21">#21</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701666</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+excludes needed for XmlSchema for ibm jdk
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-04 02:07</span>
+    <a class="permalink" title="Permalink to this commit" href="#20">#20</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701606</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+discover and load addressing module (GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>67</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        Axis2WebServiceContainer.java&#160;<span class="change">(+3&#160;-1)</span>,
+        AxisServiceGenerator.java&#160;<span class="change">(+7&#160;-1)</span>,
+        GeronimoConfigurator.java&#160;<span class="new">(new&#160;57)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/resources/META-INF</strong>:
+        geronimo-axis2.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-03 23:53</span>
+    <a class="permalink" title="Permalink to this commit" href="#19">#19</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701591</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+switch to latest XmlSchema - Axis2 needs it
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-03 17:06</span>
+    <a class="permalink" title="Permalink to this commit" href="#18">#18</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701533</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4336 some improvements to the addRepository page of the install plugin portlet
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        AddRepositoryHandler.java&#160;<span class="change">(+20&#160;-11)</span>,
+        BaseImportExportHandler.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ListHandler.java&#160;<span class="change">(+3&#160;-3)</span>,
+        ViewPluginDownloadHandler.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car</strong>:
+        addRepository.jsp&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-03 16:24</span>
+    <a class="permalink" title="Permalink to this commit" href="#17">#17</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701520</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4225 add additional testcases for datasource vs. database focused Run SQL portlet instances
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/console-testsuite/advanced/src/test/java/org/apache/geronimo/testsuite/console</strong>:
+        DBManagerTest.java&#160;<span class="change">(+12&#160;-3)</span>,
+        DatabasePoolTest.java&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-03 15:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#16">#16</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701499</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add comment on other way to run individual testsuites
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite</strong>:
+        pom.xml&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-03 12:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#15">#15</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701427</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+rename wsa-common to wsa-test-war
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">22 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common/src/main/java/org/apache/geronimo/calculator</strong>:
+        Add.java&#160;<span class="del">(del)</span>,
+        AddResponse.java&#160;<span class="del">(del)</span>,
+        Calculator.java&#160;<span class="del">(del)</span>,
+        CalculatorService.java&#160;<span class="del">(del)</span>,
+        GetEPR.java&#160;<span class="del">(del)</span>,
+        GetEPRResponse.java&#160;<span class="del">(del)</span>,
+        Multiply.java&#160;<span class="del">(del)</span>,
+        MultiplyResponse.java&#160;<span class="del">(del)</span>,
+        ObjectFactory.java&#160;<span class="del">(del)</span>,
+        package-info.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common/src/main/java/org/apache/geronimo/jaxws/wsa</strong>:
+        TestServlet.java&#160;<span class="del">(del)</span>,
+        TestServletEJB.java&#160;<span class="del">(del)</span>,
+        TestServletWeb.java&#160;<span class="del">(del)</span>,
+        TestUtils.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common/src/main/webapp/WEB-INF</strong>:
+        geronimo-web.xml&#160;<span class="del">(del)</span>,
+        web.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common/src/main/webapp/WEB-INF/wsdl</strong>:
+        calculator.wsdl&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-ear</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-4)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-test-war</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-03 12:03</span>
+    <a class="permalink" title="Permalink to this commit" href="#14">#14</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701421</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+forgot to add
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common/src/main/webapp/WEB-INF</strong>:
+        geronimo-web.xml&#160;<span class="new">(new)</span>,
+        web.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-03 12:01</span>
+    <a class="permalink" title="Permalink to this commit" href="#13">#13</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701420</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+drop empty dir
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-war/src/main/java/org/apache/geronimo/jaxws/wsa</strong>:
+        TestServlet.java&#160;<span class="del">(del)</span>,
+        TestServletEJB.java&#160;<span class="del">(del)</span>,
+        TestServletWeb.java&#160;<span class="del">(del)</span>,
+        TestUtils.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-03 11:59</span>
+    <a class="permalink" title="Permalink to this commit" href="#12">#12</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701419</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+split web service from test client code to prevent jaxb confclits
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">13 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common</strong>:
+        pom.xml&#160;<span class="change">(+6&#160;-2)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common/src/main/java/org/apache/geronimo/jaxws/wsa</strong>:
+        TestServlet.java&#160;<span class="new">(new)</span>,
+        TestServletEJB.java&#160;<span class="new">(new)</span>,
+        TestServletWeb.java&#160;<span class="new">(new)</span>,
+        TestUtils.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-common/src/main/webapp/WEB-INF/wsdl</strong>:
+        calculator.wsdl&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-ear</strong>:
+        pom.xml&#160;<span class="change">(+18&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-ejb</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-ejb/src/main/resources/META-INF</strong>:
+        openejb-jar.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-war</strong>:
+        pom.xml&#160;<span class="change">(-10)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-war/src/main/webapp/WEB-INF</strong>:
+        geronimo-web.xml&#160;<span class="change">(+1&#160;-23)</span>,
+        web.xml&#160;<span class="change">(+1&#160;-37)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests/wsa-war/src/main/webapp/WEB-INF/wsdl</strong>:
+        calculator.wsdl&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-03 11:55</span>
+    <a class="permalink" title="Permalink to this commit" href="#11">#11</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701418</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add some instruction on how to access this servlet from browser
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        GeronimoAsMavenServlet.java&#160;<span class="change">(+16&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-03 10:46</span>
+    <a class="permalink" title="Permalink to this commit" href="#10">#10</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701393</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4225 refactor patch to keep DB Manager -&gt; Run SQL db centric while adding an init-param so we can also have a datasource centric DB Pools -&gt; Run SQL instance from the same code
+    </p>
+    <p class="commitdetails"><strong>143</strong> lines of code changed in <span class="files">13 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-portlets/src/main/java/org/apache/geronimo/console/internaldb</strong>:
+        DBViewerHelper.java&#160;<span class="change">(+2&#160;-2)</span>,
+        RunSQLHelper.java&#160;<span class="change">(+7&#160;-4)</span>,
+        RunSQLPortlet.java&#160;<span class="change">(+25&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-portlets/src/main/resources</strong>:
+        systemdatabase.properties&#160;<span class="change">(+4&#160;-2)</span>,
+        systemdatabase_zh.properties&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-portlets/src/main/webapp/WEB-INF</strong>:
+        portlet.xml&#160;<span class="change">(+27)</span>,
+        web.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-portlets/src/main/webapp/WEB-INF/view/internaldb</strong>:
+        runSQLHelp.jsp&#160;<span class="new">(new)</span>,
+        runSQLNormal.jsp&#160;<span class="change">(+74&#160;-45)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-02 16:52</span>
+    <a class="permalink" title="Permalink to this commit" href="#9">#9</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701240</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+related to GERONIMO-4306 - Let's not cache the plugin list in the install plugins portlet either
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        ListHandler.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-02 16:21</span>
+    <a class="permalink" title="Permalink to this commit" href="#8">#8</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701233</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4319 - All plugin groups are shown as installable from the install plugin portlet
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        PluginInstallerGBean.java&#160;<span class="change">(+21&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-02 16:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#7">#7</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701229</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+dep fix: axis2-transports module got split into sub modules (GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+32&#160;-28)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+10&#160;-5)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-02 15:01</span>
+    <a class="permalink" title="Permalink to this commit" href="#6">#6</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701211</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+load addressing module for Axis2 (part of GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>138</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+97&#160;-8)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+35)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-02 13:30</span>
+    <a class="permalink" title="Permalink to this commit" href="#5">#5</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701194</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add geronimo version, jvm version, repo info to plugin groups
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups</strong>:
+        pom.xml&#160;<span class="change">(+11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-02 12:33</span>
+    <a class="permalink" title="Permalink to this commit" href="#4">#4</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701178</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+re rev 701153 also update dependencies.xml
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/client/client-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-02 11:44</span>
+    <a class="permalink" title="Permalink to this commit" href="#3">#3</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701164</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+initial step to upgrade to latest Axis2 for JAX-WS 2.1 support (GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>133</strong> lines of code changed in <span class="files">22 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+26&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2-ejb/src/main/java/org/apache/geronimo/axis2/ejb</strong>:
+        EJBAddressingSupport.java&#160;<span class="new">(new&#160;48)</span>,
+        EJBEndpointController.java&#160;<span class="new">(new)</span>,
+        EJBInterceptor.java&#160;<span class="change">(+3&#160;-5)</span>,
+        EJBMessageReceiver.java&#160;<span class="change">(+2&#160;-1)</span>,
+        EJBProviderDispatcher.java&#160;<span class="new">(new)</span>,
+        EJBServiceDispatcher.java&#160;<span class="new">(new)</span>,
+        EJBWebServiceContainer.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        Axis2WebServiceContainer.java&#160;<span class="change">(+16&#160;-16)</span>,
+        AxisServiceGenerator.java&#160;<span class="change">(+2&#160;-1)</span>,
+        GeronimoHandlerLifecycleManager.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/client</strong>:
+        Axis2ClientConfigurationFactory.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/pojo</strong>:
+        POJOEndpointLifecycleManagerFactory.java&#160;<span class="new">(new)</span>,
+        POJOWebServiceContext.java&#160;<span class="change">(+25&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-02 11:24</span>
+    <a class="permalink" title="Permalink to this commit" href="#2">#2</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701153</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+comment out the provided scope to resolve the daytrader build error NPE
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/client/geronimo-client-builder</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_dblevins.html" class="author">dblevins</a>
+    <span class="date">2008-10-01 14:26</span>
+    <a class="permalink" title="Permalink to this commit" href="#1">#1</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">700858</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Inroduced a MulticastLocation gbean that hold the mutlicast connection info so it can be configured in one place yet consumed by multiple gbeans.<br />
+Added a HeartbeatMonitor ghsell command (not quite working) that will allow people to see what is moving on the heartbeat.<br />
+Renamed FarmCommand to ClusterCommand and its flags to -c and --cluster<br />
+
+    </p>
+    <p class="commitdetails"><strong>209</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>assemblies/geronimo-boilerplate/src/main/underlay/etc</strong>:
+        layout.xml&#160;<span class="change">(+13&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-commands/src/main/groovy/org/apache/geronimo/commands</strong>:
+        ClusterCommand.groovy&#160;<span class="new">(new)</span>,
+        HeartbeatCommand.groovy&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        HeartbeatMonitor.java&#160;<span class="new">(new&#160;29)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/geronimo-farm/src/main/java/org/apache/geronimo/farm/discovery</strong>:
+        MulticastDiscoveryAgent.java&#160;<span class="change">(+4&#160;-4)</span>,
+        MulticastLocation.java&#160;<span class="new">(new&#160;47)</span>,
+        MulticastSearch.java&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/geronimo-plugin-farm/src/main/java/org/apache/geronimo/farm/plugin</strong>:
+        HeartbeatMonitor.java&#160;<span class="new">(new&#160;92)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/plugin-farm-member</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/plugin-farm-member/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/plugin-farm</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/plugin-farm/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p class="previous"><a href="2008-09.html">September 2008</a> &#187; </p>
+<div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

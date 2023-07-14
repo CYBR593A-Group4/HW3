@@ -1,0 +1,862 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>790</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_tomcat.html">tomcat</a>/<a href="dir_plugins_tomcat_geronimo-tomcat7-builder.html">geronimo-tomcat7-builder</a>/<a href="dir_plugins_tomcat_geronimo-tomcat7-builder_src.html">src</a>/<a href="dir_plugins_tomcat_geronimo-tomcat7-builder_src_main.html">main</a>/<a href="dir_plugins_tomcat_geronimo-tomcat7-builder_src_main_java.html">java</a>/<a href="dir_plugins_tomcat_geronimo-tomcat7-builder_src_main_java_org.html">org</a>/<a href="dir_plugins_tomcat_geronimo-tomcat7-builder_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_tomcat_geronimo-tomcat7-builder_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_plugins_tomcat_geronimo-tomcat7-builder_src_main_java_org_apache_geronimo_tomcat.html">tomcat</a>/<strong>deployment</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_tomcat_geronimo-tomcat7-builder_src_main_java_org_apache_geronimo_tomcat_deployment.png" alt="plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>62 (100.0%)</td>
+        <td>997 (100.0%)</td>
+        <td>16.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>23 (37.1%)</td>
+        <td>322 (32.3%)</td>
+        <td>14.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>10 (16.1%)</td>
+        <td>248 (24.9%)</td>
+        <td>24.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>18 (29.0%)</td>
+        <td>195 (19.6%)</td>
+        <td>10.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rwonly.html" class="author">rwonly</a></th>
+        <td>6 (9.7%)</td>
+        <td>130 (13.0%)</td>
+        <td>21.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>4 (6.5%)</td>
+        <td>83 (8.3%)</td>
+        <td>20.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dblevins.html" class="author">dblevins</a></th>
+        <td>1 (1.6%)</td>
+        <td>19 (1.9%)</td>
+        <td>19.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2012-05-22 11:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1341511</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Merge changes from GERONIMO-6341 orm.xml does not take effect in latest Geronimo 3.0 beta branch.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2012-03-02 12:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1296271</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6292 Share the japser servlet between jasper plugin and web-container plugin.
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+26&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-12-11 10:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1213003</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6228 Jar resource and getRealPath cache should not be cleaned while uninstalling embedded WAB in EBA
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+13&#160;-23)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-11-01 10:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1196032</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6204 Decouple OpenWebBeans from web container
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-09-07 11:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1166214</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6143 Create a fragment context for each sub modules in the EAR package
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-08-12 04:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1157006</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6106 Clean up temp files created in the deployment process<br />
+Use a thread local in the FileUtils to hold all the temp files in the deployment process
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-08-09 23:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1156005</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6106 Clean up temp files created in the deployment process
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+10&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-08-01 06:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1152724</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6059 New look and feel of Geronimo 3.0 admin console (Step 2, New UI design)
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-07-14 20:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1146934</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5050 really use only one owb context for the whole ear, and combine all the module info into it
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+2&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-07-11 22:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1145437</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6043 gbean reordering so initorder can work
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-07-11 22:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1145436</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5050 Start of always using openejb for owb
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-07-04 03:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1142573</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6024 use the identifySpecDDSchemaVersion to replace the new added method isSchemaDefined.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+4&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-07-03 02:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1142379</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6024 support dd schema validation when deploy web app
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+42&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-06-29 22:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1141367</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6025 make the url-pattern validation happen in a single place
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+2&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_dblevins.html" class="author">dblevins</a>
+    <span class="date">2011-06-12 23:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1135021</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+David Jencks' workaround for not re-initializing the OWB context in the servlet side of things when there is one in the app<br />
+
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+19&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-06-07 04:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1132900</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+re-enable the message-destination handling logic for spec and vendor DD.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+1&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-06-05 09:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1132395</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a. Update the WebAttributeNames in the geronimo-web module to WebApplicationConstants<br />
+b. Update the WebApplicationConstants in the geronimo-wab module to WABApplicationConstants
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-06-05 02:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1131922</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+move schema conversion "openejb-jar" from SchemaConversoinUtils to jetty/tomcat builders.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-04-14 09:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1092215</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5902 Ignore web service from web application side if it is also an EJB web service
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+10&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-03-02 21:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1076488</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Ignore web service configuration if it is a JSP in the web.xml
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-03-02 02:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1076122</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5839 Add module name prefix for WSDL path
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+1&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-03-01 05:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1075734</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5841 Only check the servlets configured by users
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+9&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-02-28 02:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1075220</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a. Enable POJO web service class enhancement on the runtime for Tomcat assembly<br />
+b. Disable web service deployer in UDDI module temporarily
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+33&#160;-37)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-01-20 04:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1061154</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5773 Referenced resource cannot be generated by plan creator (Patch from FangShenhao)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-01-18 23:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1060665</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+revert the changes in 1060171, and will try a new approach.
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+38&#160;-42)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-01-17 22:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1060171</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+re-enable the codes that deal with the web service fake servlet
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+42&#160;-38)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-01-11 05:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1057540</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Revert "m2 has been branched, re-enable web service in tomcat builder of trunk."<br />
+<br />
+Because there's another problem in the jaxws code.
+    </p>
+    <p class="commitdetails"><strong>37</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+37&#160;-38)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-01-10 03:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1057104</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+m2 has been branched, re-enable web service in tomcat builder of trunk.
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+38&#160;-37)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-10-31 02:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1029264</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5050 provide a means of sharing the openejb-initialized owb context with web containers.  Use it for tomcat
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-30 20:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1003341</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5624 more info tree for tomcat
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-09-25 22:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1001341</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5557 Add a similar context element in the schema, currently we could use this elements for most context level attributes configurations and context parameters. (Based on the patch from viola.lu)
+    </p>
+    <p class="commitdetails"><strong>77</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+77&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-21 19:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">999688</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5624 use info tree for tomcat web app deployment
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+62&#160;-39)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-09-05 22:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">992929</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5511 context-priority-classloader is not allowed in geronimo-web.xml for backwards compatibility (Based on the patch from viola)
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+15&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-08-09 11:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">983700</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+pass stripped down and complete DD to Tomcat. Make sure Tomcat only parses the stripped down version.
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+16&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-08-05 03:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">982493</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5066 Fix a lot of problems with jndi including wrong finders and inconsistent adding of injections
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+15&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-07-29 09:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">980431</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+I am too aggressive in the last commit, we should only update the deployment descriptor if the version is after 2.5
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+21&#160;-21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-07-29 06:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">980389</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove jndi related items from deployment plan to prevent Tomcat handles them.
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+24&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-07-22 21:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">966928</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+regression - return null if web.xml is not found and it's not a war file
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+28&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-27 02:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">958341</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+cf openejb rev 958340.  marshal persistence.xml in the correct namespace, marshal methods names changed
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-24 14:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">957655</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5190 use openejb-jee jaxb tree for spec dds
+    </p>
+    <p class="commitdetails"><strong>55</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+55&#160;-66)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(21 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

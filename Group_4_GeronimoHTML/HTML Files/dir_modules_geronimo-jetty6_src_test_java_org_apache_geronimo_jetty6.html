@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>7</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<a href="dir_modules_geronimo-jetty6.html">geronimo-jetty6</a>/<a href="dir_modules_geronimo-jetty6_src.html">src</a>/<a href="dir_modules_geronimo-jetty6_src_test.html">test</a>/<a href="dir_modules_geronimo-jetty6_src_test_java.html">java</a>/<a href="dir_modules_geronimo-jetty6_src_test_java_org.html">org</a>/<a href="dir_modules_geronimo-jetty6_src_test_java_org_apache.html">apache</a>/<a href="dir_modules_geronimo-jetty6_src_test_java_org_apache_geronimo.html">geronimo</a>/<strong>jetty6</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-jetty6_src_test_java_org_apache_geronimo_jetty6_app.html">app</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-jetty6_src_test_java_org_apache_geronimo_jetty6_connector.html">connector</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-jetty6_src_test_java_org_apache_geronimo_jetty6.png" alt="modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>47 (100.0%)</td>
+        <td>140 (100.0%)</td>
+        <td>2.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>15 (31.9%)</td>
+        <td>57 (40.7%)</td>
+        <td>3.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>4 (8.5%)</td>
+        <td>43 (30.7%)</td>
+        <td>10.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>11 (23.4%)</td>
+        <td>13 (9.3%)</td>
+        <td>1.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_akulshreshtha.html" class="author">akulshreshtha</a></th>
+        <td>4 (8.5%)</td>
+        <td>12 (8.6%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>2 (4.3%)</td>
+        <td>6 (4.3%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gregw.html" class="author">gregw</a></th>
+        <td>1 (2.1%)</td>
+        <td>6 (4.3%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dims.html" class="author">dims</a></th>
+        <td>2 (4.3%)</td>
+        <td>3 (2.1%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>7 (14.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jbohn.html" class="author">jbohn</a></th>
+        <td>1 (2.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="24"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="del">(del)</span>,
+        ApplicationTest.java&#160;<span class="del">(del)</span>,
+        ClassLoaderTest.java&#160;<span class="del">(del)</span>,
+        ContainerTest.java&#160;<span class="del">(del)</span>,
+        GBeanInfoTest.java&#160;<span class="del">(del)</span>,
+        SecurityTest.java&#160;<span class="del">(del)</span>,
+        StatTest.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_jbohn.html" class="author">jbohn</a>
+    <span class="date">2007-10-17 16:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">585698</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3490 make JettyContainer and WebManagerPortlet utilize the LazyStatisticsProvider interface introduced in rev. 585308.  Also updated to use setStartTime() and setLastSampleTime() from StatsImpl.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        StatTest.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2007-10-16 20:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">585308</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3490 Adding LazyStatisticsProvider interface to deal with components that provide<br />
+              statistics on demand.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        StatTest.java&#160;<span class="change">(+5&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2007-10-04 10:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">581936</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3490 Adding JSR77 stats for Jetty connectors. This a substantially modified version<br />
+    of the patch submitted by Viet H. N. 
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+1&#160;-1)</span>,
+        StatTest.java&#160;<span class="new">(new&#160;3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-09-20 11:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">577801</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2964 Cannot specify the Tomcat work directory for a web application<br />
+  o Committing GERONIMO-2964-trunk.patch submitted in the JIRA<br />
+  o geronimo-web.xml can now have a "work-dir" tag to specify the work directory to be used by the application.<br />
+  o For Tomcat this work directory will be relative to "catalina.home"<br />
+  o For Jetty this work directory will be relative to jetty home which is var/jetty by default.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+2&#160;-1)</span>,
+        GBeanInfoTest.java&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-07-10 19:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">555111</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+* Add a Cluster GBean such that we can implement cluster aware services, for<br />
+instance a cluster aware deployer;<br />
+* When a clustered Web-application is deployed, we now deploy it to a Cluster<br />
+by specifying its name. The former mechanism was to deploy it to a<br />
+DispatcherHolder;<br />
+* Add Node.getJMXConnector such that clients can get a JMXConnector connected<br />
+ to the target Node instance. Host and port connection details of this <br />
+JMXConnector are retrieved via the clustered service proxying/invocation of<br />
+WADI; and<br />
+* Use a configuration substitution mechanism to simplify the configuration of<br />
+node names.<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        ApplicationTest.java&#160;<span class="change">(+11&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-10 11:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">554977</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3303 Major simplification of authentication framework.  Removes remote login and supporting code
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+9&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-07-05 10:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">553508</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add SessionManager.getRemoteNodes so that clients know which Nodes are hosting the sessions managed by a clustered<br />
+SessionManager.<br />
+<br />
+Provide a WADI implementation of this contract.<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        ApplicationTest.java&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-06-19 10:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">548733</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3083 fix j2ca container managed security
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-06-09 13:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">545781</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2687.  Don't construct default and run-as subjects, get them from a login module. Also creates a separate server-security-config for the security config stuff you probably want to change.  Also fixes lots of security problems, including mdb run-as handling.
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+17&#160;-15)</span>,
+        SecurityTest.java&#160;<span class="change">(+11&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-06-02 04:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">543715</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3034 GERONIMO-2655 New SelectChannel and AJP connectors.  Also hook the connectors up to our thread pool
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-15 18:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">538344</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3154 Implement security for jetty using only spec compliant jacc calls
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(-2)</span>,
+        SecurityTest.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-24 10:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">522036</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2965 GERONIMO-3008 GERONIMO-3010 Tomcat annotation processing with lots of other improvements.  Uses LifecycleProvider interface proposed in GERONIMO-3010
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+2&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-21 01:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520756</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2949 get the jndi handler outside the context handler: GERONIMO-3000 provide default locale encoding mappings and mimetype mappings: this should fix 2999 for jetty, but I don't know how to test
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        GBeanInfoTest.java&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-08 14:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">516141</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2940, GERONIMO-2887  More injection work for app client and jetty: lifecycle methods verified on app client.  Ear lib dir available to app client.  Also upgrade to jetty snapshot for jetty lifecycle method support
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-06 03:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">515004</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2887 put the injections and postCreate and preDestroy info in one object
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2007-03-01 00:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">513131</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2907 Remove dependency on mx4j
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        ClassLoaderTest.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-02-26 16:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">512007</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2887 Start hooking up injection for jetty
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-01-05 17:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">493201</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix build following recent Jetty6 AbstractSessionManager updates.<br />
+<br />
+There are two core changes:<br />
+1. update ClusteredSessionHandler to leverage the new API provided<br />
+by AbstractSessionManager, which simplifies the implementation and<br />
+remove a hack around the initialization of the session attributes<br />
+following a session migration.<br />
+2. move pre-handle logic from ServletHandler to SessionHandler.<br />
+<br />
+Also, fix a lame type in WADIClusteredPreHandlerFactory: the<br />
+expose interface is PreHandlerFactory and not SessionHandlerFactory.<br />
+<br />
+This fixes GERONIMO-2677 - HttpSession Relocation - Sticky load-balancing via HTTP Cookie<br />
+
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+2&#160;-1)</span>,
+        ApplicationTest.java&#160;<span class="change">(+24&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2006-12-15 14:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">487617</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix build failures on winxp, now jetty is sending back 404, added a sleep to prevent JVM_Bind exception
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+1)</span>,
+        ContainerTest.java&#160;<span class="change">(+2&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_gregw.html" class="author">gregw</a>
+    <span class="date">2006-12-15 05:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">487486</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+temp change to expect 500 until next version of Jetty: GERONIMO-2654
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        ContainerTest.java&#160;<span class="change">(+6&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-12-14 20:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">487412</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2654 make the ContextHandlerCollection work, although a couple tests fail.  Both welcome and console apps work for me
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        ContainerTest.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-12-04 16:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">482336</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Fix notices and src headers in recent jee5 updates. Update Web Console notice.txt w/ ibm donation information, add copyright to assembly notice files, and remove ASF v 1.1 license from source borrowed from xerces project
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        AbstractWebModuleTest.java&#160;<span class="new">(new)</span>,
+        ApplicationTest.java&#160;<span class="change">(changed)</span>,
+        ClassLoaderTest.java&#160;<span class="change">(changed)</span>,
+        ContainerTest.java&#160;<span class="change">(changed)</span>,
+        GBeanInfoTest.java&#160;<span class="change">(+13&#160;-15)</span>,
+        SecurityTest.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-12-02 13:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">481585</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2616 Copy jee5 work from sandbox, make it build in normal build
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6</strong>:
+        GBeanInfoTest.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

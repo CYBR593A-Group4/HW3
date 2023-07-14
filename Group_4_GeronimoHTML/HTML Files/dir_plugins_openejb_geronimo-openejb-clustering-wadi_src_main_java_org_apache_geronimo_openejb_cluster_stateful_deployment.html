@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2008-02-22 21:02</span></dd>
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>144</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_openejb.html">openejb</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi.html">geronimo-openejb-clustering-wadi</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src.html">src</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src_main.html">main</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src_main_java.html">java</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src_main_java_org.html">org</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src_main_java_org_apache_geronimo_openejb.html">openejb</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src_main_java_org_apache_geronimo_openejb_cluster.html">cluster</a>/<a href="dir_plugins_openejb_geronimo-openejb-clustering-wadi_src_main_java_org_apache_geronimo_openejb_cluster_stateful.html">stateful</a>/<strong>deployment</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_openejb_geronimo-openejb-clustering-wadi_src_main_java_org_apache_geronimo_openejb_cluster_stateful_deployment.png" alt="plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>8 (100.0%)</td>
+        <td>382 (100.0%)</td>
+        <td>47.7</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>1 (12.5%)</td>
+        <td>236 (61.8%)</td>
+        <td>236.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>4 (50.0%)</td>
+        <td>137 (35.9%)</td>
+        <td>34.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>1 (12.5%)</td>
+        <td>3 (0.8%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>1 (12.5%)</td>
+        <td>3 (0.8%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dblevins.html" class="author">dblevins</a></th>
+        <td>1 (12.5%)</td>
+        <td>3 (0.8%)</td>
+        <td>3.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="8"></a>
+    <a href="user_dblevins.html" class="author">dblevins</a>
+    <span class="date">2010-09-14 03:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">996776</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Updates corresponding to OPENEJB-1354: Internal CoreDeploymentInfo class renamed to BeanContext<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-08-03 23:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">982112</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix build error
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-05-24 23:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">947901</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a. remove the use of configurationUrl \n b. Add a BundleAwareReference interface
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-05-19 19:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">946478</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4918 jndi construction requires rearranging the references
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="change">(+38&#160;-82)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-05-19 02:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">946044</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4918 port singleton support from 2.2
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="change">(+22&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-21 20:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901935</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5025 Initial work on ee 6 scoped jndi stuff.  Minimal testing so far
+    </p>
+    <p class="commitdetails"><strong>76</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="change">(+76&#160;-135)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-09-24 03:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">698441</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4258 clean up some naming constant usage
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2008-02-22 21:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">630370</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+1. Add SessionManagerListener to the clustering API. This allows clients<br />
+of local SessionManagers to receive callbacks when corresponding<br />
+remote SessionManagers join or leave the cluster.<br />
+<br />
+2. Arbitrary WADI clustered services can now be registered: distributed<br />
+services are wrapped within ClusteredServiceHolder GBeans which are injected<br />
+to BasicWADISessionManager and registered with the underlying WADI <br />
+ServiceRegistry.<br />
+<br />
+3. Add support for clustering of SFSBs.<br />
+<br />
+The structure mirrors the one applied for the clustering of Jetty and<br />
+Tomcat, i.e. two modules and two configurations are added:<br />
+<br />
+- geronimo-openejb-clustering-wadi: defines a ClusteredRPCContainer<br />
+implementation for SFSBs and infrastructure components maintaining a <br />
+bookkeeping of the connection addresses a clustered SFSB client can connect<br />
+to. The monitoring components, i.e. NetworkConnectorMonitor and <br />
+NetworkConnectTracker, works as follows:<br />
+o When an OpenEJB NetworkConnector service starts, NetworkConnectMonitor<br />
+registers the address of this NC with the clustered service <br />
+NetworkConnectorTracker and this for all the locally running clustered SFBS <br />
+deployments.<br />
+o When an OpenEJB NC services stops, NCM executes an unregisteration reverting<br />
+the effects of a NC service start.<br />
+o When a clustered SFSB deployments starts, NCM registers its  deployment id<br />
+with the clustered service NCT for all the locally running NCs addresses.<br />
+o When a clustered SFSB deployment stops, NCM executes an unregisters reverting<br />
+the effects of a deployement start.<br />
+o When a node hosting an EJB module having clustered SFSBs stops or fails, NCM<br />
+updates the local NCT so that all the connection addresses registered for<br />
+all the clustered SFSB deployments of this node are removed.<br />
+<br />
+- geronimo-openejb-clustering-builder-wadi: defines a builder to handle the<br />
+new substitution group element 'clustering' added to geronimo-openejb-2.0.xsd.<br />
+The clustering builder works nearly the same than for Jetty and Tomcat except<br />
+for the following specificities:<br />
+o A (WADI) clustered NCT service is registered.<br />
+o The container id for the clustered SFSBs is set to the Geronimo provided<br />
+clustered SFSB container implementation.<br />
+<br />
+- openejb-clustering-wadi: declares Geronimo provided clustered SFSB<br />
+container implementation.<br />
+<br />
+- openejb-clustering-builder-wadi: declares clustering builder.<br />
+
+    </p>
+    <p class="commitdetails"><strong>236</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="new">(new&#160;236)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>4</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<a href="dir_modules_geronimo-deploy-jsr88.html">geronimo-deploy-jsr88</a>/<a href="dir_modules_geronimo-deploy-jsr88_src.html">src</a>/<a href="dir_modules_geronimo-deploy-jsr88_src_main.html">main</a>/<a href="dir_modules_geronimo-deploy-jsr88_src_main_java.html">java</a>/<a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org.html">org</a>/<a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org_apache.html">apache</a>/<a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment.html">deployment</a>/<a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment_plugin.html">plugin</a>/<strong>jmx</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment_plugin_jmx.png" alt="modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>37 (100.0%)</td>
+        <td>376 (100.0%)</td>
+        <td>10.1</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>9 (24.3%)</td>
+        <td>175 (46.5%)</td>
+        <td>19.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>9 (24.3%)</td>
+        <td>162 (43.1%)</td>
+        <td>18.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_pmcmahan.html" class="author">pmcmahan</a></th>
+        <td>2 (5.4%)</td>
+        <td>21 (5.6%)</td>
+        <td>10.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>6 (16.2%)</td>
+        <td>6 (1.6%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jlaskowski.html" class="author">jlaskowski</a></th>
+        <td>1 (2.7%)</td>
+        <td>6 (1.6%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>1 (2.7%)</td>
+        <td>5 (1.3%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>1 (2.7%)</td>
+        <td>1 (0.3%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>4 (10.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>4 (10.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="18"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        CommandContext.java&#160;<span class="del">(del)</span>,
+        JMXDeploymentManager.java&#160;<span class="del">(del)</span>,
+        LocalDeploymentManager.java&#160;<span class="del">(del)</span>,
+        RemoteDeploymentManager.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_pmcmahan.html" class="author">pmcmahan</a>
+    <span class="date">2007-10-12 14:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">584221</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3496 reenable prerequisite check for plugin installation, but make the check optional via<br />
+a separate method.<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        RemoteDeploymentManager.java&#160;<span class="change">(+11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_pmcmahan.html" class="author">pmcmahan</a>
+    <span class="date">2007-09-22 15:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">578483</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3413 promote the verifyPlugin method to the PluginInstaller interface so that the<br />
+PluginInstallerGBean can be used to determine if plugins are installable.<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        RemoteDeploymentManager.java&#160;<span class="change">(+10&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-09-03 13:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">572395</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3330 GERONIMO-3453  Use the new plugin schema Paul came up with.  Use jaxb for geronimo-plugin xml handling.  Modify the car-maven-plugin to generate geronimo-plugin.xml and explicitly specify the dependencies for the plan in pom.xml.  This introduces several more jaxb  libraries in lib which I hope can be removed again.  Also the console plugin handling is barely working.
+    </p>
+    <p class="commitdetails"><strong>97</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        RemoteDeploymentManager.java&#160;<span class="change">(+97&#160;-93)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-26 17:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">560010</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3350 get rid of questionable getURLFor method
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-05-22 22:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">540803</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3183 Fix offline deployment in minimal configurations.  Applied the second-half of the patch, which adds some improved diagnostics.  Offline deployment still fails in the minimal assemblies....
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-02-28 17:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">512979</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2904 add impl of new jsr-88 method
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+11&#160;-7)</span>,
+        RemoteDeploymentManager.java&#160;<span class="change">(+5&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-17 04:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">508724</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Second attempt to change the way the online/offline deployers and the JSR88<br />
+deployment driver work. The first attempt was breaking the TCK amd the <br />
+eclipse plugin.<br />
+<br />
+<br />
+Online deployer, i.e. deployer.jar, boots a Kernel to load its dependencies,<br />
+ e.g. geronimo-deploy-tool, and registers the available ModuleConfigurers with <br />
+the DeploymentManager.<br />
+<br />
+ModuleConfigurers to be registered are loaded by the persistent configuration <br />
+list jsr88-configurer-config.xml.<br />
+<br />
+In the case of an offline deployment, the online deployer starts the <br />
+offline-deployer configuration within the same Kernel. In turn, the <br />
+offline-deployer configuration starts a list of configurations to register <br />
+the available module builders.<br />
+<br />
+Add a log4j configuration for the online deployer.<br />
+<br />
+DeploymentFactoryBootstrapper is the new JSR88 deployment driver. It boots a <br />
+kernel; starts the configuration list jsr88-configurer-config.xml; retrieves<br />
+the "actual" DeploymentFactory implementation from the kernel; and delegates<br />
+to this retrieved imoplementation.<br />
+The JSR88 JAR driver is now named jsr88-deploymentfactory.jar.<br />
+<br />
+<br />
+This fixes:<br />
+* GERONIMO-2794 - Improve online deployer to register ModuleConfigurers from the repository; and<br />
+* GERONIMO-2767 - Minimize side effects of the offline deployer<br />
+
+    </p>
+    <p class="commitdetails"><strong>69</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+16&#160;-7)</span>,
+        LocalDeploymentManager.java&#160;<span class="change">(+15&#160;-6)</span>,
+        RemoteDeploymentManager.java&#160;<span class="change">(+38&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-05 18:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">503905</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Revert deployer changes as they do break the Eclipse plugin and TCK.<br />
+I will investigate offline.<br />
+<br />
+svn merge -r503370:503369 .<br />
+<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+7&#160;-16)</span>,
+        LocalDeploymentManager.java&#160;<span class="change">(+6&#160;-15)</span>,
+        RemoteDeploymentManager.java&#160;<span class="change">(+11&#160;-38)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-04 03:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">503370</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Online deployer, i.e. deployer.jar, boots a Kernel to load its dependencies,<br />
+ e.g. geronimo-deploy-tool, and registers the available ModuleConfigurers with <br />
+the DeploymentManager.<br />
+<br />
+ModuleConfigurers to be registered are loaded by the persistent configuration <br />
+list jsr88-configurer-config.xml.<br />
+<br />
+In the case of an offline deployment, the online deployer starts the <br />
+offline-deployer configuration within the same Kernel. In turn, the <br />
+offline-deployer configuration starts a list of configurations to register <br />
+the available module builders.<br />
+<br />
+Add a log4j configuration for the online deployer.<br />
+<br />
+This fixes:<br />
+* GERONIMO-2794 - Improve online deployer to register ModuleConfigurers from the repository; and<br />
+* GERONIMO-2767 - Minimize side effects of the offline deployer<br />
+
+    </p>
+    <p class="commitdetails"><strong>69</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+16&#160;-7)</span>,
+        LocalDeploymentManager.java&#160;<span class="change">(+15&#160;-6)</span>,
+        RemoteDeploymentManager.java&#160;<span class="change">(+38&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-01-09 22:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">494692</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2686 Fix some more problems with trying to use the deployer jar, the ModuleConfigurers are not available remotely
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+1&#160;-12)</span>,
+        LocalDeploymentManager.java&#160;<span class="change">(+21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-01-05 16:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">493181</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2686 Implement registration for ModuleConfigurers.  Requires openejb changes also which will take a while to locate and commit
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+32&#160;-23)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-12-05 22:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">482870</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2627 clean up the jsr88 classpath problems a little bit
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+6&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2006-12-05 15:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">482741</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1657 CommandSupport doesn't bubble up the exception. Prints stacktrace<br />
+  o Merging rev 482740 from branches\1.2<br />
+  o Modified the patch submitted by Prasad Kashyap to account for the code changes post submission.<br />
+  o Removed printStackTrace and the exception is passed on to the caller
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-11-17 00:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476049</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Update the src headers in server/trunk/modules to be compliant with the new ASF src header and copyright policy (<a href="http://www.apache.org/legal/src">http://www.apache.org/legal/src</a>-headers.html). I also did some cleanup of the src headers and tried to make them all a consistent format
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        CommandContext.java&#160;<span class="change">(changed)</span>,
+        JMXDeploymentManager.java&#160;<span class="change">(-1)</span>,
+        LocalDeploymentManager.java&#160;<span class="new">(new)</span>,
+        RemoteDeploymentManager.java&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jlaskowski.html" class="author">jlaskowski</a>
+    <span class="date">2006-11-02 19:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">470597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Partial fix for GERONIMO-2537 All Geronimo source files must be brought in line with the new ASF source header and copyright notice policy<br />
+<br />
+The modules directory is supposed to be migrated. There're some issues with some files, but they'll be handled manually<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-09-30 13:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">451628</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2441 some additional changes org.openejb&gt;&gt; org.apache.openejb
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-08-28 05:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">437623</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Use logging instead of System.out and printStackTrace<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx</strong>:
+        JMXDeploymentManager.java&#160;<span class="new">(new)</span>,
+        RemoteDeploymentManager.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

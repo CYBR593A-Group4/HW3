@@ -1,0 +1,1016 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2009-12-10 04:33</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>23</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_tomcat.html">tomcat</a>/<a href="dir_plugins_tomcat_geronimo-tomcat6.html">geronimo-tomcat6</a>/<a href="dir_plugins_tomcat_geronimo-tomcat6_src.html">src</a>/<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main.html">main</a>/<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java.html">java</a>/<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org.html">org</a>/<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo.html">geronimo</a>/<strong>tomcat</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_cluster.html">cluster</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_connector.html">connector</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_interceptor.html">interceptor</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_listener.html">listener</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_model.html">model</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_realm.html">realm</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_security.html">security</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_security_authentication.html">authentication</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_security_authentication_jaspic.html">jaspic</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_security_impl.html">impl</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_security_jacc.html">jacc</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_stats.html">stats</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_util.html">util</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat.png" alt="plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>152 (100.0%)</td>
+        <td>1421 (100.0%)</td>
+        <td>9.3</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>43 (28.3%)</td>
+        <td>557 (39.2%)</td>
+        <td>12.9</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>36 (23.7%)</td>
+        <td>259 (18.2%)</td>
+        <td>7.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>10 (6.6%)</td>
+        <td>221 (15.6%)</td>
+        <td>22.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>14 (9.2%)</td>
+        <td>145 (10.2%)</td>
+        <td>10.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>2 (1.3%)</td>
+        <td>92 (6.5%)</td>
+        <td>46.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>2 (1.3%)</td>
+        <td>87 (6.1%)</td>
+        <td>43.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>29 (19.1%)</td>
+        <td>25 (1.8%)</td>
+        <td>0.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>8 (5.3%)</td>
+        <td>13 (0.9%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_linsun.html" class="author">linsun</a></th>
+        <td>1 (0.7%)</td>
+        <td>10 (0.7%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>2 (1.3%)</td>
+        <td>7 (0.5%)</td>
+        <td>3.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>5 (3.3%)</td>
+        <td>5 (0.4%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-12-10 04:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">889135</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4980 Use Tomcat 7 in Geronimo 3.0
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">23 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        BaseGBean.java&#160;<span class="del">(del)</span>,
+        BaseGeronimoContextConfig.java&#160;<span class="del">(del)</span>,
+        EjbWsContextConfig.java&#160;<span class="del">(del)</span>,
+        EngineGBean.java&#160;<span class="del">(del)</span>,
+        GeronimoStandardContext.java&#160;<span class="del">(del)</span>,
+        HostGBean.java&#160;<span class="del">(del)</span>,
+        JAASTomcatPrincipal.java&#160;<span class="del">(del)</span>,
+        LifecycleListenerGBean.java&#160;<span class="del">(del)</span>,
+        ManagerGBean.java&#160;<span class="del">(del)</span>,
+        RealmGBean.java&#160;<span class="del">(del)</span>,
+        TomcatContainer.java&#160;<span class="del">(del)</span>,
+        TomcatContext.java&#160;<span class="del">(del)</span>,
+        TomcatEJBWebServiceContext.java&#160;<span class="del">(del)</span>,
+        TomcatEngine.java&#160;<span class="del">(del)</span>,
+        TomcatExecutorWrapper.java&#160;<span class="del">(del)</span>,
+        TomcatGeronimoEmbedded.java&#160;<span class="del">(del)</span>,
+        TomcatLogManagerImpl.java&#160;<span class="del">(del)</span>,
+        TomcatManagerImpl.java&#160;<span class="del">(del)</span>,
+        TomcatServerConfigManager.java&#160;<span class="del">(del)</span>,
+        TomcatServerGBean.java&#160;<span class="del">(del)</span>,
+        TomcatWebAppContext.java&#160;<span class="del">(del)</span>,
+        ValveGBean.java&#160;<span class="del">(del)</span>,
+        WebContextConfig.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-11-25 13:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">884212</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use latest geronimo tomcat
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        GeronimoStandardContext.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2009-10-20 11:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">827705</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Commit tomcat plugin changes so far
+    </p>
+    <p class="commitdetails"><strong>92</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+22&#160;-7)</span>,
+        TomcatManagerImpl.java&#160;<span class="change">(+70&#160;-70)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2009-09-21 21:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">817472</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4882 some doc update in G22 might be caused by bugs in code.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        ValveGBean.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-09-14 05:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">814547</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4798 can't start server because of an error of Http11AprProtocol 
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatServerGBean.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2009-09-11 12:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">813898</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4851 Server will get into abnormal status when trying to edit/delete Tomcat Connector HTTPS BIO network listener
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatManagerImpl.java&#160;<span class="change">(+8&#160;-1)</span>,
+        TomcatServerConfigManager.java&#160;<span class="change">(+14&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2009-09-10 03:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">813266</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4856 Some abnormal conditions with Tomcat NIO HTTPS Connector
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatServerGBean.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2009-09-10 02:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">813259</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4858 Geronimo 2.2 doesn't add correct connector attributes to server.xml, patch from Siqi.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatManagerImpl.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2009-09-02 23:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">810767</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4742 Connector portlets for Tomcat does not work<br />
+<br />
+1, Added ConnectorWrapperGBeanStarter.java to start connector GBeans for connectors defined in server.xml.  <br />
+2, Added TomcatServerConfigManager.java to use DOM to read/write connectors from server.xml.<br />
+3, Modified other classes to make this happen.
+    </p>
+    <p class="commitdetails"><strong>192</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        BaseGBean.java&#160;<span class="change">(changed)</span>,
+        TomcatManagerImpl.java&#160;<span class="change">(+172&#160;-74)</span>,
+        TomcatServerConfigManager.java&#160;<span class="new">(new&#160;2)</span>,
+        TomcatServerGBean.java&#160;<span class="change">(+18&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-08-19 04:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">805693</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4803 ClassCastExeption after disabling access log valve for web container
+    </p>
+    <p class="commitdetails"><strong>75</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatLogManagerImpl.java&#160;<span class="change">(+71&#160;-31)</span>,
+        TomcatServerGBean.java&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-08-14 02:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">804089</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4659 Include web app "Display Name" in console web app portlet (Patch from Victor Fang)
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatWebAppContext.java&#160;<span class="change">(+15&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-08-13 03:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">803799</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4645 use jacc ejb ws auth for jetty6, simplify SOAPHandler interface
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-07-25 10:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">797771</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+install jacc security valve before ejb ws valve and use ejb authorizer. should fix some problems in tck or at least move things in the right direction
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        BaseGeronimoContextConfig.java&#160;<span class="change">(+5&#160;-1)</span>,
+        EjbWsContextConfig.java&#160;<span class="change">(+8)</span>,
+        TomcatEJBWebServiceContext.java&#160;<span class="change">(+8&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-25 04:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">797720</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4752 fix tck problems in jaspic integration
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        BaseGeronimoContextConfig.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-17 13:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">795168</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4748 Make sure default subject is set on the thread if there is any security configuration at all
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        BaseGeronimoContextConfig.java&#160;<span class="change">(+1&#160;-4)</span>,
+        WebContextConfig.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-17 01:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">794963</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4748 simplify default subject handling which should remove the possibility of the problem in the defect
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        BaseGeronimoContextConfig.java&#160;<span class="change">(+16&#160;-19)</span>,
+        GeronimoStandardContext.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-16 13:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">794752</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4752 rewrite toomcat security to support jaspic and better support jacc
+    </p>
+    <p class="commitdetails"><strong>198</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        BaseGeronimoContextConfig.java&#160;<span class="new">(new&#160;19)</span>,
+        EjbWsContextConfig.java&#160;<span class="new">(new)</span>,
+        EngineGBean.java&#160;<span class="change">(+76&#160;-89)</span>,
+        GeronimoStandardContext.java&#160;<span class="change">(+36&#160;-9)</span>,
+        JAASTomcatPrincipal.java&#160;<span class="new">(new)</span>,
+        TomcatContainer.java&#160;<span class="change">(+63&#160;-124)</span>,
+        TomcatEJBWebServiceContext.java&#160;<span class="change">(+2&#160;-117)</span>,
+        TomcatEngine.java&#160;<span class="change">(-1)</span>,
+        WebContextConfig.java&#160;<span class="new">(new&#160;2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-10 03:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">792824</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4645 Make ejb ws security more jacc friendly, implement transport guarantees for jetty7 using jacc. See jira for more comments
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-07-07 01:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">791703</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+prefer openejb-jar.xml instead of geronimo-openejb.xml descriptor in ejb ws deployer and pass additional properties object to SoapHandlers
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+11&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-26 15:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">788834</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4715 Get tomcat to use our thread pools
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatExecutorWrapper.java&#160;<span class="new">(new)</span>,
+        TomcatServerGBean.java&#160;<span class="change">(+7&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-06-25 03:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">788280</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix the Tomcat configuration about realm and valve
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        ValveGBean.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-06-22 05:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">787174</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4684 Recover the AccessLogValve and LogManager, those two GBeans are needed by console
+    </p>
+    <p class="commitdetails"><strong>102</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        HostGBean.java&#160;<span class="change">(+2&#160;-4)</span>,
+        TomcatLogManagerImpl.java&#160;<span class="change">(+6&#160;-6)</span>,
+        TomcatServerGBean.java&#160;<span class="change">(+9&#160;-6)</span>,
+        ValveGBean.java&#160;<span class="change">(+85&#160;-49)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-22 02:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">787153</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4684 Do property substitution and calculations in the tomcat server.xml
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatServerGBean.java&#160;<span class="change">(+22&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-19 18:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">786690</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4684 Provide a way for the existing EngineGBean to wrap the engine started from a server.xml.  This should provide backward compatibility for added gbeans in user plans
+    </p>
+    <p class="commitdetails"><strong>30</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        EngineGBean.java&#160;<span class="change">(+28&#160;-42)</span>,
+        TomcatContainer.java&#160;<span class="change">(-2)</span>,
+        TomcatWebAppContext.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-06-16 02:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">785090</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4684 Configure tomcat server using server.xml
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+2&#160;-1)</span>,
+        TomcatServerGBean.java&#160;<span class="change">(+26&#160;-18)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-14 03:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">784518</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4684, GERONIMO-4685 Use our tomcat build, configure tomcat using server.xml.  Also includes some spec jar updates including using our jaxb spec jar
+    </p>
+    <p class="commitdetails"><strong>201</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        GeronimoStandardContext.java&#160;<span class="change">(+8&#160;-1)</span>,
+        TomcatContainer.java&#160;<span class="change">(+175&#160;-141)</span>,
+        TomcatServerGBean.java&#160;<span class="new">(new&#160;18)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-06-09 22:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">783183</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3389 java.lang.UnsatisfiedLinkError is thrown when create a Tomcat APR HTTP Connector (Patch from Shawn Jiang)
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatManagerImpl.java&#160;<span class="change">(+27&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-05-26 10:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">778726</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4553 Make web use of security realms depend on plugin visibility; make console expose the 'global' attribute for configuration (renamed from 'publish'). Also merges in geronimo-security changes from sandbox branches.
+    </p>
+    <p class="commitdetails"><strong>34</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        EngineGBean.java&#160;<span class="change">(+9&#160;-2)</span>,
+        RealmGBean.java&#160;<span class="change">(changed)</span>,
+        TomcatContainer.java&#160;<span class="change">(+11&#160;-31)</span>,
+        TomcatEJBWebServiceContext.java&#160;<span class="change">(+4&#160;-7)</span>,
+        TomcatEngine.java&#160;<span class="change">(changed)</span>,
+        TomcatGeronimoEmbedded.java&#160;<span class="change">(+3&#160;-2)</span>,
+        TomcatWebAppContext.java&#160;<span class="change">(+7&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-05-21 22:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">777350</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4545 TomcatJAASRealm keeps reference to undeployed EAR/WAR's classloader
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+9&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-03-05 17:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">750618</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+expose HttpServletRequest through jacc for ejb web services (GERONIMO-4572)
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatEJBWebServiceContext.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-01-07 00:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">732217</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+support for specifying a list of http methods that should be secured for ejb-based web services (GERONIMO-4015)
+    </p>
+    <p class="commitdetails"><strong>78</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+2&#160;-2)</span>,
+        TomcatEJBWebServiceContext.java&#160;<span class="change">(+74&#160;-30)</span>,
+        TomcatGeronimoEmbedded.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-11-19 10:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">718972</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3838 Close potential denial of service attack vector in Tomcat session handling, which can be exploited by accessing the Admin Console login page but never logging in.  Thanks to Ivan for the patch.
+    </p>
+    <p class="commitdetails"><strong>79</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        ManagerGBean.java&#160;<span class="change">(+79&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-09-24 03:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">698441</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4258 clean up some naming constant usage
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        EngineGBean.java&#160;<span class="change">(+1&#160;-1)</span>,
+        HostGBean.java&#160;<span class="change">(+2&#160;-2)</span>,
+        TomcatContainer.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TomcatManagerImpl.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TomcatWebAppContext.java&#160;<span class="change">(+4&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-07-31 13:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">681419</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+read log file line by line instead of loading the entire file into memory (GERONIMO-4224)
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatLogManagerImpl.java&#160;<span class="change">(+24&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-07-09 14:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">675305</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+give users a better message when context-root is not unique - GERONIMO-4191
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+10&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-06-12 09:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">667080</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4113 Merge from branches/2.1. Use appropriate classloader when loading valve class
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        ValveGBean.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-06-06 19:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">664198</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4109 reverse host-engine relationship direction for non-default hosts
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        EngineGBean.java&#160;<span class="change">(+9&#160;-46)</span>,
+        HostGBean.java&#160;<span class="change">(+15&#160;-2)</span>,
+        TomcatContainer.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-06 10:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">653782</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More loggers back to static<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        EngineGBean.java&#160;<span class="change">(+1&#160;-1)</span>,
+        HostGBean.java&#160;<span class="change">(+1&#160;-1)</span>,
+        LifecycleListenerGBean.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ManagerGBean.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TomcatContainer.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TomcatEJBWebServiceContext.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TomcatGeronimoEmbedded.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TomcatLogManagerImpl.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TomcatManagerImpl.java&#160;<span class="change">(+1&#160;-1)</span>,
+        TomcatWebAppContext.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ValveGBean.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-25 15:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">651684</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3985) Use SLF4J as the primary logging facade for Geronimo<br />
+
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        EngineGBean.java&#160;<span class="change">(changed)</span>,
+        HostGBean.java&#160;<span class="new">(new)</span>,
+        LifecycleListenerGBean.java&#160;<span class="new">(new)</span>,
+        ManagerGBean.java&#160;<span class="change">(changed)</span>,
+        TomcatContainer.java&#160;<span class="change">(+3&#160;-3)</span>,
+        TomcatEJBWebServiceContext.java&#160;<span class="change">(changed)</span>,
+        TomcatGeronimoEmbedded.java&#160;<span class="new">(new)</span>,
+        TomcatLogManagerImpl.java&#160;<span class="change">(+3&#160;-3)</span>,
+        TomcatManagerImpl.java&#160;<span class="change">(+5&#160;-5)</span>,
+        TomcatWebAppContext.java&#160;<span class="change">(+3&#160;-3)</span>,
+        ValveGBean.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-04-17 14:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">649215</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3900 Add runtime support for non-Sun JVMs.  Merged in updates from 2.1.1 branch.
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+8&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(9 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

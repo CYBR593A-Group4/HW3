@@ -1,0 +1,770 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>9</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>3178</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_framework.html">framework</a>/<a href="dir_framework_modules.html">modules</a>/<a href="dir_framework_modules_geronimo-kernel.html">geronimo-kernel</a>/<a href="dir_framework_modules_geronimo-kernel_src.html">src</a>/<a href="dir_framework_modules_geronimo-kernel_src_main.html">main</a>/<a href="dir_framework_modules_geronimo-kernel_src_main_java.html">java</a>/<a href="dir_framework_modules_geronimo-kernel_src_main_java_org.html">org</a>/<a href="dir_framework_modules_geronimo-kernel_src_main_java_org_apache.html">apache</a>/<a href="dir_framework_modules_geronimo-kernel_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_framework_modules_geronimo-kernel_src_main_java_org_apache_geronimo_gbean.html">gbean</a>/<strong>runtime</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_framework_modules_geronimo-kernel_src_main_java_org_apache_geronimo_gbean_runtime.png" alt="framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>68 (100.0%)</td>
+        <td>3440 (100.0%)</td>
+        <td>50.5</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>32 (47.1%)</td>
+        <td>3218 (93.5%)</td>
+        <td>100.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>6 (8.8%)</td>
+        <td>117 (3.4%)</td>
+        <td>19.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>4 (5.9%)</td>
+        <td>38 (1.1%)</td>
+        <td>9.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>17 (25.0%)</td>
+        <td>35 (1.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>4 (5.9%)</td>
+        <td>20 (0.6%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>2 (2.9%)</td>
+        <td>6 (0.2%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>1 (1.5%)</td>
+        <td>3 (0.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jaydm.html" class="author">jaydm</a></th>
+        <td>1 (1.5%)</td>
+        <td>2 (0.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>1 (1.5%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="31"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-12-20 14:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1221390</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6240 Make several base geronimo functions (kernel, deployer, etc) DS services and make the car-maven-plugin take advantage of that.  Server assembly doesn't work yet, builds framework.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanSingleReference.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-07-31 22:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1152675</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+A minor change to the last commit, the correct count of service names is kept
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-07-31 22:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1152674</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6100 Limit the recorded dependency and reference number info for stateReason
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+35&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2011-06-22 23:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1138728</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5744: Support for Equinox-specific classloader that can convert bundle:// urls into regular file:// or jar:// urls and make things easier for 3rd party libraries. The Equinox-specific classloader is disabled by default for now
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-10-11 06:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1021297</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Make it easier to view the builder list when debuging the deployment process.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        ProxyCollection.java&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-25 02:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1001150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Show all of all fail-to-start exceptions
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstanceState.java&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-07-21 01:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">966098</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+when exposing gbean as a service always set abstract name property and set default osgi jndi service name property if none was specified
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-15 19:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">955091</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5380 Allow exposing gbeans as osgi services (or service factories).  Replace the specialized code in connector with this new generic code.  This is not serialziation compatible with old GBeanInfo and GBeanData
+    </p>
+    <p class="commitdetails"><strong>76</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+76&#160;-27)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-26 22:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">938294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-148 use new xbean-bundleutils
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-02-16 16:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">910676</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+genericize a few kernel classes a bit more
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanAttribute.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-02-03 16:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">906227</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+extact some code into a separate utility function
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-22 12:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add DelegatingBundle that can delegate calls to multiple Bundles and remove classSource support
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+4&#160;-19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-08 19:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897346</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5021 allow gbean classes to be loaded from another plugin, plus use in jetty and jasper
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+19&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-06 03:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">896340</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Revert an unexpected change
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanOperation.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-06 03:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">896339</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5008 Create util methods for all the Geronimo components
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanOperation.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2009-10-30 13:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">831403</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More plugin cleanup
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstanceState.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-29 18:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">831112</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4907 Complain about all attempts to set non-existent gbean properties at once
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+11&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-16 16:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">826073</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4916 step 2 move sandbox osgi framework into trunk
+    </p>
+    <p class="commitdetails"><strong>3073</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        AbstractGBeanReference.java&#160;<span class="new">(new&#160;192)</span>,
+        GBeanAttribute.java&#160;<span class="new">(new&#160;428)</span>,
+        GBeanDependency.java&#160;<span class="new">(new&#160;206)</span>,
+        GBeanInstance.java&#160;<span class="new">(new&#160;1247)</span>,
+        GBeanInstanceState.java&#160;<span class="new">(new&#160;452)</span>,
+        GBeanOperation.java&#160;<span class="new">(new&#160;146)</span>,
+        GBeanReference.java&#160;<span class="new">(new&#160;42)</span>,
+        GBeanSingleReference.java&#160;<span class="new">(new&#160;99)</span>,
+        ProxyCollection.java&#160;<span class="new">(new&#160;261)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-16 16:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">826072</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4916 step 1 remove old framwork
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        AbstractGBeanReference.java&#160;<span class="del">(del)</span>,
+        GBeanAttribute.java&#160;<span class="del">(del)</span>,
+        GBeanDependency.java&#160;<span class="del">(del)</span>,
+        GBeanInstance.java&#160;<span class="del">(del)</span>,
+        GBeanInstanceState.java&#160;<span class="del">(del)</span>,
+        GBeanOperation.java&#160;<span class="del">(del)</span>,
+        GBeanReference.java&#160;<span class="del">(del)</span>,
+        GBeanSingleReference.java&#160;<span class="del">(del)</span>,
+        ProxyCollection.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2009-09-15 03:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">815175</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fixing a typo in error message.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-29 02:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">798794</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3003 Encrypt poassoreds and morked attributes in serialized gbeans and config.xml.  Modified from patch by Jack Cai, many thanks.
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanAttribute.java&#160;<span class="change">(+26&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-01-07 18:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">732537</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4495 Invoking stop method on a gbean whose instancestate is destoryed caused that gbean in the stopping state.  Patch provided by Ivan (xuhaihong).
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstanceState.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-09-01 02:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">690859</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4239, sort of.  Use transitive depenedencies in c-m-p everywhere.  This may break stuff.... let me know
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanOperation.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-06 06:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">653740</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More loggers back to statics<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        ProxyCollection.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-05 16:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">653588</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Start of custom SLF4J muck for Geronimo<br />
+
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstanceState.java&#160;<span class="change">(+15&#160;-13)</span>,
+        GBeanSingleReference.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-04 10:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">653218</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More loggers back to static<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanDependency.java&#160;<span class="change">(+3&#160;-4)</span>,
+        GBeanInstance.java&#160;<span class="change">(+3&#160;-2)</span>,
+        GBeanInstanceState.java&#160;<span class="change">(+3&#160;-2)</span>,
+        GBeanSingleReference.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-25 15:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">651684</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3985) Use SLF4J as the primary logging facade for Geronimo<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        AbstractGBeanReference.java&#160;<span class="change">(+3&#160;-3)</span>,
+        GBeanDependency.java&#160;<span class="new">(new)</span>,
+        GBeanInstance.java&#160;<span class="change">(+3&#160;-3)</span>,
+        GBeanInstanceState.java&#160;<span class="change">(changed)</span>,
+        GBeanSingleReference.java&#160;<span class="change">(changed)</span>,
+        ProxyCollection.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2008-04-05 07:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">645077</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+*** Definition of annotations streamlining the definition of GBeanInfos.<br />
+<br />
+* @GBean: optional annotation defining the name and j2eeType of a GBean.<br />
+If this annotation is not specified, then the default name is assumed to be<br />
+the class (simple) name and the default j2eeType is GBean.<br />
+* @Priority: optionalannotation defining the priority of a GBean.<br />
+* @ParamSpecial: annotation defining a GBean special attribute to be <br />
+injected.<br />
+* @ParamAttribute: annotation defining the GBean attribute to be injected.<br />
+* @ParamReference: annotation defining the GBean reference to be injected. <br />
+* @Persistent: annotation for setter methods turning the corresponding GBean <br />
+attributes into persistent attributes.<br />
+* @Reference: annotation for setter methods turning the corresponding GBean<br />
+attribute into a GBean reference.<br />
+<br />
+Note that at most one constructor must be annotated with @ParamSpecial,<br />
+@ParamAttribute or @ParamReference.<br />
+<br />
+*** Add a GBeanInfo factory strategy, GBeanInfoFactory, which allows us to<br />
+plug-in an annotation based GBeanInfo factory implementation.<br />
+<br />
+*** Use annotation based GBeanInfo declaration for clustering related GBeans.<br />
+<br />
+*** Use xbean-reflect to build GBean instances.<br />
+<br />
+This fixes GERONIMO-3952 - Definition of GBeanInfo via annotations<br />
+
+    </p>
+    <p class="commitdetails"><strong>117</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        AbstractGBeanReference.java&#160;<span class="change">(-6)</span>,
+        GBeanAttribute.java&#160;<span class="new">(new)</span>,
+        GBeanInstance.java&#160;<span class="change">(+117&#160;-168)</span>,
+        GBeanReference.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jaydm.html" class="author">jaydm</a>
+    <span class="date">2008-01-22 12:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">614255</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Changed the log level on the proxy/no proxy message from 'warn' to 'info'<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        AbstractGBeanReference.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-01-04 20:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">609072</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3732 steps 1, 2. Move plugin management and some jsr88 base code into a new module
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-12-15 14:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">604482</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3708 turn off gbean reference proxies
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        AbstractGBeanReference.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

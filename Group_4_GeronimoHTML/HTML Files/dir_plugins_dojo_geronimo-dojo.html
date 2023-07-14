@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/dojo/geronimo-dojo/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/dojo/geronimo-dojo/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2011-10-10 05:25</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>3</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_dojo.html">dojo</a>/<strong>geronimo-dojo</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_dojo_geronimo-dojo_src.html">src</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_dojo_geronimo-dojo_src_main.html">main</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_dojo_geronimo-dojo_src_main_appended-resources.html">appended-resources</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_dojo_geronimo-dojo_src_main_appended-resources_META-INF.html">META-INF</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_dojo_geronimo-dojo.png" alt="plugins/dojo/geronimo-dojo/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>14 (100.0%)</td>
+        <td>68 (100.0%)</td>
+        <td>4.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>2 (14.3%)</td>
+        <td>47 (69.1%)</td>
+        <td>23.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_ecraig.html" class="author">ecraig</a></th>
+        <td>2 (14.3%)</td>
+        <td>13 (19.1%)</td>
+        <td>6.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_linsun.html" class="author">linsun</a></th>
+        <td>1 (7.1%)</td>
+        <td>5 (7.4%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>1 (7.1%)</td>
+        <td>2 (2.9%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>3 (21.4%)</td>
+        <td>1 (1.5%)</td>
+        <td>0.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rwonly.html" class="author">rwonly</a></th>
+        <td>3 (21.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>2 (14.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="10"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-10-10 05:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1180838</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove dojo plugin, we never use it.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        LICENSE.txt&#160;<span class="del">(del)</span>,
+        NOTICE.txt&#160;<span class="del">(del)</span>,
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-09-30 11:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">700512</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4325 Switch to new Dojo 1.1.1 mini release bundle, which removes the unused tests, utilities and demos.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-07-02 22:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">673564</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4175 dojo v1.0.2 dijit/demos/i18n directory contains wikipedia content - removed demos and tests folder
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-15 18:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">656887</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Upgrade maven-dependency-plugin to 2.0<br />
+Replace dojo .tar.gz bits with .zip ones instead, this prevents the build from having to unarchive the .gz into /tmp, which may or may not be on another filesystem, and when its not the same the build crawls.  Also the plexus tar.gz bits are buggy and can't handle files with spaces.  Also using the names of the release artifacts for clarity.<br />
+Removed the need for dojoVersion and dojoLegacyVersion properties<br />
+
+    </p>
+    <p class="commitdetails"><strong>37</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        pom.xml&#160;<span class="change">(+37&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-04 00:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">618167</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update LICENSE and NOTICE files. Merge from 2.1 branch
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        NOTICE.txt&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-02 04:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617770</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upgrade trunk to 2.2-SNAPSHOT
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-01-22 18:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">614367</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3747) Fixed parentage of module groups, though most still need to have their modules put into the proper groupId<br />
+Updated groupId of *everything* under framework/** to org.apache.geronimo.framework, and did my best to update all references<br />
+
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        pom.xml&#160;<span class="change">(+10&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ecraig.html" class="author">ecraig</a>
+    <span class="date">2008-01-15 19:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">612294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3684<br />
+<br />
+Upgrade Monitoring Client to use Dojo 1.0.2<br />
+<br />
+Updated the dojo plugin so that all necessary files are included.<br />
+Made changes to the monitoring application so that graphs are drawn<br />
+using dojo 1.0.2, which is completely different from 0.4.3<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ecraig.html" class="author">ecraig</a>
+    <span class="date">2008-01-09 22:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">610651</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3300<br />
+Upgrade Dojo to 1.0<br />
+<br />
+-Moved dojo 0.4.3 to dojolegacy artifact to prevent issues/conflicts with 1.0.2, as well as allow both to co-exist<br />
+-created dojo-legacy plugin for 0.4.3<br />
+-changed dependencies for 0.4.3 to use dojo-legacy plugin<br />
+-changed dojo plugin to use 1.0.2<br />
+-added dojo 1.0.2 to repository<br />
+-set dojo 1.0.2 to default context root of /dojo/1.0<br />
+-Dojo 0.4.3 still has default context root of /dojo<br />
+-added dojo plugin to default jee5 assemblies<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-10-30 17:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">590482</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+* GERONIMO-3565
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/dojo/geronimo-dojo</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

@@ -1,0 +1,695 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /geronimo/server/trunk Developers: hanhongfang</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/geronimo/server/trunk Developers: hanhongfang</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>hanhongfang</dd>
+    <dt>Total Commits:</dt>
+    <dd>46 (0.1%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>503 (0.1%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2011-10-27 03:54</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=hanhongfang%20contributed%20503%20(0.1%25)%20lines%20to%20%2Fgeronimo%2Fserver%2Ftrunk%20%7B0}%20most%20recent%20commit%202011-10-27%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_hanhongfang.png" alt="Activity by Hour of Day for hanhongfang" width="800" height="500" /></p><p class="chart"><img src="activity_day_hanhongfang.png" alt="Activity by Day of Week for hanhongfang" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>46 (100.0%)</td>
+        <td>503 (100.0%)</td>
+        <td>10.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_plugins_openjpa2_geronimo-persistence-jpa20-builder_src_main_java_org_apache_geronimo_persistence_builder.html" class="directory">plugins/openjpa2/geronimo-persistence-jpa20-builder/src/main/java/org/apache/geronimo/persistence/builder/</a></th>
+        <td>4 (8.7%)</td>
+        <td>97 (19.3%)</td>
+        <td>24.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_uddi_uddi-war-repackage_src_main_java_org_apache_juddi_config.html" class="directory">plugins/uddi/uddi-war-repackage/src/main/java/org/apache/juddi/config/</a></th>
+        <td>3 (6.5%)</td>
+        <td>93 (18.5%)</td>
+        <td>31.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_configs_karaf-framework_src_main_distribution_unix-shell_bin.html" class="directory">framework/configs/karaf-framework/src/main/distribution/unix-shell/bin/</a></th>
+        <td>1 (2.2%)</td>
+        <td>73 (14.5%)</td>
+        <td>73.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-system_src_main_java_org_apache_geronimo_system_configuration.html" class="directory">framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration/</a></th>
+        <td>4 (8.7%)</td>
+        <td>50 (9.9%)</td>
+        <td>12.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_corba_geronimo-corba_src_main_java_org_apache_geronimo_corba.html" class="directory">plugins/corba/geronimo-corba/src/main/java/org/apache/geronimo/corba/</a></th>
+        <td>1 (2.2%)</td>
+        <td>45 (8.9%)</td>
+        <td>45.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_plancreator_plancreator-portlets_src_main_java_org_apache_geronimo_console_configcreator.html" class="directory">plugins/plancreator/plancreator-portlets/src/main/java/org/apache/geronimo/console/configcreator/</a></th>
+        <td>2 (4.3%)</td>
+        <td>38 (7.6%)</td>
+        <td>19.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_activemq_geronimo-activemq-blueprint_src_main_java_org_apache_geronimo_activemq.html" class="directory">plugins/activemq/geronimo-activemq-blueprint/src/main/java/org/apache/geronimo/activemq/</a></th>
+        <td>3 (6.5%)</td>
+        <td>13 (2.6%)</td>
+        <td>4.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_uddi_uddi-tomcat.html" class="directory">plugins/uddi/uddi-tomcat/</a></th>
+        <td>2 (4.3%)</td>
+        <td>12 (2.4%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_uddi_uddi-jetty.html" class="directory">plugins/uddi/uddi-jetty/</a></th>
+        <td>2 (4.3%)</td>
+        <td>12 (2.4%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_configs_karaf-framework_src_main_distribution_windows-text_bin.html" class="directory">framework/configs/karaf-framework/src/main/distribution/windows-text/bin/</a></th>
+        <td>1 (2.2%)</td>
+        <td>11 (2.2%)</td>
+        <td>11.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_uddi_uddi-tomcat_src_main_plan.html" class="directory">plugins/uddi/uddi-tomcat/src/main/plan/</a></th>
+        <td>2 (4.3%)</td>
+        <td>9 (1.8%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-system.html" class="directory">framework/modules/geronimo-system/</a></th>
+        <td>2 (4.3%)</td>
+        <td>9 (1.8%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_configs_karaf-framework_src_main_distribution_text_etc.html" class="directory">framework/configs/karaf-framework/src/main/distribution/text/etc/</a></th>
+        <td>2 (4.3%)</td>
+        <td>9 (1.8%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_uddi_uddi-jetty_src_main_plan.html" class="directory">plugins/uddi/uddi-jetty/src/main/plan/</a></th>
+        <td>2 (4.3%)</td>
+        <td>7 (1.4%)</td>
+        <td>3.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_openejb_openejb_src_main_resources_schema.html" class="directory">plugins/openejb/openejb/src/main/resources/schema/</a></th>
+        <td>1 (2.2%)</td>
+        <td>7 (1.4%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment.html" class="directory">framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/</a></th>
+        <td>1 (2.2%)</td>
+        <td>5 (1.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_uddi_uddi-war-repackage_src_main_resources_WEB-INF_classes_META-INF.html" class="directory">plugins/uddi/uddi-war-repackage/src/main/resources/WEB-INF/classes/META-INF/</a></th>
+        <td>1 (2.2%)</td>
+        <td>2 (0.4%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_tomcat_tomcat7_src_main_plan.html" class="directory">plugins/tomcat/tomcat7/src/main/plan/</a></th>
+        <td>1 (2.2%)</td>
+        <td>2 (0.4%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_openjpa2_persistence-jpa20-deployer_src_main_plan.html" class="directory">plugins/openjpa2/persistence-jpa20-deployer/src/main/plan/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_monitoring_mconsole-tomcat_src_main_plan.html" class="directory">plugins/monitoring/mconsole-tomcat/src/main/plan/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_monitoring_mconsole-jetty_src_main_plan.html" class="directory">plugins/monitoring/mconsole-jetty/src/main/plan/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_corba_j2ee-corba-yoko_src_main_plan.html" class="directory">plugins/corba/j2ee-corba-yoko/src/main/plan/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_activemq_activemq-ra.html" class="directory">plugins/activemq/activemq-ra/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_activemq_activemq-broker-blueprint_src_main_resources_etc.html" class="directory">plugins/activemq/activemq-broker-blueprint/src/main/resources/etc/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_activemq_activemq-broker-blueprint_src_main_resources_OSGI-INF_blueprint.html" class="directory">plugins/activemq/activemq-broker-blueprint/src/main/resources/OSGI-INF/blueprint/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_activemq_activemq-broker-blueprint_src_main_plan.html" class="directory">plugins/activemq/activemq-broker-blueprint/src/main/plan/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>1 (2.2%)</td>
+        <td>1 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-naming_src_main_java_org_apache_geronimo_naming_reference.html" class="directory">framework/modules/geronimo-naming/src/main/java/org/apache/geronimo/naming/reference/</a></th>
+        <td>2 (4.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_hanhongfang.png" alt="Activity of hanhongfang" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-10-27 03:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1189654</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6206 Concise infomation rather than Exception stacktrace when create plan from a WAR. Thanks Yi Xiao for the patch.
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/plancreator/plancreator-portlets/src/main/java/org/apache/geronimo/console/configcreator</strong>:
+        GetArchiveHandler.java&#160;<span class="change">(+35&#160;-23)</span>,
+        JSR88_Util.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-09-28 02:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1176744</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add a comment to override org.apache.catalina.STRICT_SERVLET_COMPLIANCE
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/karaf-framework/src/main/distribution/text/etc</strong>:
+        system.properties&#160;<span class="change">(+8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-09-28 02:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1176738</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6127 spring sample travel: homepage can not be accessed problem
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/tomcat7/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-09-21 03:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1173517</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6154 Add monitoring to basic console view
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-09-04 22:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1165151</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6144 NPE in DependencyManager if configurations/bundles are uninstalled
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        DependencyManager.java&#160;<span class="change">(+8&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-24 04:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1161003</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6120 Could not connect to karaf shell by SSH
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/karaf-framework/src/main/distribution/text/etc</strong>:
+        org.apache.karaf.shell.cfg&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-22 05:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1160155</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6116 differentiate the two "OpenEJB ORB Adapter" displayed in "Linstening on Ports" after server startup.
+    </p>
+    <p class="commitdetails"><strong>46</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/corba/geronimo-corba/src/main/java/org/apache/geronimo/corba</strong>:
+        CORBAEjbSSLBeanGBean.java&#160;<span class="new">(new&#160;45)</span>
+      </li>
+      <li>
+        <strong>plugins/corba/j2ee-corba-yoko/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-18 05:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1159115</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Change to monitor DefaultActiveMQBroker only. GERONIMO-6110 On 3.0 we don't register the 61616 port and the IP address for the server socket is not correct.
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/geronimo-activemq-blueprint/src/main/java/org/apache/geronimo/activemq</strong>:
+        ActiveMQBrokerServiceMonitorGBean.java&#160;<span class="change">(+13&#160;-19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-16 21:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1158486</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6110 On 3.0 we don't register the 61616 port and the IP address for the server socket is not correct.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-broker-blueprint/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq/activemq-broker-blueprint/src/main/resources/OSGI-INF/blueprint</strong>:
+        activemq.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq/activemq-broker-blueprint/src/main/resources/etc</strong>:
+        blueprint-activemq-placeholder.cfg&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq/activemq-ra</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq/geronimo-activemq-blueprint/src/main/java/org/apache/geronimo/activemq</strong>:
+        ActiveMQBrokerServiceMonitorGBean.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-11 22:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1156942</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use specific property name instead of general property in openjpa to avoid possible side effect. GERONIMO-6109 Derby connection failure in uddi when PortOffset is not 0
+    </p>
+    <p class="commitdetails"><strong>34</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/uddi/uddi-jetty</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-war-repackage/src/main/java/org/apache/juddi/config</strong>:
+        PersistenceManager.java&#160;<span class="change">(+30&#160;-31)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-11 02:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1156498</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add missing license header.
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/uddi/uddi-war-repackage/src/main/java/org/apache/juddi/config</strong>:
+        PersistenceManager.java&#160;<span class="change">(+17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-10 22:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1156451</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6109 Derby connection failure in uddi when PortOffset is not 0
+    </p>
+    <p class="commitdetails"><strong>84</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/uddi/uddi-jetty</strong>:
+        pom.xml&#160;<span class="change">(+11)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+11)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-war-repackage/src/main/java/org/apache/juddi/config</strong>:
+        PersistenceManager.java&#160;<span class="new">(new&#160;46)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/uddi-war-repackage/src/main/resources/WEB-INF/classes/META-INF</strong>:
+        persistence.xml&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-04 01:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1153754</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Using Properties class in felix util package to keep the config-substitutions in section as they are defeined. GERONIMO-5310 Better ordering for config-substitutions.properties
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-system</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+7&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-02 02:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1153036</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+revert rev1153013.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+3&#160;-32)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-08-01 23:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1153013</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5310 Better ordering for config-substitutions.properties
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+32&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-07-28 02:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1151742</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6099 Can't connect to Jconsole via secure JMX Connector
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-system</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-07-08 02:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1144172</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6050 openejb-jar-2.2.xsd out-of-date
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/openejb/src/main/resources/schema</strong>:
+        openejb-jar-2.2.xsd&#160;<span class="change">(+7&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-06-29 04:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1141004</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add ConvertPositionalParametersToNamed=true to enable openjpa support for non-sequential positional parameters (OPENJPA-1999)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openjpa2/persistence-jpa20-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-06-28 22:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1140948</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upadte openjpa from 2.1.0 to 2.1.1-SNAPSHOT
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_hanhongfang.html" class="author">hanhongfang</a>
+    <span class="date">2011-06-28 05:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1140502</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+make META-INF/persistence.xml in web module processed, and also update the persistence ref search process to select correct one when several persistence units exist in the same ear module<br />
+
+    </p>
+    <p class="commitdetails"><strong>70</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openjpa2/geronimo-persistence-jpa20-builder/src/main/java/org/apache/geronimo/persistence/builder</strong>:
+        PersistenceRefBuilder.java&#160;<span class="change">(+48&#160;-9)</span>,
+        PersistenceUnitBuilder.java&#160;<span class="change">(+22&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(5 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>3</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<a href="dir_modules_geronimo-hot-deploy.html">geronimo-hot-deploy</a>/<a href="dir_modules_geronimo-hot-deploy_src.html">src</a>/<a href="dir_modules_geronimo-hot-deploy_src_main.html">main</a>/<a href="dir_modules_geronimo-hot-deploy_src_main_java.html">java</a>/<a href="dir_modules_geronimo-hot-deploy_src_main_java_org.html">org</a>/<a href="dir_modules_geronimo-hot-deploy_src_main_java_org_apache.html">apache</a>/<a href="dir_modules_geronimo-hot-deploy_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_modules_geronimo-hot-deploy_src_main_java_org_apache_geronimo_deployment.html">deployment</a>/<strong>hot</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-hot-deploy_src_main_java_org_apache_geronimo_deployment_hot.png" alt="modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>22 (100.0%)</td>
+        <td>178 (100.0%)</td>
+        <td>8.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>3 (13.6%)</td>
+        <td>70 (39.3%)</td>
+        <td>23.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>4 (18.2%)</td>
+        <td>53 (29.8%)</td>
+        <td>13.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>3 (13.6%)</td>
+        <td>28 (15.7%)</td>
+        <td>9.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_hogstrom.html" class="author">hogstrom</a></th>
+        <td>1 (4.5%)</td>
+        <td>20 (11.2%)</td>
+        <td>20.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>5 (22.7%)</td>
+        <td>6 (3.4%)</td>
+        <td>1.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_akulshreshtha.html" class="author">akulshreshtha</a></th>
+        <td>1 (4.5%)</td>
+        <td>1 (0.6%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>3 (13.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>2 (9.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="12"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="del">(del)</span>,
+        DirectoryMonitor.java&#160;<span class="del">(del)</span>,
+        HotDeployer.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-06-08 07:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">545480</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3231 Hot deployment error when restart server
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-05-17 17:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">539130</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1431 Make deploy tool and hot deploy directory work better together.  Rakesh, thanks for the patch.
+    </p>
+    <p class="commitdetails"><strong>69</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+19&#160;-1)</span>,
+        DirectoryMonitor.java&#160;<span class="change">(+50&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2007-04-11 09:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527482</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3011 Resolve sharedlib and hot deploy directory relative to GERONIMO_BASE
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-17 04:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">508724</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Second attempt to change the way the online/offline deployers and the JSR88<br />
+deployment driver work. The first attempt was breaking the TCK amd the <br />
+eclipse plugin.<br />
+<br />
+<br />
+Online deployer, i.e. deployer.jar, boots a Kernel to load its dependencies,<br />
+ e.g. geronimo-deploy-tool, and registers the available ModuleConfigurers with <br />
+the DeploymentManager.<br />
+<br />
+ModuleConfigurers to be registered are loaded by the persistent configuration <br />
+list jsr88-configurer-config.xml.<br />
+<br />
+In the case of an offline deployment, the online deployer starts the <br />
+offline-deployer configuration within the same Kernel. In turn, the <br />
+offline-deployer configuration starts a list of configurations to register <br />
+the available module builders.<br />
+<br />
+Add a log4j configuration for the online deployer.<br />
+<br />
+DeploymentFactoryBootstrapper is the new JSR88 deployment driver. It boots a <br />
+kernel; starts the configuration list jsr88-configurer-config.xml; retrieves<br />
+the "actual" DeploymentFactory implementation from the kernel; and delegates<br />
+to this retrieved imoplementation.<br />
+The JSR88 JAR driver is now named jsr88-deploymentfactory.jar.<br />
+<br />
+<br />
+This fixes:<br />
+* GERONIMO-2794 - Improve online deployer to register ModuleConfigurers from the repository; and<br />
+* GERONIMO-2767 - Minimize side effects of the offline deployer<br />
+
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+26&#160;-25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-05 18:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">503905</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Revert deployer changes as they do break the Eclipse plugin and TCK.<br />
+I will investigate offline.<br />
+<br />
+svn merge -r503370:503369 .<br />
+<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-04 03:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">503370</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Online deployer, i.e. deployer.jar, boots a Kernel to load its dependencies,<br />
+ e.g. geronimo-deploy-tool, and registers the available ModuleConfigurers with <br />
+the DeploymentManager.<br />
+<br />
+ModuleConfigurers to be registered are loaded by the persistent configuration <br />
+list jsr88-configurer-config.xml.<br />
+<br />
+In the case of an offline deployment, the online deployer starts the <br />
+offline-deployer configuration within the same Kernel. In turn, the <br />
+offline-deployer configuration starts a list of configurations to register <br />
+the available module builders.<br />
+<br />
+Add a log4j configuration for the online deployer.<br />
+<br />
+This fixes:<br />
+* GERONIMO-2794 - Improve online deployer to register ModuleConfigurers from the repository; and<br />
+* GERONIMO-2767 - Minimize side effects of the offline deployer<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2006-12-07 18:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">483713</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2402 Redeployment fails after third iteration.<br />
+  o Integrating the patch provided by Rakesh Midha<br />
+  o The Problem is caused by first update operation. The first time hot-deployer tries to update the changes, it redeployes the application which means the application configid is changes. This change is not reflected in hotdeployer list. Which mean next time any operation is done on this application hotdeployer fails because the application configid being used doesn't exist now.<br />
+  o Instead of void the fileUpdated method of DirectoryHotDeployer.java now returns new configId as string, and in DirectoryMonitor.java this configId is updated in actions fileinfo.<br />
+
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+12&#160;-2)</span>,
+        DirectoryMonitor.java&#160;<span class="change">(+10&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2006-12-07 17:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">483678</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2584 Hot deploy module/server restart, throws IllegalArgumentException if application deployed using hotdeployment<br />
+  o Integrated the patch provided by Rakesh Midha<br />
+  o Patch adds getModuleId in DirectoryHotDeployer, and change calculateModuleId to use it, also defination of getModuleId is added in listener interface.  Changed calculateModuleId() to use newly added method getModuleId() from DirectoryHotDeployer. This newly added method returns configId of deployed application.
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+22)</span>,
+        DirectoryMonitor.java&#160;<span class="change">(+9&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-11-17 00:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476049</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Update the src headers in server/trunk/modules to be compliant with the new ASF src header and copyright policy (<a href="http://www.apache.org/legal/src">http://www.apache.org/legal/src</a>-headers.html). I also did some cleanup of the src headers and tried to make them all a consistent format
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+6&#160;-6)</span>,
+        DirectoryMonitor.java&#160;<span class="new">(new)</span>,
+        HotDeployer.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_hogstrom.html" class="author">hogstrom</a>
+    <span class="date">2006-11-14 16:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">474972</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1813 - Applied HotDeployer patch
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+20&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-08-28 05:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">437623</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Use logging instead of System.out and printStackTrace<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

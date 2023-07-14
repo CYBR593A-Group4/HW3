@@ -1,0 +1,851 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2009-11-19 18:21</span></dd>
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>753</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_jetty8.html">jetty8</a>/<a href="dir_plugins_jetty8_geronimo-jetty8-builder.html">geronimo-jetty8-builder</a>/<a href="dir_plugins_jetty8_geronimo-jetty8-builder_src.html">src</a>/<a href="dir_plugins_jetty8_geronimo-jetty8-builder_src_main.html">main</a>/<a href="dir_plugins_jetty8_geronimo-jetty8-builder_src_main_java.html">java</a>/<a href="dir_plugins_jetty8_geronimo-jetty8-builder_src_main_java_org.html">org</a>/<a href="dir_plugins_jetty8_geronimo-jetty8-builder_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_jetty8_geronimo-jetty8-builder_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_plugins_jetty8_geronimo-jetty8-builder_src_main_java_org_apache_geronimo_jetty8.html">jetty8</a>/<strong>deployment</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_jetty8_geronimo-jetty8-builder_src_main_java_org_apache_geronimo_jetty8_deployment.png" alt="plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>48 (100.0%)</td>
+        <td>2098 (100.0%)</td>
+        <td>43.7</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>24 (50.0%)</td>
+        <td>1773 (84.5%)</td>
+        <td>73.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>9 (18.8%)</td>
+        <td>203 (9.7%)</td>
+        <td>22.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>13 (27.1%)</td>
+        <td>121 (5.8%)</td>
+        <td>9.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>2 (4.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2012-05-22 11:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1341511</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Merge changes from GERONIMO-6341 orm.xml does not take effect in latest Geronimo 3.0 beta branch.
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+12&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2012-03-02 12:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1296271</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6292 Share the japser servlet between jasper plugin and web-container plugin.
+    </p>
+    <p class="commitdetails"><strong>29</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+29&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-11-01 10:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1196032</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6204 Decouple OpenWebBeans from web container
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+2&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-09-07 11:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1166214</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6143 Create a fragment context for each sub modules in the EAR package
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-08-12 04:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1157006</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6106 Clean up temp files created in the deployment process<br />
+Use a thread local in the FileUtils to hold all the temp files in the deployment process
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-08-09 23:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1156005</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6106 Clean up temp files created in the deployment process
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-07-11 22:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1145438</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5050 Continue integrating use of openejb owb integration
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-06-07 04:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1132900</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+re-enable the message-destination handling logic for spec and vendor DD.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-06-05 09:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1132395</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a. Update the WebAttributeNames in the geronimo-web module to WebApplicationConstants<br />
+b. Update the WebApplicationConstants in the geronimo-wab module to WABApplicationConstants
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-06-05 02:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1131922</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+move schema conversion "openejb-jar" from SchemaConversoinUtils to jetty/tomcat builders.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-04-14 09:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1092215</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5902 Ignore web service from web application side if it is also an EJB web service
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+11&#160;-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-11-01 12:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1029726</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5050 use single owb lifecycle and context in jetty, fix a couple small problems
+    </p>
+    <p class="commitdetails"><strong>42</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+42&#160;-28)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-10-14 17:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1022726</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5647 avoid an NPE in jetty if no security realm is specified anywhere
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-30 13:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1003167</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5624 add more goo to WebAppInfo, use in jetty
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+9&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-29 04:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1002525</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5624 better default web app merging, and make jetty use more of the info tree
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+21&#160;-147)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-23 01:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1000329</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5624 patch (slightly modified) from Ivan to use info tree to merge security info from dynamic additions and annotations (this is new for jetty).
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+17&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-09 01:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">995315</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5567 clean up unused classes and code
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+21&#160;-483)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-08 20:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">995287</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5567 fix some more integration issues with Registration based web.xml processing.  Functional but needs cleanup.
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+10&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-06 20:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">993185</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5567 rewrite jetty integration to use a openejb-like info tree and the *Registration interfaces.  This gets everything started in the right order and is a lot simpler.  Old code still needs to be removed
+    </p>
+    <p class="commitdetails"><strong>152</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+152&#160;-109)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-27 02:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">958341</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+cf openejb rev 958340.  marshal persistence.xml in the correct namespace, marshal methods names changed
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-24 14:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">957655</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5190 use openejb-jee jaxb tree for spec dds
+    </p>
+    <p class="commitdetails"><strong>162</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+162&#160;-189)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-02 03:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">950397</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5025, GERONIMO-5117. Make jndi supported directly by Modules and straighten out which contexts are shared when.
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+13&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-05-05 19:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">941547</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix jaspic message layer name for servlet profile
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-05-01 07:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">939982</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a. Calculate web permissions while starting the web module to support setServletSecurity feature in Servlet 3.0<br />
+b. Initial support ServletContainerInitializer, some improvements might be needed, such as use ASM ?<br />
+c. Support ORDERED_LIBS ServletContext attribute 
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+9&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-26 22:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">938294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-148 use new xbean-bundleutils
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-26 03:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">937941</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+cf OPENEJB-1252 replace file.toURL() with file.toURI().toURL()
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-20 12:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">935991</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix compilation problem
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-13 22:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">933845</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5253: Publish application name to JNDI (java:app/AppName)
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+17&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-04-12 02:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">933100</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+1. Make sure we only reassemble the DD of the version after 2.5<br />
+2. Ignore the same param-name configurations checking in the same DD file (web-fragment.xml/web.xml)
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+5&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-09 13:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">932532</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5150 type safe shared data in EARContext
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-04-06 01:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">931020</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5037 Support Servlet 3.0 annotation and fragment web file
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+32&#160;-22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-17 15:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">924430</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030: Fragment bundles must also be considered when looking up resources
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-02 20:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">918287</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030: Make sure ServletContext is registered in service registry after the web app context is fully initialized - take 2. Register gbean with lowest priority so that it starts last and causes the ServletContext to be registered
+    </p>
+    <p class="commitdetails"><strong>62</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+62&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-02 17:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">918179</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+revert most of 918095. it's causing some other problems with filters.
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+10&#160;-18)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-02 12:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">918095</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030: Make sure ServletContext is registered in service registry after the web app context is fully initialized. That is, start web app context after all dependent servlet gbeans are started
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+18&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-02-22 14:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">915011</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Merge with ear environment if we are using onely one bundle
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-02-03 03:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">905918</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5057 Use those xmlbeans generated by JAVA EE 6 schema files
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-29 23:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904725</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+make sure the deploymentDescriptor attribute has the right root element
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-23 23:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902527</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4996 GERONIMO-5025 separate jndi context setup from web app context since jsf needs it too.  Hook up myfaces which now starts.  Don't know if myfaces works
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+8&#160;-57)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-23 19:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902507</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030: Initial refactoring of some of the module deployment code to support deployment of Bundles. Also, implemented rfc66 extender that can actually deploy WABs with simple servlets and jsps.
+    </p>
+    <p class="commitdetails"><strong>81</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+81&#160;-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(8 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

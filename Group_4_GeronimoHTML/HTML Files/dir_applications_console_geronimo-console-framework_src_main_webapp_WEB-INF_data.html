@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2008-01-22 20:19</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>2</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_applications.html">applications</a>/<a href="dir_applications_console.html">console</a>/<a href="dir_applications_console_geronimo-console-framework.html">geronimo-console-framework</a>/<a href="dir_applications_console_geronimo-console-framework_src.html">src</a>/<a href="dir_applications_console_geronimo-console-framework_src_main.html">main</a>/<a href="dir_applications_console_geronimo-console-framework_src_main_webapp.html">webapp</a>/<a href="dir_applications_console_geronimo-console-framework_src_main_webapp_WEB-INF.html">WEB-INF</a>/<strong>data</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_applications_console_geronimo-console-framework_src_main_webapp_WEB-INF_data_xml.html">xml</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_applications_console_geronimo-console-framework_src_main_webapp_WEB-INF_data.png" alt="applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>19 (100.0%)</td>
+        <td>152 (100.0%)</td>
+        <td>8.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_ccardona.html" class="author">ccardona</a></th>
+        <td>4 (21.1%)</td>
+        <td>98 (64.5%)</td>
+        <td>24.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>6 (31.6%)</td>
+        <td>41 (27.0%)</td>
+        <td>6.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>2 (10.5%)</td>
+        <td>12 (7.9%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_pmcmahan.html" class="author">pmcmahan</a></th>
+        <td>5 (26.3%)</td>
+        <td>1 (0.7%)</td>
+        <td>0.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>2 (10.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="9"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-01-22 20:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">614392</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3747) Moved applications/* to plugins/*<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="del">(del)</span>,
+        portletentityregistry.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-08-13 12:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">565397</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3254 Admin Console Wizard to auto generate geronimo-web.xml<br />
+and dependencies GERONIMO-3394, GERONIMO-3395, GERONIMO-3396, GERONIMO-3397, GERONIMO-3398<br />
+  o First commit of "Create Plan" portlet code.<br />
+  o Thanks to Shiva Kumar H R for this work.<br />
+
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="change">(+15)</span>,
+        portletentityregistry.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_ccardona.html" class="author">ccardona</a>
+    <span class="date">2007-01-12 23:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">495833</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2689 : New View for JNDI name in all the contexts<br />
+GERONIMO-2690 : New view for all the classloaders and classes loaded in it<br />
+GERONIMO-2691 : New view for the hierarchical modules and linked dependencies<br />
+<br />
+Thanks Rakesh!
+    </p>
+    <p class="commitdetails"><strong>80</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="change">(+71&#160;-19)</span>,
+        portletentityregistry.xml&#160;<span class="change">(+9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2006-12-04 05:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">482113</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1601 Remove the "Old Keystore" portlet<br />
+  o Merging rev 482109 from trunk<br />
+  o Removed "Old Keystore" related entries from console portlet definitions<br />
+  o Removed java and jsp files related to "Old Keystore"<br />
+  o Removed "ssl-keystore-1" entries from webconsole configs
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="change">(+3&#160;-14)</span>,
+        portletentityregistry.xml&#160;<span class="change">(+3&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-11-17 19:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476361</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Update more src file headers
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="change">(+6&#160;-4)</span>,
+        portletentityregistry.xml&#160;<span class="change">(+6&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2006-11-17 13:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476229</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2413 Add a Certification Authority (CA) portlet to Geronimo console
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="change">(+14)</span>,
+        portletentityregistry.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ccardona.html" class="author">ccardona</a>
+    <span class="date">2006-11-15 04:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">475164</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1823 Add Embedded LDAP Server Viewer Portlet
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="change">(+15)</span>,
+        portletentityregistry.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_pmcmahan.html" class="author">pmcmahan</a>
+    <span class="date">2006-09-29 18:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">451486</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix a typo in the description for the JMX explorer portlet
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_pmcmahan.html" class="author">pmcmahan</a>
+    <span class="date">2006-09-25 10:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">449693</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2333 JMX Portlet
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data</strong>:
+        pageregistry.xml&#160;<span class="change">(changed)</span>,
+        portletentityregistry.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

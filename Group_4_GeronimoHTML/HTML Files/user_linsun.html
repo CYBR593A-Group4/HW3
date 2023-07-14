@@ -1,0 +1,1583 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /geronimo/server/trunk Developers: linsun</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/geronimo/server/trunk Developers: linsun</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>linsun</dd>
+    <dt>Total Commits:</dt>
+    <dd>378 (0.5%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>4,600 (0.6%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2010-08-25 11:22</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=linsun%20contributed%204%2C600%20(0.6%25)%20lines%20to%20%2Fgeronimo%2Fserver%2Ftrunk%20%7B0}%20most%20recent%20commit%202010-08-25%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_linsun.png" alt="Activity by Hour of Day for linsun" width="800" height="500" /></p><p class="chart"><img src="activity_day_linsun.png" alt="Activity by Day of Week for linsun" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>378 (100.0%)</td>
+        <td>4600 (100.0%)</td>
+        <td>12.1</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_plugin-portlets_src_main_webapp_WEB-INF_view_car.html" class="directory">plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car/</a></th>
+        <td>26 (6.9%)</td>
+        <td>686 (14.9%)</td>
+        <td>26.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_plugin-portlets_src_main_java_org_apache_geronimo_console_car.html" class="directory">plugins/console/plugin-portlets/src/main/java/org/apache/geronimo/console/car/</a></th>
+        <td>29 (7.7%)</td>
+        <td>374 (8.1%)</td>
+        <td>12.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_connector.html" class="directory">plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/connector/</a></th>
+        <td>8 (2.1%)</td>
+        <td>344 (7.5%)</td>
+        <td>43.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_console-tomcat.html" class="directory">plugingroups/console-tomcat/</a></th>
+        <td>2 (0.5%)</td>
+        <td>123 (2.7%)</td>
+        <td>61.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_console-jetty.html" class="directory">plugingroups/console-jetty/</a></th>
+        <td>2 (0.5%)</td>
+        <td>123 (2.7%)</td>
+        <td>61.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_debugviews_debugviews-portlets_src_main_webapp_WEB-INF_view_jndiview.html" class="directory">plugins/debugviews/debugviews-portlets/src/main/webapp/WEB-INF/view/jndiview/</a></th>
+        <td>4 (1.1%)</td>
+        <td>116 (2.5%)</td>
+        <td>29.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_javaee5-tomcat.html" class="directory">plugingroups/javaee5-tomcat/</a></th>
+        <td>5 (1.3%)</td>
+        <td>115 (2.5%)</td>
+        <td>23.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_javaee5-jetty.html" class="directory">plugingroups/javaee5-jetty/</a></th>
+        <td>5 (1.3%)</td>
+        <td>113 (2.5%)</td>
+        <td>22.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_webservices-cxf.html" class="directory">plugingroups/webservices-cxf/</a></th>
+        <td>4 (1.1%)</td>
+        <td>109 (2.4%)</td>
+        <td>27.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_webservices-axis2.html" class="directory">plugingroups/webservices-axis2/</a></th>
+        <td>4 (1.1%)</td>
+        <td>109 (2.4%)</td>
+        <td>27.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-deploy-tool_src_main_java_org_apache_geronimo_deployment_cli.html" class="directory">framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli/</a></th>
+        <td>7 (1.9%)</td>
+        <td>106 (2.3%)</td>
+        <td>15.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_debugviews_debugviews-portlets_src_main_webapp_WEB-INF_view_classloaderview.html" class="directory">plugins/debugviews/debugviews-portlets/src/main/webapp/WEB-INF/view/classloaderview/</a></th>
+        <td>3 (0.8%)</td>
+        <td>105 (2.3%)</td>
+        <td>35.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_ejb.html" class="directory">plugingroups/ejb/</a></th>
+        <td>4 (1.1%)</td>
+        <td>102 (2.2%)</td>
+        <td>25.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_client.html" class="directory">plugingroups/client/</a></th>
+        <td>3 (0.8%)</td>
+        <td>102 (2.2%)</td>
+        <td>34.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_debugviews_debugviews-portlets_src_main_webapp_WEB-INF_view_dependencyview.html" class="directory">plugins/debugviews/debugviews-portlets/src/main/webapp/WEB-INF/view/dependencyview/</a></th>
+        <td>3 (0.8%)</td>
+        <td>98 (2.1%)</td>
+        <td>32.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_jms.html" class="directory">plugingroups/jms/</a></th>
+        <td>2 (0.5%)</td>
+        <td>98 (2.1%)</td>
+        <td>49.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_console-testsuite_basic_src_test_java_org_apache_geronimo_testsuite_console.html" class="directory">testsuite/console-testsuite/basic/src/test/java/org/apache/geronimo/testsuite/console/</a></th>
+        <td>5 (1.3%)</td>
+        <td>96 (2.1%)</td>
+        <td>19.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_persistence.html" class="directory">plugingroups/persistence/</a></th>
+        <td>4 (1.1%)</td>
+        <td>95 (2.1%)</td>
+        <td>23.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_javaee5-tomcat_src_main_history.html" class="directory">plugingroups/javaee5-tomcat/src/main/history/</a></th>
+        <td>3 (0.8%)</td>
+        <td>93 (2.0%)</td>
+        <td>31.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_clustering-tomcat.html" class="directory">plugingroups/clustering-tomcat/</a></th>
+        <td>3 (0.8%)</td>
+        <td>83 (1.8%)</td>
+        <td>27.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_clustering-jetty.html" class="directory">plugingroups/clustering-jetty/</a></th>
+        <td>3 (0.8%)</td>
+        <td>82 (1.8%)</td>
+        <td>27.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-commands_src_main_groovy_org_apache_geronimo_commands.html" class="directory">framework/modules/geronimo-commands/src/main/groovy/org/apache/geronimo/commands/</a></th>
+        <td>3 (0.8%)</td>
+        <td>76 (1.7%)</td>
+        <td>25.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-plugin_src_main_java_org_apache_geronimo_system_plugin.html" class="directory">framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin/</a></th>
+        <td>10 (2.6%)</td>
+        <td>75 (1.6%)</td>
+        <td>7.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups.html" class="directory">plugingroups/</a></th>
+        <td>9 (2.4%)</td>
+        <td>74 (1.6%)</td>
+        <td>8.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_web-tomcat.html" class="directory">plugingroups/web-tomcat/</a></th>
+        <td>6 (1.6%)</td>
+        <td>69 (1.5%)</td>
+        <td>11.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_webservices-common.html" class="directory">configs/webservices-common/</a></th>
+        <td>3 (0.8%)</td>
+        <td>69 (1.5%)</td>
+        <td>23.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_web-jetty.html" class="directory">plugingroups/web-jetty/</a></th>
+        <td>5 (1.3%)</td>
+        <td>68 (1.5%)</td>
+        <td>13.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2.html" class="directory">modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/</a></th>
+        <td>2 (0.5%)</td>
+        <td>68 (1.5%)</td>
+        <td>34.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_javaee5-jetty_src_main_history.html" class="directory">plugingroups/javaee5-jetty/src/main/history/</a></th>
+        <td>3 (0.8%)</td>
+        <td>66 (1.4%)</td>
+        <td>22.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_assemblies_geronimo-tomcat6-javaee5.html" class="directory">assemblies/geronimo-tomcat6-javaee5/</a></th>
+        <td>2 (0.5%)</td>
+        <td>51 (1.1%)</td>
+        <td>25.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_assemblies_geronimo-jetty6-javaee5.html" class="directory">assemblies/geronimo-jetty6-javaee5/</a></th>
+        <td>2 (0.5%)</td>
+        <td>51 (1.1%)</td>
+        <td>25.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_system-database_sysdb-portlets_src_main_java_org_apache_geronimo_console_databasemanager_wizard.html" class="directory">plugins/system-database/sysdb-portlets/src/main/java/org/apache/geronimo/console/databasemanager/wizard/</a></th>
+        <td>3 (0.8%)</td>
+        <td>48 (1.0%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_plugin-portlets_src_main_resources.html" class="directory">plugins/console/plugin-portlets/src/main/resources/</a></th>
+        <td>20 (5.3%)</td>
+        <td>46 (1.0%)</td>
+        <td>2.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment_plugin_factories.html" class="directory">modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/factories/</a></th>
+        <td>4 (1.1%)</td>
+        <td>33 (0.7%)</td>
+        <td>8.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-system_src_main_java_org_apache_geronimo_system_configuration.html" class="directory">framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration/</a></th>
+        <td>5 (1.3%)</td>
+        <td>32 (0.7%)</td>
+        <td>6.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_clustering-tomcat_src_main_history.html" class="directory">plugingroups/clustering-tomcat/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>29 (0.6%)</td>
+        <td>29.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_clustering-jetty_src_main_history.html" class="directory">plugingroups/clustering-jetty/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>29 (0.6%)</td>
+        <td>29.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2-builder_src_main_java_org_apache_geronimo_axis2_builder.html" class="directory">modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder/</a></th>
+        <td>1 (0.3%)</td>
+        <td>26 (0.6%)</td>
+        <td>26.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_jetty8_jetty8_src_main_history.html" class="directory">plugins/jetty8/jetty8/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>25 (0.5%)</td>
+        <td>25.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_clustering.html" class="directory">plugingroups/clustering/</a></th>
+        <td>2 (0.5%)</td>
+        <td>25 (0.5%)</td>
+        <td>12.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_jetty8_jetty8-clustering-wadi_src_main_history.html" class="directory">plugins/jetty8/jetty8-clustering-wadi/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>23 (0.5%)</td>
+        <td>23.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_buildsupport_car-maven-plugin_src_main_java_org_apache_geronimo_mavenplugins_car.html" class="directory">buildsupport/car-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/car/</a></th>
+        <td>2 (0.5%)</td>
+        <td>21 (0.5%)</td>
+        <td>10.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_system-database_sysdb-portlets_src_main_webapp_WEB-INF_view_dbwizard.html" class="directory">plugins/system-database/sysdb-portlets/src/main/webapp/WEB-INF/view/dbwizard/</a></th>
+        <td>16 (4.2%)</td>
+        <td>17 (0.4%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_util.html" class="directory">modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/util/</a></th>
+        <td>1 (0.3%)</td>
+        <td>16 (0.3%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_debugviews_debugviews-portlets_src_main_webapp.html" class="directory">plugins/debugviews/debugviews-portlets/src/main/webapp/</a></th>
+        <td>4 (1.1%)</td>
+        <td>15 (0.3%)</td>
+        <td>3.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_framework.html" class="directory">plugingroups/framework/</a></th>
+        <td>4 (1.1%)</td>
+        <td>15 (0.3%)</td>
+        <td>3.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_welcome_geronimo-welcome_src_main_webapp.html" class="directory">plugins/welcome/geronimo-welcome/src/main/webapp/</a></th>
+        <td>1 (0.3%)</td>
+        <td>12 (0.3%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_web-jetty_src_main_history.html" class="directory">plugingroups/web-jetty/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>12 (0.3%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>7 (1.9%)</td>
+        <td>12 (0.3%)</td>
+        <td>1.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat.html" class="directory">plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>10 (0.2%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_openejb_openejb_src_main_history.html" class="directory">plugins/openejb/openejb/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>10 (0.2%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_web-tomcat_src_main_history.html" class="directory">plugingroups/web-tomcat/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>10 (0.2%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_javaee6-web-tomcat.html" class="directory">plugingroups/javaee6-web-tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>10 (0.2%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jaxws_src_main_java_org_apache_geronimo_jaxws.html" class="directory">modules/geronimo-jaxws/src/main/java/org/apache/geronimo/jaxws/</a></th>
+        <td>1 (0.3%)</td>
+        <td>10 (0.2%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_jaxws_geronimo-jaxws-builder_src_main_java_org_apache_geronimo_jaxws_builder.html" class="directory">plugins/jaxws/geronimo-jaxws-builder/src/main/java/org/apache/geronimo/jaxws/builder/</a></th>
+        <td>1 (0.3%)</td>
+        <td>9 (0.2%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_javaee6-web-jetty.html" class="directory">plugingroups/javaee6-web-jetty/</a></th>
+        <td>1 (0.3%)</td>
+        <td>9 (0.2%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2_ejb.html" class="directory">modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/ejb/</a></th>
+        <td>4 (1.1%)</td>
+        <td>9 (0.2%)</td>
+        <td>2.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-system_src_main_xsd.html" class="directory">framework/modules/geronimo-system/src/main/xsd/</a></th>
+        <td>1 (0.3%)</td>
+        <td>9 (0.2%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_webconsole-tomcat_src_plan.html" class="directory">configs/webconsole-tomcat/src/plan/</a></th>
+        <td>2 (0.5%)</td>
+        <td>9 (0.2%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_openejb_openejb.html" class="directory">plugins/openejb/openejb/</a></th>
+        <td>1 (0.3%)</td>
+        <td>7 (0.2%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_framework_src_main_history.html" class="directory">plugingroups/framework/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>7 (0.2%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_system-database_sysdb-console-jetty.html" class="directory">plugins/system-database/sysdb-console-jetty/</a></th>
+        <td>1 (0.3%)</td>
+        <td>6 (0.1%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_console-testsuite_advanced_src_test_java_org_apache_geronimo_testsuite_console.html" class="directory">testsuite/console-testsuite/advanced/src/test/java/org/apache/geronimo/testsuite/console/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_system-database_sysdb-console-tomcat.html" class="directory">plugins/system-database/sysdb-console-tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_monitoring_mconsole-tomcat.html" class="directory">plugins/monitoring/mconsole-tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_monitoring_mconsole-jetty.html" class="directory">plugins/monitoring/mconsole-jetty/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_monitoring_mconsole-ds.html" class="directory">plugins/monitoring/mconsole-ds/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_dojo_geronimo-dojo.html" class="directory">plugins/dojo/geronimo-dojo/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_javaee6-web-tomcat_src_main_history.html" class="directory">plugingroups/javaee6-web-tomcat/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_javaee6-web-jetty_src_main_history.html" class="directory">plugingroups/javaee6-web-jetty/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_ejb_src_main_history.html" class="directory">plugingroups/ejb/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>5 (0.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_axis2.html" class="directory">configs/axis2/</a></th>
+        <td>2 (0.5%)</td>
+        <td>5 (0.1%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_axis2-deployer_src_plan.html" class="directory">configs/axis2-deployer/src/plan/</a></th>
+        <td>2 (0.5%)</td>
+        <td>5 (0.1%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_plugin-portlets_src_main_webapp_WEB-INF.html" class="directory">plugins/console/plugin-portlets/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.3%)</td>
+        <td>4 (0.1%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_system-database_sysdb-console-tomcat_src_main_plan.html" class="directory">plugins/system-database/sysdb-console-tomcat/src/main/plan/</a></th>
+        <td>2 (0.5%)</td>
+        <td>3 (0.1%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_system-database_sysdb-console-jetty_src_main_plan.html" class="directory">plugins/system-database/sysdb-console-jetty/src/main/plan/</a></th>
+        <td>2 (0.5%)</td>
+        <td>3 (0.1%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_plugin-console-tomcat.html" class="directory">plugins/console/plugin-console-tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>3 (0.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_plugin-console-jetty.html" class="directory">plugins/console/plugin-console-jetty/</a></th>
+        <td>1 (0.3%)</td>
+        <td>3 (0.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_console-tomcat.html" class="directory">plugins/console/console-tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>3 (0.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_console-jetty.html" class="directory">plugins/console/console-jetty/</a></th>
+        <td>1 (0.3%)</td>
+        <td>3 (0.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_assemblies_geronimo-tomcat6-minimal.html" class="directory">assemblies/geronimo-tomcat6-minimal/</a></th>
+        <td>2 (0.5%)</td>
+        <td>3 (0.1%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_assemblies_geronimo-jetty6-minimal.html" class="directory">assemblies/geronimo-jetty6-minimal/</a></th>
+        <td>2 (0.5%)</td>
+        <td>3 (0.1%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_system-database_sysdb-portlets_src_main_resources.html" class="directory">plugins/system-database/sysdb-portlets/src/main/resources/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_plancreator_plancreator-console-tomcat.html" class="directory">plugins/plancreator/plancreator-console-tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_plancreator_plancreator-console-jetty.html" class="directory">plugins/plancreator/plancreator-console-jetty/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_jetty8_geronimo-jetty8.html" class="directory">plugins/jetty8/geronimo-jetty8/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_debugviews_debugviews-portlets_src_main_resources.html" class="directory">plugins/debugviews/debugviews-portlets/src/main/resources/</a></th>
+        <td>2 (0.5%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_debugviews_debugviews-console-tomcat.html" class="directory">plugins/debugviews/debugviews-console-tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_debugviews_debugviews-console-jetty.html" class="directory">plugins/debugviews/debugviews-console-jetty/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment_plugin_jmx.html" class="directory">framework/modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_webconsole-jetty6_src_plan.html" class="directory">configs/webconsole-jetty6/src/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_buildsupport_geronimo-assembly-archetype_src_main_resources_archetype-resources.html" class="directory">buildsupport/geronimo-assembly-archetype/src/main/resources/archetype-resources/</a></th>
+        <td>2 (0.5%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_plancreator.html" class="directory">plugins/plancreator/</a></th>
+        <td>1 (0.3%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_debugviews.html" class="directory">plugins/debugviews/</a></th>
+        <td>1 (0.3%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_client_geronimo-client-builder.html" class="directory">plugins/client/geronimo-client-builder/</a></th>
+        <td>1 (0.3%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_console-tomcat_src_main_history.html" class="directory">plugingroups/console-tomcat/src/main/history/</a></th>
+        <td>2 (0.5%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_console-jetty_src_main_history.html" class="directory">plugingroups/console-jetty/src/main/history/</a></th>
+        <td>2 (0.5%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_configs_rmi-naming.html" class="directory">framework/configs/rmi-naming/</a></th>
+        <td>1 (0.3%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_assemblies_geronimo-boilerplate.html" class="directory">assemblies/geronimo-boilerplate/</a></th>
+        <td>1 (0.3%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_tomcat_tomcat6.html" class="directory">plugins/tomcat/tomcat6/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_sharedlib_src_main_resources_shared_lib.html" class="directory">plugins/sharedlib/src/main/resources/shared/lib/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_sharedlib_src_main_resources_shared_classes.html" class="directory">plugins/sharedlib/src/main/resources/shared/classes/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_sharedlib_src_main_resources_shared.html" class="directory">plugins/sharedlib/src/main/resources/shared/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_openejb_openejb-deployer_src_main_history.html" class="directory">plugins/openejb/openejb-deployer/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_openejb_openejb-deployer.html" class="directory">plugins/openejb/openejb-deployer/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_openejb_geronimo-openejb-builder.html" class="directory">plugins/openejb/geronimo-openejb-builder/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_jetty8_jetty8.html" class="directory">plugins/jetty8/jetty8/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_jetty_jetty6.html" class="directory">plugins/jetty/jetty6/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_unavailable-webservices-deployer_src_main_plan.html" class="directory">plugins/j2ee/unavailable-webservices-deployer/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_j2ee_unavailable-webservices-deployer_src_main_history.html" class="directory">plugins/j2ee/unavailable-webservices-deployer/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_unavailable-webservices-deployer_src.html" class="directory">plugins/j2ee/unavailable-webservices-deployer/src/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_j2ee_unavailable-webservices-deployer.html" class="directory">plugins/j2ee/unavailable-webservices-deployer/</a></th>
+        <td>3 (0.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_unavailable-ejb-deployer_src_main_plan.html" class="directory">plugins/j2ee/unavailable-ejb-deployer/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_j2ee_unavailable-ejb-deployer_src_main_history.html" class="directory">plugins/j2ee/unavailable-ejb-deployer/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_unavailable-ejb-deployer_src.html" class="directory">plugins/j2ee/unavailable-ejb-deployer/src/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_j2ee_unavailable-ejb-deployer.html" class="directory">plugins/j2ee/unavailable-ejb-deployer/</a></th>
+        <td>3 (0.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_unavailable-client-deployer_src_main_plan.html" class="directory">plugins/j2ee/unavailable-client-deployer/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_j2ee_unavailable-client-deployer_src_main_history.html" class="directory">plugins/j2ee/unavailable-client-deployer/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_unavailable-client-deployer_src.html" class="directory">plugins/j2ee/unavailable-client-deployer/src/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_j2ee_unavailable-client-deployer.html" class="directory">plugins/j2ee/unavailable-client-deployer/</a></th>
+        <td>3 (0.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee.html" class="directory">plugins/j2ee/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_axis_axis-deployer.html" class="directory">plugins/axis/axis-deployer/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_webservices-cxf_src_main_plan.html" class="directory">plugingroups/webservices-cxf/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_webservices-axis2_src_main_plan.html" class="directory">plugingroups/webservices-axis2/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_web-tomcat_src_main_plan.html" class="directory">plugingroups/web-tomcat/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_web-jetty_src_main_plan.html" class="directory">plugingroups/web-jetty/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_persistence_src_main_plan.html" class="directory">plugingroups/persistence/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_jsf_src_main_history.html" class="directory">plugingroups/jsf/src/main/history/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_jsf_src_main.html" class="directory">plugingroups/jsf/src/main/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_jsf.html" class="directory">plugingroups/jsf/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_jms_src_main_plan.html" class="directory">plugingroups/jms/src/main/plan/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_jms_src_main_history.html" class="directory">plugingroups/jms/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_javaee5-tomcat_src_main.html" class="directory">plugingroups/javaee5-tomcat/src/main/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_javaee5-jetty_src_main.html" class="directory">plugingroups/javaee5-jetty/src/main/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_ejb_src_main_plan.html" class="directory">plugingroups/ejb/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_console-tomcat_src_main.html" class="directory">plugingroups/console-tomcat/src/main/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_console-jetty_src_main.html" class="directory">plugingroups/console-jetty/src/main/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_clustering_src_main_plan.html" class="directory">plugingroups/clustering/src/main/plan/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugingroups_clustering_src_main_history.html" class="directory">plugingroups/clustering/src/main/history/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugingroups_client_src_main_plan.html" class="directory">plugingroups/client/src/main/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_uddi-tomcat.html" class="directory">configs/uddi-tomcat/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_uddi-jetty6.html" class="directory">configs/uddi-jetty6/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_servlet-examples-tomcat_src_plan.html" class="directory">configs/servlet-examples-tomcat/src/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_servlet-examples-jetty_src_plan.html" class="directory">configs/servlet-examples-jetty/src/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jsp-examples-tomcat_src_plan.html" class="directory">configs/jsp-examples-tomcat/src/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jsp-examples-jetty_src_plan.html" class="directory">configs/jsp-examples-jetty/src/plan/</a></th>
+        <td>1 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_assemblies_geronimo-boilerplate_src_main_underlay_var_config.html" class="directory">assemblies/geronimo-boilerplate/src/main/underlay/var/config/</a></th>
+        <td>2 (0.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_linsun.png" alt="Activity of linsun" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2010-08-25 11:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">989167</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add javamail config to web profile assembly so that we can have MailResource created
+    </p>
+    <p class="commitdetails"><strong>29</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/javaee6-web-jetty</strong>:
+        pom.xml&#160;<span class="change">(+9)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee6-web-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee6-web-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+10)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee6-web-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2010-08-23 13:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">988228</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+to have dependency consistent with tomcat7
+    </p>
+    <p class="commitdetails"><strong>50</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/jetty8-clustering-wadi/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+23&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/jetty8</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/jetty8/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+25&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2010-08-23 12:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">988191</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove unnecessary webservices-builder and webservices-common dependencies off openejb
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-builder</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-deployer</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb</strong>:
+        pom.xml&#160;<span class="change">(+7&#160;-8)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+10&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-03-03 23:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">749892</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4564 update to use transaction manager 2.1.2
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-01-12 12:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">733836</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4506 switch to use txmanager 2.1.2-snapshot in geronimo server trunk
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-01-06 17:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">732119</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4488 Framework assembly can not be stopped successfully
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty/jetty6</strong>:
+        pom.xml&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat6</strong>:
+        pom.xml&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-01-06 14:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">732039</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4486 Custom server assembly portlet doesn't filter specific word
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car</strong>:
+        assemblylist.jsp&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-01-06 11:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">731980</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4491 Can not assemble application centric custom server if there is deployed application, which is not converted into plugin
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli</strong>:
+        CommandListConfigurations.java&#160;<span class="change">(+1&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-01-05 18:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">731752</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4489 Creating an application centric custom server does not include Framework plugin group
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-commands/src/main/groovy/org/apache/geronimo/commands</strong>:
+        AssembleServerCommand.groovy&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli</strong>:
+        CommandListConfigurations.java&#160;<span class="change">(+14&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-01-05 17:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">731731</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4479 rework on handling of empty folders Thanks Jarek and Joe for their comments
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        RepositoryConfigurationStore.java&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/sharedlib/src/main/resources/shared</strong>:
+        EMPTY&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugins/sharedlib/src/main/resources/shared/classes</strong>:
+        EMPTY&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugins/sharedlib/src/main/resources/shared/lib</strong>:
+        EMPTY&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-01-05 16:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">731677</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4479 - remove unneeded copy-file stuff in axis-deployer
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/axis/axis-deployer</strong>:
+        pom.xml&#160;<span class="change">(-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2009-01-05 15:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">731662</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4479 add empty files to get the empty shared folder copied
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/sharedlib/src/main/resources/shared</strong>:
+        EMPTY&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/sharedlib/src/main/resources/shared/classes</strong>:
+        EMPTY&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/sharedlib/src/main/resources/shared/lib</strong>:
+        EMPTY&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-12-29 11:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">729920</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+revert some of the changes in rev708650 as it causes GERONIMO-4479 Custom server assembly does not work
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        PluginInstallerGBean.java&#160;<span class="change">(+7&#160;-21)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-11-25 18:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">720621</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4432 Allow users to filter plugins by category and name columns when selecting assembly list
+    </p>
+    <p class="commitdetails"><strong>37</strong> lines of code changed in <span class="files">15 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/client</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-jetty</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/ejb</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/framework</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/persistence</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-jetty</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-cxf</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/resources</strong>:
+        pluginportlets.properties&#160;<span class="change">(+1&#160;-1)</span>,
+        pluginportlets_zh.properties&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/view/car</strong>:
+        assemblylist.jsp&#160;<span class="change">(+21&#160;-19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-11-25 17:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">720620</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4282 add display of application plugins at functional centric mode, to be consistent as admin console
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-commands/src/main/groovy/org/apache/geronimo/commands</strong>:
+        AssembleServerCommand.groovy&#160;<span class="change">(+8&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli</strong>:
+        CommandListConfigurations.java&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-11-14 12:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">714062</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4141 display only car types on the export plugin portlet page thanks Ivan for the patch
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        CreatePluginIndexHandler.java&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-11-14 11:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">714047</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4395 EmployeeDatasource and jdbc/EmployeeDatasource create the same files.  Slightly modified patch from Ivan Thanks Ivan
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-portlets/src/main/java/org/apache/geronimo/console/databasemanager/wizard</strong>:
+        DatabasePoolPortlet.java&#160;<span class="change">(+16&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-20 21:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706491</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4371 remove unnecessary plugin groups
+    </p>
+    <p class="commitdetails"><strong>229</strong> lines of code changed in <span class="files">17 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups</strong>:
+        pom.xml&#160;<span class="change">(-4)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-jetty</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-jetty/src/main</strong>:
+        plan&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-tomcat</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-tomcat/src/main</strong>:
+        plan&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty</strong>:
+        pom.xml&#160;<span class="change">(+71&#160;-19)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+39&#160;-9)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+70&#160;-19)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+47&#160;-12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jms</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jms/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jms/src/main/plan</strong>:
+        plan.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf/src/main</strong>:
+        plan&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugingroups/jsf/src/main/history</strong>:
+        dependencies.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-20 16:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706407</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4363 Update plugin group's metadata (especially category) to represent function of a plugin group
+    </p>
+    <p class="commitdetails"><strong>150</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugingroups/client</strong>:
+        pom.xml&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-jetty</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/clustering-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/ejb</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/framework</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-jetty</strong>:
+        pom.xml&#160;<span class="change">(+14&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+14&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugingroups/persistence</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-jetty</strong>:
+        pom.xml&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-axis2</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-cxf</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-20 10:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">706298</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4370 improve usage of default-repository in plugin catalog
+    </p>
+    <p class="commitdetails"><strong>22</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli</strong>:
+        CommandDeploy.java&#160;<span class="change">(+1&#160;-1)</span>,
+        CommandListConfigurations.java&#160;<span class="change">(+9)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        PluginInstallerGBean.java&#160;<span class="change">(+12&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(96 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

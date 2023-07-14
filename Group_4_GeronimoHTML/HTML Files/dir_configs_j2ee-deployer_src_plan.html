@@ -1,0 +1,683 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory configs/j2ee-deployer/src/plan/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory configs/j2ee-deployer/src/plan/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>1</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_configs.html">configs</a>/<a href="dir_configs_j2ee-deployer.html">j2ee-deployer</a>/<a href="dir_configs_j2ee-deployer_src.html">src</a>/<strong>plan</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_configs_j2ee-deployer_src_plan.png" alt="configs/j2ee-deployer/src/plan/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>27 (100.0%)</td>
+        <td>109 (100.0%)</td>
+        <td>4.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>14 (51.9%)</td>
+        <td>67 (61.5%)</td>
+        <td>4.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dims.html" class="author">dims</a></th>
+        <td>2 (7.4%)</td>
+        <td>20 (18.3%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>4 (14.8%)</td>
+        <td>7 (6.4%)</td>
+        <td>1.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jlaskowski.html" class="author">jlaskowski</a></th>
+        <td>1 (3.7%)</td>
+        <td>6 (5.5%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>3 (11.1%)</td>
+        <td>4 (3.7%)</td>
+        <td>1.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_akulshreshtha.html" class="author">akulshreshtha</a></th>
+        <td>1 (3.7%)</td>
+        <td>4 (3.7%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dain.html" class="author">dain</a></th>
+        <td>1 (3.7%)</td>
+        <td>1 (0.9%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>1 (3.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="26"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591373</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Configs distributed amongst framework/configs and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-31 04:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">561259</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2286 GERONIMO-1874 GERONIMO-3140 Use patterns for external-rar in app client plans and external-path in ear plan external modules.  Allow partial artifacts and use an ArtifactResolver to fill in the missing bits.  Use client_artifact_aliases.properties in the app client builder to help avoid using server side modules when client side modules are intended for runtime.  This is not backward compatible for apps using external-rar or external-path.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-06-09 13:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">545781</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2687.  Don't construct default and run-as subjects, get them from a login module. Also creates a separate server-security-config for the security config stuff you probably want to change.  Also fixes lots of security problems, including mdb run-as handling.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-04 20:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">535427</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3136 Supply persistence framework classes in app client and hook up appropriate deployers.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-03-26 13:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">522575</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3027 OpenEjbCorbaRefBuilder is not processing css-links at all.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-03-12 08:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">517193</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2953 Remove obsolete TSSLinkBuilder references from deployer plans.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-08 14:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">516141</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2940, GERONIMO-2887  More injection work for app client and jetty: lifecycle methods verified on app client.  Ear lib dir available to app client.  Also upgrade to jetty snapshot for jetty lifecycle method support
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-03-06 08:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">515107</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Process persistence units located in the EAR library folder.<br />
+<br />
+This fixes GERONIMO-2928 - PersistenceUnit located in the EAR library directory is not yet implemented<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-17 04:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">508724</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Second attempt to change the way the online/offline deployers and the JSR88<br />
+deployment driver work. The first attempt was breaking the TCK amd the <br />
+eclipse plugin.<br />
+<br />
+<br />
+Online deployer, i.e. deployer.jar, boots a Kernel to load its dependencies,<br />
+ e.g. geronimo-deploy-tool, and registers the available ModuleConfigurers with <br />
+the DeploymentManager.<br />
+<br />
+ModuleConfigurers to be registered are loaded by the persistent configuration <br />
+list jsr88-configurer-config.xml.<br />
+<br />
+In the case of an offline deployment, the online deployer starts the <br />
+offline-deployer configuration within the same Kernel. In turn, the <br />
+offline-deployer configuration starts a list of configurations to register <br />
+the available module builders.<br />
+<br />
+Add a log4j configuration for the online deployer.<br />
+<br />
+DeploymentFactoryBootstrapper is the new JSR88 deployment driver. It boots a <br />
+kernel; starts the configuration list jsr88-configurer-config.xml; retrieves<br />
+the "actual" DeploymentFactory implementation from the kernel; and delegates<br />
+to this retrieved imoplementation.<br />
+The JSR88 JAR driver is now named jsr88-deploymentfactory.jar.<br />
+<br />
+<br />
+This fixes:<br />
+* GERONIMO-2794 - Improve online deployer to register ModuleConfigurers from the repository; and<br />
+* GERONIMO-2767 - Minimize side effects of the offline deployer<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-12 02:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">506309</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Initial port of the serviceref and handler chain support (needs a lot of work/testing!)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-05 18:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">503905</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Revert deployer changes as they do break the Eclipse plugin and TCK.<br />
+I will investigate offline.<br />
+<br />
+svn merge -r503370:503369 .<br />
+<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-04 03:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">503370</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Online deployer, i.e. deployer.jar, boots a Kernel to load its dependencies,<br />
+ e.g. geronimo-deploy-tool, and registers the available ModuleConfigurers with <br />
+the DeploymentManager.<br />
+<br />
+ModuleConfigurers to be registered are loaded by the persistent configuration <br />
+list jsr88-configurer-config.xml.<br />
+<br />
+In the case of an offline deployment, the online deployer starts the <br />
+offline-deployer configuration within the same Kernel. In turn, the <br />
+offline-deployer configuration starts a list of configurations to register <br />
+the available module builders.<br />
+<br />
+Add a log4j configuration for the online deployer.<br />
+<br />
+This fixes:<br />
+* GERONIMO-2794 - Improve online deployer to register ModuleConfigurers from the repository; and<br />
+* GERONIMO-2767 - Minimize side effects of the offline deployer<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-02-02 11:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">502626</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for   GERONIMO-2791 - Switching ServiceRef naming builder
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+20&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_dain.html" class="author">dain</a>
+    <span class="date">2007-01-24 07:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">499370</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+renamed ejb-ref builders
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-01-05 19:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">493249</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2686 missed the configs changes in previous commit
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-11-28 21:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">480326</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2602,GERONIMO-2603 Fix scope overloading.  Make only transitive dependencies<br />
+ visible to PackageMojo (geronimo running on maven repo)
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2006-11-22 10:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">478171</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2590 The TSSLinkBuilder is not included in the list of loaded builders.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-11-19 20:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476982</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2460, GERONIMO-2580 move some builders into better modules
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-11-06 06:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">471685</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2460 add application managed JPA support
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_jlaskowski.html" class="author">jlaskowski</a>
+    <span class="date">2006-11-03 06:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">470743</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 All Geronimo source files must be brought in line with the new ASF source header and copyright notice policy<br />
+<br />
+The rest of Geronimo sources migrated<br />
+
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-10-18 04:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">465177</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2499 OPENEJB-280. Allow naming builders to collide on one QNameSet but not both.  Hook up the new corba NamingBuilders for corba ejb refs and binding to corba name server
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2006-10-12 15:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">463384</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2486 Added a property geronimoSchemaVersion to the namespaces in all the plans
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-09-25 18:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">449846</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2427  make the axis service-ref builder and the env-entry ref builder work for both j2ee 1.4 and jee5 xml
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-09-19 18:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">447998</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2398 Create transaction and connector-deployer configs, clean up a lot of dependency problems, and fix major app client module builder classloader bugs
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(-25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-09-11 19:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">442387</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2383  Refactor naming builder to a set of registered builders
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+38&#160;-19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-08-26 15:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">437211</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1563 leftover and mostly irrelevant namespace update
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/j2ee-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

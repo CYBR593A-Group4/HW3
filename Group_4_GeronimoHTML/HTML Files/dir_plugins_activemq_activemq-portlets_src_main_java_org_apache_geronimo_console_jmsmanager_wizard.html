@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>10</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>2161</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_activemq.html">activemq</a>/<a href="dir_plugins_activemq_activemq-portlets.html">activemq-portlets</a>/<a href="dir_plugins_activemq_activemq-portlets_src.html">src</a>/<a href="dir_plugins_activemq_activemq-portlets_src_main.html">main</a>/<a href="dir_plugins_activemq_activemq-portlets_src_main_java.html">java</a>/<a href="dir_plugins_activemq_activemq-portlets_src_main_java_org.html">org</a>/<a href="dir_plugins_activemq_activemq-portlets_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_activemq_activemq-portlets_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_plugins_activemq_activemq-portlets_src_main_java_org_apache_geronimo_console.html">console</a>/<a href="dir_plugins_activemq_activemq-portlets_src_main_java_org_apache_geronimo_console_jmsmanager.html">jmsmanager</a>/<strong>wizard</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_activemq_activemq-portlets_src_main_java_org_apache_geronimo_console_jmsmanager_wizard.png" alt="plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>71 (100.0%)</td>
+        <td>2424 (100.0%)</td>
+        <td>34.1</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>43 (60.6%)</td>
+        <td>2043 (84.3%)</td>
+        <td>47.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>16 (22.5%)</td>
+        <td>316 (13.0%)</td>
+        <td>19.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>1 (1.4%)</td>
+        <td>38 (1.6%)</td>
+        <td>38.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>7 (9.9%)</td>
+        <td>13 (0.5%)</td>
+        <td>1.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>1 (1.4%)</td>
+        <td>13 (0.5%)</td>
+        <td>13.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>1 (1.4%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>2 (2.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="23"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-07-08 09:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1144307</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6058 Replace StringBuffer usage with StringBuilder
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        JMSProviderData.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-05-04 04:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1099362</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5859 Reenable JMS related portlets, patch from Shenghao Fang
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        ListScreenHandler.java&#160;<span class="change">(+38&#160;-36)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-10-25 22:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">829691</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Cleanup some codes in the ActiveMQ plug-in
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-09-23 09:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">818101</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Disable the function of view history topic messages due to recent change of ActiveMQ
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        ListScreenHandler.java&#160;<span class="change">(+19&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-09-15 02:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">815170</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4873 Unable creating a new JMS Resource Group via "For another JMS provider... " under IE
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        SelectProviderHandler.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-09-11 05:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">813745</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4625 JMS statistics does not work correctly while the server url is of vm protocol
+    </p>
+    <p class="commitdetails"><strong>153</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+1)</span>,
+        JMSResourcePortlet.java&#160;<span class="change">(+2&#160;-2)</span>,
+        ListScreenHandler.java&#160;<span class="change">(+110&#160;-191)</span>,
+        MessageDetailsHandler.java&#160;<span class="change">(+8&#160;-12)</span>,
+        SendMessageHandler.java&#160;<span class="change">(+10&#160;-11)</span>,
+        ViewMessageHandler.java&#160;<span class="change">(+22&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-08-11 02:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">803001</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4625 JMS statistics does not work correctly while the server url is of vm protocol <br />
+First step change, at least the portlet could display correctly even if the broker name could not be detected.
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        ListScreenHandler.java&#160;<span class="change">(+14&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-08-04 04:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">800701</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4749 The resource adapter created via console should be deployed as car(Patch from Rex Wang)
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-03-19 10:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">756018</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4454 JMS Resources - Destination stats not suported with new AMQ5
+    </p>
+    <p class="commitdetails"><strong>124</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        JMSResourcePortlet.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ListScreenHandler.java&#160;<span class="change">(+121&#160;-28)</span>,
+        ViewMessageHandler.java&#160;<span class="change">(+2&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-03-06 14:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">751035</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4550 No error message displays in console when fail to create jms resource.  Patch from Gang Yin.
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+8&#160;-3)</span>,
+        DeployHandler.java&#160;<span class="new">(new)</span>,
+        JMSResourcePortlet.java&#160;<span class="change">(+2&#160;-2)</span>,
+        SendMessageHandler.java&#160;<span class="change">(+2&#160;-2)</span>,
+        ShowPlanHandler.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-01-21 15:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">736391</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4475 Improve JMS portlet for Borker configuration.  Applied 4 patches from Ivan.
+    </p>
+    <p class="commitdetails"><strong>113</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+1)</span>,
+        ListScreenHandler.java&#160;<span class="change">(+112&#160;-38)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-01-13 10:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">734145</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4484 Extraction, localization and display of messages generated in portlets.  Applied common-message_fix.patch from Gang Yin.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        SendMessageHandler.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-01-07 16:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">732459</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4484 Extraction, localization and display of messages generated in portlets.  Applied common-message-openejb.patch, common-message-activemq.patch, common-message-debugviews.patch, common-message-plancreator.patch and common-message-sysdb.patch from Gang Yin.  Also updated 2 console-testsuite DB tests to match modified message strings.
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+5&#160;-1)</span>,
+        JMSResourcePortlet.java&#160;<span class="change">(+1&#160;-1)</span>,
+        SendMessageHandler.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-12-09 11:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">724750</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 rename AMQ5 modules to old names that apps expect
+    </p>
+    <p class="commitdetails"><strong>1850</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+686)</span>,
+        JMSProviderData.java&#160;<span class="change">(+401)</span>,
+        JMSResourcePortlet.java&#160;<span class="change">(+58)</span>,
+        ListScreenHandler.java&#160;<span class="change">(+380)</span>,
+        MessageDetailsHandler.java&#160;<span class="change">(+79)</span>,
+        SendMessageHandler.java&#160;<span class="change">(+146)</span>,
+        ViewMessageHandler.java&#160;<span class="change">(+100)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-12-09 11:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">724738</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 rename AMQ5 modules to old names that apps expect
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="new">(new)</span>,
+        JMSProviderData.java&#160;<span class="new">(new)</span>,
+        JMSResourcePortlet.java&#160;<span class="new">(new)</span>,
+        ListScreenHandler.java&#160;<span class="new">(new)</span>,
+        MessageDetailsHandler.java&#160;<span class="new">(new)</span>,
+        SendMessageHandler.java&#160;<span class="new">(new)</span>,
+        ViewMessageHandler.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-12-09 11:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">724732</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 remove old AMQ4 based modules
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="del">(del)</span>,
+        JMSProviderData.java&#160;<span class="del">(del)</span>,
+        JMSResourcePortlet.java&#160;<span class="del">(del)</span>,
+        ListScreenHandler.java&#160;<span class="del">(del)</span>,
+        MessageDetailsHandler.java&#160;<span class="del">(del)</span>,
+        SendMessageHandler.java&#160;<span class="del">(del)</span>,
+        ViewMessageHandler.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-07-18 00:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">677815</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use queueName as PhysicalName if PhysicalName is undefined
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        ListScreenHandler.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-06-27 13:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">672342</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3983 Update JMS Resource portlet to show the Destination statistics.  Thanks Anish for the patch.
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        ListScreenHandler.java&#160;<span class="change">(+14&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-06 10:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">653782</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More loggers back to static<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        ListScreenHandler.java&#160;<span class="change">(+1&#160;-1)</span>,
+        SendMessageHandler.java&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-25 15:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">651684</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3985) Use SLF4J as the primary logging facade for Geronimo<br />
+
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+3&#160;-3)</span>,
+        JMSProviderData.java&#160;<span class="new">(new)</span>,
+        ListScreenHandler.java&#160;<span class="change">(+4&#160;-5)</span>,
+        SendMessageHandler.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-04-04 08:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">644702</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3819 Update JMS Resources Portlet.  Patch from Anish Pathadan.
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+19)</span>,
+        JMSResourcePortlet.java&#160;<span class="new">(new)</span>,
+        ListScreenHandler.java&#160;<span class="new">(new)</span>,
+        MessageDetailsHandler.java&#160;<span class="new">(new)</span>,
+        SendMessageHandler.java&#160;<span class="new">(new)</span>,
+        ViewMessageHandler.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-01-11 20:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">611338</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3732.  Move the rest of deployment functionality out of console base and (mostly) into plugin-portlets. Revert the accidental menu name change for looking at web apps
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-11-21 04:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">596987</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+When distributing w/o the explicit selection of a target, we only distribute<br />
+to the first target returned by DeploymentManager. This first target is<br />
+the default target, or configuration store, and users can specify an abstract<br />
+name query (in EditableKernelConfigurationManager) to identify this default <br />
+target.<br />
+<br />
+Now that multiple configuration stores per server are better handled <br />
+out-of-the-box, we can re-enable the "clustered" configuration stores.<br />
+<br />
+Also, let's more the rmock dependency to testsupport-common so that we<br />
+can use it from all our tests.<br />
+<br />
+This fixes GERONIMO-3612 - When no target configuration store is explicitly <br />
+specified while installing a configuration, the configuration should be <br />
+installed to a default configuration store<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-portlets/src/main/java/org/apache/geronimo/console/jmsmanager/wizard</strong>:
+        AbstractHandler.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

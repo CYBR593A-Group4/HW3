@@ -1,0 +1,1254 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory repository/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory repository/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2007-02-27 19:42</span></dd>
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2009-07-24 03:12</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>5</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<strong>repository</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_com.html">com</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_com_sun.html">sun</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_com_sun_xml.html">xml</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_com_sun_xml_ws.html">ws</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_com_sun_xml_ws_jaxws-rt.html">jaxws-rt</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_com_sun_xml_ws_jaxws-rt_2.0.html">2.0</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_com_sun_xml_ws_jaxws-tools.html">jaxws-tools</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_com_sun_xml_ws_jaxws-tools_2.0.html">2.0</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_jstl.html">jstl</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_jstl_jstl.html">jstl</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_jstl_jstl_1.2.html">1.2</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org.html">org</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_apache.html">apache</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_activemq.html">activemq</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_activemq_activemq-core.html">activemq-core</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_activemq_activemq-core_4.1.2-G647819.html">4.1.2-G647819</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto.html">pluto</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-container.html">pluto-container</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-container_1.1.6-G643117.html">1.1.6-G643117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-container_1.2.0-G601060.html">1.2.0-G601060</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-container_1.2.0-G601061.html">1.2.0-G601061</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-descriptor-api.html">pluto-descriptor-api</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-descriptor-api_1.1.6-G643117.html">1.1.6-G643117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-descriptor-api_1.2.0-G601060.html">1.2.0-G601060</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-descriptor-api_1.2.0-G601061.html">1.2.0-G601061</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-descriptor-impl.html">pluto-descriptor-impl</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-descriptor-impl_1.1.6-G643117.html">1.1.6-G643117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-descriptor-impl_1.2.0-G601060.html">1.2.0-G601060</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-descriptor-impl_1.2.0-G601061.html">1.2.0-G601061</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-portal-driver-impl.html">pluto-portal-driver-impl</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-portal-driver-impl_1.1.6-G643117.html">1.1.6-G643117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-portal-driver-impl_1.2.0-G601060.html">1.2.0-G601060</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-portal-driver-impl_1.2.0-G601061.html">1.2.0-G601061</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-portal-driver.html">pluto-portal-driver</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-portal-driver_1.1.6-G643117.html">1.1.6-G643117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-portal-driver_1.2.0-G601060.html">1.2.0-G601060</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-portal-driver_1.2.0-G601061.html">1.2.0-G601061</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-taglib.html">pluto-taglib</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-taglib_1.1.6-G643117.html">1.1.6-G643117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-taglib_1.2.0-G601060.html">1.2.0-G601060</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto-taglib_1.2.0-G601061.html">1.2.0-G601061</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto.html">pluto</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_pluto_pluto_1.1.6-G643117.html">1.1.6-G643117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_apache_tomcat.html">tomcat</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina.html">catalina</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0-G521891.html">6.0-G521891</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0-G522103.html">6.0-G522103</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0-G525637.html">6.0-G525637</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0-TC543661.html">6.0-TC543661</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0.13-G543818.html">6.0.13-G543818</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0.14-G602188.html">6.0.14-G602188</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0.14-G604245.html">6.0.14-G604245</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0.14-G614585.html">6.0.14-G614585</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0.16-G652117.html">6.0.16-G652117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_apache_tomcat_catalina_6.0.18-G678601.html">6.0.18-G678601</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper-el.html">jasper-el</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper-el_6.0.18-G678601.html">6.0.18-G678601</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper.html">jasper</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0-G521891.html">6.0-G521891</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0-G522103.html">6.0-G522103</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0-G525637.html">6.0-G525637</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0-TC543661.html">6.0-TC543661</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0.13-G543818.html">6.0.13-G543818</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0.14-G602188.html">6.0.14-G602188</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0.14-G604245.html">6.0.14-G604245</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0.14-G614585.html">6.0.14-G614585</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0.16-G652117.html">6.0.16-G652117</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_apache_tomcat_jasper_6.0.18-G678601.html">6.0.18-G678601</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko.html">yoko</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-core.html">yoko-core</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-core_1.0-incubating-r557035.html">1.0-incubating-r557035</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-core_1.0-incubating-r602900.html">1.0-incubating-r602900</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-core_1.0-r615303.html">1.0-r615303</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-rmi-impl.html">yoko-rmi-impl</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-rmi-impl_1.0-incubating-r557035.html">1.0-incubating-r557035</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-rmi-impl_1.0-incubating-r602900.html">1.0-incubating-r602900</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-rmi-impl_1.0-r615303.html">1.0-r615303</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-rmi-spec.html">yoko-rmi-spec</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-rmi-spec_1.0-incubating-r557035.html">1.0-incubating-r557035</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-rmi-spec_1.0-incubating-r602900.html">1.0-incubating-r602900</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-rmi-spec_1.0-r615303.html">1.0-r615303</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-spec-corba.html">yoko-spec-corba</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-spec-corba_1.0-incubating-r557035.html">1.0-incubating-r557035</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-spec-corba_1.0-incubating-r602900.html">1.0-incubating-r602900</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko-spec-corba_1.0-r615303.html">1.0-r615303</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko.html">yoko</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko_1.0-incubating-r602900.html">1.0-incubating-r602900</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_apache_yoko_yoko_1.0-r615303.html">1.0-r615303</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_codehaus.html">codehaus</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_codehaus_mojo.html">mojo</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_directwebremoting.html">directwebremoting</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_directwebremoting_dwr.html">dwr</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_directwebremoting_dwr_2.0.5.html">2.0.5</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_dojotoolkit.html">dojotoolkit</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo-ajax.html">dojo-ajax</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo-ajax_0.4.3.html">0.4.3</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo-mini.html">dojo-mini</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo-mini_1.1.1.html">1.1.1</a> 
+(1 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo-release.html">dojo-release</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo-release_1.1.0.html">1.1.0</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo-release_1.1.1.html">1.1.1</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo.html">dojo</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo_0.4.1.html">0.4.1</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo_0.4.3.html">0.4.3</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo_1.0.2.html">1.0.2</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojo_1.1.0.html">1.1.0</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojolegacy.html">dojolegacy</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_repository_org_dojotoolkit_dojolegacy_0.4.3.html">0.4.3</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_repository.png" alt="repository/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>52 (100.0%)</td>
+        <td>358 (100.0%)</td>
+        <td>6.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>13 (25.0%)</td>
+        <td>120 (33.5%)</td>
+        <td>9.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>9 (17.3%)</td>
+        <td>78 (21.8%)</td>
+        <td>8.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>13 (25.0%)</td>
+        <td>50 (14.0%)</td>
+        <td>3.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>4 (7.7%)</td>
+        <td>33 (9.2%)</td>
+        <td>8.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jbohn.html" class="author">jbohn</a></th>
+        <td>1 (1.9%)</td>
+        <td>26 (7.3%)</td>
+        <td>26.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>3 (5.8%)</td>
+        <td>24 (6.7%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dims.html" class="author">dims</a></th>
+        <td>1 (1.9%)</td>
+        <td>16 (4.5%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_ecraig.html" class="author">ecraig</a></th>
+        <td>1 (1.9%)</td>
+        <td>8 (2.2%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_pmcmahan.html" class="author">pmcmahan</a></th>
+        <td>2 (3.8%)</td>
+        <td>1 (0.3%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>1 (1.9%)</td>
+        <td>1 (0.3%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_hogstrom.html" class="author">hogstrom</a></th>
+        <td>1 (1.9%)</td>
+        <td>1 (0.3%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>3 (5.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="40"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-24 03:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">797348</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4656 we have stopped using the svn repo
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        dwr&#160;<span class="del">(del)</span>,
+        groovy&#160;<span class="del">(del)</span>,
+        jtidy&#160;<span class="del">(del)</span>,
+        juddi&#160;<span class="del">(del)</span>,
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-07-16 19:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">794898</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4750 build the legacy dojo war from source in external.  Remove jars from svn repo.  Mostly patch from Rex Wang, thanks
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+15&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-24 03:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">787936</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4708 Use released pluto version, implement icon handling in geronimo code.  Also put pluto dependency management into pluto plugin.  Also delete some now unused repository entries
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+24&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-23 00:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">787533</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4705 use sun jstl from maven central
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-22 05:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">787177</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4702 upgrade juddi version, simplify uddi plugin project structure.  This includes minor data fiddling for the tck's benefit, which needs to be moved to the tck project. Part 2
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-14 03:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">784518</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4684, GERONIMO-4685 Use our tomcat build, configure tomcat using server.xml.  Also includes some spec jar updates including using our jaxb spec jar
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+12&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-12-09 11:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">724728</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 remove old AMQ4 artifacts
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-45)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-23 11:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">707400</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+not needed anymore
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-14 15:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">704629</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upgrade ant-launcher (GERONIMO-4212)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-10-07 16:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702631</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use jaxws-tools 2.1 to generate the wsdl (that needs extra CDDL libs such as stax-ex and streambuffer) and drop unneeded jaxen and annogen dependencies (GERONIMO-4327)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-10-04 20:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701730</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4337 move amq version info out of root pom
+    </p>
+    <p class="commitdetails"><strong>39</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+39)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-09-30 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">700509</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4325 Switch to new Dojo 1.1.1 mini release bundle, which removes the unused tests, utilities and demos.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-08-26 20:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">689302</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4266 Upgrade to DWR-2.0.5 for security fixes.  Had to include in our private repo as it is not available on the maven repos.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-08-25 15:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">688836</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4262 Include patched build of AMQ 4.1.2 to resolve AMQ-1272 security exposure
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-08-18 16:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">686862</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4245 pull in ELParser fix from Tomcat 6.0.x (6.0.19)
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-08-15 00:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">686143</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4245 Upgrade to private build of Tomcat 6.0.18 with our Geronimo required patches integrated for catalina.jar and jasper.jar.  Also some JSP updates were required to handle a Jasper change introduced in Tomcat 6.0.17.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-07-01 12:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">673128</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+include patched ant-launcher for Windows users from branches/2.1
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-15 18:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">656887</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Upgrade maven-dependency-plugin to 2.0<br />
+Replace dojo .tar.gz bits with .zip ones instead, this prevents the build from having to unarchive the .gz into /tmp, which may or may not be on another filesystem, and when its not the same the build crawls.  Also the plexus tar.gz bits are buggy and can't handle files with spaces.  Also using the names of the release artifacts for clarity.<br />
+Removed the need for dojoVersion and dojoLegacyVersion properties<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-05-07 13:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">654191</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3992 Switch to a Pluto 1.1.6 based patch build.  Also included properties for other depend versions like we have in branches/2.1
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-23 04:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">650787</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Drop tools-maven-plugin hack<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-40)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2008-04-22 09:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">650522</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove dependencies for the pinned yoko version in trunk. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-21 10:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">650161</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3410) Upgrade to version 2.0-alpha-2-SNAPSHOT of the jspc-maven-plugin, which should resolve windows issues<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-21 07:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">650098</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3961) This is an *old* version of groovy, which is not needed<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-02-07 16:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">619624</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+switch over to our local repo copy of jtidy so offline builds will work
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-02-07 15:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">619592</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+include a pinned version of JTidy for offline builds
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        jtidy&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-02 04:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617770</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upgrade trunk to 2.2-SNAPSHOT
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-01-22 18:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">614367</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3747) Fixed parentage of module groups, though most still need to have their modules put into the proper groupId<br />
+Updated groupId of *everything* under framework/** to org.apache.geronimo.framework, and did my best to update all references<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_ecraig.html" class="author">ecraig</a>
+    <span class="date">2008-01-09 22:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">610651</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3300<br />
+Upgrade Dojo to 1.0<br />
+<br />
+-Moved dojo 0.4.3 to dojolegacy artifact to prevent issues/conflicts with 1.0.2, as well as allow both to co-exist<br />
+-created dojo-legacy plugin for 0.4.3<br />
+-changed dependencies for 0.4.3 to use dojo-legacy plugin<br />
+-changed dojo plugin to use 1.0.2<br />
+-added dojo 1.0.2 to repository<br />
+-set dojo 1.0.2 to default context root of /dojo/1.0<br />
+-Dojo 0.4.3 still has default context root of /dojo<br />
+-added dojo plugin to default jee5 assemblies<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-12-10 16:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">603021</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3692 Replace yoko snapshot version with known version from repository.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_jbohn.html" class="author">jbohn</a>
+    <span class="date">2007-12-05 11:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">601351</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3674 Added private pluto build in prep for Geronimo 2.1 release
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+26)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-10-25 22:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">588485</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+hack to get around bogus groovy-all-1.0.pom and xbean-naming-3.2-r579367 maven depend for openejb-3.0-beta-1
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-10-25 22:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">588483</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+temp hack due to bogus groovy-all-1.0.pom breaking our builds
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        groovy&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-10-25 16:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">588348</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+temp hack to use same level as 2.0.x releases
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-09-05 13:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">573009</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3360 corba-marshall and corba-mytime tests failing<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_hogstrom.html" class="author">hogstrom</a>
+    <span class="date">2007-07-23 11:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">558782</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Changed trunk to 2.1-SNAPSHOT 
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-07-18 07:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">557227</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add snapshot level of Yoko to the Geronimo repository for the 2.0 release. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_pmcmahan.html" class="author">pmcmahan</a>
+    <span class="date">2007-06-04 17:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">544271</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3210 - upgrade to dojo 0.4.3<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-10 13:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527215</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2988 - Axis2: needs to support optional wsdl file
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(+16)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_pmcmahan.html" class="author">pmcmahan</a>
+    <span class="date">2007-03-28 01:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">523187</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3036 upgrade to dwr 1.1.3.  eliminate dwr-1.1.1 from local repo<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-24 16:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">522105</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3010 New version of tomcat/jasper jars that use the correct classloader for jsps
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>repository</strong>:
+        pom.xml&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(6 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

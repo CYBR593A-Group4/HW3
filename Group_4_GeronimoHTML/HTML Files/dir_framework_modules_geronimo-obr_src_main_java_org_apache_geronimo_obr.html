@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2010-02-16 21:30</span></dd>
+    <dt>Total Files:</dt>
+    <dd>2</dd>
+    <dt>Deleted Files:</dt>
+    <dd>1</dd>
+    <dt>Lines of Code:</dt>
+    <dd>491</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_framework.html">framework</a>/<a href="dir_framework_modules.html">modules</a>/<a href="dir_framework_modules_geronimo-obr.html">geronimo-obr</a>/<a href="dir_framework_modules_geronimo-obr_src.html">src</a>/<a href="dir_framework_modules_geronimo-obr_src_main.html">main</a>/<a href="dir_framework_modules_geronimo-obr_src_main_java.html">java</a>/<a href="dir_framework_modules_geronimo-obr_src_main_java_org.html">org</a>/<a href="dir_framework_modules_geronimo-obr_src_main_java_org_apache.html">apache</a>/<a href="dir_framework_modules_geronimo-obr_src_main_java_org_apache_geronimo.html">geronimo</a>/<strong>obr</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_framework_modules_geronimo-obr_src_main_java_org_apache_geronimo_obr_model.html">model</a> 
+(7 files, 1101 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_framework_modules_geronimo-obr_src_main_java_org_apache_geronimo_obr.png" alt="framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>16 (100.0%)</td>
+        <td>556 (100.0%)</td>
+        <td>34.7</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>6 (37.5%)</td>
+        <td>384 (69.1%)</td>
+        <td>64.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>8 (50.0%)</td>
+        <td>140 (25.2%)</td>
+        <td>17.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>2 (12.5%)</td>
+        <td>32 (5.8%)</td>
+        <td>16.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-12-20 14:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1221390</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6240 Make several base geronimo functions (kernel, deployer, etc) DS services and make the car-maven-plugin take advantage of that.  Server assembly doesn't work yet, builds framework.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        GeronimoOBRGBean.java&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2011-12-20 13:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1221342</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+generate 'fragment' capability
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        ResourceBuilder.java&#160;<span class="change">(+18&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-07-08 09:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1144307</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6058 Replace StringBuffer usage with StringBuilder
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        ResourceBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-02-28 21:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1075615</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Add Debug codes for better error diagnose
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        GeronimoOBRGBean.java&#160;<span class="change">(+31&#160;-28)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-06-23 13:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">957276</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Improved Geronimo OBR support. Contains fix for GERONIMO-5392 as well as support for excludes and a shell command for refreshing the repository
+    </p>
+    <p class="commitdetails"><strong>83</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        GeronimoOBRGBean.java&#160;<span class="change">(+83&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-06-03 13:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">951083</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+generate requirement for Bundle-RequiredExecutionEnvironment header
+    </p>
+    <p class="commitdetails"><strong>29</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        ResourceBuilder.java&#160;<span class="change">(+29&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-26 22:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">938294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-148 use new xbean-bundleutils
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        GeronimoOBRGBean.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ResourceBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-16 11:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">923812</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+some OBR-related cleanup
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        GeronimoOBRGBean.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-16 11:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">923794</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4971: Initial OBR integration for Aries Applications. Some of the OBR resolver code is based on the resolver in Apache Aries
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        Activator.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-02 16:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">918172</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix build problem
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        Activator.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-01 16:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">917692</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+use felix obr api instead of osgi api
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        Activator.java&#160;<span class="change">(+3&#160;-3)</span>,
+        GeronimoOBRGBean.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-02-16 21:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">910793</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4971 include obr repository.xml in every plugin, and install it into an obr instance when the plugin is installed.  Also update the aries plugin and build it. The framework geronimo-obr module is written by Jarek Gawor with minor changes
+    </p>
+    <p class="commitdetails"><strong>378</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-obr/src/main/java/org/apache/geronimo/obr</strong>:
+        Activator.java&#160;<span class="new">(new&#160;3)</span>,
+        GeronimoOBRGBean.java&#160;<span class="new">(new&#160;177)</span>,
+        ResourceBuilder.java&#160;<span class="new">(new&#160;198)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

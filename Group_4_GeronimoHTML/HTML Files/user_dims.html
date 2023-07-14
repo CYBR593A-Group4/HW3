@@ -1,0 +1,1090 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /geronimo/server/trunk Developers: dims</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/geronimo/server/trunk Developers: dims</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>dims</dd>
+    <dt>Total Commits:</dt>
+    <dd>830 (1.2%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>38,326 (4.6%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2007-04-23 16:23</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=dims%20contributed%2038%2C326%20(4.6%25)%20lines%20to%20%2Fgeronimo%2Fserver%2Ftrunk%20%7B0}%20most%20recent%20commit%202007-04-23%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_dims.png" alt="Activity by Hour of Day for dims" width="800" height="500" /></p><p class="chart"><img src="activity_day_dims.png" alt="Activity by Day of Week for dims" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>830 (100.0%)</td>
+        <td>38326 (100.0%)</td>
+        <td>46.1</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-axis2_src_main_generated_org_apache_axis2_jaxws_javaee.html" class="directory">modules/geronimo-axis2/src/main/generated/org/apache/axis2/jaxws/javaee/</a></th>
+        <td>197 (23.7%)</td>
+        <td>21095 (55.0%)</td>
+        <td>107.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2.html" class="directory">modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/</a></th>
+        <td>75 (9.0%)</td>
+        <td>3409 (8.9%)</td>
+        <td>45.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-cxf_src_main_java_org_apache_geronimo_cxf.html" class="directory">modules/geronimo-cxf/src/main/java/org/apache/geronimo/cxf/</a></th>
+        <td>34 (4.1%)</td>
+        <td>1855 (4.8%)</td>
+        <td>54.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2-builder_src_main_java_org_apache_geronimo_axis2_builder.html" class="directory">modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder/</a></th>
+        <td>25 (3.0%)</td>
+        <td>1247 (3.3%)</td>
+        <td>49.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-cxf_src_main_java_org_apache_geronimo_cxf_annotations.html" class="directory">modules/geronimo-cxf/src/main/java/org/apache/geronimo/cxf/annotations/</a></th>
+        <td>16 (1.9%)</td>
+        <td>1094 (2.9%)</td>
+        <td>68.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2.html" class="directory">modules/geronimo-axis2/</a></th>
+        <td>28 (3.4%)</td>
+        <td>982 (2.6%)</td>
+        <td>35.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_axis2.html" class="directory">configs/axis2/</a></th>
+        <td>20 (2.4%)</td>
+        <td>884 (2.3%)</td>
+        <td>44.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2_src_test_resources.html" class="directory">modules/geronimo-axis2/src/test/resources/</a></th>
+        <td>16 (1.9%)</td>
+        <td>810 (2.1%)</td>
+        <td>50.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2.html" class="directory">modules/geronimo-axis2/src/test/java/org/apache/geronimo/axis2/</a></th>
+        <td>21 (2.5%)</td>
+        <td>588 (1.5%)</td>
+        <td>28.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-cxf-builder_src_main_java_org_apache_geronimo_cxf_builder.html" class="directory">modules/geronimo-cxf-builder/src/main/java/org/apache/geronimo/cxf/builder/</a></th>
+        <td>13 (1.6%)</td>
+        <td>562 (1.5%)</td>
+        <td>43.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-axis2_src_test_java_org_apache_hello_control_types.html" class="directory">modules/geronimo-axis2/src/test/java/org/apache/hello_control/types/</a></th>
+        <td>12 (1.4%)</td>
+        <td>416 (1.1%)</td>
+        <td>34.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jaxws_src_main_java_org_apache_geronimo_jaxws_client.html" class="directory">modules/geronimo-jaxws/src/main/java/org/apache/geronimo/jaxws/client/</a></th>
+        <td>11 (1.3%)</td>
+        <td>353 (0.9%)</td>
+        <td>32.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_axis2-deployer.html" class="directory">configs/axis2-deployer/</a></th>
+        <td>9 (1.1%)</td>
+        <td>341 (0.9%)</td>
+        <td>37.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-war_src_main_java_org_apache_greeter_control.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-war/src/main/java/org/apache/greeter_control/</a></th>
+        <td>5 (0.6%)</td>
+        <td>326 (0.9%)</td>
+        <td>65.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>16 (1.9%)</td>
+        <td>321 (0.8%)</td>
+        <td>20.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jaxws.html" class="directory">modules/geronimo-jaxws/</a></th>
+        <td>12 (1.4%)</td>
+        <td>304 (0.8%)</td>
+        <td>25.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_axis2-deployer_src_plan.html" class="directory">configs/axis2-deployer/src/plan/</a></th>
+        <td>11 (1.3%)</td>
+        <td>282 (0.7%)</td>
+        <td>25.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-client.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-client/</a></th>
+        <td>1 (0.1%)</td>
+        <td>251 (0.7%)</td>
+        <td>251.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-axis2-builder.html" class="directory">modules/geronimo-axis2-builder/</a></th>
+        <td>9 (1.1%)</td>
+        <td>194 (0.5%)</td>
+        <td>21.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-war_src_main_java_org_apache_hello_world_soap_http.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-war/src/main/java/org/apache/hello_world_soap_http/</a></th>
+        <td>11 (1.3%)</td>
+        <td>190 (0.5%)</td>
+        <td>17.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-client_src_main_resources_META-INF_wsdl.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-client/src/main/resources/META-INF/wsdl/</a></th>
+        <td>1 (0.1%)</td>
+        <td>179 (0.5%)</td>
+        <td>179.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-cxf_src_main_java_org_apache_geronimo_cxf_client.html" class="directory">modules/geronimo-cxf/src/main/java/org/apache/geronimo/cxf/client/</a></th>
+        <td>4 (0.5%)</td>
+        <td>171 (0.4%)</td>
+        <td>42.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-jaxws_src_main_java_org_apache_geronimo_jaxws.html" class="directory">modules/geronimo-jaxws/src/main/java/org/apache/geronimo/jaxws/</a></th>
+        <td>23 (2.8%)</td>
+        <td>153 (0.4%)</td>
+        <td>6.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_cxf-deployer_src_plan.html" class="directory">configs/cxf-deployer/src/plan/</a></th>
+        <td>4 (0.5%)</td>
+        <td>144 (0.4%)</td>
+        <td>36.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-client_src_main_java_org_apache_greeter_control.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-client/src/main/java/org/apache/greeter_control/</a></th>
+        <td>2 (0.2%)</td>
+        <td>143 (0.4%)</td>
+        <td>71.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jaxws-deployer.html" class="directory">configs/jaxws-deployer/</a></th>
+        <td>4 (0.5%)</td>
+        <td>135 (0.4%)</td>
+        <td>33.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2_client.html" class="directory">modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/client/</a></th>
+        <td>7 (0.8%)</td>
+        <td>128 (0.3%)</td>
+        <td>18.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_kernel_classloader.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/classloader/</a></th>
+        <td>3 (0.4%)</td>
+        <td>123 (0.3%)</td>
+        <td>41.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-jaxws-builder.html" class="directory">modules/geronimo-jaxws-builder/</a></th>
+        <td>4 (0.5%)</td>
+        <td>97 (0.3%)</td>
+        <td>24.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jaxws-builder_src_main_java_org_apache_geronimo_jaxws_builder.html" class="directory">modules/geronimo-jaxws-builder/src/main/java/org/apache/geronimo/jaxws/builder/</a></th>
+        <td>13 (1.6%)</td>
+        <td>87 (0.2%)</td>
+        <td>6.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-naming-builder_src_main_java_org_apache_geronimo_naming_deployment.html" class="directory">modules/geronimo-naming-builder/src/main/java/org/apache/geronimo/naming/deployment/</a></th>
+        <td>5 (0.6%)</td>
+        <td>78 (0.2%)</td>
+        <td>15.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-cxf_src_test_java_org_apache_geronimo_cxf.html" class="directory">modules/geronimo-cxf/src/test/java/org/apache/geronimo/cxf/</a></th>
+        <td>3 (0.4%)</td>
+        <td>77 (0.2%)</td>
+        <td>25.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-client_src_main_resources_META-INF.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-client/src/main/resources/META-INF/</a></th>
+        <td>2 (0.2%)</td>
+        <td>75 (0.2%)</td>
+        <td>37.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-war.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-war/</a></th>
+        <td>2 (0.2%)</td>
+        <td>70 (0.2%)</td>
+        <td>35.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2_pojo.html" class="directory">modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/pojo/</a></th>
+        <td>7 (0.8%)</td>
+        <td>68 (0.2%)</td>
+        <td>9.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis-builder_src_main_java_org_apache_geronimo_axis_builder.html" class="directory">modules/geronimo-axis-builder/src/main/java/org/apache/geronimo/axis/builder/</a></th>
+        <td>1 (0.1%)</td>
+        <td>62 (0.2%)</td>
+        <td>62.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-client_src_test_java_org_apache_geronimo_testsuite_testset.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-client/src/test/java/org/apache/geronimo/testsuite/testset/</a></th>
+        <td>1 (0.1%)</td>
+        <td>61 (0.2%)</td>
+        <td>61.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_assemblies_geronimo-tomcat6-jee5_src_main_var_config.html" class="directory">assemblies/geronimo-tomcat6-jee5/src/main/var/config/</a></th>
+        <td>8 (1.0%)</td>
+        <td>58 (0.2%)</td>
+        <td>7.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-cxf_src_main_java_org_apache_geronimo_cxf_pojo.html" class="directory">modules/geronimo-cxf/src/main/java/org/apache/geronimo/cxf/pojo/</a></th>
+        <td>4 (0.5%)</td>
+        <td>57 (0.1%)</td>
+        <td>14.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_assemblies_geronimo-jetty6-jee5_src_main_var_config.html" class="directory">assemblies/geronimo-jetty6-jee5/src/main/var/config/</a></th>
+        <td>8 (1.0%)</td>
+        <td>56 (0.1%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-war_src_main_webapp.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-war/src/main/webapp/</a></th>
+        <td>1 (0.1%)</td>
+        <td>48 (0.1%)</td>
+        <td>48.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-client_src_main_java_org_apache_geronimo_test.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-client/src/main/java/org/apache/geronimo/test/</a></th>
+        <td>1 (0.1%)</td>
+        <td>48 (0.1%)</td>
+        <td>48.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-war_src_test_java_org_apache_geronimo_testsuite_testset.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-war/src/test/java/org/apache/geronimo/testsuite/testset/</a></th>
+        <td>3 (0.4%)</td>
+        <td>46 (0.1%)</td>
+        <td>15.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-cxf_src_main_java_org_apache_geronimo_cxf_ejb.html" class="directory">modules/geronimo-cxf/src/main/java/org/apache/geronimo/cxf/ejb/</a></th>
+        <td>4 (0.5%)</td>
+        <td>42 (0.1%)</td>
+        <td>10.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxws-tests_jaxws-war_src_main_webapp_WEB-INF.html" class="directory">testsuite/webservices-testsuite/jaxws-tests/jaxws-war/src/main/webapp/WEB-INF/</a></th>
+        <td>5 (0.6%)</td>
+        <td>39 (0.1%)</td>
+        <td>7.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-openejb.html" class="directory">modules/geronimo-openejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>34 (0.1%)</td>
+        <td>34.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_openejb.html" class="directory">configs/openejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>34 (0.1%)</td>
+        <td>34.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2_testdata.html" class="directory">modules/geronimo-axis2/src/test/java/org/apache/geronimo/axis2/testdata/</a></th>
+        <td>4 (0.5%)</td>
+        <td>33 (0.1%)</td>
+        <td>8.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_cxf.html" class="directory">configs/cxf/</a></th>
+        <td>9 (1.1%)</td>
+        <td>33 (0.1%)</td>
+        <td>3.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2_src_main_java_org_apache_geronimo_axis2_ejb.html" class="directory">modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/ejb/</a></th>
+        <td>4 (0.5%)</td>
+        <td>28 (0.1%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-cxf.html" class="directory">modules/geronimo-cxf/</a></th>
+        <td>5 (0.6%)</td>
+        <td>24 (0.1%)</td>
+        <td>4.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-cxf-builder.html" class="directory">modules/geronimo-cxf-builder/</a></th>
+        <td>3 (0.4%)</td>
+        <td>23 (0.1%)</td>
+        <td>7.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_axis2_src_plan.html" class="directory">configs/axis2/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>23 (0.1%)</td>
+        <td>23.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty6_src_main_java_org_apache_geronimo_jetty6.html" class="directory">modules/geronimo-jetty6/src/main/java/org/apache/geronimo/jetty6/</a></th>
+        <td>5 (0.6%)</td>
+        <td>22 (0.1%)</td>
+        <td>4.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jaxws-deployer_src_plan.html" class="directory">configs/jaxws-deployer/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>22 (0.1%)</td>
+        <td>22.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_j2ee-deployer_src_plan.html" class="directory">configs/j2ee-deployer/src/plan/</a></th>
+        <td>2 (0.2%)</td>
+        <td>20 (0.1%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_client-deployer_src_plan.html" class="directory">configs/client-deployer/src/plan/</a></th>
+        <td>2 (0.2%)</td>
+        <td>20 (0.1%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_webservices-common.html" class="directory">configs/webservices-common/</a></th>
+        <td>4 (0.5%)</td>
+        <td>19 (0.0%)</td>
+        <td>4.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-webservices_src_main_java_org_apache_geronimo_webservices.html" class="directory">modules/geronimo-webservices/src/main/java/org/apache/geronimo/webservices/</a></th>
+        <td>6 (0.7%)</td>
+        <td>18 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis_src_test_java_org_apache_geronimo_axis.html" class="directory">modules/geronimo-axis/src/test/java/org/apache/geronimo/axis/</a></th>
+        <td>4 (0.5%)</td>
+        <td>17 (0.0%)</td>
+        <td>4.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_repository.html" class="directory">repository/</a></th>
+        <td>1 (0.1%)</td>
+        <td>16 (0.0%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_itests_cxfPojoWS_war.html" class="directory">testsuite/itests/cxfPojoWS/war/</a></th>
+        <td>1 (0.1%)</td>
+        <td>15 (0.0%)</td>
+        <td>15.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jee-specs.html" class="directory">configs/jee-specs/</a></th>
+        <td>2 (0.2%)</td>
+        <td>15 (0.0%)</td>
+        <td>7.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_cxf-deployer.html" class="directory">configs/cxf-deployer/</a></th>
+        <td>4 (0.5%)</td>
+        <td>14 (0.0%)</td>
+        <td>3.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_assemblies_geronimo-tomcat6-jee5.html" class="directory">assemblies/geronimo-tomcat6-jee5/</a></th>
+        <td>1 (0.1%)</td>
+        <td>12 (0.0%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_assemblies_geronimo-jetty6-jee5.html" class="directory">assemblies/geronimo-jetty6-jee5/</a></th>
+        <td>1 (0.1%)</td>
+        <td>12 (0.0%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat.html" class="directory">modules/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/</a></th>
+        <td>5 (0.6%)</td>
+        <td>11 (0.0%)</td>
+        <td>2.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_util.html" class="directory">modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/util/</a></th>
+        <td>1 (0.1%)</td>
+        <td>11 (0.0%)</td>
+        <td>11.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jetty6-deployer_src_plan.html" class="directory">configs/jetty6-deployer/src/plan/</a></th>
+        <td>3 (0.4%)</td>
+        <td>10 (0.0%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_tomcat6-deployer_src_plan.html" class="directory">configs/tomcat6-deployer/src/plan/</a></th>
+        <td>3 (0.4%)</td>
+        <td>9 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_openejb-deployer_src_plan.html" class="directory">configs/openejb-deployer/src/plan/</a></th>
+        <td>2 (0.2%)</td>
+        <td>8 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-cxf_src_test_resources.html" class="directory">modules/geronimo-cxf/src/test/resources/</a></th>
+        <td>6 (0.7%)</td>
+        <td>7 (0.0%)</td>
+        <td>1.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules.html" class="directory">modules/</a></th>
+        <td>5 (0.6%)</td>
+        <td>7 (0.0%)</td>
+        <td>1.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs.html" class="directory">configs/</a></th>
+        <td>4 (0.5%)</td>
+        <td>7 (0.0%)</td>
+        <td>1.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-webservices_src_main_java_org_apache_geronimo_webservices_saaj.html" class="directory">modules/geronimo-webservices/src/main/java/org/apache/geronimo/webservices/saaj/</a></th>
+        <td>1 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-naming_src_main_java_org_apache_geronimo_gjndi_binding.html" class="directory">modules/geronimo-naming/src/main/java/org/apache/geronimo/gjndi/binding/</a></th>
+        <td>1 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_stax-tests_stax-ejb.html" class="directory">testsuite/webservices-testsuite/stax-tests/stax-ejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxr-tests_jaxr-ejb.html" class="directory">testsuite/webservices-testsuite/jaxr-tests/jaxr-ejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_webservices-testsuite_jaxb-tests_jaxb-ejb.html" class="directory">testsuite/webservices-testsuite/jaxb-tests/jaxb-ejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-openejb_src_main_java_org_apache_geronimo_openejb.html" class="directory">modules/geronimo-openejb/src/main/java/org/apache/geronimo/openejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat6_src_main_resources_META-INF_geronimo-tomcat6_var_catalina_conf.html" class="directory">modules/geronimo-tomcat6/src/main/resources/META-INF/geronimo-tomcat6/var/catalina/conf/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-openejb_src_main_resources_META-INF.html" class="directory">modules/geronimo-openejb/src/main/resources/META-INF/</a></th>
+        <td>2 (0.2%)</td>
+        <td>4 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_gbean_runtime.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty6_src_test_java_org_apache_geronimo_jetty6.html" class="directory">modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6/</a></th>
+        <td>2 (0.2%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_itests_cxfPojoWS_server_itests_src_test_java_org_apache_geronimo_testsuite_deployment.html" class="directory">testsuite/itests/cxfPojoWS/server/itests/src/test/java/org/apache/geronimo/testsuite/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-webservices-builder_src_test_resources.html" class="directory">modules/geronimo-webservices-builder/src/test/resources/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-openejb-builder_src_main_java_org_apache_geronimo_openejb_deployment.html" class="directory">modules/geronimo-openejb-builder/src/main/java/org/apache/geronimo/openejb/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2_testdata_simple.html" class="directory">modules/geronimo-axis2/src/test/java/org/apache/geronimo/axis2/testdata/simple/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2_testdata_rpclit.html" class="directory">modules/geronimo-axis2/src/test/java/org/apache/geronimo/axis2/testdata/rpclit/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-axis2_src_test_java_org_apache_geronimo_axis2_testdata_doclitbare.html" class="directory">modules/geronimo-axis2/src/test/java/org/apache/geronimo/axis2/testdata/doclitbare/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_itests_cxfPojoWS_war_src_main_java_org_apache_hello_world_soap_http.html" class="directory">testsuite/itests/cxfPojoWS/war/src/main/java/org/apache/hello_world_soap_http/</a></th>
+        <td>2 (0.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_repository_com_sun_xml_ws_jaxws-tools_2.0.html" class="directory">repository/com/sun/xml/ws/jaxws-tools/2.0/</a></th>
+        <td>2 (0.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_repository_com_sun_xml_ws_jaxws-rt_2.0.html" class="directory">repository/com/sun/xml/ws/jaxws-rt/2.0/</a></th>
+        <td>2 (0.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jaxws_src_main_java_org_apache_geronimo_jaxws_annotations.html" class="directory">modules/geronimo-jaxws/src/main/java/org/apache/geronimo/jaxws/annotations/</a></th>
+        <td>16 (1.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-cxf_src_main_java_org_apache_geronimo_jaxws_annotations.html" class="directory">modules/geronimo-cxf/src/main/java/org/apache/geronimo/jaxws/annotations/</a></th>
+        <td>24 (2.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-cxf_src_main_java_org_apache_geronimo_jaxws.html" class="directory">modules/geronimo-cxf/src/main/java/org/apache/geronimo/jaxws/</a></th>
+        <td>9 (1.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-cxf-builder_src_main_java_org_apache_geronimo_jaxws_builder.html" class="directory">modules/geronimo-cxf-builder/src/main/java/org/apache/geronimo/jaxws/builder/</a></th>
+        <td>3 (0.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_webconsole-jetty6.html" class="directory">configs/webconsole-jetty6/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_dims.png" alt="Activity of dims" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-23 16:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">531585</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+better change the scope to test just in case
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-23 16:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">531584</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add woodstox dependency
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-22 16:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">531260</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+forgot to switch from axis2-saaj to saajri jar
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2BuilderUtil.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-20 07:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530739</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove xalan dependency
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/axis2-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(-4)</span>
+      </li>
+      <li>
+        <strong>configs/axis2</strong>:
+        pom.xml&#160;<span class="change">(-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-20 01:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530651</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+don't need xalan
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-19 13:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530502</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+cleanup axis2 pom's/plan's
+    </p>
+    <p class="commitdetails"><strong>30</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/axis2-deployer</strong>:
+        pom.xml&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>configs/axis2-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+16&#160;-16)</span>
+      </li>
+      <li>
+        <strong>configs/axis2</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-18)</span>
+      </li>
+      <li>
+        <strong>modules/geronimo-axis2</strong>:
+        pom.xml&#160;<span class="change">(+10&#160;-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-19 09:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530402</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Axis2 needs one more jar
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+8&#160;-2)</span>
+      </li>
+      <li>
+        <strong>configs/axis2-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>configs/axis2</strong>:
+        pom.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-18 22:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530234</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Switch Axis2 over to sun's saaj jars as well. Once we stabilize, we can switch back to see what breaks with Axis2's saaj impl jars
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+10&#160;-26)</span>
+      </li>
+      <li>
+        <strong>configs/axis2-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(-8)</span>
+      </li>
+      <li>
+        <strong>configs/axis2</strong>:
+        pom.xml&#160;<span class="change">(-8)</span>
+      </li>
+      <li>
+        <strong>modules/geronimo-webservices/src/main/java/org/apache/geronimo/webservices/saaj</strong>:
+        SAAJFactoryFinder.java&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-18 17:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530156</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+i see handler-chain under some conditions getting passed in, so let's try that as fallback
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/client</strong>:
+        Axis2ServiceReference.java&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-18 16:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530155</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+oops! thanks jdillon
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        AnnotationHandlerChainBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-18 16:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530150</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+log error first, then try to send the fault back (and don't print fault on output stream when you are trying to send back the fault)
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        Axis2WebServiceContainer.java&#160;<span class="change">(+2&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-18 16:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">530148</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove print stack trace
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        AnnotationHandlerChainBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-16 15:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">529376</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-3102 - Axis2: servicename and portname overwrite (from wsdl to annotation)
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        AxisServiceGenerator.java&#160;<span class="change">(+14&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-16 10:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">529257</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-3100 - Axis2: remove hardcoded 12 jars in Axis2BuilderUtil
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+7&#160;-4)</span>,
+        Axis2BuilderUtil.java&#160;<span class="change">(+28&#160;-22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-15 01:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">528929</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+- trying to fix GERONIMO-3097 by eliminating unnecessary code.<br />
+- We don't need wsdl20 support, also avoids saving the wsdl into a byte array (which in turn helps with problems loading schemas relative to wsdl)<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        Axis2WebServiceContainer.java&#160;<span class="change">(+1&#160;-1)</span>,
+        AxisServiceGenerator.java&#160;<span class="change">(+31&#160;-262)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-14 09:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">528805</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update to released versions
+    </p>
+    <p class="commitdetails"><strong>14</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+14&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-12 20:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">528297</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Avoid java.lang.ArrayIndexOutOfBoundsException
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        AxisServiceGenerator.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-12 17:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">528250</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-3092 - Axis2: after wsgen tool, need to scan the directory for the generated wsdl file
+    </p>
+    <p class="commitdetails"><strong>113</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+29&#160;-49)</span>,
+        Axis2BuilderUtil.java&#160;<span class="change">(+84&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-12 13:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">528061</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for (GERONIMO-3094) Axis2: need to build the classpath and pass it onto wsgen
+    </p>
+    <p class="commitdetails"><strong>39</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2-builder/src/main/java/org/apache/geronimo/axis2/builder</strong>:
+        Axis2Builder.java&#160;<span class="change">(+11&#160;-3)</span>,
+        Axis2BuilderUtil.java&#160;<span class="change">(+28&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_dims.html" class="author">dims</a>
+    <span class="date">2007-04-12 08:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527912</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix for GERONIMO-2998 - Geronimo Axis2 Adding Fault Handling for WSDL Provided
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-axis2/src/main/java/org/apache/geronimo/axis2</strong>:
+        AxisServiceGenerator.java&#160;<span class="change">(+8&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(115 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

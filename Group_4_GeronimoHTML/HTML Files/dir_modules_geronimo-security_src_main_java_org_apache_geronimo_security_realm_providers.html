@@ -1,0 +1,636 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>19</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<a href="dir_modules_geronimo-security.html">geronimo-security</a>/<a href="dir_modules_geronimo-security_src.html">src</a>/<a href="dir_modules_geronimo-security_src_main.html">main</a>/<a href="dir_modules_geronimo-security_src_main_java.html">java</a>/<a href="dir_modules_geronimo-security_src_main_java_org.html">org</a>/<a href="dir_modules_geronimo-security_src_main_java_org_apache.html">apache</a>/<a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo_security.html">security</a>/<a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo_security_realm.html">realm</a>/<strong>providers</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-security_src_main_java_org_apache_geronimo_security_realm_providers.png" alt="modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>96 (100.0%)</td>
+        <td>802 (100.0%)</td>
+        <td>8.3</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>14 (14.6%)</td>
+        <td>465 (58.0%)</td>
+        <td>33.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>19 (19.8%)</td>
+        <td>317 (39.5%)</td>
+        <td>16.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>6 (6.3%)</td>
+        <td>9 (1.1%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>1 (1.0%)</td>
+        <td>9 (1.1%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>1 (1.0%)</td>
+        <td>2 (0.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>19 (19.8%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>36 (37.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="23"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">19 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        CertificateCallback.java&#160;<span class="del">(del)</span>,
+        CertificateCallbackHandler.java&#160;<span class="del">(del)</span>,
+        CertificateChainCallback.java&#160;<span class="del">(del)</span>,
+        CertificateChainCallbackHandler.java&#160;<span class="del">(del)</span>,
+        CertificateChainLoginModule.java&#160;<span class="del">(del)</span>,
+        CertificatePropertiesFileLoginModule.java&#160;<span class="del">(del)</span>,
+        ClearableCallbackHandler.java&#160;<span class="del">(del)</span>,
+        FileAuditLoginModule.java&#160;<span class="del">(del)</span>,
+        GeronimoCallerPrincipal.java&#160;<span class="del">(del)</span>,
+        GeronimoGroupPrincipal.java&#160;<span class="del">(del)</span>,
+        GeronimoPasswordCredential.java&#160;<span class="del">(del)</span>,
+        GeronimoPasswordCredentialLoginModule.java&#160;<span class="del">(del)</span>,
+        GeronimoPropertiesFileMappedPasswordCredentialLoginModule.java&#160;<span class="del">(del)</span>,
+        GeronimoUserPrincipal.java&#160;<span class="del">(del)</span>,
+        LDAPLoginModule.java&#160;<span class="del">(del)</span>,
+        PasswordCallbackHandler.java&#160;<span class="del">(del)</span>,
+        PropertiesFileLoginModule.java&#160;<span class="del">(del)</span>,
+        RepeatedFailureLockoutLoginModule.java&#160;<span class="del">(del)</span>,
+        SQLLoginModule.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-11-02 10:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591344</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+**GERONIMO-3582 Review CertificateChainLoginModule<br />
+ o LoginModule should not add principals when login fails.  Test is due.<br />
+ o Other changes to bring CertificateChainLoginModule in line with <a href="http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html">http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html</a><br />
+**: This fix can use a thorough review.
+    </p>
+    <p class="commitdetails"><strong>50</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        CertificateChainLoginModule.java&#160;<span class="change">(+50&#160;-19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-10-31 19:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">590862</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+**GERONIMO-3575 Review CertificatePropertiesFileLoginModule<br />
+ o LoginModule should not add principals when login fails.  Added a test to detect if it does.<br />
+ o Other changes to bring CertificatePropertiesFileLoginModule in line with <a href="http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html">http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html</a><br />
+**: This fix can use a thorough review.
+    </p>
+    <p class="commitdetails"><strong>61</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        CertificatePropertiesFileLoginModule.java&#160;<span class="change">(+61&#160;-22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-10-31 17:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">590833</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Remove redundant code. The catch block handles this part.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        LDAPLoginModule.java&#160;<span class="change">(-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-10-31 17:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">590830</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Do not wrap LoginException with LoginException.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        LDAPLoginModule.java&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-10-31 16:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">590821</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+**GERONIMO-3574 Review PropertiesFileLoginModule<br />
+ o LoginModule should not add principals when login fails. NOTE: Adding a test for this would be good.<br />
+ o Other changes to bring PropertiesFileLoginModule in line with <a href="http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html">http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html</a><br />
+**: This fix can use a thorough review.
+    </p>
+    <p class="commitdetails"><strong>74</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        LDAPLoginModule.java&#160;<span class="change">(+74&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-10-31 16:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">590807</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+**GERONIMO-3571 Review PropertiesFileLoginModule<br />
+ o LoginModule should not add principals when login fails.  Added a test to detect the same.<br />
+ o Other changes to bring PropertiesFileLoginModule in line with <a href="http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html">http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html</a><br />
+**: This fix can use a thorough review.
+    </p>
+    <p class="commitdetails"><strong>61</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        PropertiesFileLoginModule.java&#160;<span class="change">(+61&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-10-31 14:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">590783</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Correct a type
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        SQLLoginModule.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-10-31 14:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">590777</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+**GERONIMO-3570 Review SQLLoginModule<br />
+ o LoginModule should not add principals when login fails.  Added a test to detect the same.<br />
+ o Other changes to bring SQLLoginModule in line with <a href="http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html">http://java.sun.com/j2se/1.5.0/docs/guide/security/jaas/JAASLMDevGuide.html</a><br />
+**: This fix can use a thorough review.
+    </p>
+    <p class="commitdetails"><strong>70</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        SQLLoginModule.java&#160;<span class="change">(+70&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-10-22 13:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">587156</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+don't wrap LoginException with LoginException
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        SQLLoginModule.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-10-22 02:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">587006</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+**GERONIMO-3543 SQLLoginModule successfully authenticates non-existent users<br />
+ o Fixed the LoginModule to throw FailedLoginException for non-existent user<br />
+ o Added a test to detect regression<br />
+**: This commit can use a thorough review.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        SQLLoginModule.java&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-09-17 21:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">576651</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2925 implement pluggable obscuring of passwords in plans etc
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        PropertiesFileLoginModule.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-08-13 21:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">565599</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3404 GERONIMO-3406  Fix the return values from login module lifecycle methods and add some javadoc and a little code cleanup
+    </p>
+    <p class="commitdetails"><strong>274</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        CertificateChainLoginModule.java&#160;<span class="change">(+9&#160;-26)</span>,
+        CertificatePropertiesFileLoginModule.java&#160;<span class="change">(+9&#160;-30)</span>,
+        FileAuditLoginModule.java&#160;<span class="change">(+7&#160;-4)</span>,
+        GeronimoPasswordCredentialLoginModule.java&#160;<span class="change">(+12&#160;-4)</span>,
+        GeronimoPropertiesFileMappedPasswordCredentialLoginModule.java&#160;<span class="change">(+20&#160;-4)</span>,
+        LDAPLoginModule.java&#160;<span class="change">(+69&#160;-110)</span>,
+        PropertiesFileLoginModule.java&#160;<span class="change">(+71&#160;-86)</span>,
+        RepeatedFailureLockoutLoginModule.java&#160;<span class="change">(+17&#160;-16)</span>,
+        SQLLoginModule.java&#160;<span class="change">(+60&#160;-50)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-07-22 22:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">558586</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1716 Add usage of SimpleEncryption to PropertiesFileLoginModule and Admin Console
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        PropertiesFileLoginModule.java&#160;<span class="change">(+9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-07 01:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">554142</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+This didn't used to work...
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        GeronimoPasswordCredentialLoginModule.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-06-25 11:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">550523</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3246 Cleanup exception handling so stack traces for first failures are not discarded.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        CertificatePropertiesFileLoginModule.java&#160;<span class="change">(+1&#160;-1)</span>,
+        FileAuditLoginModule.java&#160;<span class="change">(+1&#160;-1)</span>,
+        GeronimoPropertiesFileMappedPasswordCredentialLoginModule.java&#160;<span class="change">(+1&#160;-1)</span>,
+        PropertiesFileLoginModule.java&#160;<span class="change">(+2&#160;-2)</span>,
+        RepeatedFailureLockoutLoginModule.java&#160;<span class="change">(+1&#160;-1)</span>,
+        SQLLoginModule.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-06-19 10:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">548735</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3251 PropertiesFile and SQL LoginModules should provide configurable "encoding" option for digest<br />
+  o Added an encoding option to support hex and base64 encoding of passwords.
+    </p>
+    <p class="commitdetails"><strong>38</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        PropertiesFileLoginModule.java&#160;<span class="change">(+20&#160;-6)</span>,
+        SQLLoginModule.java&#160;<span class="change">(+18&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-06-09 13:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">545781</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2687.  Don't construct default and run-as subjects, get them from a login module. Also creates a separate server-security-config for the security config stuff you probably want to change.  Also fixes lots of security problems, including mdb run-as handling.
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        CertificateChainLoginModule.java&#160;<span class="change">(+2&#160;-2)</span>,
+        CertificatePropertiesFileLoginModule.java&#160;<span class="change">(+1&#160;-1)</span>,
+        GeronimoCallerPrincipal.java&#160;<span class="change">(+3&#160;-1)</span>,
+        GeronimoPropertiesFileMappedPasswordCredentialLoginModule.java&#160;<span class="new">(new&#160;4)</span>,
+        PropertiesFileLoginModule.java&#160;<span class="change">(+1&#160;-1)</span>,
+        SQLLoginModule.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-20 18:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">539968</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3175 yet another overlooked change to exception signature as a result of previous change
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        SQLLoginModule.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-01-09 14:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">494517</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2713 LDAP Realm fails to test and deploy<br />
+  o The issue was fixed in branches\1.1 in rev 412812 to address GERONIMO-1791 GERONIMO-1817. The fix has not been merged into trunk.<br />
+  o Applying the fix to branches\1.2 and trunk
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        LDAPLoginModule.java&#160;<span class="change">(+6&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-12-07 16:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">483636</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2350 improve CertificateChainCallbackHandler error message
+    </p>
+    <p class="commitdetails"><strong>25</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        CertificateChainCallbackHandler.java&#160;<span class="change">(+25&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2006-11-23 08:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">478545</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1880 To Allow configurable password digests during REALM Deployment<br />
+  o Introduced a "digest" option in PropertiesFileLoginModule and SQLLoginModule
+    </p>
+    <p class="commitdetails"><strong>92</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        PropertiesFileLoginModule.java&#160;<span class="change">(+44&#160;-1)</span>,
+        SQLLoginModule.java&#160;<span class="change">(+48&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-11-17 00:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476049</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Update the src headers in server/trunk/modules to be compliant with the new ASF src header and copyright policy (<a href="http://www.apache.org/legal/src">http://www.apache.org/legal/src</a>-headers.html). I also did some cleanup of the src headers and tried to make them all a consistent format
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">36 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers</strong>:
+        CertificateCallback.java&#160;<span class="change">(changed)</span>,
+        CertificateCallbackHandler.java&#160;<span class="change">(changed)</span>,
+        CertificateChainCallback.java&#160;<span class="change">(changed)</span>,
+        CertificateChainCallbackHandler.java&#160;<span class="change">(changed)</span>,
+        CertificateChainLoginModule.java&#160;<span class="change">(changed)</span>,
+        CertificatePropertiesFileLoginModule.java&#160;<span class="new">(new)</span>,
+        ClearableCallbackHandler.java&#160;<span class="change">(changed)</span>,
+        FileAuditLoginModule.java&#160;<span class="new">(new)</span>,
+        GeronimoCallerPrincipal.java&#160;<span class="change">(changed)</span>,
+        GeronimoGroupPrincipal.java&#160;<span class="new">(new)</span>,
+        GeronimoPasswordCredential.java&#160;<span class="change">(changed)</span>,
+        GeronimoPasswordCredentialLoginModule.java&#160;<span class="change">(changed)</span>,
+        GeronimoUserPrincipal.java&#160;<span class="new">(new)</span>,
+        LDAPLoginModule.java&#160;<span class="change">(changed)</span>,
+        PasswordCallbackHandler.java&#160;<span class="new">(new)</span>,
+        PropertiesFileLoginModule.java&#160;<span class="change">(changed)</span>,
+        RepeatedFailureLockoutLoginModule.java&#160;<span class="new">(new)</span>,
+        SQLLoginModule.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

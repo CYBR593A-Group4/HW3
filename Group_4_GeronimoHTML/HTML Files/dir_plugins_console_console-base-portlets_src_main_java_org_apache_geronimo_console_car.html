@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2008-01-09 17:53</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>10</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_console.html">console</a>/<a href="dir_plugins_console_console-base-portlets.html">console-base-portlets</a>/<a href="dir_plugins_console_console-base-portlets_src.html">src</a>/<a href="dir_plugins_console_console-base-portlets_src_main.html">main</a>/<a href="dir_plugins_console_console-base-portlets_src_main_java.html">java</a>/<a href="dir_plugins_console_console-base-portlets_src_main_java_org.html">org</a>/<a href="dir_plugins_console_console-base-portlets_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_console_console-base-portlets_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_plugins_console_console-base-portlets_src_main_java_org_apache_geronimo_console.html">console</a>/<strong>car</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_console_console-base-portlets_src_main_java_org_apache_geronimo_console_car.png" alt="plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>36 (100.0%)</td>
+        <td>24 (100.0%)</td>
+        <td>0.6</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>28 (77.8%)</td>
+        <td>24 (100.0%)</td>
+        <td>0.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_pmcmahan.html" class="author">pmcmahan</a></th>
+        <td>6 (16.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>2 (5.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-01-09 17:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">610590</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3732 step 3 Move plugin and deployment pages into a console plugin
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        AddRepositoryHandler.java&#160;<span class="del">(del)</span>,
+        DownloadCARHandler.java&#160;<span class="del">(del)</span>,
+        ExportConfigHandler.java&#160;<span class="del">(del)</span>,
+        GeronimoAsMavenServlet.java&#160;<span class="del">(del)</span>,
+        IndexHandler.java&#160;<span class="del">(del)</span>,
+        ListHandler.java&#160;<span class="del">(del)</span>,
+        ManagementHelper.java&#160;<span class="del">(del)</span>,
+        PluginInfoBean.java&#160;<span class="del">(del)</span>,
+        UpdateListHandler.java&#160;<span class="del">(del)</span>,
+        ViewPluginDownloadHandler.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-01-04 20:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">609072</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3732 steps 1, 2. Move plugin management and some jsr88 base code into a new module
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">10 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        AddRepositoryHandler.java&#160;<span class="change">(+5&#160;-6)</span>,
+        DownloadCARHandler.java&#160;<span class="change">(+3&#160;-3)</span>,
+        ExportConfigHandler.java&#160;<span class="new">(new)</span>,
+        IndexHandler.java&#160;<span class="change">(+3&#160;-4)</span>,
+        ListHandler.java&#160;<span class="change">(+2&#160;-2)</span>,
+        ManagementHelper.java&#160;<span class="new">(new)</span>,
+        UpdateListHandler.java&#160;<span class="change">(changed)</span>,
+        ViewPluginDownloadHandler.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-12-15 14:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">604483</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3607 Large cleanup of code for extracting assemblies from running servers.  Should greatly improve dealing with snapshots in local maven repos.  Also changes meaning of plugin dependency start flag to override plugin load flag.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        AddRepositoryHandler.java&#160;<span class="change">(+6&#160;-10)</span>,
+        IndexHandler.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-12-04 19:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">601152</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3607 Add 'assemble a server' support to geronimo and use it from car-maven-plugin and gshell.  Not yet available in the console.  Better repository support would be desirable
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        DownloadCARHandler.java&#160;<span class="change">(changed)</span>,
+        GeronimoAsMavenServlet.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-11-01 18:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591154</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3579  Configure which config.xml and properties files info from the plugin xml goes into
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        PluginInfoBean.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-10-20 22:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">586830</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove whitespace from url and encode spaces. fixes GERONIMO-3478
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        AddRepositoryHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_pmcmahan.html" class="author">pmcmahan</a>
+    <span class="date">2007-10-12 14:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">584221</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3496 reenable prerequisite check for plugin installation, but make the check optional via<br />
+a separate method.<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        ListHandler.java&#160;<span class="change">(changed)</span>,
+        ViewPluginDownloadHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_pmcmahan.html" class="author">pmcmahan</a>
+    <span class="date">2007-10-08 12:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">582884</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3509 copy the new admin console and its plugins into the server project so they<br />
+can be built and released together.<br />
+<br />
+also, merge recent improvements made to the old admin console into the new console:<br />
+ revs 581420 580352 576651 574637 573719 573616<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/car</strong>:
+        PluginInfoBean.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

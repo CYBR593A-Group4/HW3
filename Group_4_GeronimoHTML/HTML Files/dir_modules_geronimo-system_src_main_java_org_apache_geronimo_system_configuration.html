@@ -1,0 +1,898 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>21</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<a href="dir_modules_geronimo-system.html">geronimo-system</a>/<a href="dir_modules_geronimo-system_src.html">src</a>/<a href="dir_modules_geronimo-system_src_main.html">main</a>/<a href="dir_modules_geronimo-system_src_main_java.html">java</a>/<a href="dir_modules_geronimo-system_src_main_java_org.html">org</a>/<a href="dir_modules_geronimo-system_src_main_java_org_apache.html">apache</a>/<a href="dir_modules_geronimo-system_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_modules_geronimo-system_src_main_java_org_apache_geronimo_system.html">system</a>/<strong>configuration</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-system_src_main_java_org_apache_geronimo_system_configuration_cli.html">cli</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-system_src_main_java_org_apache_geronimo_system_configuration_condition.html">condition</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-system_src_main_java_org_apache_geronimo_system_configuration.png" alt="modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>111 (100.0%)</td>
+        <td>804 (100.0%)</td>
+        <td>7.2</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>19 (17.1%)</td>
+        <td>514 (63.9%)</td>
+        <td>27.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>8 (7.2%)</td>
+        <td>111 (13.8%)</td>
+        <td>13.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>7 (6.3%)</td>
+        <td>57 (7.1%)</td>
+        <td>8.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jaydm.html" class="author">jaydm</a></th>
+        <td>3 (2.7%)</td>
+        <td>53 (6.6%)</td>
+        <td>17.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>3 (2.7%)</td>
+        <td>31 (3.9%)</td>
+        <td>10.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jlaskowski.html" class="author">jlaskowski</a></th>
+        <td>3 (2.7%)</td>
+        <td>18 (2.2%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>40 (36.0%)</td>
+        <td>10 (1.2%)</td>
+        <td>0.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>3 (2.7%)</td>
+        <td>4 (0.5%)</td>
+        <td>1.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>3 (2.7%)</td>
+        <td>4 (0.5%)</td>
+        <td>1.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>1 (0.9%)</td>
+        <td>2 (0.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>21 (18.9%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="33"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">21 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        BaseMarkupSerializer.java&#160;<span class="del">(del)</span>,
+        ConfigurationOverride.java&#160;<span class="del">(del)</span>,
+        ConfigurationStoreUtil.java&#160;<span class="del">(del)</span>,
+        ElementState.java&#160;<span class="del">(del)</span>,
+        EncodingInfo.java&#160;<span class="del">(del)</span>,
+        Encodings.java&#160;<span class="del">(del)</span>,
+        ExecutableConfigurationUtil.java&#160;<span class="del">(del)</span>,
+        GBeanOverride.java&#160;<span class="del">(del)</span>,
+        InPlaceConfigurationUtil.java&#160;<span class="del">(del)</span>,
+        IndentPrinter.java&#160;<span class="del">(del)</span>,
+        InvalidAttributeException.java&#160;<span class="del">(del)</span>,
+        LocalAttributeManager.java&#160;<span class="del">(del)</span>,
+        Method.java&#160;<span class="del">(del)</span>,
+        OutputFormat.java&#160;<span class="del">(del)</span>,
+        PluginAttributeStore.java&#160;<span class="del">(del)</span>,
+        Printer.java&#160;<span class="del">(del)</span>,
+        RepositoryConfigurationStore.java&#160;<span class="del">(del)</span>,
+        ServerOverride.java&#160;<span class="del">(del)</span>,
+        SieveEncodingInfo.java&#160;<span class="del">(del)</span>,
+        SwitchableLocalAttributeManager.java&#160;<span class="del">(del)</span>,
+        XMLSerializer.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-10-04 13:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">581974</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3489 Deployment problems caused by file deletion failures
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        RepositoryConfigurationStore.java&#160;<span class="change">(+24&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-10-03 02:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">581510</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3496 assemble servers out of plugins
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+8&#160;-4)</span>,
+        PluginAttributeStore.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-09-25 00:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">579047</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+make it easier to understand where a NCDFE is happening
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        ConfigurationOverride.java&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-09-12 22:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">575143</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3453 Make installing xml attributes into configs.xml work.  Introduce a utility class for handling the jaxb details
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        GBeanOverride.java&#160;<span class="change">(+10&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-09-05 20:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">573120</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3330 GERONIMO-3453  More changes.  Plugin installer now installs stuff into config.xml, config-substitutions.properties, and external_aliases.properties.  Car-maven-plugin more or less gets this stuff into the geronimo-plugin.xml.
+    </p>
+    <p class="commitdetails"><strong>173</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        GBeanOverride.java&#160;<span class="change">(+91&#160;-7)</span>,
+        LocalAttributeManager.java&#160;<span class="change">(+74&#160;-29)</span>,
+        PluginAttributeStore.java&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-08-16 20:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">566893</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3416, start on moving common bits of deployment test infrastructure into kernel test jar.  Might also fix GERONMO-3415
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        RepositoryConfigurationStore.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-08-01 22:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">562001</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+prefer condition attribute over load attribute (GERONIMO-3365)
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        ConfigurationOverride.java&#160;<span class="change">(+2&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_jaydm.html" class="author">jaydm</a>
+    <span class="date">2007-08-01 19:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">561989</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1265 - Preserve comments added by users in config.xml file<br />
+   - Changes inspired by patch from Don Hill - Thanks Don!<br />
+
+    </p>
+    <p class="commitdetails"><strong>53</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        ConfigurationOverride.java&#160;<span class="change">(+46&#160;-4)</span>,
+        LocalAttributeManager.java&#160;<span class="change">(+2&#160;-2)</span>,
+        ServerOverride.java&#160;<span class="change">(+5&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-26 18:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">560019</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3358 local attribute manager should not require write access to config dir if it's read-only
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2007-07-24 01:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">558934</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2735 Merge from branches/2.0. Fix broken JSR88-Depoloyment. Make LocalAttributeManager a bit more lenient if a substitutionPrefix attribute is not specified
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+7&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-23 12:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">558792</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2735 clean up config substitutions
+    </p>
+    <p class="commitdetails"><strong>23</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+21&#160;-10)</span>,
+        SwitchableLocalAttributeManager.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-07-13 09:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">555993</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3318 LocalAttributeManager unable to save updates to LoginModuleControlFlag attribute<br />
+  o Added a ClassLoader parameter to setValue() and addGBean() methods in ManageableAttributeStore interface<br />
+  o Added a ClassLoader parameter to GBeanOverride.getAsText() so that the configuration's classLoader could be used to find PropertyEditor<br />
+  o GBeanInstance.updateManageableAttribute() now uses the configuration's classLoader with ManageableAttributeStore.setValue() call
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        GBeanOverride.java&#160;<span class="change">(+6&#160;-6)</span>,
+        LocalAttributeManager.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-06-25 11:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">550523</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3246 Cleanup exception handling so stack traces for first failures are not discarded.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        BaseMarkupSerializer.java&#160;<span class="change">(+1&#160;-1)</span>,
+        ConfigurationStoreUtil.java&#160;<span class="change">(+2&#160;-2)</span>,
+        GBeanOverride.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-06-05 14:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">544586</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3212 - Module config can not be removed from config.xml when undeploy offline
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        RepositoryConfigurationStore.java&#160;<span class="change">(-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2007-05-20 22:16</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">539995</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3103 GBeanOverride.writeXml parseException
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        GBeanOverride.java&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2007-03-05 17:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">514870</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2114 Log errors which occur during execution of TimerTasks. Otherwise, RuntimeException or Error kills the Timer thread. Only indication of error is when you attempt to schedule another TimerTask. This should capture the root cause of the problem
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-05 14:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">514807</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2735 doh use the right file
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-04 00:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">514355</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2735 Property substitution in config.xml, using jexl expressions.  Small example in the jetty config.xml
+    </p>
+    <p class="commitdetails"><strong>285</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        ConfigurationOverride.java&#160;<span class="change">(+13&#160;-19)</span>,
+        GBeanOverride.java&#160;<span class="change">(+159&#160;-56)</span>,
+        LocalAttributeManager.java&#160;<span class="change">(+105&#160;-160)</span>,
+        ServerOverride.java&#160;<span class="change">(+6&#160;-5)</span>,
+        SwitchableLocalAttributeManager.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-17 04:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">508724</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Second attempt to change the way the online/offline deployers and the JSR88<br />
+deployment driver work. The first attempt was breaking the TCK amd the <br />
+eclipse plugin.<br />
+<br />
+<br />
+Online deployer, i.e. deployer.jar, boots a Kernel to load its dependencies,<br />
+ e.g. geronimo-deploy-tool, and registers the available ModuleConfigurers with <br />
+the DeploymentManager.<br />
+<br />
+ModuleConfigurers to be registered are loaded by the persistent configuration <br />
+list jsr88-configurer-config.xml.<br />
+<br />
+In the case of an offline deployment, the online deployer starts the <br />
+offline-deployer configuration within the same Kernel. In turn, the <br />
+offline-deployer configuration starts a list of configurations to register <br />
+the available module builders.<br />
+<br />
+Add a log4j configuration for the online deployer.<br />
+<br />
+DeploymentFactoryBootstrapper is the new JSR88 deployment driver. It boots a <br />
+kernel; starts the configuration list jsr88-configurer-config.xml; retrieves<br />
+the "actual" DeploymentFactory implementation from the kernel; and delegates<br />
+to this retrieved imoplementation.<br />
+The JSR88 JAR driver is now named jsr88-deploymentfactory.jar.<br />
+<br />
+<br />
+This fixes:<br />
+* GERONIMO-2794 - Improve online deployer to register ModuleConfigurers from the repository; and<br />
+* GERONIMO-2767 - Minimize side effects of the offline deployer<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        SwitchableLocalAttributeManager.java&#160;<span class="new">(new&#160;2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-05 18:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">503905</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Revert deployer changes as they do break the Eclipse plugin and TCK.<br />
+I will investigate offline.<br />
+<br />
+svn merge -r503370:503369 .<br />
+<br />
+<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        SwitchableLocalAttributeManager.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2007-02-04 03:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">503370</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Online deployer, i.e. deployer.jar, boots a Kernel to load its dependencies,<br />
+ e.g. geronimo-deploy-tool, and registers the available ModuleConfigurers with <br />
+the DeploymentManager.<br />
+<br />
+ModuleConfigurers to be registered are loaded by the persistent configuration <br />
+list jsr88-configurer-config.xml.<br />
+<br />
+In the case of an offline deployment, the online deployer starts the <br />
+offline-deployer configuration within the same Kernel. In turn, the <br />
+offline-deployer configuration starts a list of configurations to register <br />
+the available module builders.<br />
+<br />
+Add a log4j configuration for the online deployer.<br />
+<br />
+This fixes:<br />
+* GERONIMO-2794 - Improve online deployer to register ModuleConfigurers from the repository; and<br />
+* GERONIMO-2767 - Minimize side effects of the offline deployer<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        SwitchableLocalAttributeManager.java&#160;<span class="new">(new&#160;2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-01-19 08:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">497782</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2105 When redeploying with no version number, new entries in config.xml break<br />
+  o This was fixed in rev 413342 in branches\1.1 (though the entries in config.xml are migrated properly, attribute value changes get reflected only upon restarting the configuration). Neither the revision was merged into trunk nor the JIRA was updated about the revision.<br />
+  o Merging rev 413342 into branches\1.2 and trunk
+    </p>
+    <p class="commitdetails"><strong>57</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        ConfigurationOverride.java&#160;<span class="change">(+11&#160;-1)</span>,
+        GBeanOverride.java&#160;<span class="change">(+36)</span>,
+        RepositoryConfigurationStore.java&#160;<span class="change">(+10&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2006-12-13 15:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">486815</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2437 Empty dirs and config.xml entries left behind after undeploy<br />
+  o Remove config.xml entry only if it is empty
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(+11)</span>,
+        RepositoryConfigurationStore.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2006-12-13 12:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">486734</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2437 Empty dirs and config.xml entries left behind after undeploy<br />
+  o Removes the uninstalled configurations from PersistentConfigurationList<br />
+  o Checks for parent directories upto 3 levels and deletes empty directories<br />
+  o FIXME: Repository is assumed to be Maven2Repository (thus checking 3 levels up).  May need a mechanism to determine the repository type and the number of directory levels to check for empty dirs.
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        RepositoryConfigurationStore.java&#160;<span class="change">(+32&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-12-04 16:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">482336</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Fix notices and src headers in recent jee5 updates. Update Web Console notice.txt w/ ibm donation information, add copyright to assembly notice files, and remove ASF v 1.1 license from source borrowed from xerces project
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        EncodingInfo.java&#160;<span class="change">(-56)</span>,
+        Encodings.java&#160;<span class="change">(-56)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-11-17 00:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476049</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Update the src headers in server/trunk/modules to be compliant with the new ASF src header and copyright policy (<a href="http://www.apache.org/legal/src">http://www.apache.org/legal/src</a>-headers.html). I also did some cleanup of the src headers and tried to make them all a consistent format
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">36 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        BaseMarkupSerializer.java&#160;<span class="change">(changed)</span>,
+        ConfigurationStoreUtil.java&#160;<span class="new">(new)</span>,
+        ElementState.java&#160;<span class="change">(changed)</span>,
+        EncodingInfo.java&#160;<span class="new">(new)</span>,
+        Encodings.java&#160;<span class="new">(new)</span>,
+        ExecutableConfigurationUtil.java&#160;<span class="new">(new)</span>,
+        GBeanOverride.java&#160;<span class="change">(-1)</span>,
+        InPlaceConfigurationUtil.java&#160;<span class="change">(changed)</span>,
+        IndentPrinter.java&#160;<span class="change">(changed)</span>,
+        InvalidAttributeException.java&#160;<span class="change">(changed)</span>,
+        LocalAttributeManager.java&#160;<span class="change">(-1)</span>,
+        Method.java&#160;<span class="change">(changed)</span>,
+        OutputFormat.java&#160;<span class="new">(new)</span>,
+        PluginAttributeStore.java&#160;<span class="change">(changed)</span>,
+        Printer.java&#160;<span class="new">(new)</span>,
+        RepositoryConfigurationStore.java&#160;<span class="new">(new)</span>,
+        ServerOverride.java&#160;<span class="new">(new)</span>,
+        SieveEncodingInfo.java&#160;<span class="change">(changed)</span>,
+        XMLSerializer.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_jlaskowski.html" class="author">jlaskowski</a>
+    <span class="date">2006-11-02 19:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">470597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Partial fix for GERONIMO-2537 All Geronimo source files must be brought in line with the new ASF source header and copyright notice policy<br />
+<br />
+The modules directory is supposed to be migrated. There're some issues with some files, but they'll be handled manually<br />
+
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        ConfigurationOverride.java&#160;<span class="change">(+6&#160;-5)</span>,
+        GBeanOverride.java&#160;<span class="change">(+6&#160;-5)</span>,
+        LocalAttributeManager.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-10-26 22:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">468233</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-2525) Allow mixed content in attributes<br />
+
+    </p>
+    <p class="commitdetails"><strong>56</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        GBeanOverride.java&#160;<span class="change">(+48&#160;-9)</span>,
+        LocalAttributeManager.java&#160;<span class="change">(+8&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-10-24 04:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">467280</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2514 fix some reference pattern bugs for config.xml
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        GBeanOverride.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-10-07 18:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">454034</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-2463) Only write out the condition if it is non-null and not an empty string<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        ConfigurationOverride.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-10-07 16:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">454011</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-2463) Initial support for condition expressions to be used in the persistent configuration list<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        ConfigurationOverride.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-10-04 19:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">453058</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Buffer and log exceptions as trace so we don't eat exception details<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        LocalAttributeManager.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

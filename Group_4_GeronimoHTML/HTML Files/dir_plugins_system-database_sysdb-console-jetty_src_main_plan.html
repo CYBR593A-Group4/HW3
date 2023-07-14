@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/system-database/sysdb-console-jetty/src/main/plan/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/system-database/sysdb-console-jetty/src/main/plan/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>463</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_system-database.html">system-database</a>/<a href="dir_plugins_system-database_sysdb-console-jetty.html">sysdb-console-jetty</a>/<a href="dir_plugins_system-database_sysdb-console-jetty_src.html">src</a>/<a href="dir_plugins_system-database_sysdb-console-jetty_src_main.html">main</a>/<strong>plan</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_system-database_sysdb-console-jetty_src_main_plan.png" alt="plugins/system-database/sysdb-console-jetty/src/main/plan/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>19 (100.0%)</td>
+        <td>93 (100.0%)</td>
+        <td>4.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>4 (21.1%)</td>
+        <td>31 (33.3%)</td>
+        <td>7.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_violalu.html" class="author">violalu</a></th>
+        <td>2 (10.5%)</td>
+        <td>16 (17.2%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>5 (26.3%)</td>
+        <td>16 (17.2%)</td>
+        <td>3.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>3 (15.8%)</td>
+        <td>10 (10.8%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jbohn.html" class="author">jbohn</a></th>
+        <td>1 (5.3%)</td>
+        <td>8 (8.6%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rwonly.html" class="author">rwonly</a></th>
+        <td>1 (5.3%)</td>
+        <td>6 (6.5%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_linsun.html" class="author">linsun</a></th>
+        <td>2 (10.5%)</td>
+        <td>3 (3.2%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>1 (5.3%)</td>
+        <td>3 (3.2%)</td>
+        <td>3.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="18"></a>
+    <a href="user_violalu.html" class="author">violalu</a>
+    <span class="date">2011-10-26 02:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1189034</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6202 tranql update
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_violalu.html" class="author">violalu</a>
+    <span class="date">2011-09-18 10:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1172287</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5209 add tranql xa for db2 iseries
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-02-16 22:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1071477</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5597 Reenable database-related admin console portlets (thanks Fang Sheng Hao for the patch!)
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-09-15 02:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">997204</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5584 identify basic set of navigation items, patch from Chi Run Hua.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-08-24 00:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">988385</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4950 Improve usability of Geronimo Console, thanks Chi Runhua for the patch !
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-07 23:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897080</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 To support multiple level navigation tree in geronimo web console.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_jbohn.html" class="author">jbohn</a>
+    <span class="date">2009-03-09 18:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">751883</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4297 - Include TranQL connector for Oracle RAC
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-02-24 15:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">747523</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4279, GERONIMO-4365 include tranql informix and sqlserver2000,2005 wrappers
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-11-17 14:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">718307</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4405 Postgresql new drives would not be listed in Drive Jars list and download driver list.  Thanks to Rex Wang for the patch (which I also applied to the Jetty console plan.
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-03 10:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">701393</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4225 refactor patch to keep DB Manager -&gt; Run SQL db centric while adding an init-param so we can also have a datasource centric DB Pools -&gt; Run SQL instance from the same code
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-09-24 12:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">698647</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4317 - SQL jdbc driver class name is wrong in db pool creation wizard
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-07-21 10:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">678442</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4145 Additional Admin Console navigational icons.  Merged in from 2.1.2.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-06-27 10:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">672282</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+change to DB2 XA since it uses the TranQL XA Resource Adapter for DB2
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-06-18 18:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">669314</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+console icons are back (GERONIMO-3562)
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-03-18 22:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">638688</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+undo add of tranql-connector-db2-local
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-03-18 17:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">638580</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+added missing tranql-connector-db2-local
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+9&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-01-31 04:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617070</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1775 2nd internationalization patch from YunFeng Ma, with some spelling corrections
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-01-24 21:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">615094</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3596 upgrade to newest mysql tranql wrappers and resurrect the db config gbeans that got lost in 2.0.2
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

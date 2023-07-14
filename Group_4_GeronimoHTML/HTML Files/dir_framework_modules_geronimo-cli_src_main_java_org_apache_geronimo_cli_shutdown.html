@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2009-11-24 16:28</span></dd>
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>1</dd>
+    <dt>Lines of Code:</dt>
+    <dd>121</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_framework.html">framework</a>/<a href="dir_framework_modules.html">modules</a>/<a href="dir_framework_modules_geronimo-cli.html">geronimo-cli</a>/<a href="dir_framework_modules_geronimo-cli_src.html">src</a>/<a href="dir_framework_modules_geronimo-cli_src_main.html">main</a>/<a href="dir_framework_modules_geronimo-cli_src_main_java.html">java</a>/<a href="dir_framework_modules_geronimo-cli_src_main_java_org.html">org</a>/<a href="dir_framework_modules_geronimo-cli_src_main_java_org_apache.html">apache</a>/<a href="dir_framework_modules_geronimo-cli_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_framework_modules_geronimo-cli_src_main_java_org_apache_geronimo_cli.html">cli</a>/<strong>shutdown</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_framework_modules_geronimo-cli_src_main_java_org_apache_geronimo_cli_shutdown.png" alt="framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>7 (100.0%)</td>
+        <td>135 (100.0%)</td>
+        <td>19.2</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>5 (71.4%)</td>
+        <td>133 (98.5%)</td>
+        <td>26.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rwonly.html" class="author">rwonly</a></th>
+        <td>1 (14.3%)</td>
+        <td>2 (1.5%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>1 (14.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2012-01-13 18:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1231349</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6240 remove/clean up some unused startup code
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown</strong>:
+        ShutdownCLI.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-04-25 02:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1096413</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5793 make config properties overridable
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown</strong>:
+        ShutdownCLI.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2011-01-31 17:23</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1065795</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5527: Improved server -clean option handling
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown</strong>:
+        ShutdownCLI.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-30 21:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">939890</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+cleanup framework startup code
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown</strong>:
+        ShutdownCLI.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-19 16:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">935740</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5213: Make shutdown command work again
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown</strong>:
+        ShutdownCLI.java&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2009-11-24 16:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">883857</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+1) register geronimo-managed mbean server as osgi service, 2) enable osgi jmx bundle to expose rfc139 mbeans, 3) add/update the shutdown command to use rfc139 mbean to stop the container, 4) update the debug properties for jdb to use geronimo defaults
+    </p>
+    <p class="commitdetails"><strong>130</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/shutdown</strong>:
+        ShutdownCLI.java&#160;<span class="new">(new&#160;9)</span>,
+        ShutdownCLParser.java&#160;<span class="new">(new&#160;121)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

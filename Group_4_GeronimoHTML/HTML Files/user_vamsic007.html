@@ -1,0 +1,3198 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /geronimo/server/trunk Developers: vamsic007</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/geronimo/server/trunk Developers: vamsic007</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>vamsic007</dd>
+    <dt>Total Commits:</dt>
+    <dd>1,562 (2.2%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>26,059 (3.1%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2010-10-19 07:03</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=vamsic007%20contributed%2026%2C059%20(3.1%25)%20lines%20to%20%2Fgeronimo%2Fserver%2Ftrunk%20%7B0}%20most%20recent%20commit%202010-10-19%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_vamsic007.png" alt="Activity by Hour of Day for vamsic007" width="800" height="500" /></p><p class="chart"><img src="activity_day_vamsic007.png" alt="Activity by Day of Week for vamsic007" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>1562 (100.0%)</td>
+        <td>26059 (100.0%)</td>
+        <td>16.6</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_ca.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/ca/</a></th>
+        <td>29 (1.9%)</td>
+        <td>3079 (11.8%)</td>
+        <td>106.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_ca.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/ca/</a></th>
+        <td>39 (2.5%)</td>
+        <td>2449 (9.4%)</td>
+        <td>62.7</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo_security_ca.html" class="directory">modules/geronimo-security/src/main/java/org/apache/geronimo/security/ca/</a></th>
+        <td>7 (0.4%)</td>
+        <td>2143 (8.2%)</td>
+        <td>306.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-ca-helper_src_main_webapp.html" class="directory">applications/geronimo-ca-helper/src/main/webapp/</a></th>
+        <td>28 (1.8%)</td>
+        <td>1179 (4.5%)</td>
+        <td>42.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-security_src_test_java_org_apache_geronimo_security_jaas.html" class="directory">framework/modules/geronimo-security/src/test/java/org/apache/geronimo/security/jaas/</a></th>
+        <td>23 (1.5%)</td>
+        <td>1065 (4.1%)</td>
+        <td>46.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_webmanager_connector.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/webmanager/connector/</a></th>
+        <td>10 (0.6%)</td>
+        <td>782 (3.0%)</td>
+        <td>78.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-management_src_main_java_org_apache_geronimo_management_geronimo.html" class="directory">modules/geronimo-management/src/main/java/org/apache/geronimo/management/geronimo/</a></th>
+        <td>14 (0.9%)</td>
+        <td>762 (2.9%)</td>
+        <td>54.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_ldapmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/ldapmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>681 (2.6%)</td>
+        <td>340.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-ca-helper.html" class="directory">applications/geronimo-ca-helper/</a></th>
+        <td>7 (0.4%)</td>
+        <td>608 (2.3%)</td>
+        <td>86.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_ca-helper-tomcat.html" class="directory">configs/ca-helper-tomcat/</a></th>
+        <td>6 (0.4%)</td>
+        <td>601 (2.3%)</td>
+        <td>100.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_ca-helper-jetty.html" class="directory">configs/ca-helper-jetty/</a></th>
+        <td>6 (0.4%)</td>
+        <td>601 (2.3%)</td>
+        <td>100.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-util_src_main_java_org_apache_geronimo_util.html" class="directory">modules/geronimo-util/src/main/java/org/apache/geronimo/util/</a></th>
+        <td>3 (0.2%)</td>
+        <td>588 (2.3%)</td>
+        <td>196.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_ldapmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/ldapmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>563 (2.2%)</td>
+        <td>281.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_webmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/webmanager/</a></th>
+        <td>5 (0.3%)</td>
+        <td>476 (1.8%)</td>
+        <td>95.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo_security_realm_providers.html" class="directory">modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers/</a></th>
+        <td>14 (0.9%)</td>
+        <td>465 (1.8%)</td>
+        <td>33.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-ca-helper_src_main_java_org_apache_geronimo_ca_helper.html" class="directory">applications/geronimo-ca-helper/src/main/java/org/apache/geronimo/ca/helper/</a></th>
+        <td>5 (0.3%)</td>
+        <td>462 (1.8%)</td>
+        <td>92.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>2 (0.1%)</td>
+        <td>386 (1.5%)</td>
+        <td>193.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_bval_geronimo-bval_src_main_java_org_apache_geronimo_bval.html" class="directory">plugins/bval/geronimo-bval/src/main/java/org/apache/geronimo/bval/</a></th>
+        <td>4 (0.3%)</td>
+        <td>322 (1.2%)</td>
+        <td>80.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo_web_deployment.html" class="directory">modules/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>232 (0.9%)</td>
+        <td>232.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_bval_geronimo-bval-builder_src_main_java_org_apache_geronimo_bval_deployment.html" class="directory">plugins/bval/geronimo-bval-builder/src/main/java/org/apache/geronimo/bval/deployment/</a></th>
+        <td>5 (0.3%)</td>
+        <td>225 (0.9%)</td>
+        <td>45.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-security_src_main_java_org_apache_geronimo_security_realm_providers.html" class="directory">framework/modules/geronimo-security/src/main/java/org/apache/geronimo/security/realm/providers/</a></th>
+        <td>42 (2.7%)</td>
+        <td>216 (0.8%)</td>
+        <td>5.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-ca-helper_src_main_java_org_apache_geronimo_ca_helper_util.html" class="directory">applications/geronimo-ca-helper/src/main/java/org/apache/geronimo/ca/helper/util/</a></th>
+        <td>2 (0.1%)</td>
+        <td>209 (0.8%)</td>
+        <td>104.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_tomcat6_src_main_plan.html" class="directory">configs/tomcat6/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>196 (0.8%)</td>
+        <td>98.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-ear.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ear/</a></th>
+        <td>1 (0.1%)</td>
+        <td>165 (0.6%)</td>
+        <td>165.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_j2ee-deployer_src_main_plan.html" class="directory">configs/j2ee-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>160 (0.6%)</td>
+        <td>80.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_keystore.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/keystore/</a></th>
+        <td>10 (0.6%)</td>
+        <td>151 (0.6%)</td>
+        <td>15.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_ca-helper-tomcat_src_main_resources_META-INF.html" class="directory">configs/ca-helper-tomcat/src/main/resources/META-INF/</a></th>
+        <td>4 (0.3%)</td>
+        <td>146 (0.6%)</td>
+        <td>36.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_ca-helper-jetty_src_main_resources_META-INF.html" class="directory">configs/ca-helper-jetty/src/main/resources/META-INF/</a></th>
+        <td>4 (0.3%)</td>
+        <td>146 (0.6%)</td>
+        <td>36.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-core_src_main_java_org_apache_geronimo_console_core_security.html" class="directory">applications/console/geronimo-console-core/src/main/java/org/apache/geronimo/console/core/security/</a></th>
+        <td>4 (0.3%)</td>
+        <td>135 (0.5%)</td>
+        <td>33.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_client-deployer_src_main_plan.html" class="directory">configs/client-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>131 (0.5%)</td>
+        <td>65.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_j2ee-corba-yoko_src_main_plan.html" class="directory">configs/j2ee-corba-yoko/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>129 (0.5%)</td>
+        <td>64.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_realmwizard.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/realmwizard/</a></th>
+        <td>23 (1.5%)</td>
+        <td>122 (0.5%)</td>
+        <td>5.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-cli_src_main_java_org_apache_geronimo_cli_deployer.html" class="directory">framework/modules/geronimo-cli/src/main/java/org/apache/geronimo/cli/deployer/</a></th>
+        <td>3 (0.2%)</td>
+        <td>114 (0.4%)</td>
+        <td>38.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-system_src_main_java_org_apache_geronimo_system_configuration.html" class="directory">modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration/</a></th>
+        <td>8 (0.5%)</td>
+        <td>111 (0.4%)</td>
+        <td>13.8</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_dbwizard.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/dbwizard/</a></th>
+        <td>7 (0.4%)</td>
+        <td>110 (0.4%)</td>
+        <td>15.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_webconsole-tomcat_src_plan.html" class="directory">configs/webconsole-tomcat/src/plan/</a></th>
+        <td>4 (0.3%)</td>
+        <td>109 (0.4%)</td>
+        <td>27.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_webconsole-jetty_src_plan.html" class="directory">configs/webconsole-jetty/src/plan/</a></th>
+        <td>4 (0.3%)</td>
+        <td>109 (0.4%)</td>
+        <td>27.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jetty6_src_main_plan.html" class="directory">configs/jetty6/src/main/plan/</a></th>
+        <td>3 (0.2%)</td>
+        <td>108 (0.4%)</td>
+        <td>36.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_webapp_WEB-INF_view_keystore.html" class="directory">plugins/console/console-base-portlets/src/main/webapp/WEB-INF/view/keystore/</a></th>
+        <td>8 (0.5%)</td>
+        <td>106 (0.4%)</td>
+        <td>13.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_java_org_apache_geronimo_console_keystores.html" class="directory">plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/keystores/</a></th>
+        <td>14 (0.9%)</td>
+        <td>100 (0.4%)</td>
+        <td>7.1</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-ejb_src_main_java_org_apache_geronimo_ejb.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ejb/src/main/java/org/apache/geronimo/ejb/</a></th>
+        <td>2 (0.1%)</td>
+        <td>97 (0.4%)</td>
+        <td>48.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_online-deployer_src_main_plan.html" class="directory">configs/online-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>96 (0.4%)</td>
+        <td>48.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_openejb-corba-deployer_src_main_plan.html" class="directory">configs/openejb-corba-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>93 (0.4%)</td>
+        <td>46.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_client_src_main_plan.html" class="directory">configs/client/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>93 (0.4%)</td>
+        <td>46.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_j2ee-system_src_main_plan.html" class="directory">configs/j2ee-system/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>92 (0.4%)</td>
+        <td>46.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_connector-deployer_src_main_plan.html" class="directory">configs/connector-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>89 (0.3%)</td>
+        <td>44.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_transaction_src_main_plan.html" class="directory">configs/transaction/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>88 (0.3%)</td>
+        <td>44.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/</a></th>
+        <td>7 (0.4%)</td>
+        <td>88 (0.3%)</td>
+        <td>12.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jsr88-deploymentfactory_src_main_plan.html" class="directory">configs/jsr88-deploymentfactory/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>83 (0.3%)</td>
+        <td>41.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_security-testsuite_test-security-annotation-ejb_security-ejb-ear_src_test_java_org_apache_geronimo_testsuite_security_ejb.html" class="directory">testsuite/security-testsuite/test-security-annotation-ejb/security-ejb-ear/src/test/java/org/apache/geronimo/testsuite/security/ejb/</a></th>
+        <td>2 (0.1%)</td>
+        <td>82 (0.3%)</td>
+        <td>41.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo_security_keystore.html" class="directory">modules/geronimo-security/src/main/java/org/apache/geronimo/security/keystore/</a></th>
+        <td>7 (0.4%)</td>
+        <td>82 (0.3%)</td>
+        <td>11.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_j2ee-server_src_main_plan.html" class="directory">configs/j2ee-server/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>82 (0.3%)</td>
+        <td>41.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_client-system_src_main_plan.html" class="directory">configs/client-system/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>82 (0.3%)</td>
+        <td>41.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_tomcat6-deployer_src_main_plan.html" class="directory">configs/tomcat6-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>80 (0.3%)</td>
+        <td>40.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_logmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/logmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>80 (0.3%)</td>
+        <td>40.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_rmi-naming_src_main_plan.html" class="directory">configs/rmi-naming/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>77 (0.3%)</td>
+        <td>38.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_openejb_src_main_plan.html" class="directory">configs/openejb/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>77 (0.3%)</td>
+        <td>38.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_client-security_src_main_plan.html" class="directory">configs/client-security/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>77 (0.3%)</td>
+        <td>38.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_ca-helper-tomcat_src_site.html" class="directory">configs/ca-helper-tomcat/src/site/</a></th>
+        <td>3 (0.2%)</td>
+        <td>73 (0.3%)</td>
+        <td>24.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_ca-helper-jetty_src_site.html" class="directory">configs/ca-helper-jetty/src/site/</a></th>
+        <td>3 (0.2%)</td>
+        <td>73 (0.3%)</td>
+        <td>24.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-ca-helper_src_site.html" class="directory">applications/geronimo-ca-helper/src/site/</a></th>
+        <td>3 (0.2%)</td>
+        <td>73 (0.3%)</td>
+        <td>24.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_securitymanager_realm.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/securitymanager/realm/</a></th>
+        <td>9 (0.6%)</td>
+        <td>72 (0.3%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_keystores.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/keystores/</a></th>
+        <td>13 (0.8%)</td>
+        <td>71 (0.3%)</td>
+        <td>5.4</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_axis-deployer_src_main_plan.html" class="directory">configs/axis-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>68 (0.3%)</td>
+        <td>34.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat.html" class="directory">modules/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/</a></th>
+        <td>7 (0.4%)</td>
+        <td>67 (0.3%)</td>
+        <td>9.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-deploy-tool_src_main_java_org_apache_geronimo_deployment_cli.html" class="directory">framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli/</a></th>
+        <td>2 (0.1%)</td>
+        <td>66 (0.3%)</td>
+        <td>33.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_client-transaction_src_main_plan.html" class="directory">configs/client-transaction/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>61 (0.2%)</td>
+        <td>30.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-ca-helper_src_main_webapp_WEB-INF.html" class="directory">applications/geronimo-ca-helper/src/main/webapp/WEB-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>61 (0.2%)</td>
+        <td>30.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_util.html" class="directory">framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/util/</a></th>
+        <td>8 (0.5%)</td>
+        <td>60 (0.2%)</td>
+        <td>7.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_server-security-config_src_main_plan.html" class="directory">configs/server-security-config/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>58 (0.2%)</td>
+        <td>29.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_activemq-ra_src_main_plan.html" class="directory">configs/activemq-ra/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>58 (0.2%)</td>
+        <td>29.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/</a></th>
+        <td>1 (0.1%)</td>
+        <td>57 (0.2%)</td>
+        <td>57.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-security_src_main_java_org_apache_geronimo_security_jaas.html" class="directory">framework/modules/geronimo-security/src/main/java/org/apache/geronimo/security/jaas/</a></th>
+        <td>15 (1.0%)</td>
+        <td>57 (0.2%)</td>
+        <td>3.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_x509.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/x509/</a></th>
+        <td>114 (7.3%)</td>
+        <td>57 (0.2%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_persistence-jpa10-deployer_src_main_plan.html" class="directory">configs/persistence-jpa10-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>57 (0.2%)</td>
+        <td>28.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-framework_src_main_webapp_js.html" class="directory">applications/console/geronimo-console-framework/src/main/webapp/js/</a></th>
+        <td>2 (0.1%)</td>
+        <td>56 (0.2%)</td>
+        <td>28.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-connector-builder_src_main_java_org_apache_geronimo_connector_deployment.html" class="directory">modules/geronimo-connector-builder/src/main/java/org/apache/geronimo/connector/deployment/</a></th>
+        <td>5 (0.3%)</td>
+        <td>54 (0.2%)</td>
+        <td>10.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_cxf-deployer_src_main_plan.html" class="directory">configs/cxf-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>54 (0.2%)</td>
+        <td>27.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_axis2-deployer_src_main_plan.html" class="directory">configs/axis2-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>54 (0.2%)</td>
+        <td>27.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_activemq-broker_src_main_plan.html" class="directory">configs/activemq-broker/src/main/plan/</a></th>
+        <td>3 (0.2%)</td>
+        <td>54 (0.2%)</td>
+        <td>18.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-hot-deploy_src_main_java_org_apache_geronimo_deployment_hot.html" class="directory">modules/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot/</a></th>
+        <td>4 (0.3%)</td>
+        <td>53 (0.2%)</td>
+        <td>13.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/</a></th>
+        <td>2 (0.1%)</td>
+        <td>51 (0.2%)</td>
+        <td>25.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/</a></th>
+        <td>102 (6.5%)</td>
+        <td>51 (0.2%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_webconsole-tomcat.html" class="directory">configs/webconsole-tomcat/</a></th>
+        <td>1 (0.1%)</td>
+        <td>51 (0.2%)</td>
+        <td>51.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_webconsole-jetty.html" class="directory">configs/webconsole-jetty/</a></th>
+        <td>1 (0.1%)</td>
+        <td>51 (0.2%)</td>
+        <td>51.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_client-corba-yoko_src_main_plan.html" class="directory">configs/client-corba-yoko/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>50 (0.2%)</td>
+        <td>25.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-core_src_main_java_org_apache_geronimo_console_util.html" class="directory">applications/console/geronimo-console-core/src/main/java/org/apache/geronimo/console/util/</a></th>
+        <td>3 (0.2%)</td>
+        <td>50 (0.2%)</td>
+        <td>16.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-war.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-war/</a></th>
+        <td>1 (0.1%)</td>
+        <td>49 (0.2%)</td>
+        <td>49.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_ca-helper-tomcat_src_plan.html" class="directory">configs/ca-helper-tomcat/src/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>49 (0.2%)</td>
+        <td>24.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_ca-helper-jetty_src_plan.html" class="directory">configs/ca-helper-jetty/src/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>49 (0.2%)</td>
+        <td>24.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_j2ee-security_src_main_plan.html" class="directory">configs/j2ee-security/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>47 (0.2%)</td>
+        <td>23.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-war_src_main_webapp.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-war/src/main/webapp/</a></th>
+        <td>1 (0.1%)</td>
+        <td>46 (0.2%)</td>
+        <td>46.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-security_src_test_data_data.html" class="directory">framework/modules/geronimo-security/src/test/data/data/</a></th>
+        <td>2 (0.1%)</td>
+        <td>46 (0.2%)</td>
+        <td>23.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_shutdown_src_main_plan.html" class="directory">configs/shutdown/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>45 (0.2%)</td>
+        <td>22.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_wadi-clustering_src_plan.html" class="directory">configs/wadi-clustering/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>43 (0.2%)</td>
+        <td>43.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_repository.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/repository/</a></th>
+        <td>4 (0.3%)</td>
+        <td>42 (0.2%)</td>
+        <td>10.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-framework_src_main_webapp_WEB-INF_data.html" class="directory">applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/data/</a></th>
+        <td>6 (0.4%)</td>
+        <td>41 (0.2%)</td>
+        <td>6.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty6_src_main_java_org_apache_geronimo_jetty6.html" class="directory">modules/geronimo-jetty6/src/main/java/org/apache/geronimo/jetty6/</a></th>
+        <td>3 (0.2%)</td>
+        <td>40 (0.2%)</td>
+        <td>13.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment.html" class="directory">framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/</a></th>
+        <td>4 (0.3%)</td>
+        <td>40 (0.2%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-ejb.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>36 (0.1%)</td>
+        <td>36.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_webaccesslogmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/webaccesslogmanager/</a></th>
+        <td>3 (0.2%)</td>
+        <td>36 (0.1%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-ear_src_test_java_org_apache_geronimo_testsuite_beanvalidation_ejb.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ear/src/test/java/org/apache/geronimo/testsuite/beanvalidation/ejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>35 (0.1%)</td>
+        <td>35.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jsr88-cli_src_main_plan.html" class="directory">configs/jsr88-cli/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>35 (0.1%)</td>
+        <td>17.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-ear_src_main_filtered-resources_META-INF.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ear/src/main/filtered-resources/META-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>32 (0.1%)</td>
+        <td>32.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-system_src_test_java_org_apache_geronimo_system_configuration.html" class="directory">modules/geronimo-system/src/test/java/org/apache/geronimo/system/configuration/</a></th>
+        <td>2 (0.1%)</td>
+        <td>32 (0.1%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-ear_src_test_resources.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ear/src/test/resources/</a></th>
+        <td>1 (0.1%)</td>
+        <td>31 (0.1%)</td>
+        <td>31.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-system_src_main_java_org_apache_geronimo_system_plugin.html" class="directory">modules/geronimo-system/src/main/java/org/apache/geronimo/system/plugin/</a></th>
+        <td>4 (0.3%)</td>
+        <td>30 (0.1%)</td>
+        <td>7.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-ejb-test_beanvalidation-ejb-war_src_main_webapp_WEB-INF.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-war/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>29 (0.1%)</td>
+        <td>29.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-common_src_main_java_org_apache_geronimo_common_propertyeditor.html" class="directory">modules/geronimo-common/src/main/java/org/apache/geronimo/common/propertyeditor/</a></th>
+        <td>9 (0.6%)</td>
+        <td>29 (0.1%)</td>
+        <td>3.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_wadi-clustering_src_main_plan.html" class="directory">configs/wadi-clustering/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>29 (0.1%)</td>
+        <td>14.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jetty6-clustering-builder-wadi_src_main_plan.html" class="directory">configs/jetty6-clustering-builder-wadi/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>29 (0.1%)</td>
+        <td>14.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_repository.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/repository/</a></th>
+        <td>1 (0.1%)</td>
+        <td>29 (0.1%)</td>
+        <td>29.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_myfaces-deployer_src_main_plan.html" class="directory">configs/myfaces-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>28 (0.1%)</td>
+        <td>14.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_clustering_src_plan.html" class="directory">configs/clustering/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>28 (0.1%)</td>
+        <td>28.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jasper-deployer_src_main_plan.html" class="directory">configs/jasper-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>27 (0.1%)</td>
+        <td>13.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_remote-deploy-tomcat_src_main_plan.html" class="directory">configs/remote-deploy-tomcat/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>26 (0.1%)</td>
+        <td>13.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_remote-deploy-jetty_src_main_plan.html" class="directory">configs/remote-deploy-jetty/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>26 (0.1%)</td>
+        <td>13.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jaxws-deployer.html" class="directory">configs/jaxws-deployer/</a></th>
+        <td>1 (0.1%)</td>
+        <td>25 (0.1%)</td>
+        <td>25.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-system_src_main_java_org_apache_geronimo_system_jmx.html" class="directory">modules/geronimo-system/src/main/java/org/apache/geronimo/system/jmx/</a></th>
+        <td>1 (0.1%)</td>
+        <td>24 (0.1%)</td>
+        <td>24.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_hot-deployer_src_main_plan.html" class="directory">configs/hot-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>24 (0.1%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-security_src_test_java_org_apache_geronimo_security_jaas.html" class="directory">modules/geronimo-security/src/test/java/org/apache/geronimo/security/jaas/</a></th>
+        <td>7 (0.4%)</td>
+        <td>22 (0.1%)</td>
+        <td>3.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_util.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/util/</a></th>
+        <td>3 (0.2%)</td>
+        <td>22 (0.1%)</td>
+        <td>7.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_databasemanager_wizard.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/databasemanager/wizard/</a></th>
+        <td>2 (0.1%)</td>
+        <td>22 (0.1%)</td>
+        <td>11.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-system_src_main_java_org_apache_geronimo_system_plugin.html" class="directory">framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/plugin/</a></th>
+        <td>3 (0.2%)</td>
+        <td>21 (0.1%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_java_org_apache_geronimo_console_webmanager.html" class="directory">plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/webmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>20 (0.1%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-openejb_src_main_java_org_apache_geronimo_openejb.html" class="directory">modules/geronimo-openejb/src/main/java/org/apache/geronimo/openejb/</a></th>
+        <td>18 (1.2%)</td>
+        <td>19 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_clustering_src_main_plan.html" class="directory">configs/clustering/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>19 (0.1%)</td>
+        <td>9.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-upgrade_src_main_java_org_apache_geronimo_upgrade.html" class="directory">modules/geronimo-upgrade/src/main/java/org/apache/geronimo/upgrade/</a></th>
+        <td>1 (0.1%)</td>
+        <td>18 (0.1%)</td>
+        <td>18.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-security_src_test_java_org_apache_geronimo_security.html" class="directory">modules/geronimo-security/src/test/java/org/apache/geronimo/security/</a></th>
+        <td>1 (0.1%)</td>
+        <td>18 (0.1%)</td>
+        <td>18.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-clustering-wadi_src_main_java_org_apache_geronimo_clustering_wadi.html" class="directory">modules/geronimo-clustering-wadi/src/main/java/org/apache/geronimo/clustering/wadi/</a></th>
+        <td>9 (0.6%)</td>
+        <td>18 (0.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-security_src_test_java_org_apache_geronimo_security.html" class="directory">framework/modules/geronimo-security/src/test/java/org/apache/geronimo/security/</a></th>
+        <td>3 (0.2%)</td>
+        <td>18 (0.1%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_crypto_params.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/params/</a></th>
+        <td>33 (2.1%)</td>
+        <td>18 (0.1%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_connector_geronimo-connector-builder_src_main_java_org_apache_geronimo_connector_deployment.html" class="directory">plugins/connector/geronimo-connector-builder/src/main/java/org/apache/geronimo/connector/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>16 (0.1%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-tomcat-builder_src_main_java_org_apache_geronimo_tomcat_deployment.html" class="directory">modules/geronimo-tomcat-builder/src/main/java/org/apache/geronimo/tomcat/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>16 (0.1%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-test-ddbean_src_main_java_org_apache_geronimo_deployment_tools_loader.html" class="directory">modules/geronimo-test-ddbean/src/main/java/org/apache/geronimo/deployment/tools/loader/</a></th>
+        <td>1 (0.1%)</td>
+        <td>16 (0.1%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty-builder_src_main_java_org_apache_geronimo_jetty_deployment.html" class="directory">modules/geronimo-jetty-builder/src/main/java/org/apache/geronimo/jetty/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>16 (0.1%)</td>
+        <td>16.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-clustering_src_main_java_org_apache_geronimo_clustering.html" class="directory">modules/geronimo-clustering/src/main/java/org/apache/geronimo/clustering/</a></th>
+        <td>8 (0.5%)</td>
+        <td>16 (0.1%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard.html" class="directory">applications/console/geronimo-console-standard/</a></th>
+        <td>2 (0.1%)</td>
+        <td>16 (0.1%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_axis_src_main_plan.html" class="directory">configs/axis/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>14 (0.1%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat.html" class="directory">plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/</a></th>
+        <td>8 (0.5%)</td>
+        <td>13 (0.0%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_kernel_config.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/config/</a></th>
+        <td>6 (0.4%)</td>
+        <td>13 (0.0%)</td>
+        <td>2.1</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty6-builder_src_main_xsd.html" class="directory">modules/geronimo-jetty6-builder/src/main/xsd/</a></th>
+        <td>2 (0.1%)</td>
+        <td>13 (0.0%)</td>
+        <td>6.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_assemblies_geronimo-boilerplate-minimal_src_main_resources_bin.html" class="directory">assemblies/geronimo-boilerplate-minimal/src/main/resources/bin/</a></th>
+        <td>1 (0.1%)</td>
+        <td>13 (0.0%)</td>
+        <td>13.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-tomcat_src_main_java_org_apache_geronimo_tomcat.html" class="directory">modules/geronimo-tomcat/src/main/java/org/apache/geronimo/tomcat/</a></th>
+        <td>2 (0.1%)</td>
+        <td>12 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_xmlbeans.html" class="directory">modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/xmlbeans/</a></th>
+        <td>1 (0.1%)</td>
+        <td>12 (0.0%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_myfaces_src_main_plan.html" class="directory">configs/myfaces/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>12 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_geronimo-j2ee-builder_src_main_java_org_apache_geronimo_j2ee_deployment.html" class="directory">plugins/j2ee/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>11 (0.0%)</td>
+        <td>11.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_jce_provider.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/jce/provider/</a></th>
+        <td>22 (1.4%)</td>
+        <td>11 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_encoders.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/encoders/</a></th>
+        <td>22 (1.4%)</td>
+        <td>11 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-web-2.5-builder_src_main_xsd.html" class="directory">modules/geronimo-web-2.5-builder/src/main/xsd/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat6-builder_src_main_xsd.html" class="directory">modules/geronimo-tomcat6-builder/src/main/xsd/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo_security_jaas_server.html" class="directory">modules/geronimo-security/src/main/java/org/apache/geronimo/security/jaas/server/</a></th>
+        <td>3 (0.2%)</td>
+        <td>10 (0.0%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-security-builder_src_main_java_org_apache_geronimo_security_deployment.html" class="directory">modules/geronimo-security-builder/src/main/java/org/apache/geronimo/security/deployment/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-security_src_main_java_org_apache_geronimo_security_keystore.html" class="directory">framework/modules/geronimo-security/src/main/java/org/apache/geronimo/security/keystore/</a></th>
+        <td>5 (0.3%)</td>
+        <td>10 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_xmlbeans_src_main_plan.html" class="directory">configs/xmlbeans/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_transformer-agent_src_main_plan.html" class="directory">configs/transformer-agent/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_sharedlib.html" class="directory">configs/sharedlib/</a></th>
+        <td>3 (0.2%)</td>
+        <td>10 (0.0%)</td>
+        <td>3.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jetty6-clustering-wadi_src_main_plan.html" class="directory">configs/jetty6-clustering-wadi/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jee-specs_src_main_plan.html" class="directory">configs/jee-specs/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_cxf_src_main_plan.html" class="directory">configs/cxf/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_classes.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/classes/</a></th>
+        <td>2 (0.1%)</td>
+        <td>10 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jasper_src_main_plan.html" class="directory">configs/jasper/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>9 (0.0%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_dojo-tomcat_src_main_resources_META-INF.html" class="directory">configs/dojo-tomcat/src/main/resources/META-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>9 (0.0%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_axis2_src_main_plan.html" class="directory">configs/axis2/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>9 (0.0%)</td>
+        <td>4.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_geronimo-security-builder_src_test_java_org_apache_geronimo_security_deployment.html" class="directory">plugins/j2ee/geronimo-security-builder/src/test/java/org/apache/geronimo/security/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>8 (0.0%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-system_src_main_java_org_apache_geronimo_system_sharedlib.html" class="directory">modules/geronimo-system/src/main/java/org/apache/geronimo/system/sharedlib/</a></th>
+        <td>1 (0.1%)</td>
+        <td>8 (0.0%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-naming_src_test_java_org_apache_geronimo_gjndi.html" class="directory">modules/geronimo-naming/src/test/java/org/apache/geronimo/gjndi/</a></th>
+        <td>4 (0.3%)</td>
+        <td>8 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-naming_src_main_java_org_apache_geronimo_gjndi.html" class="directory">modules/geronimo-naming/src/main/java/org/apache/geronimo/gjndi/</a></th>
+        <td>4 (0.3%)</td>
+        <td>8 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-jetty_src_main_java_org_apache_geronimo_jetty_cluster.html" class="directory">modules/geronimo-jetty/src/main/java/org/apache/geronimo/jetty/cluster/</a></th>
+        <td>4 (0.3%)</td>
+        <td>8 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty_src_main_java_org_apache_geronimo_jetty.html" class="directory">modules/geronimo-jetty/src/main/java/org/apache/geronimo/jetty/</a></th>
+        <td>6 (0.4%)</td>
+        <td>8 (0.0%)</td>
+        <td>1.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-activemq_src_main_java_org_apache_geronimo_activemq.html" class="directory">modules/geronimo-activemq/src/main/java/org/apache/geronimo/activemq/</a></th>
+        <td>1 (0.1%)</td>
+        <td>8 (0.0%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_maven-plugins_car-maven-plugin_src_test_resources.html" class="directory">maven-plugins/car-maven-plugin/src/test/resources/</a></th>
+        <td>4 (0.3%)</td>
+        <td>8 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_welcome-tomcat_src_main_resources_META-INF.html" class="directory">configs/welcome-tomcat/src/main/resources/META-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>8 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_welcome-jetty_src_main_resources_META-INF.html" class="directory">configs/welcome-jetty/src/main/resources/META-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>8 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jaxws-deployer_src_main_plan.html" class="directory">configs/jaxws-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>8 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_resources.html" class="directory">plugins/console/console-base-portlets/src/main/resources/</a></th>
+        <td>5 (0.3%)</td>
+        <td>7 (0.0%)</td>
+        <td>1.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_crypto.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/</a></th>
+        <td>13 (0.8%)</td>
+        <td>7 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/</a></th>
+        <td>11 (0.7%)</td>
+        <td>7 (0.0%)</td>
+        <td>0.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_assemblies_geronimo-tomcat-j2ee.html" class="directory">assemblies/geronimo-tomcat-j2ee/</a></th>
+        <td>1 (0.1%)</td>
+        <td>7 (0.0%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_assemblies_geronimo-jetty-j2ee.html" class="directory">assemblies/geronimo-jetty-j2ee/</a></th>
+        <td>1 (0.1%)</td>
+        <td>7 (0.0%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_securitymanager.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/securitymanager/</a></th>
+        <td>3 (0.2%)</td>
+        <td>7 (0.0%)</td>
+        <td>2.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_openjpa2_geronimo-persistence-jpa20.html" class="directory">plugins/openjpa2/geronimo-persistence-jpa20/</a></th>
+        <td>1 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-webservices-builder_src_main_java_org_apache_geronimo_webservices_builder.html" class="directory">modules/geronimo-webservices-builder/src/main/java/org/apache/geronimo/webservices/builder/</a></th>
+        <td>1 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-webservices-builder.html" class="directory">modules/geronimo-webservices-builder/</a></th>
+        <td>3 (0.2%)</td>
+        <td>6 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo_web25_deployment.html" class="directory">modules/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty6_src_test_java_org_apache_geronimo_jetty6.html" class="directory">modules/geronimo-jetty6/src/test/java/org/apache/geronimo/jetty6/</a></th>
+        <td>2 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_util.html" class="directory">modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/util/</a></th>
+        <td>1 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_pkcs.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/pkcs/</a></th>
+        <td>12 (0.8%)</td>
+        <td>6 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_configs_offline-deployer_src_main_plan.html" class="directory">framework/configs/offline-deployer/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_webservices-common_src_main_plan.html" class="directory">configs/webservices-common/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>6 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_wadi-clustering.html" class="directory">configs/wadi-clustering/</a></th>
+        <td>3 (0.2%)</td>
+        <td>6 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_clustering.html" class="directory">configs/clustering/</a></th>
+        <td>3 (0.2%)</td>
+        <td>6 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_webapp_WEB-INF_classes.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/webapp/WEB-INF/classes/</a></th>
+        <td>6 (0.4%)</td>
+        <td>6 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_java.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/java/</a></th>
+        <td>12 (0.8%)</td>
+        <td>6 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_jsp2_examples_simpletag.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/jsp2/examples/simpletag/</a></th>
+        <td>6 (0.4%)</td>
+        <td>6 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_jsp2_examples_simpletag.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/jsp2/examples/simpletag/</a></th>
+        <td>11 (0.7%)</td>
+        <td>6 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_plugin-portlets_src_main_webapp_WEB-INF_classes.html" class="directory">plugins/console/plugin-portlets/src/main/webapp/WEB-INF/classes/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_webapp_WEB-INF_view_logmanager.html" class="directory">plugins/console/console-base-portlets/src/main/webapp/WEB-INF/view/logmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-jetty6-builder_src_main_java_org_apache_geronimo_jetty6_deployment.html" class="directory">modules/geronimo-jetty6-builder/src/main/java/org/apache/geronimo/jetty6/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-j2ee_src_main_java_org_apache_geronimo_j2ee_j2eeobjectnames.html" class="directory">modules/geronimo-j2ee/src/main/java/org/apache/geronimo/j2ee/j2eeobjectnames/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-management_src_main_java_org_apache_geronimo_management_geronimo.html" class="directory">framework/modules/geronimo-management/src/main/java/org/apache/geronimo/management/geronimo/</a></th>
+        <td>5 (0.3%)</td>
+        <td>5 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_tomcat6_src_main_resources_META-INF.html" class="directory">configs/tomcat6/src/main/resources/META-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_tomcat6-deployer_src_main_resources_META-INF.html" class="directory">configs/tomcat6-deployer/src/main/resources/META-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_examples.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/examples/</a></th>
+        <td>5 (0.3%)</td>
+        <td>5 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_examples.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/examples/</a></th>
+        <td>8 (0.5%)</td>
+        <td>5 (0.0%)</td>
+        <td>0.6</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_securityrealmmanager_se_users.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/securityrealmmanager/se/users/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-framework_src_main_webapp.html" class="directory">applications/console/geronimo-console-framework/src/main/webapp/</a></th>
+        <td>1 (0.1%)</td>
+        <td>5 (0.0%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_openjpa2_geronimo-persistence-jpa20_src_main_java_org_apache_geronimo_persistence.html" class="directory">plugins/openjpa2/geronimo-persistence-jpa20/src/main/java/org/apache/geronimo/persistence/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-upgrade_src_test_data.html" class="directory">modules/geronimo-upgrade/src/test/data/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-tomcat6-builder_src_main_java_org_apache_geronimo_tomcat_deployment.html" class="directory">modules/geronimo-tomcat6-builder/src/main/java/org/apache/geronimo/tomcat/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat_src_test_resources_deployables_war3_WEB-INF.html" class="directory">modules/geronimo-tomcat/src/test/resources/deployables/war3/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-naming_src_test_java_org_apache_geronimo_gjndi_binding.html" class="directory">modules/geronimo-naming/src/test/java/org/apache/geronimo/gjndi/binding/</a></th>
+        <td>2 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-jetty6-builder_src_test_java_org_apache_geronimo_jetty6_deployment.html" class="directory">modules/geronimo-jetty6-builder/src/test/java/org/apache/geronimo/jetty6/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_crypto_digests.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests/</a></th>
+        <td>4 (0.3%)</td>
+        <td>4 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_misc.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/misc/</a></th>
+        <td>8 (0.5%)</td>
+        <td>4 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jetty6_src_plan.html" class="directory">configs/jetty6/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_j2ee-security_src_plan.html" class="directory">configs/j2ee-security/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_dojo-jetty6_src_main_resources_META-INF.html" class="directory">configs/dojo-jetty6/src/main/resources/META-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_activemq-broker_src_plan.html" class="directory">configs/activemq-broker/src/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_webapp_WEB-INF_classes_compressionFilters.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/webapp/WEB-INF/classes/compressionFilters/</a></th>
+        <td>4 (0.3%)</td>
+        <td>4 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_java_compressionFilters.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/java/compressionFilters/</a></th>
+        <td>7 (0.4%)</td>
+        <td>4 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_jsp2_el.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/jsp2/el/</a></th>
+        <td>4 (0.3%)</td>
+        <td>4 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_compressionFilters.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/compressionFilters/</a></th>
+        <td>4 (0.3%)</td>
+        <td>4 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_cal.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/cal/</a></th>
+        <td>4 (0.3%)</td>
+        <td>4 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_compressionFilters.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/compressionFilters/</a></th>
+        <td>7 (0.4%)</td>
+        <td>4 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_cal.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/cal/</a></th>
+        <td>7 (0.4%)</td>
+        <td>4 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_jmxmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/jmxmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_infomanager.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/infomanager/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_jmxmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/jmxmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-framework_src_main_webapp_WEB-INF.html" class="directory">applications/console/geronimo-console-framework/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-framework.html" class="directory">applications/console/geronimo-console-framework/</a></th>
+        <td>1 (0.1%)</td>
+        <td>4 (0.0%)</td>
+        <td>4.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_tomcat_tomcat7-deployer_src_main_plan.html" class="directory">plugins/tomcat/tomcat7-deployer/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_openjpa2_geronimo-persistence-jpa20-builder_src_main_java_org_apache_geronimo_persistence_builder.html" class="directory">plugins/openjpa2/geronimo-persistence-jpa20-builder/src/main/java/org/apache/geronimo/persistence/builder/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_openejb_openejb-deployer_src_main_plan.html" class="directory">plugins/openejb/openejb-deployer/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_jetty8_jetty8-deployer_src_main_plan.html" class="directory">plugins/jetty8/jetty8-deployer/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_java_org_apache_geronimo_console_securitymanager_realm.html" class="directory">plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/securitymanager/realm/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment_plugin_local.html" class="directory">modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/local/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-activemq-gbean_src_main_java_org_apache_activemq_gbean_management.html" class="directory">modules/geronimo-activemq-gbean/src/main/java/org/apache/activemq/gbean/management/</a></th>
+        <td>2 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_maven-plugins_car-maven-plugin_src_main_java_org_apache_geronimo_mavenplugins_car.html" class="directory">maven-plugins/car-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/car/</a></th>
+        <td>2 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_jce.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/jce/</a></th>
+        <td>6 (0.4%)</td>
+        <td>3 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_util.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/util/</a></th>
+        <td>6 (0.4%)</td>
+        <td>3 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_tomcat6_src_plan.html" class="directory">configs/tomcat6/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-remote-deploy_src_main_webapp_WEB-INF.html" class="directory">applications/geronimo-remote-deploy/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>3 (0.0%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_webapp_WEB-INF_classes_filters.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/webapp/WEB-INF/classes/filters/</a></th>
+        <td>3 (0.2%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_java_filters.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/java/filters/</a></th>
+        <td>6 (0.4%)</td>
+        <td>3 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_tagplugin.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/tagplugin/</a></th>
+        <td>3 (0.2%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_security_protected.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/security/protected/</a></th>
+        <td>3 (0.2%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_jsp2_tagfiles.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/jsp2/tagfiles/</a></th>
+        <td>3 (0.2%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_jsp2_simpletag.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/jsp2/simpletag/</a></th>
+        <td>3 (0.2%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_filters.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/filters/</a></th>
+        <td>3 (0.2%)</td>
+        <td>3 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_filters.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/filters/</a></th>
+        <td>6 (0.4%)</td>
+        <td>3 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_openjpa2_geronimo-persistence-jpa20_src_test_java_org_apache_geronimo_persistence.html" class="directory">plugins/openjpa2/geronimo-persistence-jpa20/src/test/java/org/apache/geronimo/persistence/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_geronimo-j2ee_src_main_java_org_apache_geronimo_j2ee_j2eeobjectnames.html" class="directory">plugins/j2ee/geronimo-j2ee/src/main/java/org/apache/geronimo/j2ee/j2eeobjectnames/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-webservices-builder_src_site.html" class="directory">modules/geronimo-webservices-builder/src/site/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat6_src_test_java_org_apache_geronimo_tomcat.html" class="directory">modules/geronimo-tomcat6/src/test/java/org/apache/geronimo/tomcat/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-security-builder_src_main_xsd.html" class="directory">modules/geronimo-security-builder/src/main/xsd/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-naming_src_main_java_org_apache_geronimo_gjndi_binding.html" class="directory">modules/geronimo-naming/src/main/java/org/apache/geronimo/gjndi/binding/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-naming-builder_src_main_xsd.html" class="directory">modules/geronimo-naming-builder/src/main/xsd/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-jetty6-builder_src_test_resources_plans.html" class="directory">modules/geronimo-jetty6-builder/src/test/resources/plans/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty-clustering-wadi_src_main_java_org_apache_geronimo_jetty_cluster_wadi.html" class="directory">modules/geronimo-jetty-clustering-wadi/src/main/java/org/apache/geronimo/jetty/cluster/wadi/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-jetty-clustering-wadi.html" class="directory">modules/geronimo-jetty-clustering-wadi/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment.html" class="directory">modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-clustering.html" class="directory">modules/geronimo-clustering/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-clustering-wadi.html" class="directory">modules/geronimo-clustering-wadi/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-clustering-builder-wadi_src_main_schema.html" class="directory">modules/geronimo-clustering-builder-wadi/src/main/schema/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-clustering-builder-wadi_src_main_java_org_apache_geronimo_clustering_wadi_jetty.html" class="directory">modules/geronimo-clustering-builder-wadi/src/main/java/org/apache/geronimo/clustering/wadi/jetty/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-clustering-builder-wadi.html" class="directory">modules/geronimo-clustering-builder-wadi/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-activemq-gbean_src_main_java_org_apache_activemq_gbean.html" class="directory">modules/geronimo-activemq-gbean/src/main/java/org/apache/activemq/gbean/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_maven-plugins_car-maven-plugin_src_test_java_org_apache_geronimo_mavenplugins_car.html" class="directory">maven-plugins/car-maven-plugin/src/test/java/org/apache/geronimo/mavenplugins/car/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_openejb-deployer.html" class="directory">configs/openejb-deployer/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_online-deployer_src_plan.html" class="directory">configs/online-deployer/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_client-security_src_plan.html" class="directory">configs/client-security/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs.html" class="directory">configs/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_assemblies_geronimo-tomcat-j2ee_src_main_var_config.html" class="directory">assemblies/geronimo-tomcat-j2ee/src/main/var/config/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_assemblies_geronimo-jetty-j2ee_src_main_var_config.html" class="directory">assemblies/geronimo-jetty-j2ee/src/main/var/config/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_webapp_WEB-INF_classes_listeners.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/webapp/WEB-INF/classes/listeners/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_java_listeners.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/java/listeners/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_jsptoserv.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/jsptoserv/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_jsp2_misc.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/jsp2/misc/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_jsp2_jspattribute.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/jsp2/jspattribute/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_include.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/include/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_forward.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/forward/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_error.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/error/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_cal.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/cal/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_listeners.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/listeners/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_jsp2_examples.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/jsp2/examples/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_listeners.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/listeners/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_jsp2_examples.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/jsp2/examples/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_car.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/car/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_jmsmanager_wizard.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/jmsmanager/wizard/</a></th>
+        <td>1 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_car.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/car/</a></th>
+        <td>2 (0.1%)</td>
+        <td>2 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsupport_test-deployment-javaee_5_test-war-javaee_5_src_main_webapp_WEB-INF.html" class="directory">testsupport/test-deployment-javaee_5/test-war-javaee_5/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsupport_test-deployment-j2ee_1.4_test-war-j2ee_1.4_src_main_webapp_WEB-INF.html" class="directory">testsupport/test-deployment-j2ee_1.4/test-war-j2ee_1.4/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsupport_test-deployment-j2ee_1.3_test-war-j2ee_1.3_src_main_webapp_WEB-INF.html" class="directory">testsupport/test-deployment-j2ee_1.3/test-war-j2ee_1.3/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_javaee6-testsuite.html" class="directory">testsuite/javaee6-testsuite/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_tomcat_tomcat6_src_main_plan.html" class="directory">plugins/tomcat/tomcat6/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_tomcat_tomcat6.html" class="directory">plugins/tomcat/tomcat6/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_openejb_geronimo-openejb_src_main_java_org_apache_geronimo_openejb.html" class="directory">plugins/openejb/geronimo-openejb/src/main/java/org/apache/geronimo/openejb/</a></th>
+        <td>3 (0.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.3</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_client_client-security_src_main_plan.html" class="directory">plugins/client/client-security/src/main/plan/</a></th>
+        <td>3 (0.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_bval_bval-deployer_src_main_plan.html" class="directory">plugins/bval/bval-deployer/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-web-2.5-builder_src_test_resources_plans.html" class="directory">modules/geronimo-web-2.5-builder/src/test/resources/plans/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-web-2.5-builder_src_test_java_org_apache_geronimo_web_deployment.html" class="directory">modules/geronimo-web-2.5-builder/src/test/java/org/apache/geronimo/web/deployment/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-web-2.5-builder_src_main_xsdconfig.html" class="directory">modules/geronimo-web-2.5-builder/src/main/xsdconfig/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-tomcat6-builder_src_main_xsdconfig.html" class="directory">modules/geronimo-tomcat6-builder/src/main/xsdconfig/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-openejb_src_test_java_org_apache_geronimo_openejb.html" class="directory">modules/geronimo-openejb/src/test/java/org/apache/geronimo/openejb/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-openejb_src_main_resources_META-INF_org.apache.openejb.client.IdentityResolver.html" class="directory">modules/geronimo-openejb/src/main/resources/META-INF/org.apache.openejb.client.IdentityResolver/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-openejb_src_main_resources_META-INF.html" class="directory">modules/geronimo-openejb/src/main/resources/META-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_gbean_runtime.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime/</a></th>
+        <td>4 (0.3%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.2</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-jetty6-builder_src_test_resources_deployables_war1_WEB-INF.html" class="directory">modules/geronimo-jetty6-builder/src/test/resources/deployables/war1/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty6-builder_src_main_xsdconfig.html" class="directory">modules/geronimo-jetty6-builder/src/main/xsdconfig/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-j2ee-schema_src_test_resources_geronimo.html" class="directory">modules/geronimo-j2ee-schema/src/test/resources/geronimo/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-deploy-tool_src_main_java_org_apache_geronimo_deployment_cli.html" class="directory">modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment_plugin_jmx.html" class="directory">modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-connector-builder_src_test_java_org_apache_geronimo_connector_deployment_jsr88.html" class="directory">modules/geronimo-connector-builder/src/test/java/org/apache/geronimo/connector/deployment/jsr88/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment_plugin_jmx.html" class="directory">framework/modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/jmx/</a></th>
+        <td>3 (0.2%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_jce_interfaces.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/jce/interfaces/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_crypto_modes.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/modes/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_x9.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/x9/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_sec.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/sec/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_oiw.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/oiw/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_asn1_cryptopro.html" class="directory">framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/asn1/cryptopro/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_configs_server-security-config_src_main_plan.html" class="directory">framework/configs/server-security-config/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_servlet-examples-tomcat_src_plan.html" class="directory">configs/servlet-examples-tomcat/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_servlet-examples-jetty_src_plan.html" class="directory">configs/servlet-examples-jetty/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_servlet-examples-jetty_src_main_resources_META-INF.html" class="directory">configs/servlet-examples-jetty/src/main/resources/META-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_remote-deploy-tomcat_src_plan.html" class="directory">configs/remote-deploy-tomcat/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_remote-deploy-jetty_src_plan.html" class="directory">configs/remote-deploy-jetty/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jsp-examples-tomcat_src_plan.html" class="directory">configs/jsp-examples-tomcat/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jsp-examples-jetty_src_plan.html" class="directory">configs/jsp-examples-jetty/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jsp-examples-jetty_src_main_resources_META-INF.html" class="directory">configs/jsp-examples-jetty/src/main/resources/META-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_activemq-broker.html" class="directory">configs/activemq-broker/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-welcome.html" class="directory">applications/geronimo-welcome/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-uddi-server.html" class="directory">applications/geronimo-uddi-server/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_webapp_WEB-INF_classes_util.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/webapp/WEB-INF/classes/util/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_webapp_WEB-INF.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-servlet-examples_src_main_java_util.html" class="directory">applications/geronimo-examples/geronimo-servlet-examples/src/main/java/util/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_xml.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/xml/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_snp.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/snp/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_simpletag.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/simpletag/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_sessions.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/sessions/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_plugin_applet.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/plugin/applet/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_plugin.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/plugin/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_num.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/num/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_dates.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/dates/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_colors.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/colors/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_checkbox.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/checkbox/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_jsp_applet.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/jsp/applet/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_validators.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/validators/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_util.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/util/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_sessions.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/sessions/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_num.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/num/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_jsp2_examples_el.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/jsp2/examples/el/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_error.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/error/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_dates.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/dates/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_colors.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/colors/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes_checkbox.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/checkbox/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF_classes.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/classes/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp_WEB-INF.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/WEB-INF/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_webapp.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/webapp/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_validators.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/validators/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_util.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/util/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_sessions.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/sessions/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_num.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/num/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_jsp2_examples_el.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/jsp2/examples/el/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_error.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/error/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_dates.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/dates/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_colors.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/colors/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java_checkbox.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/checkbox/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_geronimo-examples_geronimo-jsp-examples_src_main_java.html" class="directory">applications/geronimo-examples/geronimo-jsp-examples/src/main/java/</a></th>
+        <td>2 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>0.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_demo.html" class="directory">applications/demo/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications.html" class="directory">applications/</a></th>
+        <td>1 (0.1%)</td>
+        <td>1 (0.0%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-web-test_src_test_java_org_apache_geronimo_sample_RegisterValidation_test.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-web-test/src/test/java/org/apache/geronimo/sample/RegisterValidation/test/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-tests_beanvalidation-web-test.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-web-test/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-test_src_test_resources.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-test/src/test/resources/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-test_src_test_java_org_apache_geronimo_sample_RegisterValidation_test.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-test/src/test/java/org/apache/geronimo/sample/RegisterValidation/test/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-test_src_main_webapp_WEB-INF.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-test/src/main/webapp/WEB-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-test_src_main_webapp.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-test/src/main/webapp/</a></th>
+        <td>4 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-test_src_main_java_org_apache_geronimo_sample_RegisterValidation_Model.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-test/src/main/java/org/apache/geronimo/sample/RegisterValidation/Model/</a></th>
+        <td>4 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-test_src_main_java_org_apache_geronimo_sample_RegisterValidation_Constraints.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-test/src/main/java/org/apache/geronimo/sample/RegisterValidation/Constraints/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-test_src_main_java_org_apache_geronimo_sample_RegisterValidation_Action.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-test/src/main/java/org/apache/geronimo/sample/RegisterValidation/Action/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_testsuite_javaee6-testsuite_beanvalidation-test.html" class="directory">testsuite/javaee6-testsuite/beanvalidation-test/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_tomcat_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_connector.html" class="directory">plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/connector/</a></th>
+        <td>4 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_system-database_sysdb-portlets_src_main_java_org_apache_geronimo_console_internaldb.html" class="directory">plugins/system-database/sysdb-portlets/src/main/java/org/apache/geronimo/console/internaldb/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_jetty_geronimo-jetty6_src_main_java_org_apache_geronimo_jetty6_requestlog.html" class="directory">plugins/jetty/geronimo-jetty6/src/main/java/org/apache/geronimo/jetty6/requestlog/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo_web25_deployment.html" class="directory">plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_j2ee_geronimo-j2ee-schema_src_test_resources_geronimo.html" class="directory">plugins/j2ee/geronimo-j2ee-schema/src/test/resources/geronimo/</a></th>
+        <td>4 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_plugin-portlets_src_main_java_org_apache_geronimo_console_configmanager.html" class="directory">plugins/console/plugin-portlets/src/main/java/org/apache/geronimo/console/configmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_webapp_WEB-INF_view_webmanager_connector.html" class="directory">plugins/console/console-base-portlets/src/main/webapp/WEB-INF/view/webmanager/connector/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_java_org_apache_geronimo_console_logmanager.html" class="directory">plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/logmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_plugins_console_console-base-portlets_src_main_java_org_apache_geronimo_console_ca.html" class="directory">plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/ca/</a></th>
+        <td>4 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_plugins_connector_geronimo-connector_src_main_java_org_apache_geronimo_connector_outbound_security.html" class="directory">plugins/connector/geronimo-connector/src/main/java/org/apache/geronimo/connector/outbound/security/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat_connector.html" class="directory">modules/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/connector/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat6-builder.html" class="directory">modules/geronimo-tomcat6-builder/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-security_src_test_data_data.html" class="directory">modules/geronimo-security/src/test/data/data/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo_security_jaas_client.html" class="directory">modules/geronimo-security/src/main/java/org/apache/geronimo/security/jaas/client/</a></th>
+        <td>4 (0.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-security_src_main_java_org_apache_geronimo_security_deploy.html" class="directory">modules/geronimo-security/src/main/java/org/apache/geronimo/security/deploy/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-naming-builder_src_main_java_org_apache_geronimo_naming_deployment_jsr88.html" class="directory">modules/geronimo-naming-builder/src/main/java/org/apache/geronimo/naming/deployment/jsr88/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_kernel_repository.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/repository/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_kernel_proxy.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/proxy/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_kernel_config_xstream.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/config/xstream/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_kernel_classloader.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/classloader/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-kernel_src_main_java_org_apache_geronimo_kernel.html" class="directory">modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-j2ee_src_main_java_org_apache_geronimo_j2ee_management_impl.html" class="directory">modules/geronimo-j2ee/src/main/java/org/apache/geronimo/j2ee/management/impl/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-activation_src_test_java_org_apache_geronimo_activation_handlers.html" class="directory">modules/geronimo-activation/src/test/java/org/apache/geronimo/activation/handlers/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-activation_src_main_java_org_apache_geronimo_activation_handlers.html" class="directory">modules/geronimo-activation/src/main/java/org/apache/geronimo/activation/handlers/</a></th>
+        <td>3 (0.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_framework_modules_geronimo-util_src_main_java_org_apache_geronimo_util.html" class="directory">framework/modules/geronimo-util/src/main/java/org/apache/geronimo/util/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_welcome-tomcat_src_main_plan.html" class="directory">configs/welcome-tomcat/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_welcome-jetty_src_main_plan.html" class="directory">configs/welcome-jetty/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_webconsole-jetty6_src_plan.html" class="directory">configs/webconsole-jetty6/src/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_spring_src_main_plan.html" class="directory">configs/spring/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_sharedlib_src_main_plan.html" class="directory">configs/sharedlib/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_rmi-naming_src_plan.html" class="directory">configs/rmi-naming/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_remote-deploy-tomcat_src_main_resources_META-INF.html" class="directory">configs/remote-deploy-tomcat/src/main/resources/META-INF/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_mejb_src_main_plan.html" class="directory">configs/mejb/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_jaxws-ejb-deployer_src_main_plan.html" class="directory">configs/jaxws-ejb-deployer/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_j2ee-server_src_plan.html" class="directory">configs/j2ee-server/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_dojo-tomcat_src_main_plan.html" class="directory">configs/dojo-tomcat/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_dojo-jetty6_src_main_plan.html" class="directory">configs/dojo-jetty6/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_cxf-ejb_src_main_plan.html" class="directory">configs/cxf-ejb/src/main/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_cxf-ejb-deployer_src_main_plan.html" class="directory">configs/cxf-ejb-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_client_src_plan.html" class="directory">configs/client/src/plan/</a></th>
+        <td>1 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_ca-helper-tomcat_src_main_plan.html" class="directory">configs/ca-helper-tomcat/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_ca-helper-jetty_src_main_plan.html" class="directory">configs/ca-helper-jetty/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_axis2-ejb_src_main_plan.html" class="directory">configs/axis2-ejb/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_axis2-ejb-deployer_src_main_plan.html" class="directory">configs/axis2-ejb-deployer/src/main/plan/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_logmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/logmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_derbylogmanager.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/derbylogmanager/</a></th>
+        <td>2 (0.1%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_webapp_WEB-INF_view_configcreator.html" class="directory">applications/console/geronimo-console-standard/src/main/webapp/WEB-INF/view/configcreator/</a></th>
+        <td>7 (0.4%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_applications_console_geronimo-console-standard_src_main_java_org_apache_geronimo_console_configcreator.html" class="directory">applications/console/geronimo-console-standard/src/main/java/org/apache/geronimo/console/configcreator/</a></th>
+        <td>11 (0.7%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_vamsic007.png" alt="Activity of vamsic007" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-10-19 07:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1024200</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5222 Add support for application validation descriptor support for deployed applications<br />
+ o When the modules are packaged in an EAR, additional processing is required to obtain the validation descriptors<br />
+ o Each module has its own ValidatorFactory. So, we need to keep track of the module names too in case of EARs.
+    </p>
+    <p class="commitdetails"><strong>68</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/bval/geronimo-bval-builder/src/main/java/org/apache/geronimo/bval/deployment</strong>:
+        BValModuleBuilderExtension.java&#160;<span class="change">(+16&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/bval/geronimo-bval/src/main/java/org/apache/geronimo/bval</strong>:
+        ValidatorFactoryGBean.java&#160;<span class="change">(+52&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-10-14 12:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1022595</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Throwing deployment exceptions for validator descriptor processing is resulting in TCK failures.  Log debug messages instead.
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/bval/geronimo-bval-builder/src/main/java/org/apache/geronimo/bval/deployment</strong>:
+        BValModuleBuilderExtension.java&#160;<span class="change">(+12&#160;-8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-10-07 15:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1005583</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+BeanValidation tests for EJBs<br />
+ o Test for injected and JNDI bound validator factory, validator in session bean
+    </p>
+    <p class="commitdetails"><strong>578</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test</strong>:
+        pom.xml&#160;<span class="new">(new&#160;57)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ear</strong>:
+        pom.xml&#160;<span class="new">(new&#160;165)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ear/src/main/filtered-resources/META-INF</strong>:
+        geronimo-application.xml&#160;<span class="new">(new&#160;32)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ear/src/test/java/org/apache/geronimo/testsuite/beanvalidation/ejb</strong>:
+        ValidationEJBTest.java&#160;<span class="new">(new&#160;35)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ear/src/test/resources</strong>:
+        testng.xml&#160;<span class="new">(new&#160;31)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ejb</strong>:
+        pom.xml&#160;<span class="new">(new&#160;36)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-ejb/src/main/java/org/apache/geronimo/ejb</strong>:
+        ValidationBean.java&#160;<span class="new">(new&#160;71)</span>,
+        ValidationRemote.java&#160;<span class="new">(new&#160;26)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-war</strong>:
+        pom.xml&#160;<span class="new">(new&#160;49)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-war/src/main/webapp</strong>:
+        index.jsp&#160;<span class="new">(new&#160;46)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-ejb-test/beanvalidation-ejb-war/src/main/webapp/WEB-INF</strong>:
+        web.xml&#160;<span class="new">(new&#160;29)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-10-07 14:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1005567</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+These tests are no good without the assertions. Added assertions.
+    </p>
+    <p class="commitdetails"><strong>36</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/security-testsuite/test-security-annotation-ejb/security-ejb-ear/src/test/java/org/apache/geronimo/testsuite/security/ejb</strong>:
+        SecurityEJBTest.java&#160;<span class="change">(+36&#160;-26)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-10-07 14:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1005564</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Formatting change
+    </p>
+    <p class="commitdetails"><strong>46</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/security-testsuite/test-security-annotation-ejb/security-ejb-ear/src/test/java/org/apache/geronimo/testsuite/security/ejb</strong>:
+        SecurityEJBTest.java&#160;<span class="change">(+46&#160;-46)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-10-07 11:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1005484</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Reorganize to add more bean validation tests for EJBs, Connectors, etc.
+    </p>
+    <p class="commitdetails"><strong>51</strong> lines of code changed in <span class="files">22 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/javaee6-testsuite</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-test</strong>:
+        pom.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-test/src/main/java/org/apache/geronimo/sample/RegisterValidation/Action</strong>:
+        submitInfo.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-test/src/main/java/org/apache/geronimo/sample/RegisterValidation/Constraints</strong>:
+        ValidDay.java&#160;<span class="del">(del)</span>,
+        ValidDayValidator.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-test/src/main/java/org/apache/geronimo/sample/RegisterValidation/Model</strong>:
+        Address.java&#160;<span class="del">(del)</span>,
+        Information.java&#160;<span class="del">(del)</span>,
+        OrdinaryPeople.java&#160;<span class="del">(del)</span>,
+        VIP.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-test/src/main/webapp</strong>:
+        header.html&#160;<span class="del">(del)</span>,
+        index.html&#160;<span class="del">(del)</span>,
+        register.jsp&#160;<span class="del">(del)</span>,
+        successful.jsp&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-test/src/main/webapp/WEB-INF</strong>:
+        geronimo-web.xml&#160;<span class="del">(del)</span>,
+        web.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-test/src/test/java/org/apache/geronimo/sample/RegisterValidation/test</strong>:
+        BeanValidationTest.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-test/src/test/resources</strong>:
+        testng.xml&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests</strong>:
+        pom.xml&#160;<span class="new">(new&#160;50)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-web-test</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>testsuite/javaee6-testsuite/beanvalidation-tests/beanvalidation-web-test/src/test/java/org/apache/geronimo/sample/RegisterValidation/test</strong>:
+        BeanValidationTest.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-09-28 11:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1002222</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5222 Add support for application validation descriptor support for deployed applications<br />
+ o Throw deployment exception for errors in parsing validation and constraint mapping xml
+    </p>
+    <p class="commitdetails"><strong>73</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/bval/geronimo-bval-builder/src/main/java/org/apache/geronimo/bval/deployment</strong>:
+        BValModuleBuilderExtension.java&#160;<span class="change">(+73&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-09-16 14:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">997868</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5221 Add naming support for Validator and ValidatorFactory<br />
+ o Cache the factory instance so that a single instance is used per module
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/bval/geronimo-bval/src/main/java/org/apache/geronimo/bval</strong>:
+        DefaultValidatorFactoryReference.java&#160;<span class="change">(+9&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-09-16 09:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">997732</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5221 Add naming support for Validator and ValidatorFactory<br />
+ o DefaultValidator should use configured ValidatorFactory if any
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/bval/geronimo-bval/src/main/java/org/apache/geronimo/bval</strong>:
+        DefaultValidatorReference.java&#160;<span class="change">(+12&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-09-07 20:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">993568</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5226 Pass container ValidationFactory to the persistance manager when creating an entity manager.<br />
+  o Hook the BValModuleBuilderExtension to openejb deployer.<br />
+  o Add ValidatorFactoryGBean as a parameter to PersistenceUnitGBean constructor.
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/openejb-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/openjpa2/geronimo-persistence-jpa20-builder/src/main/java/org/apache/geronimo/persistence/builder</strong>:
+        PersistenceUnitBuilder.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/openjpa2/geronimo-persistence-jpa20</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/openjpa2/geronimo-persistence-jpa20/src/main/java/org/apache/geronimo/persistence</strong>:
+        PersistenceUnitGBean.java&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>plugins/openjpa2/geronimo-persistence-jpa20/src/test/java/org/apache/geronimo/persistence</strong>:
+        PersistenceUnitGBeanTest.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-09-07 20:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">993562</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5222 Add support for application validation descriptor support for deployed applications<br />
+ o Hook the module builder extension to jetty deployer.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/jetty8-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2010-09-07 15:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">993482</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5222 Add support for application validation descriptor support for deployed applications<br />
+ o Support for web applications<br />
+ o ModuleBuilderExtension to add ValidatorFactoryGBean.<br />
+ o Hook the module builder extension to tomcat builder.
+    </p>
+    <p class="commitdetails"><strong>379</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/bval/bval-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>plugins/bval/geronimo-bval-builder/src/main/java/org/apache/geronimo/bval/deployment</strong>:
+        BValModuleBuilderExtension.java&#160;<span class="new">(new&#160;104)</span>,
+        BValNamingBuilder.java&#160;<span class="change">(+20&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/bval/geronimo-bval/src/main/java/org/apache/geronimo/bval</strong>:
+        ValidatorFactoryGBean.java&#160;<span class="new">(new&#160;249)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee/src/main/java/org/apache/geronimo/j2ee/j2eeobjectnames</strong>:
+        NameFactory.java&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat7-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-04-24 00:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">651154</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3984 Keystores portlet - Unlock keystore page shows wrong label on submit button<br />
+ o Merging rev 651153 from branches\2.1<br />
+ o Patched unlockKeystore.jsp and consolebase.properties.<br />
+ o Can someone tell me what to do about consolebase_zh.properties?
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/resources</strong>:
+        consolebase.properties&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/webapp/WEB-INF/view/keystore</strong>:
+        unlockKeystore.jsp&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-04-15 02:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">648129</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3955 Typo<br />
+ o Thanks for the patch Joseph Leong
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/keystores</strong>:
+        LockEditKeystoreHandler.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-03-27 09:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">641805</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3901 Security Realms portlet - "encoding" option missing for Properties File Realm<br />
+ o Added the missing properties<br />
+ o Merging rev 641804 from branches\2.1
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/plugin-portlets/src/main/webapp/WEB-INF/classes</strong>:
+        login-modules.properties&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-03-27 08:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">641795</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3875 Enabling authentication for Derby renders DB Viewer portlet unusable for all db's except SystemDatabase<br />
+ o Enables using DB portlet for databases with connection pools defined.<br />
+ o Merging rev 641794 from branches\2.1
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/system-database/sysdb-portlets/src/main/java/org/apache/geronimo/console/internaldb</strong>:
+        DerbyConnectionUtil.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-03-22 02:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">639953</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3806 CLONE -Extraneous WARN messages during deployment of resource-env-refs in EJB jar<br />
+ o Applying patches submitted by Manu and Toby. Many thanks for the patch.
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector/geronimo-connector-builder/src/main/java/org/apache/geronimo/connector/deployment</strong>:
+        ResourceRefBuilder.java&#160;<span class="change">(+16&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-03-19 16:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">638985</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3879 Web Access Log Viewer problems in multiple server instances scenario<br />
+ o Locate the logs under the server instance directory.
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty/geronimo-jetty6/src/main/java/org/apache/geronimo/jetty6/requestlog</strong>:
+        JettyLogManagerImpl.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatLogManagerImpl.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-03-06 07:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">634220</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3882 Mdb container ids not set during creation<br />
+ o Set the container id<br />
+ o Patch provided by Manu T. George.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb/src/main/java/org/apache/geronimo/openejb</strong>:
+        OpenEjbSystemGBean.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-02-11 17:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">620623</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3837 allowLinking Tomcat atttibute in StandardContext not configurable through Geronimo<br />
+ o Enabling this attribute per server instance using a system property org.apache.geronimo.tomcat.GeronimoStandardContext.allowLinking
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        GeronimoStandardContext.java&#160;<span class="change">(+10)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(179 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

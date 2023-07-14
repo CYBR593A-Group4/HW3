@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/monitoring/mconsole-tomcat/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/monitoring/mconsole-tomcat/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>2</dd>
+    <dt>Lines of Code:</dt>
+    <dd>187</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_monitoring.html">monitoring</a>/<strong>mconsole-tomcat</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_monitoring_mconsole-tomcat_src.html">src</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_monitoring_mconsole-tomcat_src_main.html">main</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_monitoring_mconsole-tomcat_src_main_history.html">history</a> 
+(1 files, 44 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_monitoring_mconsole-tomcat_src_main_plan.html">plan</a> 
+(1 files, 64 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_monitoring_mconsole-tomcat.png" alt="plugins/monitoring/mconsole-tomcat/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>22 (100.0%)</td>
+        <td>238 (100.0%)</td>
+        <td>10.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>1 (4.5%)</td>
+        <td>132 (55.5%)</td>
+        <td>132.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>9 (40.9%)</td>
+        <td>76 (31.9%)</td>
+        <td>8.4</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>2 (9.1%)</td>
+        <td>13 (5.5%)</td>
+        <td>6.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>1 (4.5%)</td>
+        <td>7 (2.9%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_linsun.html" class="author">linsun</a></th>
+        <td>1 (4.5%)</td>
+        <td>5 (2.1%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>2 (9.1%)</td>
+        <td>3 (1.3%)</td>
+        <td>1.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_xiaming.html" class="author">xiaming</a></th>
+        <td>1 (4.5%)</td>
+        <td>1 (0.4%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>1 (4.5%)</td>
+        <td>1 (0.4%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>4 (18.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_xiaming.html" class="author">xiaming</a>
+    <span class="date">2012-06-15 20:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1350832</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update trunk version to 4.0.0-SNAPSHOT
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-12-20 14:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1221400</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6240 Modify configs so that they use features as the bootstrap, and fix a few compile and test errors.  Servers build but do not fully start
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+35)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-12-20 14:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1221390</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6240 Make several base geronimo functions (kernel, deployer, etc) DS services and make the car-maven-plugin take advantage of that.  Server assembly doesn't work yet, builds framework.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-07-12 05:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1145514</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5599 Reenable monitoring admin console portlets, Patch from Shenghao Fang.
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+12&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-06-22 22:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1138711</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5674 Dojo related improvement.   Patch from Xiao Yi to replace the full dojo with a customized dojo.<br />
+<br />
+1, DojoHowToCompress/**/* files are the build script to build geronimo customized dojo.<br />
+2, dojo/**/* files are the customized dojo files for geronimo.<br />
+3, dojo-tomcat and dojo-jetty modules are removed.<br />
+4, customized dojo files are put into console-portal-driver webapp so that other jsp can reference the dojo<br />
+files with /console/dojo/xxx<br />
+5, also updated all dojo references in all jsps to the new dojo location.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-05-09 02:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">942493</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5290 fix many of the deprecation warnings from maven 3
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+10&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-12-14 05:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">890252</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4980 Try to finish some more of the tomcat6 to tomcat7 upgrade
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-10-07 10:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">822759</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+missed updating some jpa10 config and deployer depends
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2009-08-20 10:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">806188</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+more required updates due to renaming of the connector and transaction artifacts to include -1_6 in r805984
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2009-08-19 04:27</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">805694</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4793 Remove those duplicated jars in the lib folder of the console applications
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-08-17 21:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">805240</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4655 upgrade version to 3.0-SNAPSHOT, make a few things more consistent
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-08-17 13:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">805062</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+[maven-release-plugin] prepare branch 2.2
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-11-23 14:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">720024</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4415 use jpa for data access in monitoring console
+    </p>
+    <p class="commitdetails"><strong>20</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+20&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-11-17 17:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">718393</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4415 start of code cleanup and use of jpa in console.  Also add a server assembly for testing
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_linsun.html" class="author">linsun</a>
+    <span class="date">2008-10-08 16:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">702982</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update the name, description of mconsole slightly
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-05-15 05:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">656565</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4014 clean up monitoring plugin a little bit.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-23 14:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">650990</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Drop *most* per-module legal muck, a few modules have additions to the standard... so left them in place for resolution later<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        LICENSE.txt&#160;<span class="del">(del)</span>,
+        NOTICE.txt&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-02 04:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617770</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upgrade trunk to 2.2-SNAPSHOT
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-01-24 11:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">614900</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+no changes, just changed to unix line endings
+    </p>
+    <p class="commitdetails"><strong>132</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+132&#160;-132)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-01-23 14:44</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">614617</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update module names<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

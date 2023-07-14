@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory framework/configs/rmi-naming/src/main/plan/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory framework/configs/rmi-naming/src/main/plan/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>64</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_framework.html">framework</a>/<a href="dir_framework_configs.html">configs</a>/<a href="dir_framework_configs_rmi-naming.html">rmi-naming</a>/<a href="dir_framework_configs_rmi-naming_src.html">src</a>/<a href="dir_framework_configs_rmi-naming_src_main.html">main</a>/<strong>plan</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_framework_configs_rmi-naming_src_main_plan.png" alt="framework/configs/rmi-naming/src/main/plan/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>21 (100.0%)</td>
+        <td>143 (100.0%)</td>
+        <td>6.8</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>14 (66.7%)</td>
+        <td>127 (88.8%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>1 (4.8%)</td>
+        <td>6 (4.2%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>3 (14.3%)</td>
+        <td>6 (4.2%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>1 (4.8%)</td>
+        <td>2 (1.4%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_rwonly.html" class="author">rwonly</a></th>
+        <td>1 (4.8%)</td>
+        <td>1 (0.7%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>1 (4.8%)</td>
+        <td>1 (0.7%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-12-20 14:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1221395</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6240 Port conflict with the RMIRegistry so disable it for now
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2010-10-13 04:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1022033</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5638 Remove the encrypt(String) method from ConfiguredEncryption
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-06-29 12:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">959025</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+let's make java.rmi.server.RMIClassLoaderSpi property configurable
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-05-05 16:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">941475</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-5286) Many irrelevant build properties end up in the manifest<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-04-27 12:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">938534</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Wait for blueprint container to be created before processing rest of the gbeans. Should get ridd of sporadic 'We could not find an ObjectFactory to use' errors at server startup
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-03-28 03:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">928355</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+minor cleanup
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(-15)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-02-25 06:22</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">916222</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+<a href="https://issues.apache.org/jira/browse/GERONIMO">https://issues.apache.org/jira/browse/GERONIMO</a>-3003,  port #896316 from 22 branch to trunk.
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-23 03:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902360</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5041 Integration aries osgi jndi implementation
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+16&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-21 20:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901935</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5025 Initial work on ee 6 scoped jndi stuff.  Minimal testing so far
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-16 16:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">826073</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4916 step 2 move sandbox osgi framework into trunk
+    </p>
+    <p class="commitdetails"><strong>65</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;65)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-16 16:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">826072</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4916 step 1 remove old framwork
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-03-01 17:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">749113</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4559 use platform mbean server by default
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2008-10-30 15:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">709226</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4386 rmi-naming should use  in config-substitutions.properties for binding, instead of the default value of 0.0.0.0 in the source
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-02-07 20:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">619712</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3808 fix npe on shutdown.  Not convinced this is compatible with resource bindings
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-02-06 17:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">619158</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3808 Fix shutdown NPE and provide better error when accessing java:comp env on a non-initialized thread. Port from 2.1
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-01-04 20:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">609072</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3732 steps 1, 2. Move plugin management and some jsr88 base code into a new module
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(-82)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-12-15 14:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">604483</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3607 Large cleanup of code for extracting assemblies from running servers.  Should greatly improve dealing with snapshots in local maven repos.  Also changes meaning of plugin dependency start flag to override plugin load flag.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-12-04 19:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">601152</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3607 Add 'assemble a server' support to geronimo and use it from car-maven-plugin and gshell.  Not yet available in the console.  Better repository support would be desirable
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+24&#160;-54)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2007-11-27 16:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">598759</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add an option for setting minimum thread pool size. also increase thread idle time to 30 secs.  (GERONIMO-3634)
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-11-01 18:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591154</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3579  Configure which config.xml and properties files info from the plugin xml goes into
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

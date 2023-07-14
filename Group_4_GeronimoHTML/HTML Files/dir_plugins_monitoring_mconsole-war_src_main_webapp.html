@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/monitoring/mconsole-war/src/main/webapp/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/monitoring/mconsole-war/src/main/webapp/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>1</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>56</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_monitoring.html">monitoring</a>/<a href="dir_plugins_monitoring_mconsole-war.html">mconsole-war</a>/<a href="dir_plugins_monitoring_mconsole-war_src.html">src</a>/<a href="dir_plugins_monitoring_mconsole-war_src_main.html">main</a>/<strong>webapp</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_monitoring_mconsole-war_src_main_webapp_WEB-INF.html">WEB-INF</a> 
+(3 files, 168 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_monitoring_mconsole-war_src_main_webapp_WEB-INF_classes.html">classes</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_monitoring_mconsole-war_src_main_webapp_WEB-INF_classes_META-INF.html">META-INF</a> 
+(1 files, 35 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_monitoring_mconsole-war_src_main_webapp_WEB-INF_view.html">view</a> 
+(14 files, 3822 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_monitoring_mconsole-war_src_main_webapp.png" alt="plugins/monitoring/mconsole-war/src/main/webapp/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>9 (100.0%)</td>
+        <td>27 (100.0%)</td>
+        <td>3.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_ecraig.html" class="author">ecraig</a></th>
+        <td>4 (44.4%)</td>
+        <td>10 (37.0%)</td>
+        <td>2.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>1 (11.1%)</td>
+        <td>7 (25.9%)</td>
+        <td>7.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>2 (22.2%)</td>
+        <td>6 (22.2%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_rwonly.html" class="author">rwonly</a></th>
+        <td>1 (11.1%)</td>
+        <td>3 (11.1%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_xiaming.html" class="author">xiaming</a></th>
+        <td>1 (11.1%)</td>
+        <td>1 (3.7%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="8"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2011-08-09 23:25</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1156008</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6076 Graphics cannot be displayed on monitoring porlet (Thanks fang shenghao for the patch!)
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-war/src/main/webapp</strong>:
+        monitoringPopUpGraph.jsp&#160;<span class="change">(+3&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2011-07-19 03:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1148197</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6076 Graphics cannot be displayed on monitoring porlet.  Patch from Yi Xiao.
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-war/src/main/webapp</strong>:
+        monitoringPopUpGraph.jsp&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_xiaming.html" class="author">xiaming</a>
+    <span class="date">2011-04-29 02:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1097703</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5895 fix variant accessibility issues, patched by Shenghao Fang
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-war/src/main/webapp</strong>:
+        monitoringPopUpGraph.jsp&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-11-23 14:32</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">720024</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4415 use jpa for data access in monitoring console
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-war/src/main/webapp</strong>:
+        monitoringPopUpGraph.jsp&#160;<span class="change">(+2&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-11-17 17:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">718393</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4415 start of code cleanup and use of jpa in console.  Also add a server assembly for testing
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-war/src/main/webapp</strong>:
+        monitoringPopUpGraph.jsp&#160;<span class="change">(+4&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_ecraig.html" class="author">ecraig</a>
+    <span class="date">2008-02-06 07:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">618967</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3633<br />
+Monitoring client should auto redraw graphs/the page on any page that has graphs<br />
+<br />
+GERONIMO-3818<br />
+Monitoring console should open individual graphs in actual new window rather than tabs in firefox<br />
+<br />
+GERONIMO-3817<br />
+mconsole should display axis labels<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-war/src/main/webapp</strong>:
+        monitoringPopUpGraph.jsp&#160;<span class="change">(+9&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_ecraig.html" class="author">ecraig</a>
+    <span class="date">2008-01-30 18:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">616925</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Changing Dojo 1.0.x to default /dojo<br />
+Moved context root of Dojo 0.4.3 to /dojo/0.4<br />
+<br />
+Changed references in dependent plugins so they access proper versions correctly<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-war/src/main/webapp</strong>:
+        monitoringPopUpGraph.jsp&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_ecraig.html" class="author">ecraig</a>
+    <span class="date">2008-01-26 06:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">615443</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Monitoring console: Cleaned up appearance of header bar above graphs so that they match the width of the graph and are of uniform height
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/monitoring/mconsole-war/src/main/webapp</strong>:
+        monitoringPopUpGraph.jsp&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

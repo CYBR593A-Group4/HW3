@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>8</dd>
+    <dt>Deleted Files:</dt>
+    <dd>2</dd>
+    <dt>Lines of Code:</dt>
+    <dd>878</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_pluto.html">pluto</a>/<a href="dir_plugins_pluto_geronimo-pluto.html">geronimo-pluto</a>/<a href="dir_plugins_pluto_geronimo-pluto_src.html">src</a>/<a href="dir_plugins_pluto_geronimo-pluto_src_main.html">main</a>/<a href="dir_plugins_pluto_geronimo-pluto_src_main_java.html">java</a>/<a href="dir_plugins_pluto_geronimo-pluto_src_main_java_org.html">org</a>/<a href="dir_plugins_pluto_geronimo-pluto_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_pluto_geronimo-pluto_src_main_java_org_apache_geronimo.html">geronimo</a>/<strong>pluto</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_pluto_geronimo-pluto_src_main_java_org_apache_geronimo_pluto_impl.html">impl</a> 
+(3 files, 273 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_pluto_geronimo-pluto_src_main_java_org_apache_geronimo_pluto.png" alt="plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>24 (100.0%)</td>
+        <td>529 (100.0%)</td>
+        <td>22.0</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>15 (62.5%)</td>
+        <td>478 (90.4%)</td>
+        <td>31.8</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>4 (16.7%)</td>
+        <td>26 (4.9%)</td>
+        <td>6.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_genspring.html" class="author">genspring</a></th>
+        <td>1 (4.2%)</td>
+        <td>21 (4.0%)</td>
+        <td>21.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>4 (16.7%)</td>
+        <td>4 (0.8%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="11"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-09-06 05:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">992979</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5516 Add isAdvanced properties to AdminConsoleExtensionGBean.  Patch from janel with modifications.
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        AdminConsoleExtensionGBean.java&#160;<span class="change">(+21&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-05-04 12:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">940946</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+wait for PortalContainerServices gbean to be initialized (since it is initialized via blueprint)
+    </p>
+    <p class="commitdetails"><strong>17</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        AdminConsoleExtensionGBean.java&#160;<span class="change">(+2)</span>,
+        PortalContainerServices.java&#160;<span class="change">(+2)</span>,
+        PortalContainerServicesGBean.java&#160;<span class="change">(+13&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-26 22:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">938294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-148 use new xbean-bundleutils
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        ConfigServiceActivator.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-12-24 19:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">893821</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4965 update to DI changes in pluto
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        PortalStartupListener.java&#160;<span class="change">(+33&#160;-65)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-12-10 05:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">889157</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4965 Get pluto 2 running as osgi blueprint service.  Base console sort of works. Fix a bug in jetty single-bundle-ear support for locating resources
+    </p>
+    <p class="commitdetails"><strong>432</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        ConfigService.java&#160;<span class="new">(new&#160;30)</span>,
+        ConfigServiceActivator.java&#160;<span class="new">(new&#160;61)</span>,
+        ConfigServiceImpl.java&#160;<span class="new">(new&#160;42)</span>,
+        PortalStartupListener.java&#160;<span class="new">(new&#160;260)</span>,
+        ResourceConfigFactory.java&#160;<span class="new">(new&#160;39)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-12-02 13:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">886217</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix problem in EarConfigBuilder when constructing sub-configurations for wars. Rename DeploymentContext.getBundle to getDependencyBundle to try to make it clearer that it is temporary and not always available.  Start updating pluto/console stuff for pluto 2.
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        PortalContainerServices.java&#160;<span class="new">(new)</span>,
+        PortalContainerServicesGBean.java&#160;<span class="change">(+10&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-06-24 03:56</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">787936</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4708 Use released pluto version, implement icon handling in geronimo code.  Also put pluto dependency management into pluto plugin.  Also delete some now unused repository entries
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        AdminConsoleExtensionGBean.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2008-06-18 18:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">669314</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+console icons are back (GERONIMO-3562)
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        AdminConsoleExtensionGBean.java&#160;<span class="change">(+9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-05-06 10:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">653782</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+More loggers back to static<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        AdminConsoleExtensionGBean.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2008-04-25 15:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">651684</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+(GERONIMO-3985) Use SLF4J as the primary logging facade for Geronimo<br />
+
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        AdminConsoleExtensionGBean.java&#160;<span class="change">(+3&#160;-3)</span>,
+        PortalContainerServicesGBean.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-01-10 19:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">610984</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3745 clean up AdminConsoleExtensionGBean
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/pluto/geronimo-pluto/src/main/java/org/apache/geronimo/pluto</strong>:
+        AdminConsoleExtension.java&#160;<span class="del">(del)</span>,
+        AdminConsoleExtensionGBean.java&#160;<span class="change">(changed)</span>,
+        PlutoAccessInterface.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

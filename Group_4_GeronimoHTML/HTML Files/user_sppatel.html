@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - /geronimo/server/trunk Developers: sppatel</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>/geronimo/server/trunk Developers: sppatel</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a> &#171; <a href="developers.html">Developers</a></div>
+<dl class="attributes">
+    <dt>Login name:</dt>
+    <dd>sppatel</dd>
+    <dt>Total Commits:</dt>
+    <dd>44 (0.1%)</dd>
+    <dt>Lines of Code:</dt>
+    <dd>678 (0.1%)</dd>
+    <dt>Most Recent Commit:</dt>
+    <dd><span class="date">2007-05-15 13:26</span></dd>
+    <dt>Tweet this:</dt>
+    <dd><a onclick="return shortenTweet(this.href);" href="http://twitter.com/home?status=sppatel%20contributed%20678%20(0.1%25)%20lines%20to%20%2Fgeronimo%2Fserver%2Ftrunk%20%7B0}%20most%20recent%20commit%202007-05-15%20stats%20by%20StatSVN%20http%3A%2F%2Fstatsvn.org"><img style="border:0px" alt="Tweet this" src="tweet-this.png"/></a></dd>
+</dl>
+
+<div class="section">
+<h2>Activity by Clock Time</h2>
+<p class="chart"><img src="activity_time_sppatel.png" alt="Activity by Hour of Day for sppatel" width="800" height="500" /></p><p class="chart"><img src="activity_day_sppatel.png" alt="Activity by Day of Week for sppatel" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Activity in Directories</h2>
+  <table  rules="groups" summary="Overview of this author's activities in different directories">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Directory</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>44 (100.0%)</td>
+        <td>678 (100.0%)</td>
+        <td>15.4</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-j2ee-builder_src_main_java_org_apache_geronimo_j2ee_deployment.html" class="directory">modules/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment/</a></th>
+        <td>8 (18.2%)</td>
+        <td>404 (59.6%)</td>
+        <td>50.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_maven-plugins_car-maven-plugin_src_main_java_org_apache_geronimo_mavenplugins_car.html" class="directory">maven-plugins/car-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/car/</a></th>
+        <td>3 (6.8%)</td>
+        <td>60 (8.8%)</td>
+        <td>20.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-j2ee-builder_src_main_java_org_apache_geronimo_j2ee_deployment_annotation.html" class="directory">modules/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment/annotation/</a></th>
+        <td>2 (4.5%)</td>
+        <td>33 (4.9%)</td>
+        <td>16.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-web-2.5-builder.html" class="directory">modules/geronimo-web-2.5-builder/</a></th>
+        <td>1 (2.3%)</td>
+        <td>28 (4.1%)</td>
+        <td>28.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir.html" class="directory">/</a></th>
+        <td>5 (11.4%)</td>
+        <td>26 (3.8%)</td>
+        <td>5.2</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-jetty6-builder_src_main_java_org_apache_geronimo_jetty6_deployment.html" class="directory">modules/geronimo-jetty6-builder/src/main/java/org/apache/geronimo/jetty6/deployment/</a></th>
+        <td>2 (4.5%)</td>
+        <td>21 (3.1%)</td>
+        <td>10.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat6-builder_src_main_java_org_apache_geronimo_tomcat_deployment.html" class="directory">modules/geronimo-tomcat6-builder/src/main/java/org/apache/geronimo/tomcat/deployment/</a></th>
+        <td>3 (6.8%)</td>
+        <td>19 (2.8%)</td>
+        <td>6.3</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-client-builder_src_main_java_org_apache_geronimo_client_builder.html" class="directory">modules/geronimo-client-builder/src/main/java/org/apache/geronimo/client/builder/</a></th>
+        <td>2 (4.5%)</td>
+        <td>18 (2.7%)</td>
+        <td>9.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_tomcat6.html" class="directory">configs/tomcat6/</a></th>
+        <td>1 (2.3%)</td>
+        <td>18 (2.7%)</td>
+        <td>18.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_jetty6.html" class="directory">configs/jetty6/</a></th>
+        <td>1 (2.3%)</td>
+        <td>15 (2.2%)</td>
+        <td>15.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_util.html" class="directory">modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/util/</a></th>
+        <td>1 (2.3%)</td>
+        <td>12 (1.8%)</td>
+        <td>12.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_openejb-deployer_src_plan.html" class="directory">configs/openejb-deployer/src/plan/</a></th>
+        <td>1 (2.3%)</td>
+        <td>10 (1.5%)</td>
+        <td>10.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_configs_openejb_src_plan.html" class="directory">configs/openejb/src/plan/</a></th>
+        <td>1 (2.3%)</td>
+        <td>6 (0.9%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_configs_online-deployer.html" class="directory">configs/online-deployer/</a></th>
+        <td>1 (2.3%)</td>
+        <td>3 (0.4%)</td>
+        <td>3.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-tomcat6_src_main_java_org_apache_geronimo_tomcat.html" class="directory">modules/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat/</a></th>
+        <td>1 (2.3%)</td>
+        <td>2 (0.3%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-openejb_src_main_java_org_apache_geronimo_openejb.html" class="directory">modules/geronimo-openejb/src/main/java/org/apache/geronimo/openejb/</a></th>
+        <td>2 (4.5%)</td>
+        <td>2 (0.3%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-client-builder_src_test_resources_j2ee_1_3dtd.html" class="directory">modules/geronimo-client-builder/src/test/resources/j2ee_1_3dtd/</a></th>
+        <td>1 (2.3%)</td>
+        <td>1 (0.1%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-web-2.5-builder_repository_org_apache_myfaces_core_myfaces-impl_1.2.0-SNAPSHOT.html" class="directory">modules/geronimo-web-2.5-builder/repository/org/apache/myfaces/core/myfaces-impl/1.2.0-SNAPSHOT/</a></th>
+        <td>2 (4.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-web-2.5-builder_repository_org_apache_myfaces_core_myfaces-api_1.2.0-SNAPSHOT.html" class="directory">modules/geronimo-web-2.5-builder/repository/org/apache/myfaces/core/myfaces-api/1.2.0-SNAPSHOT/</a></th>
+        <td>2 (4.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="dir_modules_geronimo-deploy-tool_src_main_java_org_apache_geronimo_deployment_cli.html" class="directory">modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli/</a></th>
+        <td>2 (4.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="dir_modules_geronimo-deploy-jsr88_src_main_java_org_apache_geronimo_deployment_plugin_local.html" class="directory">modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin/local/</a></th>
+        <td>2 (4.5%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+<p class="chart"><img src="directory_sizes_sppatel.png" alt="Activity of sppatel" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="20"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-05-15 13:26</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">538259</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+set missing tomcat standard context attributes for tomcat fallback application<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-tomcat6/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-05-11 07:40</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">537166</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+MEJB support<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/openejb/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>modules/geronimo-openejb/src/main/java/org/apache/geronimo/openejb</strong>:
+        MEJBGBean.java&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-04-11 15:47</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527635</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+revert back r527503.. jaxb back to 2.0.3 due to openejb runtime errors<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+4&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-04-11 11:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527541</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix exclude for jsr173 after backleveling jaxb<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-04-11 10:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">527503</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+backlevel jaxb-impl and jaxb-xjc to 2.0 to match other jaxb jar levels<br />
+
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+8&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-04-05 11:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">525840</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+upgrade level of woodstox to 3.2.1<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-03-20 15:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520533</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+allow nestedjarfiles to contain unpacked modules<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/util</strong>:
+        NestedJarFile.java&#160;<span class="change">(+12&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-03-20 10:33</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">520407</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+jaxws workaround fails for inplace deployment in tomcat, check for web.xml in inPlace location before trying to create, also mkdirs to avoid exception in filewriter if WEB-INF dir does not exist<br />
+
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-tomcat6-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-02-28 11:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">512801</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+temporarily comment out block as "id" is currently unused and causes an NPE if appclient contains no dd
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-client-builder/src/main/java/org/apache/geronimo/client/builder</strong>:
+        AppClientModuleBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-02-28 10:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">512761</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+if no dd and manifest contains main-class then consider it an appclient
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder.java&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-02-28 10:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">512759</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+tolerate no app client dd
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-client-builder/src/main/java/org/apache/geronimo/client/builder</strong>:
+        AppClientModuleBuilder.java&#160;<span class="change">(+16&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-02-23 15:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">511052</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2874 need to call getStringValue to get value of element
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment/annotation</strong>:
+        EJBAnnotationHelper.java&#160;<span class="change">(+13&#160;-4)</span>,
+        ResourceAnnotationHelper.java&#160;<span class="change">(+20&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-02-16 11:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">508457</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+actually only continue building module without web.xml if module name is *.war
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6-builder/src/main/java/org/apache/geronimo/jetty6/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>modules/geronimo-tomcat6-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-02-16 09:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">508394</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+squash exception and continue processing webbuilder if no web.xml
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-jetty6-builder/src/main/java/org/apache/geronimo/jetty6/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+16&#160;-20)</span>
+      </li>
+      <li>
+        <strong>modules/geronimo-tomcat6-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+10&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-02-09 16:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">505475</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix checking of jar entry as a "lib" entry and get the actual value of lib directory
+    </p>
+    <p class="commitdetails"><strong>21</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder.java&#160;<span class="change">(+21&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-01-31 23:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">502109</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix incorrect appclient schema url
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-client-builder/src/test/resources/j2ee_1_3dtd</strong>:
+        application-client-5.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-01-30 13:38</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">501483</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add geronimo-openejb to default env for refbuilders to provide visibility to ClientEjbReference
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>configs/openejb-deployer/src/plan</strong>:
+        plan.xml&#160;<span class="change">(+10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-01-29 15:39</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">501156</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+typo in property name, missing "."
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-openejb/src/main/java/org/apache/geronimo/openejb</strong>:
+        ClientEjbReference.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-01-16 13:17</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">496776</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix specified group/artifact/version elements being ignored on standalone module deployments
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder.java&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_sppatel.html" class="author">sppatel</a>
+    <span class="date">2007-01-16 12:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">496754</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix NPE.. continue search if no applclient or ejbjar 
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p>(9 more)</p>
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

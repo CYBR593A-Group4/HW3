@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>4</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>1069</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_framework.html">framework</a>/<a href="dir_framework_modules.html">modules</a>/<a href="dir_framework_modules_geronimo-crypto.html">geronimo-crypto</a>/<a href="dir_framework_modules_geronimo-crypto_src.html">src</a>/<a href="dir_framework_modules_geronimo-crypto_src_main.html">main</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java.html">java</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org.html">org</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache.html">apache</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto.html">crypto</a>/<a href="dir_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_crypto.html">crypto</a>/<strong>digests</strong><br/>
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_framework_modules_geronimo-crypto_src_main_java_org_apache_geronimo_crypto_crypto_digests.png" alt="framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>28 (100.0%)</td>
+        <td>2154 (100.0%)</td>
+        <td>76.9</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>16 (57.1%)</td>
+        <td>1081 (50.2%)</td>
+        <td>67.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>8 (28.6%)</td>
+        <td>1069 (49.6%)</td>
+        <td>133.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>4 (14.3%)</td>
+        <td>4 (0.2%)</td>
+        <td>1.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-16 16:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">826073</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4916 step 2 move sandbox osgi framework into trunk
+    </p>
+    <p class="commitdetails"><strong>1069</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests</strong>:
+        GeneralDigest.java&#160;<span class="new">(new&#160;152)</span>,
+        MD4Digest.java&#160;<span class="new">(new&#160;287)</span>,
+        MD5Digest.java&#160;<span class="new">(new&#160;319)</span>,
+        SHA1Digest.java&#160;<span class="new">(new&#160;311)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2009-10-16 16:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">826072</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4916 step 1 remove old framwork
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests</strong>:
+        GeneralDigest.java&#160;<span class="del">(del)</span>,
+        MD4Digest.java&#160;<span class="del">(del)</span>,
+        MD5Digest.java&#160;<span class="del">(del)</span>,
+        SHA1Digest.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2008-02-01 21:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617735</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Attempt to preserve svn history. Damage control for revs 617595 and 617610.
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests</strong>:
+        GeneralDigest.java&#160;<span class="change">(+1&#160;-1)</span>,
+        MD4Digest.java&#160;<span class="change">(+1&#160;-1)</span>,
+        MD5Digest.java&#160;<span class="change">(+1&#160;-1)</span>,
+        SHA1Digest.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-01 15:01</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617610</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1761 the svn mv util crypto got lost from my commit. this is adding the directory and files back. there only changes to the files were updates to the package name
+    </p>
+    <p class="commitdetails"><strong>1081</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests</strong>:
+        GeneralDigest.java&#160;<span class="change">(+155)</span>,
+        MD4Digest.java&#160;<span class="change">(+290)</span>,
+        MD5Digest.java&#160;<span class="change">(+322)</span>,
+        SHA1Digest.java&#160;<span class="change">(+314)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-01 14:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617595</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1761 move util dir to crypto in test src. svn wouldn't let me move, earlier...
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests</strong>:
+        GeneralDigest.java&#160;<span class="change">(-155)</span>,
+        MD4Digest.java&#160;<span class="change">(-290)</span>,
+        MD5Digest.java&#160;<span class="change">(-322)</span>,
+        SHA1Digest.java&#160;<span class="change">(-314)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2008-02-01 14:20</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">617588</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-1761 move geronimo-util to geronimo-crypto. Still pending mv of one test directory that svn wouldn't let me move
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-crypto/src/main/java/org/apache/geronimo/crypto/crypto/digests</strong>:
+        GeneralDigest.java&#160;<span class="change">(changed)</span>,
+        MD4Digest.java&#160;<span class="new">(new)</span>,
+        MD5Digest.java&#160;<span class="new">(new)</span>,
+        SHA1Digest.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

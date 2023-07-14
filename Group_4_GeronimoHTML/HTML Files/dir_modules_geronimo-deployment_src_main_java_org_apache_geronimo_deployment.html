@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Deleted:</dt>
+    <dd><span class="date">2007-11-02 11:52</span></dd>
+    <dt>Total Files:</dt>
+    <dd>0</dd>
+    <dt>Deleted Files:</dt>
+    <dd>16</dd>
+    <dt>Lines of Code:</dt>
+    <dd>0</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_modules.html">modules</a>/<a href="dir_modules_geronimo-deployment.html">geronimo-deployment</a>/<a href="dir_modules_geronimo-deployment_src.html">src</a>/<a href="dir_modules_geronimo-deployment_src_main.html">main</a>/<a href="dir_modules_geronimo-deployment_src_main_java.html">java</a>/<a href="dir_modules_geronimo-deployment_src_main_java_org.html">org</a>/<a href="dir_modules_geronimo-deployment_src_main_java_org_apache.html">apache</a>/<a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo.html">geronimo</a>/<strong>deployment</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_util.html">util</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_xml.html">xml</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment_xmlbeans.html">xmlbeans</a> 
+(0 files, 0 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_modules_geronimo-deployment_src_main_java_org_apache_geronimo_deployment.png" alt="modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>72 (100.0%)</td>
+        <td>390 (100.0%)</td>
+        <td>5.4</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>23 (31.9%)</td>
+        <td>321 (82.3%)</td>
+        <td>13.9</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_kevan.html" class="author">kevan</a></th>
+        <td>21 (29.2%)</td>
+        <td>34 (8.7%)</td>
+        <td>1.6</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gdamour.html" class="author">gdamour</a></th>
+        <td>2 (2.8%)</td>
+        <td>16 (4.1%)</td>
+        <td>8.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jlaskowski.html" class="author">jlaskowski</a></th>
+        <td>2 (2.8%)</td>
+        <td>12 (3.1%)</td>
+        <td>6.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_akulshreshtha.html" class="author">akulshreshtha</a></th>
+        <td>2 (2.8%)</td>
+        <td>4 (1.0%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_vamsic007.html" class="author">vamsic007</a></th>
+        <td>1 (1.4%)</td>
+        <td>2 (0.5%)</td>
+        <td>2.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_rickmcguire.html" class="author">rickmcguire</a></th>
+        <td>1 (1.4%)</td>
+        <td>1 (0.3%)</td>
+        <td>1.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_prasad.html" class="author">prasad</a></th>
+        <td>16 (22.2%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_jdillon.html" class="author">jdillon</a></th>
+        <td>4 (5.6%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="26"></a>
+    <a href="user_prasad.html" class="author">prasad</a>
+    <span class="date">2007-11-02 11:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">591372</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3565. Modules distributed amongst framework/modules and plugins
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">16 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        AbstractBuilderCollection.java&#160;<span class="del">(del)</span>,
+        AbstractNamespaceBuilder.java&#160;<span class="del">(del)</span>,
+        ClassPathList.java&#160;<span class="del">(del)</span>,
+        ConfigurationBuilder.java&#160;<span class="del">(del)</span>,
+        CopyResourceContext.java&#160;<span class="del">(del)</span>,
+        Deployer.java&#160;<span class="del">(del)</span>,
+        DeploymentConfigurationManager.java&#160;<span class="del">(del)</span>,
+        DeploymentContext.java&#160;<span class="del">(del)</span>,
+        InPlaceResourceContext.java&#160;<span class="del">(del)</span>,
+        ModuleIDBuilder.java&#160;<span class="del">(del)</span>,
+        ModuleList.java&#160;<span class="del">(del)</span>,
+        NamespaceDrivenBuilder.java&#160;<span class="del">(del)</span>,
+        NamespaceDrivenBuilderCollection.java&#160;<span class="del">(del)</span>,
+        ResourceContext.java&#160;<span class="del">(del)</span>,
+        SingleFileHotDeployer.java&#160;<span class="del">(del)</span>,
+        plugin&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-09-28 03:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">580243</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+make error message slightly easier to read
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-26 17:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">560010</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3350 get rid of questionable getURLFor method
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        Deployer.java&#160;<span class="change">(+8&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-23 21:15</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">558905</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3307 Clear up test case meaning a bit, better error message, and use the right DeploymentContext for finding the war manifest classpath
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-13 15:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">556119</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3316 Better messages when manifest cp resolution encounters problems.  Also generified some more gbean stuff
+    </p>
+    <p class="commitdetails"><strong>53</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+53&#160;-34)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-13 00:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">555869</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3307 Unit tests and a whole lotta fixes
+    </p>
+    <p class="commitdetails"><strong>51</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+51&#160;-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-07-11 02:19</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">555182</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3307 fix a problem with identifying which module a persistence unit is supposed to be associated
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+9&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2007-06-21 08:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">549455</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3246 Cleanup exception handling so stack traces for first failures are not discarded.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-16 17:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">538730</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3132 GERONIMO-3165.  Fix a bunch of stuff with locating persistence.xml and persistence unit jars.  Hook up with openejb for extended persistence contexts
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        ClassPathList.java&#160;<span class="new">(new)</span>,
+        DeploymentContext.java&#160;<span class="change">(+12&#160;-4)</span>,
+        ModuleList.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-04 17:04</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">535381</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3134 GERONIMO-3136 Fix app client refs including ejb refs.  Get a lot closer to jpa working on the app client
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        AbstractBuilderCollection.java&#160;<span class="change">(+9&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-04 16:00</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">535367</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3140 workaround for multiple matches during app client deploy
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-05-03 04:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">534748</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3131 GERONIMO-3132 GERONIMO-3133 GERONIMO-3134  Defaults for persistence units. Supply locations of jars with persistent classes to the PersistenceUnitInfo. Match a ref with not persistence unit specified to a unique match. Allow wars to have jndi references pointing to the war module, not just the ear
+    </p>
+    <p class="commitdetails"><strong>57</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+57&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-04-06 05:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">526110</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-3070 only generate web app dependencies onto stuff in the current ear, not all the parents
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-03-14 21:21</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">518425</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+partial genericization
+    </p>
+    <p class="commitdetails"><strong>25</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+25&#160;-27)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-02-16 03:29</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">508331</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2485 Work on PersistenceUnitBuilder.  jpa test app now deploys but can not access most persistence features
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(-17)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2007-02-15 04:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">507861</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2485 Make persistence unit gbean abstract names more unique.  NOT FINISHED, but in its current state gives different names to autogenerated cmp persistence units in different ejb modules
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+26&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_vamsic007.html" class="author">vamsic007</a>
+    <span class="date">2007-01-17 06:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">496988</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-438 Deployer.deploy arguments inconsistent<br />
+  o Looks like PackageMojo.invokeDeployer() is the only place where Deployer.deploy() method with "long signature" is called.<br />
+  o See the JIRA for more information and observations<br />
+  o Concluding the hunt for the method usage and updating Deployer and PackageMojo classes to make the arguments consistent
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        Deployer.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2006-12-12 11:42</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">486195</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2607 reverted 485524
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        Deployer.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_akulshreshtha.html" class="author">akulshreshtha</a>
+    <span class="date">2006-12-11 02:08</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">485524</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERGERONIMO-2607 Updated all GBeans to use new GBeanInfoBuilder.addOperation(..) method<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        Deployer.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-12-01 20:57</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">481466</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2615 More info on what went wrong when a gbean ref isn't verified at deploy time
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+11&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_kevan.html" class="author">kevan</a>
+    <span class="date">2006-11-17 00:35</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">476049</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2537 Update the src headers in server/trunk/modules to be compliant with the new ASF src header and copyright policy (<a href="http://www.apache.org/legal/src">http://www.apache.org/legal/src</a>-headers.html). I also did some cleanup of the src headers and tried to make them all a consistent format
+    </p>
+    <p class="commitdetails"><strong>34</strong> lines of code changed in <span class="files">21 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        AbstractBuilderCollection.java&#160;<span class="change">(+14&#160;-18)</span>,
+        AbstractNamespaceBuilder.java&#160;<span class="change">(+14&#160;-18)</span>,
+        ConfigurationBuilder.java&#160;<span class="change">(changed)</span>,
+        CopyResourceContext.java&#160;<span class="change">(changed)</span>,
+        Deployer.java&#160;<span class="change">(changed)</span>,
+        DeploymentConfigurationManager.java&#160;<span class="new">(new)</span>,
+        DeploymentContext.java&#160;<span class="change">(+6&#160;-6)</span>,
+        InPlaceResourceContext.java&#160;<span class="new">(new)</span>,
+        ModuleIDBuilder.java&#160;<span class="change">(changed)</span>,
+        NamespaceDrivenBuilder.java&#160;<span class="change">(-1)</span>,
+        NamespaceDrivenBuilderCollection.java&#160;<span class="change">(-1)</span>,
+        ResourceContext.java&#160;<span class="new">(new)</span>,
+        SingleFileHotDeployer.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-11-16 18:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">475947</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2484 NamespaceDrivenBuilders should register QNameSets
+    </p>
+    <p class="commitdetails"><strong>43</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        AbstractBuilderCollection.java&#160;<span class="new">(new&#160;18)</span>,
+        AbstractNamespaceBuilder.java&#160;<span class="new">(new&#160;18)</span>,
+        NamespaceDrivenBuilder.java&#160;<span class="change">(+1&#160;-3)</span>,
+        NamespaceDrivenBuilderCollection.java&#160;<span class="change">(+6&#160;-42)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2006-11-06 06:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">471683</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2541 priority order for gbeans, including Gianny's backward compatibility patch
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_jlaskowski.html" class="author">jlaskowski</a>
+    <span class="date">2006-11-02 19:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">470597</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Partial fix for GERONIMO-2537 All Geronimo source files must be brought in line with the new ASF source header and copyright notice policy<br />
+<br />
+The modules directory is supposed to be migrated. There're some issues with some files, but they'll be handled manually<br />
+
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        NamespaceDrivenBuilder.java&#160;<span class="change">(+6&#160;-5)</span>,
+        NamespaceDrivenBuilderCollection.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_gdamour.html" class="author">gdamour</a>
+    <span class="date">2006-09-15 11:02</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">446624</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-2163 - WADI Integration for Jetty<br />
+
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        NamespaceDrivenBuilder.java&#160;<span class="change">(+4)</span>,
+        NamespaceDrivenBuilderCollection.java&#160;<span class="change">(+12&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_jdillon.html" class="author">jdillon</a>
+    <span class="date">2006-08-26 20:07</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">437254</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Apply standard properties<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        NamespaceDrivenBuilder.java&#160;<span class="change">(changed)</span>,
+        NamespaceDrivenBuilderCollection.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Directory Created:</dt>
+    <dd><span class="date">2010-04-06 01:14</span></dd>
+    <dt>Total Files:</dt>
+    <dd>4</dd>
+    <dt>Deleted Files:</dt>
+    <dd>0</dd>
+    <dt>Lines of Code:</dt>
+    <dd>760</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_j2ee.html">j2ee</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder.html">geronimo-web-2.5-builder</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src.html">src</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main.html">main</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java.html">java</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org.html">org</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo.html">geronimo</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo_web25.html">web25</a>/<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo_web25_deployment.html">deployment</a>/<strong>merge</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo_web25_deployment_merge_annotation.html">annotation</a> 
+(5 files, 487 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo_web25_deployment_merge_webfragment.html">webfragment</a> 
+(39 files, 3350 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_j2ee_geronimo-web-2.5-builder_src_main_java_org_apache_geronimo_web25_deployment_merge.png" alt="plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>26 (100.0%)</td>
+        <td>1233 (100.0%)</td>
+        <td>47.4</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>17 (65.4%)</td>
+        <td>1080 (87.6%)</td>
+        <td>63.5</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>6 (23.1%)</td>
+        <td>138 (11.2%)</td>
+        <td>23.0</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>2 (7.7%)</td>
+        <td>10 (0.8%)</td>
+        <td>5.0</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_dwoods.html" class="author">dwoods</a></th>
+        <td>1 (3.8%)</td>
+        <td>5 (0.4%)</td>
+        <td>5.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="22"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-10-17 10:37</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1185215</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6194 Sort gbeans while stopping the configuration
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-09-07 11:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1166214</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6143 Create a fragment context for each sub modules in the EAR package
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+9&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2011-01-27 22:31</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1064433</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-162 update to genericed xbean-finder apis
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-09-13 15:48</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">996665</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ResourceFinderCallback API updates
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_dwoods.html" class="author">dwoods</a>
+    <span class="date">2010-08-11 16:50</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">984576</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+workaround to get the BVAL TCK working on the Tocmat assembly again.  now, it's back to the previous results of only 1 failure.
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+5&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-08-11 07:03</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">984368</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix a typo error while creating the web fragment entry
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-08-08 21:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">983497</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5496 Move the sort algorithm from the geronimo-web-builder to geronimo-j2ee-builder
+    </p>
+    <p class="commitdetails"><strong>91</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+91&#160;-156)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-08-04 15:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">982380</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a bunch of minor fixes for servlet 3.0 merge code
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-07-10 11:36</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">962861</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix the ArrayIndexOoutOfBoundsException in relative web fragment sorting
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-07-07 16:45</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">961503</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5436 try to fix merge helper -- needs to read in using jaxb, not xmlbeans
+    </p>
+    <p class="commitdetails"><strong>15</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+15&#160;-10)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-06-24 14:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">957655</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5190 use openejb-jee jaxb tree for spec dds
+    </p>
+    <p class="commitdetails"><strong>80</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeContext.java&#160;<span class="change">(+2&#160;-2)</span>,
+        MergeHelper.java&#160;<span class="change">(+78&#160;-111)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-05-05 21:34</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">941561</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Enable ServletContainerInitializer scanning as we have an ASM-based class finder now
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+26&#160;-33)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-05-03 10:54</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">940477</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+1. Use a full loop to find the web-fragment.xml in the embedded jar file of the bundle, might be easier once we have full ear support<br />
+2. Use the deploymentDescriptor to calculate the component permission, currently, it seems that we have no way to read the web.xml while the package is of ear type
+    </p>
+    <p class="commitdetails"><strong>26</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+26&#160;-23)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-05-02 15:30</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">940310</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5037 fix type cast problem
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+35&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-05-02 10:55</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">940240</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix NullPointerException when no entry is found in WEB-INF/lib directory
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+31&#160;-25)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-05-01 10:06</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">940027</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+ORDERED_LIBS should be null if no absolute or relative ordering has been specified
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+27&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-05-01 07:51</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">939982</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+a. Calculate web permissions while starting the web module to support setServletSecurity feature in Servlet 3.0<br />
+b. Initial support ServletContainerInitializer, some improvements might be needed, such as use ASM ?<br />
+c. Support ORDERED_LIBS ServletContext attribute 
+    </p>
+    <p class="commitdetails"><strong>124</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+124&#160;-31)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-26 22:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">938294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-148 use new xbean-bundleutils
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-04-15 05:11</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">934335</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Support ServletSecurity annotation scan, some more work might need for it while adding Servlet dynamically
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+7&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-04-12 10:09</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">933246</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Different prefix for a standalone war and a war in the ear<br />
+
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-04-07 23:53</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">931770</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5037 Make sure annotations in the web-inf/classes folder could be scanned
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        MergeHelper.java&#160;<span class="change">(+6&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-04-06 01:14</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">931020</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5037 Support Servlet 3.0 annotation and fragment web file
+    </p>
+    <p class="commitdetails"><strong>720</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment/merge</strong>:
+        ElementSource.java&#160;<span class="new">(new&#160;25)</span>,
+        MergeContext.java&#160;<span class="new">(new&#160;88)</span>,
+        MergeHelper.java&#160;<span class="new">(new&#160;535)</span>,
+        MergeItem.java&#160;<span class="new">(new&#160;72)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

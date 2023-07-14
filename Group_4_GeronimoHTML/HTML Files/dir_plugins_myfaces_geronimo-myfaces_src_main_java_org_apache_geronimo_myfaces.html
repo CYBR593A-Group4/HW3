@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - Directory plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces/</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>Directory plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces/</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+<dl class="attributes">
+    <dt>Total Files:</dt>
+    <dd>7</dd>
+    <dt>Deleted Files:</dt>
+    <dd>3</dd>
+    <dt>Lines of Code:</dt>
+    <dd>982</dd>
+</dl>
+<p class="dirtree">
+<a href="dir.html">[root]</a>/<a href="dir_plugins.html">plugins</a>/<a href="dir_plugins_myfaces.html">myfaces</a>/<a href="dir_plugins_myfaces_geronimo-myfaces.html">geronimo-myfaces</a>/<a href="dir_plugins_myfaces_geronimo-myfaces_src.html">src</a>/<a href="dir_plugins_myfaces_geronimo-myfaces_src_main.html">main</a>/<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java.html">java</a>/<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org.html">org</a>/<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache.html">apache</a>/<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo.html">geronimo</a>/<strong>myfaces</strong><br/>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces_config.html">config</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder-deleted.png" width="15" height="13" alt="Folder removed from repo" title="Folder removed from repo"/> 
+<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces_config_annotation.html">annotation</a> 
+(0 files, 0 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces_config_resource.html">resource</a> 
+(1 files, 109 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces_config_resource_osgi.html">osgi</a> 
+(3 files, 425 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces_config_resource_osgi_api.html">api</a> 
+(1 files, 79 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces_facelet.html">facelet</a> 
+(1 files, 55 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces_info.html">info</a> 
+(2 files, 509 lines)<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="folder.png" width="15" height="13" alt="directory in repo" title="directory in repo"/> 
+<a href="dir_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces_webapp.html">webapp</a> 
+(3 files, 313 lines)<br />
+</p>
+
+<div class="section">
+<h2>Lines of Code</h2>
+<p class="chart"><img src="loc_module_plugins_myfaces_geronimo-myfaces_src_main_java_org_apache_geronimo_myfaces.png" alt="plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces/ Lines of Code" width="800" height="500" /></p></div>
+<div class="section">
+<h2>Developers</h2>
+  <table  rules="groups" summary="All authors and the number of their changes and lines of code in this directory">
+    <colgroup align="left"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <colgroup align="right"/>
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Changes</th>
+        <th>Lines of Code</th>
+        <th>Lines per Change</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Totals</th>
+        <td>30 (100.0%)</td>
+        <td>972 (100.0%)</td>
+        <td>32.4</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr  class="odd">
+        <th><a href="user_xuhaihong.html" class="author">xuhaihong</a></th>
+        <td>15 (50.0%)</td>
+        <td>926 (95.3%)</td>
+        <td>61.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_gawor.html" class="author">gawor</a></th>
+        <td>4 (13.3%)</td>
+        <td>34 (3.5%)</td>
+        <td>8.5</td>
+      </tr>
+      <tr  class="odd">
+        <th><a href="user_djencks.html" class="author">djencks</a></th>
+        <td>7 (23.3%)</td>
+        <td>12 (1.2%)</td>
+        <td>1.7</td>
+      </tr>
+      <tr  class="even">
+        <th><a href="user_jlaskowski.html" class="author">jlaskowski</a></th>
+        <td>4 (13.3%)</td>
+        <td>0 (0.0%)</td>
+        <td>0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+<div class="section">
+<h2>Most Recent Commits</h2>
+<dl class="commitlist">
+  <dt><a name="15"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-11-01 10:49</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1196032</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6204 Decouple OpenWebBeans from web container
+    </p>
+    <p class="commitdetails"><strong>11</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        GeronimoFactoryFinderProvider.java&#160;<span class="change">(+11&#160;-11)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-09-19 09:43</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1172626</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Comment out the clean up codes for FactoryFinderProviderFactory, as MyFaces will think it is an initialization error
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        MyFacesSystemInitializer.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-09-17 23:12</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1172179</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Use the web identity string as the key
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        GeronimoFactoryFinderProvider.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-09-16 04:52</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1171452</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Minor change to the debug log output, make sure the factory map could be print before it is cleared
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        GeronimoFactoryFinderProvider.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-09-16 04:46</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1171450</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6145 Factory info should not be shared among those web jsf applications in one EAR package
+    </p>
+    <p class="commitdetails"><strong>430</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        GeronimoFactoryFinderProvider.java&#160;<span class="new">(new&#160;346)</span>,
+        GeronimoFactoryFinderProviderFactory.java&#160;<span class="new">(new&#160;35)</span>,
+        MyFacesSystemInitializer.java&#160;<span class="new">(new&#160;49)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2011-06-14 04:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1135403</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-6006 Upgrade MyFaces to 2.0.7<br />
+The most change is to use one LifecycleProviderFactory for each web application, as MyFaces will not use a static variable to host it in the LifeccyleProviderFactory
+    </p>
+    <p class="commitdetails"><strong>63</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        ApplicationIndexedLifecycleProviderFactory.java&#160;<span class="del">(del)</span>,
+        GeronimoLifecycleProviderFactory.java&#160;<span class="new">(new&#160;62)</span>,
+        LifecycleProviderFactoryGBean.java&#160;<span class="del">(del)</span>,
+        LifecycleProviderFactorySource.java&#160;<span class="del">(del)</span>,
+        LifecycleProviderGBean.java&#160;<span class="change">(+1&#160;-19)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-12-13 23:13</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1048917</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5713 MyFaces 2.0.3 Integration
+    </p>
+    <p class="commitdetails"><strong>412</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        FacesConfigDigester.java&#160;<span class="new">(new&#160;322)</span>,
+        GeronimoServiceProviderFinder.java&#160;<span class="new">(new&#160;90)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-10-28 01:28</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">1028188</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5561 First step changes, use a MyFacesWebAppContext GBean holds all the meta data, including faces configuration URLs and anntations. Once update to 2.0.3, some hack codes could be removed, and we might even store the final info data, as MyFaces would provide some more SPI.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        LifecycleProviderGBean.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-09-10 18:59</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">996014</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5567 adapt myfaces to new way to add listeners
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        LifecycleProviderFactoryGBean.java&#160;<span class="change">(+2&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-04-26 22:05</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">938294</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+XBEAN-148 use new xbean-bundleutils
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        ApplicationIndexedLifecycleProviderFactory.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-03-29 13:24</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">928839</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+make sure BundleClassLoader.getBundle() does not return DelegatingBundle
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        ApplicationIndexedLifecycleProviderFactory.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-02-03 16:41</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">906232</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4996: Lookup LifecycleProvider based on Bundle instead of ClassLoader. ClassLoaders even for the same Bundle might be different objects.
+    </p>
+    <p class="commitdetails"><strong>33</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        ApplicationIndexedLifecycleProviderFactory.java&#160;<span class="change">(+18&#160;-9)</span>,
+        LifecycleProviderFactoryGBean.java&#160;<span class="change">(-2)</span>,
+        LifecycleProviderGBean.java&#160;<span class="change">(+15&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-23 23:58</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902527</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4996 GERONIMO-5025 separate jndi context setup from web app context since jsf needs it too.  Hook up myfaces which now starts.  Don't know if myfaces works
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        LifecycleProviderGBean.java&#160;<span class="change">(+9&#160;-23)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_jlaskowski.html" class="author">jlaskowski</a>
+    <span class="date">2008-11-26 09:18</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">720842</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+header fixes (Rev, Date)
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        ApplicationIndexedLifecycleProviderFactory.java&#160;<span class="change">(changed)</span>,
+        LifecycleProviderFactorySource.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2008-09-24 03:10</span>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">698441</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4258 clean up some naming constant usage
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        LifecycleProviderFactoryGBean.java&#160;<span class="new">(new)</span>,
+        LifecycleProviderGBean.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+</div><div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>

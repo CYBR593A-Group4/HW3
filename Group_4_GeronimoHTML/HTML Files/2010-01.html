@@ -1,0 +1,3547 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>StatSVN - January 2010 Commit Log</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <meta name="Generator" content="StatSVN @VERSION@"/>
+<link rel="stylesheet" href="objectlab-statcvs.css" type="text/css"/>
+<script type="text/javascript" charset="utf-8" src="http://bit.ly/javascript-api.js?version=latest&#38;login=statsvn&#38;apiKey=R_2c362b417d0517c27876cbaca1bb68cc"></script>
+<script type="text/javascript" charset="utf-8">
+   // wait until page is loaded to call API
+   var redir_url;
+   var short_url;
+   BitlyCB.myShortenCallback = function(data) {
+      // this is how to get a result of shortening a single url
+      var result;
+      short_url=null;
+      for (var r in data.results) {
+         result = data.results[r];
+         result['longUrl'] = r;
+         short_url = result['shortUrl'];
+         break;
+      }
+      if (short_url==null) // bit.ly failed
+      document.location=redir_url;
+      else
+      redirToTwitter();
+   };
+   function shortenTweet(url) {
+      if (short_url == null || redir_url!=url) {
+      redir_url = url;
+      BitlyClient.shorten(document.location, 'BitlyCB.myShortenCallback');
+      }
+      else
+      redirToTwitter();
+      return false;
+   }
+   function redirToTwitter() { 
+      // replace {0} which is visible as %7B0} in the link
+      document.location = redir_url.replace('%7B0}', short_url);
+   }
+</script>
+  </head>
+
+<body>
+
+<h1>January 2010 Commit Log</h1>
+<div id="parentlink">&#171; <a href="index.html">Development Statistics for /geronimo/server/trunk</a></div>
+
+<div id="nav" class="section">
+<h2>Commit Logs</h2>
+<ul>
+    <li><a href="commitlog.html">March 2013</a></li>
+    <li><a href="2013-02.html">February 2013</a></li>
+    <li><a href="2013-01.html">January 2013</a></li>
+    <li><a href="2012-12.html">December 2012</a></li>
+    <li><a href="2012-11.html">November 2012</a></li>
+    <li><a href="2012-10.html">October 2012</a></li>
+    <li><a href="2012-09.html">September 2012</a></li>
+    <li><a href="2012-08.html">August 2012</a></li>
+    <li><a href="2012-07.html">July 2012</a></li>
+    <li><a href="2012-06.html">June 2012</a></li>
+    <li><a href="2012-05.html">May 2012</a></li>
+    <li><a href="2012-04.html">April 2012</a></li>
+    <li><a href="2012-03.html">March 2012</a></li>
+    <li><a href="2012-02.html">February 2012</a></li>
+    <li><a href="2012-01.html">January 2012</a></li>
+    <li><a href="2011-12.html">December 2011</a></li>
+    <li><a href="2011-11.html">November 2011</a></li>
+    <li><a href="2011-10.html">October 2011</a></li>
+    <li><a href="2011-09.html">September 2011</a></li>
+    <li><a href="2011-08.html">August 2011</a></li>
+    <li><a href="2011-07.html">July 2011</a></li>
+    <li><a href="2011-06.html">June 2011</a></li>
+    <li><a href="2011-05.html">May 2011</a></li>
+    <li><a href="2011-04.html">April 2011</a></li>
+    <li><a href="2011-03.html">March 2011</a></li>
+    <li><a href="2011-02.html">February 2011</a></li>
+    <li><a href="2011-01.html">January 2011</a></li>
+    <li><a href="2010-12.html">December 2010</a></li>
+    <li><a href="2010-11.html">November 2010</a></li>
+    <li><a href="2010-10.html">October 2010</a></li>
+    <li><a href="2010-09.html">September 2010</a></li>
+    <li><a href="2010-08.html">August 2010</a></li>
+    <li><a href="2010-07.html">July 2010</a></li>
+    <li><a href="2010-06.html">June 2010</a></li>
+    <li><a href="2010-05.html">May 2010</a></li>
+    <li><a href="2010-04.html">April 2010</a></li>
+    <li><a href="2010-03.html">March 2010</a></li>
+    <li><a href="2010-02.html">February 2010</a></li>
+    <li><span class="here">January 2010</span></li>
+    <li><a href="2009-12.html">December 2009</a></li>
+    <li><a href="2009-11.html">November 2009</a></li>
+    <li><a href="2009-10.html">October 2009</a></li>
+    <li><a href="2009-09.html">September 2009</a></li>
+    <li><a href="2009-08.html">August 2009</a></li>
+    <li><a href="2009-07.html">July 2009</a></li>
+    <li><a href="2009-06.html">June 2009</a></li>
+    <li><a href="2009-05.html">May 2009</a></li>
+    <li><a href="2009-04.html">April 2009</a></li>
+    <li><a href="2009-03.html">March 2009</a></li>
+    <li><a href="2009-02.html">February 2009</a></li>
+    <li><a href="2009-01.html">January 2009</a></li>
+    <li><a href="2008-12.html">December 2008</a></li>
+    <li><a href="2008-11.html">November 2008</a></li>
+    <li><a href="2008-10.html">October 2008</a></li>
+    <li><a href="2008-09.html">September 2008</a></li>
+    <li><a href="2008-08.html">August 2008</a></li>
+    <li><a href="2008-07.html">July 2008</a></li>
+    <li><a href="2008-06.html">June 2008</a></li>
+    <li><a href="2008-05.html">May 2008</a></li>
+    <li><a href="2008-04.html">April 2008</a></li>
+    <li><a href="2008-03.html">March 2008</a></li>
+    <li><a href="2008-02.html">February 2008</a></li>
+    <li><a href="2008-01.html">January 2008</a></li>
+    <li><a href="2007-12.html">December 2007</a></li>
+    <li><a href="2007-11.html">November 2007</a></li>
+    <li><a href="2007-10.html">October 2007</a></li>
+    <li><a href="2007-09.html">September 2007</a></li>
+    <li><a href="2007-08.html">August 2007</a></li>
+    <li><a href="2007-07.html">July 2007</a></li>
+    <li><a href="2007-06.html">June 2007</a></li>
+    <li><a href="2007-05.html">May 2007</a></li>
+    <li><a href="2007-04.html">April 2007</a></li>
+    <li><a href="2007-03.html">March 2007</a></li>
+    <li><a href="2007-02.html">February 2007</a></li>
+    <li><a href="2007-01.html">January 2007</a></li>
+    <li><a href="2006-12.html">December 2006</a></li>
+    <li><a href="2006-11.html">November 2006</a></li>
+    <li><a href="2006-10.html">October 2006</a></li>
+    <li><a href="2006-09.html">September 2006</a></li>
+    <li><a href="2006-08.html">August 2006</a></li>
+</ul>
+</div><dl class="attributes">
+    <dt>Number of Commits:</dt>
+    <dd>90</dd>
+    <dt>Number of Active Developers:</dt>
+    <dd>7</dd>
+</dl>
+<dl class="commitlist">
+  <dt><a name="90"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-31 14:07</span>
+    <a class="permalink" title="Permalink to this commit" href="#90">#90</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">905088</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix bunch of Tomcat issues: 1) implement ServletContext.getResourcePaths() properly, 2) install jndi protocol handler (it's needed in some cases) and 3) make sure web.xml parsing is namespace aware
+    </p>
+    <p class="commitdetails"><strong>153</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7</strong>:
+        pom.xml&#160;<span class="change">(+9)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        BundleDirContext.java&#160;<span class="change">(+88&#160;-58)</span>,
+        GeronimoStandardContext.java&#160;<span class="change">(+1)</span>,
+        JNDIURLStreamHandlerService.java&#160;<span class="new">(new&#160;55)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="89"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-30 21:24</span>
+    <a class="permalink" title="Permalink to this commit" href="#89">#89</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904947</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add howl bundle to j2ee plugin so that geronimo-transaction is wired correctly. fixes the howl class load problems on startup
+    </p>
+    <p class="commitdetails"><strong>10</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/connector-1_6/transaction-1_6/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/j2ee-server/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="88"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-29 23:33</span>
+    <a class="permalink" title="Permalink to this commit" href="#88">#88</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904725</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+make sure the deploymentDescriptor attribute has the right root element
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment</strong>:
+        AbstractWebModuleBuilder.java&#160;<span class="change">(+14)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+1&#160;-23)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="87"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-29 19:36</span>
+    <a class="permalink" title="Permalink to this commit" href="#87">#87</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904674</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+make tomcat read the exact descriptor generated by Geronimo
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(-86)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+4&#160;-4)</span>,
+        TomcatContext.java&#160;<span class="change">(+2)</span>,
+        WebContextConfig.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="86"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-29 18:59</span>
+    <a class="permalink" title="Permalink to this commit" href="#86">#86</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904657</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5056 simple DeploymentFactory setup that lets some jsr88 stuff work
+    </p>
+    <p class="commitdetails"><strong>27</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/karaf-framework</strong>:
+        pom.xml&#160;<span class="change">(+25&#160;-13)</span>
+      </li>
+      <li>
+        <strong>framework/configs/karaf-framework/src/main/descriptors</strong>:
+        geronimo-bin.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deploy-jsr88-full</strong>:
+        pom.xml&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="85"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-29 18:13</span>
+    <a class="permalink" title="Permalink to this commit" href="#85">#85</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904646</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4934 set the bundle context in the app clients EarContext
+    </p>
+    <p class="commitdetails"><strong>31</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/client/geronimo-client-builder/src/main/java/org/apache/geronimo/client/builder</strong>:
+        AppClientModuleBuilder.java&#160;<span class="change">(+4&#160;-7)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARContext.java&#160;<span class="change">(+21&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="84"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-29 16:22</span>
+    <a class="permalink" title="Permalink to this commit" href="#84">#84</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904616</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4996: updated myfaces deployer to work with bundles and updated dependencies
+    </p>
+    <p class="commitdetails"><strong>28</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces-builder/src/main/java/org/apache/geronimo/myfaces/deployment</strong>:
+        MyFacesModuleBuilderExtension.java&#160;<span class="change">(+18&#160;-18)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/myfaces</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/myfaces/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="83"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-28 19:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#83">#83</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904300</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+web apps no longer have a base url since they are always packed in bundles
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-management/src/main/java/org/apache/geronimo/management/geronimo</strong>:
+        WebModule.java&#160;<span class="change">(-7)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/java/org/apache/geronimo/console/apache/jk</strong>:
+        WebAppHandler.java&#160;<span class="change">(+7&#160;-7)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8/src/main/java/org/apache/geronimo/jetty8</strong>:
+        WebAppContextWrapper.java&#160;<span class="change">(+1&#160;-11)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8/src/test/java/org/apache/geronimo/jetty8</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatWebAppContext.java&#160;<span class="change">(-9)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/test/java/org/apache/geronimo/tomcat</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="82"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-01-28 11:36</span>
+    <a class="permalink" title="Permalink to this commit" href="#82">#82</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904134</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix cxf build errors
+    </p>
+    <p class="commitdetails"><strong>35</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/cxf/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf/src/main/java/org/apache/geronimo/cxf/pojo</strong>:
+        POJOWebServiceContainerFactoryGBean.java&#160;<span class="change">(+30&#160;-24)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="81"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-01-28 09:25</span>
+    <a class="permalink" title="Permalink to this commit" href="#81">#81</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">904077</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix pom syntax error
+    </p>
+    <p class="commitdetails"><strong>4</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/cxf/cxf-deployer</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="80"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2010-01-28 03:28</span>
+    <a class="permalink" title="Permalink to this commit" href="#80">#80</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903980</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5016: 3. make the rest cxf plugins be compiled except the tools which will be enable after gshell refactor
+    </p>
+    <p class="commitdetails"><strong>19</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-7)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-deployer</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-ejb-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf-ejb-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-builder/src/main/java/org/apache/geronimo/cxf/builder</strong>:
+        CXFBuilder.java&#160;<span class="change">(+2&#160;-2)</span>,
+        CXFServiceRefBuilder.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb-builder/src/main/java/org/apache/geronimo/cxf/ejb/builder</strong>:
+        CXFEJBBuilder.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="79"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-27 19:28</span>
+    <a class="permalink" title="Permalink to this commit" href="#79">#79</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903903</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove executable svn property. not sure how it got there
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/web-testsuite/test-tld</strong>:
+        goals.txt&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-jar/src/main/java/org/apache/geronimo/testsuite/taglib</strong>:
+        TestTag.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-jar/src/main/resources/META-INF</strong>:
+        embedded.tld&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/main/java/org/apache/geronimo/testsuite/jsps</strong>:
+        HelloTag.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/main/webapp</strong>:
+        index.html&#160;<span class="change">(-1)</span>,
+        testTaglibs.jsp&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/main/webapp/WEB-INF</strong>:
+        geronimo-web.xml&#160;<span class="change">(-1)</span>,
+        taglib.tld&#160;<span class="change">(-1)</span>,
+        taglib.wtld&#160;<span class="change">(-1)</span>,
+        web.xml&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/test/java/org/apache/geronimo/testsuite/tld</strong>:
+        TestTLD.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/test/resources</strong>:
+        testng.xml&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="78"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-27 19:26</span>
+    <a class="permalink" title="Permalink to this commit" href="#78">#78</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903902</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5051: added test case for tld scanning
+    </p>
+    <p class="commitdetails"><strong>509</strong> lines of code changed in <span class="files">16 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>testsuite/web-testsuite</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld</strong>:
+        goals.txt&#160;<span class="new">(new&#160;1)</span>,
+        pom.xml&#160;<span class="new">(new&#160;42)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-jar</strong>:
+        pom.xml&#160;<span class="new">(new&#160;45)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-jar/src/main/java/org/apache/geronimo/testsuite/taglib</strong>:
+        TestTag.java&#160;<span class="new">(new&#160;40)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-jar/src/main/resources/META-INF</strong>:
+        embedded.tld&#160;<span class="new">(new&#160;31)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war</strong>:
+        pom.xml&#160;<span class="new">(new&#160;103)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/main/java/org/apache/geronimo/testsuite/jsps</strong>:
+        HelloTag.java&#160;<span class="new">(new&#160;38)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/main/webapp</strong>:
+        index.html&#160;<span class="new">(new&#160;20)</span>,
+        testTaglibs.jsp&#160;<span class="new">(new&#160;29)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/main/webapp/WEB-INF</strong>:
+        geronimo-web.xml&#160;<span class="new">(new&#160;29)</span>,
+        taglib.tld&#160;<span class="new">(new&#160;31)</span>,
+        taglib.wtld&#160;<span class="new">(new&#160;31)</span>,
+        web.xml&#160;<span class="new">(new&#160;32)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/test/java/org/apache/geronimo/testsuite/tld</strong>:
+        TestTLD.java&#160;<span class="new">(new&#160;35)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tld/test-tld-war/src/test/resources</strong>:
+        testng.xml&#160;<span class="new">(new&#160;1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="77"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-27 17:05</span>
+    <a class="permalink" title="Permalink to this commit" href="#77">#77</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903834</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+disable web.xml rewriting in Tomcat. We'll see what breaks (if anything)
+    </p>
+    <p class="commitdetails"><strong>71</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+71&#160;-61)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="76"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-27 16:09</span>
+    <a class="permalink" title="Permalink to this commit" href="#76">#76</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903814</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5051: Fix tld discovery at deployment and runtime
+    </p>
+    <p class="commitdetails"><strong>550</strong> lines of code changed in <span class="files">16 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        BundleResourceContext.java&#160;<span class="change">(+12)</span>,
+        CopyResourceContext.java&#160;<span class="change">(+11)</span>,
+        DeploymentContext.java&#160;<span class="change">(+54&#160;-24)</span>,
+        InPlaceResourceContext.java&#160;<span class="change">(+11)</span>,
+        ResourceContext.java&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/osgi</strong>:
+        BundleResourceFinder.java&#160;<span class="change">(+58&#160;-45)</span>,
+        DelegatingBundle.java&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        BundleDeploymentContext.java&#160;<span class="change">(+2&#160;-12)</span>,
+        EARContext.java&#160;<span class="change">(+27&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper-builder/src/main/java/org/apache/geronimo/jasper/deployment</strong>:
+        BundleTldScanner.java&#160;<span class="new">(new&#160;69)</span>,
+        JarFileTldScanner.java&#160;<span class="new">(new&#160;195)</span>,
+        JspModuleBuilderExtension.java&#160;<span class="change">(+21&#160;-147)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper/src/main/java/org/apache/geronimo/jasper</strong>:
+        GeronimoTldLocationsCache.java&#160;<span class="change">(+70&#160;-257)</span>
+      </li>
+      <li>
+        <strong>plugins/wab</strong>:
+        TODO&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-jetty-server</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-tomcat-server</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="75"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-26 21:59</span>
+    <a class="permalink" title="Permalink to this commit" href="#75">#75</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903525</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4844 Fix uninstall in a cluster.  Thanks to Ashish Jain for the original patch, the test also needed tweaking. port from 2.1
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/clustering/geronimo-deploy-farm/src/main/java/org/apache/geronimo/farm/deployment</strong>:
+        BasicClusterConfigurationStoreClient.java&#160;<span class="change">(changed)</span>,
+        BasicConfigurationNameBuilder.java&#160;<span class="change">(changed)</span>,
+        ConfigurationNameBuilder.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/geronimo-deploy-farm/src/test/java/org/apache/geronimo/farm/deployment</strong>:
+        BasicClusterConfigurationStoreClientTest.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="74"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-26 02:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#74">#74</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903093</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+help prevent NPE in java.util.zip.Inflater on Jetty
+    </p>
+    <p class="commitdetails"><strong>9</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8/src/main/java/org/apache/geronimo/jetty8/handler</strong>:
+        GeronimoWebAppContext.java&#160;<span class="change">(+9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="73"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-25 21:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#73">#73</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903037</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+build plugin groups, but trim them to what is available
+    </p>
+    <p class="commitdetails"><strong>318</strong> lines of code changed in <span class="files">14 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugingroups</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugingroups/client</strong>:
+        pom.xml&#160;<span class="change">(+12&#160;-12)</span>
+      </li>
+      <li>
+        <strong>plugingroups/client/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-10)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+102&#160;-102)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee5-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-85)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee6-jetty</strong>:
+        pom.xml&#160;<span class="change">(+102&#160;-102)</span>
+      </li>
+      <li>
+        <strong>plugingroups/javaee6-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-80)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-jetty</strong>:
+        pom.xml&#160;<span class="change">(+36&#160;-36)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-30)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+36&#160;-36)</span>
+      </li>
+      <li>
+        <strong>plugingroups/web-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-31)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-axis2</strong>:
+        pom.xml&#160;<span class="change">(+24&#160;-24)</span>
+      </li>
+      <li>
+        <strong>plugingroups/webservices-axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-20)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="72"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-25 21:11</span>
+    <a class="permalink" title="Permalink to this commit" href="#72">#72</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903036</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5041 disable ger binding of javamail session temporarily
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/javamail/javamail/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="71"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-25 21:08</span>
+    <a class="permalink" title="Permalink to this commit" href="#71">#71</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903035</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update client to use new jndi stuff
+    </p>
+    <p class="commitdetails"><strong>6</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/client/client/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+6&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="70"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-25 21:08</span>
+    <a class="permalink" title="Permalink to this commit" href="#70">#70</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">903034</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+provide more info on file copy error
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        PluginInstallerGBean.java&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="69"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-25 15:26</span>
+    <a class="permalink" title="Permalink to this commit" href="#69">#69</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902940</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+minor fix
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="68"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-25 14:55</span>
+    <a class="permalink" title="Permalink to this commit" href="#68">#68</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902923</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030: Register ServletContext into service registry as mandated by OSGi Web Applications specification
+    </p>
+    <p class="commitdetails"><strong>69</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/test/java/org/apache/geronimo/kernel/osgi</strong>:
+        MockBundle.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8/src/main/java/org/apache/geronimo/jetty8/handler</strong>:
+        GeronimoWebAppContext.java&#160;<span class="change">(+14&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/jetty8-clustering-wadi/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/jetty8/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7</strong>:
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        GeronimoStandardContext.java&#160;<span class="change">(+17)</span>,
+        TomcatContainer.java&#160;<span class="change">(+3&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat7/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web/src/main/java/org/apache/geronimo/osgi/web</strong>:
+        WebApplicationUtils.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="67"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-25 12:47</span>
+    <a class="permalink" title="Permalink to this commit" href="#67">#67</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902869</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030: move extender into its own package
+    </p>
+    <p class="commitdetails"><strong>866</strong> lines of code changed in <span class="files">14 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/wab</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web-extender</strong>:
+        pom.xml&#160;<span class="change">(+6&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web-extender/src/main/java/org/apache/geronimo/osgi/web</strong>:
+        WebApplication.java&#160;<span class="del">(del)</span>,
+        WebContainerConstants.java&#160;<span class="del">(del)</span>,
+        WebContainerEventDispatcher.java&#160;<span class="del">(del)</span>,
+        WebContainerExtender.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web-extender/src/main/java/org/apache/geronimo/osgi/web/extender</strong>:
+        WebApplication.java&#160;<span class="new">(new&#160;299)</span>,
+        WebContainerConstants.java&#160;<span class="new">(new&#160;60)</span>,
+        WebContainerEventDispatcher.java&#160;<span class="new">(new&#160;208)</span>,
+        WebContainerExtender.java&#160;<span class="new">(new&#160;279)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web</strong>:
+        pom.xml&#160;<span class="new">(new&#160;7)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web/src/main/java/org/apache/geronimo/osgi/web</strong>:
+        WebApplicationConstants.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-extender/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-extender/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="66"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2010-01-25 05:50</span>
+    <a class="permalink" title="Permalink to this commit" href="#66">#66</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902753</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5016: 1. make cxf &amp; geronimo-cxf can be compiled 2. refactor the package name in geronimo-cxf-ejb-builder to avoid split package issue.
+    </p>
+    <p class="commitdetails"><strong>233</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+9&#160;-25)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf</strong>:
+        pom.xml&#160;<span class="change">(+141&#160;-210)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf</strong>:
+        pom.xml&#160;<span class="change">(+7&#160;-79)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/cxf/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+57&#160;-52)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb-builder/src/main/java/org/apache/geronimo/cxf/builder</strong>:
+        CXFEJBBuilder.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf-ejb-builder/src/main/java/org/apache/geronimo/cxf/ejb/builder</strong>:
+        CXFEJBBuilder.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf</strong>:
+        pom.xml&#160;<span class="change">(+19&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="65"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-25 03:27</span>
+    <a class="permalink" title="Permalink to this commit" href="#65">#65</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902720</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update Tomcat 7 dependencies.xml file
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/tomcat7/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+2&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="64"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-24 18:25</span>
+    <a class="permalink" title="Permalink to this commit" href="#64">#64</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902666</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5045 geronimo-maven-plugin works at least a bit
+    </p>
+    <p class="commitdetails"><strong>120</strong> lines of code changed in <span class="files">5 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/assemblies/geronimo-framework</strong>:
+        pom.xml&#160;<span class="change">(+120)</span>
+      </li>
+      <li>
+        <strong>framework/buildsupport/geronimo-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/geronimo/server</strong>:
+        InstallerMojoSupport.java&#160;<span class="new">(new)</span>,
+        StartServerMojo.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="63"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-24 14:38</span>
+    <a class="permalink" title="Permalink to this commit" href="#63">#63</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902618</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix unix permissions for bin scripts
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        ArchiverGBean.java&#160;<span class="change">(+18&#160;-71)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="62"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-23 23:58</span>
+    <a class="permalink" title="Permalink to this commit" href="#62">#62</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902527</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4996 GERONIMO-5025 separate jndi context setup from web app context since jsf needs it too.  Hook up myfaces which now starts.  Don't know if myfaces works
+    </p>
+    <p class="commitdetails"><strong>189</strong> lines of code changed in <span class="files">16 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/transaction-1_6/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee/src/main/java/org/apache/geronimo/j2ee/jndi</strong>:
+        ContextSource.java&#160;<span class="new">(new&#160;32)</span>,
+        WebContextSource.java&#160;<span class="new">(new&#160;71)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment</strong>:
+        AbstractWebModuleBuilder.java&#160;<span class="change">(+13&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/j2ee-server/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+10)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+8&#160;-57)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8/src/main/java/org/apache/geronimo/jetty8</strong>:
+        WebAppContextWrapper.java&#160;<span class="change">(+7&#160;-21)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8/src/test/java/org/apache/geronimo/jetty8</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+9&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces-builder/src/main/java/org/apache/geronimo/myfaces/deployment</strong>:
+        MyFacesModuleBuilderExtension.java&#160;<span class="change">(+5&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/main/java/org/apache/geronimo/myfaces</strong>:
+        LifecycleProviderGBean.java&#160;<span class="change">(+9&#160;-23)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces/src/test/java/org/apache/geronimo/myfaces</strong>:
+        BasicTest.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/myfaces/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatWebAppContext.java&#160;<span class="change">(+5&#160;-16)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/test/java/org/apache/geronimo/tomcat</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+9&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="61"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-23 20:04</span>
+    <a class="permalink" title="Permalink to this commit" href="#61">#61</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902513</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030: Missed a file for r902507
+    </p>
+    <p class="commitdetails"><strong>93</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        BundleDeploymentContext.java&#160;<span class="new">(new&#160;93)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="60"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-23 19:28</span>
+    <a class="permalink" title="Permalink to this commit" href="#60">#60</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902507</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030: Initial refactoring of some of the module deployment code to support deployment of Bundles. Also, implemented rfc66 extender that can actually deploy WABs with simple servlets and jsps.
+    </p>
+    <p class="commitdetails"><strong>1563</strong> lines of code changed in <span class="files">59 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        BundleResourceContext.java&#160;<span class="new">(new&#160;66)</span>,
+        ClassPathUtils.java&#160;<span class="new">(new&#160;298)</span>,
+        Deployable.java&#160;<span class="new">(new&#160;30)</span>,
+        DeployableBundle.java&#160;<span class="new">(new&#160;46)</span>,
+        DeployableJarFile.java&#160;<span class="new">(new&#160;57)</span>,
+        DeploymentContext.java&#160;<span class="change">(+31&#160;-313)</span>,
+        ResourceContext.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/test/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContextTest.java&#160;<span class="change">(+15&#160;-15)</span>
+      </li>
+      <li>
+        <strong>plugins</strong>:
+        pom.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>plugins/axis/geronimo-axis-builder/src/main/java/org/apache/geronimo/axis/builder</strong>:
+        AxisModuleBuilderExtension.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/client/geronimo-client-builder/src/main/java/org/apache/geronimo/client/builder</strong>:
+        AppClientModuleBuilder.java&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/connector/deployment</strong>:
+        ConnectorModuleBuilder.java&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARContext.java&#160;<span class="change">(-22)</span>,
+        Module.java&#160;<span class="change">(+19&#160;-7)</span>,
+        ModuleBuilder.java&#160;<span class="change">(+3)</span>,
+        ModuleBuilderExtension.java&#160;<span class="change">(+3)</span>,
+        SwitchingModuleBuilder.java&#160;<span class="change">(+9)</span>,
+        UnavailableModuleBuilder.java&#160;<span class="change">(+6&#160;-2)</span>,
+        WebModule.java&#160;<span class="change">(+7&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/test/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder13NakedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder13Test.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder14AltDDTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder14AltDDUnpackedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder14NakedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder14NakedUnpackedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder14Test.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder14UnpackedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder5AltDDTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder5AltDDUnpackedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder5NakedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder5NakedUnpackedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder5Test.java&#160;<span class="change">(+3&#160;-1)</span>,
+        EARConfigBuilder5UnpackedTest.java&#160;<span class="change">(+3&#160;-1)</span>,
+        MockConnectorConfigBuilder.java&#160;<span class="change">(+4)</span>,
+        MockEJBConfigBuilder.java&#160;<span class="change">(+4)</span>,
+        MockWARConfigBuilder.java&#160;<span class="change">(+4)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-naming-builder/src/main/java/org/apache/geronimo/naming/deployment</strong>:
+        SwitchingServiceRefBuilder.java&#160;<span class="change">(+8&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-security-builder/src/main/java/org/apache/geronimo/security/deployment</strong>:
+        GeronimoSecurityBuilderImpl.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment</strong>:
+        AbstractWebModuleBuilder.java&#160;<span class="change">(+2&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/test/java/org/apache/geronimo/web25/deployment</strong>:
+        SchemaConversionTest.java&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper-builder/src/main/java/org/apache/geronimo/jasper/deployment</strong>:
+        JspModuleBuilderExtension.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-ejb-builder/src/main/java/org/apache/geronimo/jaxws/ejb/builder</strong>:
+        JAXWSEJBModuleBuilderExtension.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+81&#160;-16)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/test/java/org/apache/geronimo/jetty8/deployment</strong>:
+        PlanParsingTest.java&#160;<span class="change">(+7&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces-builder/src/main/java/org/apache/geronimo/myfaces/deployment</strong>:
+        MyFacesModuleBuilderExtension.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-builder/src/main/java/org/apache/geronimo/openejb/deployment</strong>:
+        EjbModuleBuilder.java&#160;<span class="change">(+5&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-builder-wadi/src/main/java/org/apache/geronimo/openejb/deployment/cluster</strong>:
+        WADIOpenEJBClusteringBuilder.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/openjpa2/geronimo-persistence-jpa20-builder/src/main/java/org/apache/geronimo/persistence/builder</strong>:
+        PersistenceUnitBuilder.java&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+107&#160;-42)</span>
+      </li>
+      <li>
+        <strong>plugins/wab</strong>:
+        TODO&#160;<span class="new">(new&#160;4)</span>,
+        pom.xml&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web-extender</strong>:
+        pom.xml&#160;<span class="change">(+8)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web-extender/src/main/java/org/apache/geronimo/osgi/web</strong>:
+        WebApplication.java&#160;<span class="change">(+129&#160;-11)</span>,
+        WebContainerExtender.java&#160;<span class="change">(+99&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-extender</strong>:
+        pom.xml&#160;<span class="change">(+8)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-extender/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+122&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-extender/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+15)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-jetty-server</strong>:
+        pom.xml&#160;<span class="new">(new&#160;143)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-tomcat-server</strong>:
+        pom.xml&#160;<span class="new">(new&#160;143)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="59"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-23 07:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#59">#59</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902387</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Latest Tomcat 7 removed the getState method
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        GeronimoStandardContext.java&#160;<span class="change">(+2&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="58"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-23 03:33</span>
+    <a class="permalink" title="Permalink to this commit" href="#58">#58</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902360</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5041 Integration aries osgi jndi implementation
+    </p>
+    <p class="commitdetails"><strong>286</strong> lines of code changed in <span class="files">11 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework</strong>:
+        pom.xml&#160;<span class="change">(+10)</span>
+      </li>
+      <li>
+        <strong>framework/configs/rmi-naming</strong>:
+        pom.xml&#160;<span class="change">(+15&#160;-4)</span>
+      </li>
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+10)</span>
+      </li>
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+16&#160;-10)</span>
+      </li>
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/resources/OSGI-INF/blueprint</strong>:
+        naming-providers.xml&#160;<span class="new">(new&#160;76)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/main/java/org/apache/geronimo/gjndi</strong>:
+        WritableFederatedContextMember.java&#160;<span class="new">(new&#160;65)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/main/java/org/apache/geronimo/naming</strong>:
+        AbstractURLContextFactory.java&#160;<span class="new">(new&#160;38)</span>,
+        WritableURLContextFactory.java&#160;<span class="new">(new&#160;47)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/main/java/org/apache/geronimo/naming/java</strong>:
+        javaURLContextFactory.java&#160;<span class="change">(+9&#160;-20)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/properties</strong>:
+        NamingProperties.java&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="57"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-23 02:25</span>
+    <a class="permalink" title="Permalink to this commit" href="#57">#57</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902348</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+some minor updates
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/config</strong>:
+        Configuration.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/osgi</strong>:
+        DelegatingBundle.java&#160;<span class="change">(+1&#160;-1)</span>,
+        DelegatingBundleContext.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="56"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-22 22:20</span>
+    <a class="permalink" title="Permalink to this commit" href="#56">#56</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902335</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+some environment information i forgot to put back
+    </p>
+    <p class="commitdetails"><strong>12</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/jetty8-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat7-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="55"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-01-22 17:07</span>
+    <a class="permalink" title="Permalink to this commit" href="#55">#55</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902267</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Back off jpa spec version temporarily
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/j2ee-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="54"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-22 12:47</span>
+    <a class="permalink" title="Permalink to this commit" href="#54">#54</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902167</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+remove unnecessary imports
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/config</strong>:
+        Configuration.java&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="53"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-22 12:41</span>
+    <a class="permalink" title="Permalink to this commit" href="#53">#53</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902162</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+add DelegatingBundle that can delegate calls to multiple Bundles and remove classSource support
+    </p>
+    <p class="commitdetails"><strong>128</strong> lines of code changed in <span class="files">20 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+18&#160;-20)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/test/java/org/apache/geronimo/deployment</strong>:
+        SingleFileHotDeployerTest.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean</strong>:
+        GBeanData.java&#160;<span class="change">(+3&#160;-36)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+4&#160;-19)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/config</strong>:
+        Configuration.java&#160;<span class="change">(+73&#160;-11)</span>,
+        ConfigurationData.java&#160;<span class="change">(+10)</span>,
+        KernelConfigurationManager.java&#160;<span class="change">(+1)</span>,
+        SerializedConfigurationMarshaler.java&#160;<span class="new">(new)</span>,
+        SimpleConfigurationManager.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/osgi</strong>:
+        DelegatingBundle.java&#160;<span class="new">(new&#160;1)</span>,
+        DelegatingBundleContext.java&#160;<span class="new">(new&#160;1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/test/java/org/apache/geronimo/kernel/mock</strong>:
+        MockConfigurationManager.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper-builder/src/main/java/org/apache/geronimo/jasper/deployment</strong>:
+        JspModuleBuilderExtension.java&#160;<span class="change">(+1&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper-builder/src/test/java/org/apache/geronimo/jasper/deployment</strong>:
+        BasicTest.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/jasper-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+11&#160;-19)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/test/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilderTest.java&#160;<span class="change">(-1)</span>,
+        PlanParsingTest.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/jetty8-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="52"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-22 04:50</span>
+    <a class="permalink" title="Permalink to this commit" href="#52">#52</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902037</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update JAXWS to the latest version 2.2
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">7 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxrpc-jaxws-tests/jaxrpc-jaxws-war</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-catalog-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-mtom-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-provider-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="51"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-22 04:34</span>
+    <a class="permalink" title="Permalink to this commit" href="#51">#51</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">902033</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update those specs to latest versions
+    </p>
+    <p class="commitdetails"><strong>8</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+8&#160;-12)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="50"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-21 20:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#50">#50</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901935</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5025 Initial work on ee 6 scoped jndi stuff.  Minimal testing so far
+    </p>
+    <p class="commitdetails"><strong>783</strong> lines of code changed in <span class="files">72 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/karaf-framework/src/main/filtered-resources/etc</strong>:
+        startup.properties&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/configs/rmi-naming/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-core/src/main/java/org/apache/geronimo/validator</strong>:
+        ValidationContext.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/main/java/org/apache/geronimo/gjndi</strong>:
+        FederatedContext.java&#160;<span class="new">(new&#160;34)</span>,
+        FederatedContextGBean.java&#160;<span class="new">(new&#160;39)</span>,
+        GlobalContextGBean.java&#160;<span class="change">(+6&#160;-13)</span>,
+        JavaCompContextGBean.java&#160;<span class="change">(+4&#160;-14)</span>,
+        KernelContextGBean.java&#160;<span class="change">(+13&#160;-21)</span>,
+        WritableContextGBean.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/main/java/org/apache/geronimo/gjndi/binding</strong>:
+        GBeanBinding.java&#160;<span class="change">(+12&#160;-19)</span>,
+        GBeanFormatBinding.java&#160;<span class="change">(+19&#160;-27)</span>,
+        ResourceBinding.java&#160;<span class="change">(+13&#160;-16)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/main/java/org/apache/geronimo/naming/enc</strong>:
+        EnterpriseNamingContext.java&#160;<span class="change">(+31&#160;-28)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/main/java/org/apache/geronimo/naming/java</strong>:
+        RootContext.java&#160;<span class="change">(changed)</span>,
+        javaURLContextFactory.java&#160;<span class="new">(new&#160;51)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/test/java/org/apache/geronimo/gjndi</strong>:
+        AbstractContextTest.java&#160;<span class="new">(new)</span>,
+        JavaCompContextTest.java&#160;<span class="change">(+20&#160;-21)</span>,
+        JavaCompGBeanTest.java&#160;<span class="change">(changed)</span>,
+        KernelContextGBeanTest.java&#160;<span class="change">(+5&#160;-8)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-naming/src/test/java/org/apache/geronimo/gjndi/binding</strong>:
+        FormatTest.java&#160;<span class="change">(+5&#160;-2)</span>,
+        GBeanBindingTest.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration/cli</strong>:
+        AddStartupConfiguration.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/geronimo-axis2/src/main/java/org/apache/geronimo/axis2/pojo</strong>:
+        POJOWebServiceContainerFactoryGBean.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/client/geronimo-client-builder/src/main/java/org/apache/geronimo/client/builder</strong>:
+        AppClientModuleBuilder.java&#160;<span class="change">(+4&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/client/geronimo-client/src/main/java/org/apache/geronimo/client</strong>:
+        StaticJndiContextPlugin.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/connector/deployment</strong>:
+        AdminObjectRefBuilder.java&#160;<span class="change">(+4&#160;-4)</span>,
+        ResourceRefBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/java/org/apache/geronimo/connector/deployment</strong>:
+        ConnectorModuleBuilderTest.java&#160;<span class="change">(+1)</span>,
+        MessageDestinationTest.java&#160;<span class="change">(+3&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder.java&#160;<span class="change">(+19&#160;-41)</span>,
+        EARContext.java&#160;<span class="change">(+1)</span>,
+        NamingBuilder.java&#160;<span class="change">(+5&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/test/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilderTestSupport.java&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee</strong>:
+        pom.xml&#160;<span class="change">(+11&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee/src/main/java/org/apache/geronimo/j2ee/jndi</strong>:
+        ApplicationJndi.java&#160;<span class="new">(new&#160;84)</span>,
+        JndiKey.java&#160;<span class="new">(new&#160;28)</span>,
+        JndiScope.java&#160;<span class="new">(new&#160;28)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee/src/main/java/org/apache/geronimo/j2ee/management/impl</strong>:
+        J2EEApplicationImpl.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-naming-builder/src/main/java/org/apache/geronimo/naming/deployment</strong>:
+        AbstractNamingBuilder.java&#160;<span class="change">(+36&#160;-4)</span>,
+        EnvironmentEntryBuilder.java&#160;<span class="change">(+1&#160;-1)</span>,
+        GBeanRefBuilder.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-naming-builder/src/test/java/org/apache/geronimo/naming/deployment</strong>:
+        EnvironmentEntryBuilderTest.java&#160;<span class="change">(+28&#160;-32)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment</strong>:
+        AbstractWebModuleBuilder.java&#160;<span class="change">(+43&#160;-29)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/j2ee-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-builder/src/main/java/org/apache/geronimo/jaxws/builder</strong>:
+        JAXWSServiceRefBuilder.java&#160;<span class="change">(+1&#160;-1)</span>,
+        WARWebServiceFinder.java&#160;<span class="change">(+7&#160;-7)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8/src/main/java/org/apache/geronimo/jetty8</strong>:
+        WebAppContextWrapper.java&#160;<span class="change">(+16&#160;-10)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8/src/test/java/org/apache/geronimo/jetty8</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-builder/src/main/java/org/apache/geronimo/openejb/deployment</strong>:
+        EjbDeploymentBuilder.java&#160;<span class="change">(+11&#160;-7)</span>,
+        EjbModuleBuilder.java&#160;<span class="change">(+10&#160;-1)</span>,
+        EjbRefBuilder.java&#160;<span class="change">(+9&#160;-9)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-clustering-wadi/src/main/java/org/apache/geronimo/openejb/cluster/stateful/deployment</strong>:
+        ClusteredStatefulDeployment.java&#160;<span class="change">(+76&#160;-135)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/geronimo-openejb/src/main/java/org/apache/geronimo/openejb</strong>:
+        EjbDeployment.java&#160;<span class="change">(+6&#160;-6)</span>,
+        EjbDeploymentGBean.java&#160;<span class="change">(+39&#160;-24)</span>,
+        EjbModuleImpl.java&#160;<span class="change">(+19&#160;-1)</span>,
+        EjbModuleImplGBean.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/openjpa2/geronimo-persistence-jpa20-builder/src/main/java/org/apache/geronimo/persistence/builder</strong>:
+        PersistenceContextRefBuilder.java&#160;<span class="new">(new)</span>,
+        PersistenceUnitRefBuilder.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatWebAppContext.java&#160;<span class="change">(+16&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/test/java/org/apache/geronimo/tomcat</strong>:
+        AbstractWebModuleTest.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="49"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-21 20:08</span>
+    <a class="permalink" title="Permalink to this commit" href="#49">#49</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901934</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+JspServletWrapper is looking for InstanceManager in ServletContext
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        GeronimoStandardContext.java&#160;<span class="change">(+3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="48"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-21 19:14</span>
+    <a class="permalink" title="Permalink to this commit" href="#48">#48</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901918</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+and prevent another NPE
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jasper/geronimo-jasper/src/main/java/org/apache/geronimo/jasper</strong>:
+        GeronimoTldLocationsCache.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="47"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-21 18:58</span>
+    <a class="permalink" title="Permalink to this commit" href="#47">#47</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901910</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+prevent NPE
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jasper/geronimo-jasper/src/main/java/org/apache/geronimo/jasper</strong>:
+        GeronimoTldLocationsCache.java&#160;<span class="change">(+1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="46"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-01-21 08:37</span>
+    <a class="permalink" title="Permalink to this commit" href="#46">#46</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901682</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update dependecies.xml for recent changes. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/plugingroups/framework/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-45)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="45"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-21 05:22</span>
+    <a class="permalink" title="Permalink to this commit" href="#45">#45</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901610</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4948 To migrate existing geronimo gshell commands to karaf based shell.  ----&gt;  Adding the dependencies to karaf-framework so that other assemblies can pick up shell-base and deploy-tools modules.
+    </p>
+    <p class="commitdetails"><strong>155</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/karaf-framework</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>framework/configs/karaf-framework/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+150)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="44"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-21 04:44</span>
+    <a class="permalink" title="Permalink to this commit" href="#44">#44</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901598</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+The admin console is depending on dojo because of the new navigation tree.  --- the dojo dependencies should be added to console-tomcat/jetty instead of plugin-console-tomcat/jetty
+    </p>
+    <p class="commitdetails"><strong>24</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-jetty/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="43"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-21 04:05</span>
+    <a class="permalink" title="Permalink to this commit" href="#43">#43</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901587</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+The admin console is depending on dojo because of the new navigation tree.
+    </p>
+    <p class="commitdetails"><strong>16</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-jetty</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="42"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-20 20:40</span>
+    <a class="permalink" title="Permalink to this commit" href="#42">#42</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901469</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+better default page id
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-core/src/main/resources/WEB-INF</strong>:
+        pluto-portal-driver-config.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="41"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-20 20:38</span>
+    <a class="permalink" title="Permalink to this commit" href="#41">#41</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901467</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix a split-package issue
+    </p>
+    <p class="commitdetails"><strong>257</strong> lines of code changed in <span class="files">4 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-core/src/main/java/org/apache/geronimo/console/servlet</strong>:
+        ContextForwardServlet.java&#160;<span class="new">(new&#160;73)</span>,
+        GenericForwardServlet.java&#160;<span class="new">(new&#160;184)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/java/org/apache/geronimo/console/servlet</strong>:
+        ContextForwardServlet.java&#160;<span class="del">(del)</span>,
+        GenericForwardServlet.java&#160;<span class="del">(del)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="40"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-20 09:08</span>
+    <a class="permalink" title="Permalink to this commit" href="#40">#40</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901175</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Fix failed case due to recent change of Tomcat 7
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-clustering-wadi/src/test/java/org/apache/geronimo/tomcat/cluster</strong>:
+        ClusteredManagerTest.java&#160;<span class="new">(new)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="39"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-20 04:43</span>
+    <a class="permalink" title="Permalink to this commit" href="#39">#39</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">901105</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5038 counteract felix's URLDecoder.decode(location) with an opposite encode
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="38"></a>
+    <a href="user_rwonly.html" class="author">rwonly</a>
+    <span class="date">2010-01-19 05:33</span>
+    <a class="permalink" title="Permalink to this commit" href="#38">#38</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">900707</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+cleanup the axis2 plugin's pom
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/axis2</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-30)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="37"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-18 23:39</span>
+    <a class="permalink" title="Permalink to this commit" href="#37">#37</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">900657</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5009 Enable Java EE package deployment in Geronimo 3.0
+    </p>
+    <p class="commitdetails"><strong>276</strong> lines of code changed in <span class="files">23 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/buildsupport/car-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/car</strong>:
+        ArchiveCarMojo.java&#160;<span class="change">(+64&#160;-58)</span>,
+        CreatePluginListMojo.java&#160;<span class="change">(changed)</span>,
+        MavenConfigStore.java&#160;<span class="change">(changed)</span>,
+        PackageMojo.java&#160;<span class="change">(+6&#160;-6)</span>,
+        PlanProcessorMojo.java&#160;<span class="change">(+1&#160;-2)</span>,
+        PluginBootstrap2.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>framework/buildsupport/car-maven-plugin/src/main/resources/META-INF/plexus</strong>:
+        components.xml&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli</strong>:
+        CommandDeploy.java&#160;<span class="change">(-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        CopyResourceContext.java&#160;<span class="change">(+3&#160;-4)</span>,
+        DeploymentContext.java&#160;<span class="change">(+33&#160;-23)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/util</strong>:
+        FileUtils.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/test/java/org/apache/geronimo/kernel/osgi</strong>:
+        MockBundleContext.java&#160;<span class="change">(+16&#160;-7)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-service-builder/src/main/java/org/apache/geronimo/deployment/service</strong>:
+        ServiceConfigBuilder.java&#160;<span class="change">(+11&#160;-18)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        RepositoryConfigurationStore.java&#160;<span class="change">(+21&#160;-34)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder.java&#160;<span class="change">(+18&#160;-9)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        GeronimoStandardContext.java&#160;<span class="change">(+16&#160;-16)</span>
+      </li>
+      <li>
+        <strong>plugins/welcome/geronimo-welcome</strong>:
+        pom.xml&#160;<span class="change">(+18&#160;-18)</span>
+      </li>
+      <li>
+        <strong>plugins/welcome/welcome-tomcat-server</strong>:
+        pom.xml&#160;<span class="change">(+67)</span>
+      </li>
+      <li>
+        <strong>plugins/welcome/welcome-tomcat/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="36"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-17 13:51</span>
+    <a class="permalink" title="Permalink to this commit" href="#36">#36</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">900168</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5030, GERONIMO-5029: Initial plugin for rfc 66. Contains web container extender that doesn't do any actual work besides tracking web application bundles (WABs) and firing events. The extender code is based on Rick's code in sandbox. The plugin also installs Apache Aries webbundle url handler for converting WARs into WABs
+    </p>
+    <p class="commitdetails"><strong>250</strong> lines of code changed in <span class="files">9 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/wab</strong>:
+        pom.xml&#160;<span class="new">(new&#160;53)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web-extender</strong>:
+        pom.xml&#160;<span class="new">(new&#160;74)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/geronimo-web-extender/src/main/java/org/apache/geronimo/osgi/web</strong>:
+        WebApplication.java&#160;<span class="new">(new&#160;11)</span>,
+        WebContainerConstants.java&#160;<span class="new">(new)</span>,
+        WebContainerEventDispatcher.java&#160;<span class="new">(new)</span>,
+        WebContainerExtender.java&#160;<span class="new">(new&#160;1)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-extender</strong>:
+        pom.xml&#160;<span class="new">(new&#160;60)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-extender/src/main/history</strong>:
+        dependencies.xml&#160;<span class="new">(new&#160;29)</span>
+      </li>
+      <li>
+        <strong>plugins/wab/web-extender/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new&#160;22)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="35"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-16 04:43</span>
+    <a class="permalink" title="Permalink to this commit" href="#35">#35</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899902</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Put the changes in dependency files in target so they won't mess up svn status listings
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/buildsupport/car-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/car</strong>:
+        DependencyChangeMojo.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="34"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-16 04:20</span>
+    <a class="permalink" title="Permalink to this commit" href="#34">#34</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899900</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4992  undo mistaken removal of tomcat osgi-unfriendliness workaround
+    </p>
+    <p class="commitdetails"><strong>57</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        GeronimoStandardContext.java&#160;<span class="change">(+57&#160;-57)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="33"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-15 15:38</span>
+    <a class="permalink" title="Permalink to this commit" href="#33">#33</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899785</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+another dependency change
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/jetty8-clustering-wadi/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="32"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-15 15:33</span>
+    <a class="permalink" title="Permalink to this commit" href="#32">#32</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899777</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+update groupdId for jetty-util
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/jetty8/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="31"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-15 13:35</span>
+    <a class="permalink" title="Permalink to this commit" href="#31">#31</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899728</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+fix jsp compilation and update some dependencies.xml
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+6)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/jasper/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-10)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat7/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="30"></a>
+    <a href="user_caijunj.html" class="author">caijunj</a>
+    <span class="date">2010-01-15 04:39</span>
+    <a class="permalink" title="Permalink to this commit" href="#30">#30</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899565</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4968 - Problemastic OS check in Windows startup command
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/configs/geronimo-boilerplate/src/main/underlay/contents/bin</strong>:
+        client.bat&#160;<span class="change">(changed)</span>,
+        deploy.bat&#160;<span class="new">(new)</span>,
+        geronimo.bat&#160;<span class="change">(-6)</span>,
+        gsh.bat&#160;<span class="new">(new)</span>,
+        shutdown.bat&#160;<span class="change">(changed)</span>,
+        start-server.bat&#160;<span class="new">(new)</span>,
+        startup.bat&#160;<span class="change">(changed)</span>,
+        stop-server.bat&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/jaxws-tools/src/main/resources/contents/bin</strong>:
+        jaxws-tools.bat&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/procrun/src/main/resources/bin</strong>:
+        service_pr.bat&#160;<span class="change">(-6)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="29"></a>
+    <a href="user_caijunj.html" class="author">caijunj</a>
+    <span class="date">2010-01-15 04:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#29">#29</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899556</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5032 - Procrun issue: windows service is stoped when user log off console session. Thanks Forrest for the patch
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/procrun/src/main/resources/bin</strong>:
+        service_pr.bat&#160;<span class="change">(+5&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="28"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-15 02:46</span>
+    <a class="permalink" title="Permalink to this commit" href="#28">#28</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899548</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 use hash to keep the page to the latest page viewed after refresh.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>192</strong> lines of code changed in <span class="files">6 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-filter/src/main/java/org/apache/geronimo/console/filter</strong>:
+        XSRFHandler.java&#160;<span class="change">(+9&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/java/org/apache/geronimo/console/filter</strong>:
+        RedirectByHashFilter.java&#160;<span class="new">(new&#160;126)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp/WEB-INF</strong>:
+        web.xml&#160;<span class="change">(+14&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp/WEB-INF/themes</strong>:
+        navigation.jsp&#160;<span class="change">(+11&#160;-3)</span>,
+        portlets-only.jsp&#160;<span class="change">(+6)</span>,
+        portlets-with-tree.jsp&#160;<span class="change">(+26&#160;-13)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="27"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-14 16:42</span>
+    <a class="permalink" title="Permalink to this commit" href="#27">#27</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899403</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5026: first stab at bundle resource finder
+    </p>
+    <p class="commitdetails"><strong>56</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/osgi</strong>:
+        BundleClassFinder.java&#160;<span class="change">(+11&#160;-10)</span>,
+        BundleResourceFinder.java&#160;<span class="new">(new&#160;45)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="26"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-01-14 13:19</span>
+    <a class="permalink" title="Permalink to this commit" href="#26">#26</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899310</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Some dependencies.xml fixup. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>13</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jasper/jasper/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+11&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat7/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="25"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-14 02:54</span>
+    <a class="permalink" title="Permalink to this commit" href="#25">#25</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899081</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+1. Update Tomcat/Jasper dependency <br />
+2. Set ThreadContextClassLoader to load classes while Tomcat creates MBean
+    </p>
+    <p class="commitdetails"><strong>74</strong> lines of code changed in <span class="files">8 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/jasper</strong>:
+        pom.xml&#160;<span class="change">(+12)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper</strong>:
+        pom.xml&#160;<span class="change">(+6&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/jasper/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+6&#160;-11)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat</strong>:
+        pom.xml&#160;<span class="change">(+13)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatServerGBean.java&#160;<span class="change">(+11&#160;-5)</span>,
+        TomcatWebAppContext.java&#160;<span class="change">(+19&#160;-15)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat7</strong>:
+        pom.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat7/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="24"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-14 02:27</span>
+    <a class="permalink" title="Permalink to this commit" href="#24">#24</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">899075</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 correct the menu sequence in jetty build.<br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="23"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-13 17:23</span>
+    <a class="permalink" title="Permalink to this commit" href="#23">#23</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">898946</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5026: First stab at bundle class finder
+    </p>
+    <p class="commitdetails"><strong>18</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/osgi</strong>:
+        BundleClassFinder.java&#160;<span class="new">(new&#160;10)</span>,
+        BundleDescription.java&#160;<span class="change">(+8)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="22"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-01-12 11:06</span>
+    <a class="permalink" title="Permalink to this commit" href="#22">#22</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">898356</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update for renamed spec versions. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>249</strong> lines of code changed in <span class="files">57 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq/activemq-portlets</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/ca-helper/geronimo-ca-helper</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/client/client/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/concurrent/geronimo-concurrent-builder</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-core</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/cxf/geronimo-cxf</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/j2ee-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-5)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/jasper/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+11&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/mejb/geronimo-mejb</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/monitoring/agent-ejb</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-8)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/myfaces</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/geronimo-openejb</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-portlets</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/pluto/pluto-support</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/pluto/pluto-support/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-portlets</strong>:
+        pom.xml&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/uddi/geronimo-uddi-server</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/welcome/geronimo-welcome</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>testsuite/commands-testsuite/jaxws</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/concurrent-testsuite/concurrent-basic/common-ejb</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>testsuite/concurrent-testsuite/concurrent-basic/common-jar</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>testsuite/concurrent-testsuite/concurrent-basic/concurrent-ejb</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>testsuite/concurrent-testsuite/concurrent-basic/concurrent-war</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>testsuite/deployment-testsuite/jca-cms-tests/jca-cms-war</strong>:
+        pom.xml&#160;<span class="change">(+9&#160;-9)</span>
+      </li>
+      <li>
+        <strong>testsuite/enterprise-testsuite/ejb-tests</strong>:
+        pom.xml&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+      <li>
+        <strong>testsuite/enterprise-testsuite/ejb-tests/ejb-war</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+      <li>
+        <strong>testsuite/enterprise-testsuite/jms-tests/jms-ejb</strong>:
+        pom.xml&#160;<span class="change">(+12&#160;-12)</span>
+      </li>
+      <li>
+        <strong>testsuite/enterprise-testsuite/jms-tests/jms-war</strong>:
+        pom.xml&#160;<span class="change">(+10&#160;-10)</span>
+      </li>
+      <li>
+        <strong>testsuite/enterprise-testsuite/sec-tests/sec-ejb</strong>:
+        pom.xml&#160;<span class="change">(+7&#160;-7)</span>
+      </li>
+      <li>
+        <strong>testsuite/security-testsuite/test-security</strong>:
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-2.1-jsps</strong>:
+        pom.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-jetty</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-8)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-myfaces</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-tomcat</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-8)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-web-forward/web-forward-war-1</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-8)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-web-forward/web-forward-war-2</strong>:
+        pom.xml&#160;<span class="change">(+9&#160;-9)</span>
+      </li>
+      <li>
+        <strong>testsuite/web-testsuite/test-web-references/web-references-war</strong>:
+        pom.xml&#160;<span class="change">(+12&#160;-12)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxb-tests/jaxb-war</strong>:
+        pom.xml&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxr-tests/jaxr-war</strong>:
+        pom.xml&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxrpc-jaxws-tests/jaxrpc-jaxws-war</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-catalog-tests</strong>:
+        pom.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-mtom-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-provider-tests</strong>:
+        pom.xml&#160;<span class="change">(+7&#160;-7)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/saaj-tests/saaj-war</strong>:
+        pom.xml&#160;<span class="change">(+8&#160;-8)</span>
+      </li>
+      <li>
+        <strong>testsupport/test-deployment-j2ee_1.3/test-war-j2ee_1.3</strong>:
+        pom.xml&#160;<span class="change">(+9&#160;-9)</span>
+      </li>
+      <li>
+        <strong>testsupport/test-deployment-j2ee_1.4/test-war-j2ee_1.4</strong>:
+        pom.xml&#160;<span class="change">(+9&#160;-9)</span>
+      </li>
+      <li>
+        <strong>testsupport/test-deployment-javaee_5/test-war-javaee_5</strong>:
+        pom.xml&#160;<span class="change">(+9&#160;-9)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="21"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-11 22:57</span>
+    <a class="permalink" title="Permalink to this commit" href="#21">#21</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">898160</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Update JSP and EL spec version
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="20"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-11 04:39</span>
+    <a class="permalink" title="Permalink to this commit" href="#20">#20</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897795</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 missed unit test classes when applying patch.<br />
+
+    </p>
+    <p class="commitdetails"><strong>236</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-portal-driver/src/test/java/org/apache/geronimo/console/navigation</strong>:
+        NavigationJsonGeneratorTest.java&#160;<span class="new">(new&#160;102)</span>,
+        TreeNodeTest.java&#160;<span class="new">(new&#160;134)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="19"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-11 04:03</span>
+    <a class="permalink" title="Permalink to this commit" href="#19">#19</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897783</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 adding g11n support for the new navigation tree.
+    </p>
+    <p class="commitdetails"><strong>37</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/java/org/apache/geronimo/console/navigation</strong>:
+        NavigationJsonGenerator.java&#160;<span class="change">(+36&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp/WEB-INF/themes</strong>:
+        navigation.jsp&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="18"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-11 03:38</span>
+    <a class="permalink" title="Permalink to this commit" href="#18">#18</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897778</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Minor fix for FileUtils
+    </p>
+    <p class="commitdetails"><strong>2</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/util</strong>:
+        FileUtils.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="17"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-11 02:51</span>
+    <a class="permalink" title="Permalink to this commit" href="#17">#17</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897766</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 adding copyright and version info to the classes.<br />
+
+    </p>
+    <p class="commitdetails"><strong>55</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/java/org/apache/geronimo/console/navigation</strong>:
+        NavigationJsonGenerator.java&#160;<span class="change">(+19)</span>,
+        TreeNode.java&#160;<span class="change">(+18)</span>,
+        TreeNodeIdComparator.java&#160;<span class="change">(+18)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="16"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-11 01:15</span>
+    <a class="permalink" title="Permalink to this commit" href="#16">#16</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897756</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 missed classes when applying patch.<br />
+
+    </p>
+    <p class="commitdetails"><strong>387</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/java/org/apache/geronimo/console/navigation</strong>:
+        NavigationJsonGenerator.java&#160;<span class="new">(new&#160;203)</span>,
+        TreeNode.java&#160;<span class="new">(new&#160;135)</span>,
+        TreeNodeIdComparator.java&#160;<span class="new">(new&#160;49)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="15"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-10 23:49</span>
+    <a class="permalink" title="Permalink to this commit" href="#15">#15</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897752</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 expand  and select tree node automatically when open menu item from quick launcher<br />
+
+    </p>
+    <p class="commitdetails"><strong>66</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp/WEB-INF/themes</strong>:
+        navigation.jsp&#160;<span class="change">(+66&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="14"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-10 14:55</span>
+    <a class="permalink" title="Permalink to this commit" href="#14">#14</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897683</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+experimental blueprint integration
+    </p>
+    <p class="commitdetails"><strong>0</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/geronimo-activemq-blueprint</strong>:
+        pom.xml&#160;<span class="change">(changed)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="13"></a>
+    <a href="user_djencks.html" class="author">djencks</a>
+    <span class="date">2010-01-08 19:20</span>
+    <a class="permalink" title="Permalink to this commit" href="#13">#13</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897346</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5021 allow gbean classes to be loaded from another plugin, plus use in jetty and jasper
+    </p>
+    <p class="commitdetails"><strong>186</strong> lines of code changed in <span class="files">12 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContext.java&#160;<span class="change">(+9&#160;-7)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean</strong>:
+        GBeanData.java&#160;<span class="change">(+36&#160;-3)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanInstance.java&#160;<span class="change">(+19&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper-builder/src/main/java/org/apache/geronimo/jasper/deployment</strong>:
+        JspModuleBuilderExtension.java&#160;<span class="change">(+36&#160;-40)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper-builder/src/test/java/org/apache/geronimo/jasper/deployment</strong>:
+        BasicTest.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/geronimo-jasper/src/main/java/org/apache/geronimo/jasper</strong>:
+        JasperServletContextCustomizer.java&#160;<span class="change">(+11&#160;-21)</span>
+      </li>
+      <li>
+        <strong>plugins/jasper/jasper-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+71&#160;-102)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/test/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilderTest.java&#160;<span class="change">(+1)</span>,
+        PlanParsingTest.java&#160;<span class="change">(+1)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/jetty8-deployer/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-23)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="12"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-08 12:21</span>
+    <a class="permalink" title="Permalink to this commit" href="#12">#12</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897250</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4984: Create a separate gbean for each OpenEJB ServerService
+    </p>
+    <p class="commitdetails"><strong>178</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/openejb/geronimo-openejb/src/main/java/org/apache/geronimo/openejb</strong>:
+        EjbDaemonGBean.java&#160;<span class="change">(+99&#160;-18)</span>,
+        OpenEjbSystemGBean.java&#160;<span class="change">(+10&#160;-4)</span>,
+        ServerServiceGBean.java&#160;<span class="new">(new&#160;69)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="11"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-08 12:08</span>
+    <a class="permalink" title="Permalink to this commit" href="#11">#11</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897244</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+support setting of arbitrary system properties for package goal of car-maven-plugin
+    </p>
+    <p class="commitdetails"><strong>47</strong> lines of code changed in <span class="files">3 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/buildsupport/car-maven-plugin/src/main/java/org/apache/geronimo/mavenplugins/car</strong>:
+        PackageMojo.java&#160;<span class="change">(+40&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/configs</strong>:
+        pom.xml&#160;<span class="change">(+3)</span>
+      </li>
+      <li>
+        <strong>plugins</strong>:
+        pom.xml&#160;<span class="change">(+4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="10"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-08 06:16</span>
+    <a class="permalink" title="Permalink to this commit" href="#10">#10</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897155</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 return to the top after clicking a menu item(navigation.jsp), refactor the resizing of iframe(portlets-with-tree.jsp).
+    </p>
+    <p class="commitdetails"><strong>32</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp/WEB-INF/themes</strong>:
+        navigation.jsp&#160;<span class="change">(+12&#160;-4)</span>,
+        portlets-with-tree.jsp&#160;<span class="change">(+20&#160;-7)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="9"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-08 04:10</span>
+    <a class="permalink" title="Permalink to this commit" href="#9">#9</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897129</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 fix IE tree display problem.
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp</strong>:
+        main.css&#160;<span class="change">(+1&#160;-14)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="8"></a>
+    <a href="user_gawor.html" class="author">gawor</a>
+    <span class="date">2010-01-08 01:55</span>
+    <a class="permalink" title="Permalink to this commit" href="#8">#8</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897107</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+build axis bundle
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/bundles</strong>:
+        pom.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="7"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-07 23:12</span>
+    <a class="permalink" title="Permalink to this commit" href="#7">#7</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897081</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 To support multiple level navigation tree in geronimo web console.
+    </p>
+    <p class="commitdetails"><strong>3</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp/images</strong>:
+        folderClosed_new.gif&#160;<span class="new">(new&#160;1)</span>,
+        folderOpened_new.gif&#160;<span class="new">(new&#160;2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="6"></a>
+    <a href="user_genspring.html" class="author">genspring</a>
+    <span class="date">2010-01-07 23:03</span>
+    <a class="permalink" title="Permalink to this commit" href="#6">#6</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">897080</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4994 To support multiple level navigation tree in geronimo web console.
+    </p>
+    <p class="commitdetails"><strong>430</strong> lines of code changed in <span class="files">29 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>plugins/activemq/activemq-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/activemq/activemq-console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-base-portlets/src/main/webapp/WEB-INF/view/welcome</strong>:
+        welcomeNormal.jsp&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-filter/src/main/java/org/apache/geronimo/console/filter</strong>:
+        XSRFHandler.java&#160;<span class="change">(+10&#160;-1)</span>,
+        XSSHandler.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+28&#160;-28)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp</strong>:
+        index.jsp&#160;<span class="change">(changed)</span>,
+        logout.jsp&#160;<span class="new">(new)</span>,
+        main.css&#160;<span class="change">(+24&#160;-121)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-portal-driver/src/main/webapp/WEB-INF/themes</strong>:
+        default-theme.jsp&#160;<span class="change">(+23&#160;-74)</span>,
+        head.jsp&#160;<span class="del">(del)</span>,
+        navigation.jsp&#160;<span class="change">(+140&#160;-150)</span>,
+        portlets-only.jsp&#160;<span class="new">(new&#160;32)</span>,
+        portlets-with-tree.jsp&#160;<span class="new">(new&#160;113)</span>
+      </li>
+      <li>
+        <strong>plugins/console/console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+19&#160;-19)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/console/plugin-console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>plugins/debugviews/debugviews-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+6&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/debugviews/debugviews-console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+      <li>
+        <strong>plugins/monitoring/mconsole-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/monitoring/mconsole-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/openejb-console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/plancreator/plancreator-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/plancreator/plancreator-console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-console-jetty/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>plugins/system-database/sysdb-console-tomcat/src/main/plan</strong>:
+        plan.xml&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="5"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-06 03:50</span>
+    <a class="permalink" title="Permalink to this commit" href="#5">#5</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">896343</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5008 Create util methods for all the Geronimo components
+    </p>
+    <p class="commitdetails"><strong>5</strong> lines of code changed in <span class="files">2 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-deploy-jsr88/src/main/java/org/apache/geronimo/deployment/plugin</strong>:
+        ConfigIDExtractor.java&#160;<span class="change">(+4&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli</strong>:
+        CommandDistribute.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="4"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-06 03:36</span>
+    <a class="permalink" title="Permalink to this commit" href="#4">#4</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">896340</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+Revert an unexpected change
+    </p>
+    <p class="commitdetails"><strong>1</strong> lines of code changed in <span class="files">1 file</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanOperation.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="3"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-06 03:29</span>
+    <a class="permalink" title="Permalink to this commit" href="#3">#3</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">896339</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5008 Create util methods for all the Geronimo components
+    </p>
+    <p class="commitdetails"><strong>1839</strong> lines of code changed in <span class="files">88 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-common/src/main/java/org/apache/geronimo/common</strong>:
+        FileUtils.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deploy-tool/src/main/java/org/apache/geronimo/deployment/cli</strong>:
+        CommandDistribute.java&#160;<span class="change">(+2&#160;-1)</span>,
+        CommandRedeploy.java&#160;<span class="change">(+3&#160;-3)</span>,
+        ServerConnection.java&#160;<span class="change">(+14&#160;-14)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment</strong>:
+        ConfigurationBuilder.java&#160;<span class="new">(new)</span>,
+        CopyResourceContext.java&#160;<span class="change">(+8&#160;-7)</span>,
+        Deployer.java&#160;<span class="change">(+31&#160;-29)</span>,
+        DeploymentConfigurationManager.java&#160;<span class="new">(new)</span>,
+        InPlaceResourceContext.java&#160;<span class="change">(+11&#160;-10)</span>,
+        ModuleIDBuilder.java&#160;<span class="new">(new)</span>,
+        NamespaceDrivenBuilder.java&#160;<span class="change">(changed)</span>,
+        NamespaceDrivenBuilderCollection.java&#160;<span class="change">(-3)</span>,
+        SingleFileHotDeployer.java&#160;<span class="change">(+15&#160;-14)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/util</strong>:
+        DeploymentUtil.java&#160;<span class="del">(del)</span>,
+        NestedJarEntry.java&#160;<span class="del">(del)</span>,
+        NestedJarFile.java&#160;<span class="del">(del)</span>,
+        URLInfo.java&#160;<span class="change">(changed)</span>,
+        UnclosableInputStream.java&#160;<span class="new">(new)</span>,
+        UnpackedJarEntry.java&#160;<span class="del">(del)</span>,
+        UnpackedJarFile.java&#160;<span class="del">(del)</span>,
+        XMLUtil.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/main/java/org/apache/geronimo/deployment/xml</strong>:
+        LocalEntityResolver.java&#160;<span class="change">(+2&#160;-2)</span>,
+        ParserFactoryImpl.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-deployment/src/test/java/org/apache/geronimo/deployment</strong>:
+        DeploymentContextTest.java&#160;<span class="change">(+15&#160;-14)</span>,
+        SingleFileHotDeployerTest.java&#160;<span class="change">(+1&#160;-2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/gbean/runtime</strong>:
+        GBeanOperation.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/config</strong>:
+        ConfigurationResolver.java&#160;<span class="change">(+4&#160;-4)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/repository</strong>:
+        CopyArtifactTypeHandler.java&#160;<span class="new">(new)</span>,
+        UnpackArtifactTypeHandler.java&#160;<span class="change">(+2&#160;-1)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/util</strong>:
+        FileUtils.java&#160;<span class="new">(new&#160;359)</span>,
+        IOUtils.java&#160;<span class="change">(+11&#160;-257)</span>,
+        InputUtils.java&#160;<span class="change">(+1&#160;-2)</span>,
+        JarUtils.java&#160;<span class="new">(new&#160;339)</span>,
+        NestedJarEntry.java&#160;<span class="new">(new&#160;130)</span>,
+        NestedJarFile.java&#160;<span class="new">(new&#160;269)</span>,
+        UnpackedJarEntry.java&#160;<span class="new">(new&#160;175)</span>,
+        UnpackedJarFile.java&#160;<span class="new">(new&#160;164)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/test/java/org/apache/geronimo/kernel/mock</strong>:
+        MockConfigStore.java&#160;<span class="change">(+3&#160;-3)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        ArchiverGBean.java&#160;<span class="change">(+17&#160;-17)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-service-builder/src/main/java/org/apache/geronimo/deployment/service</strong>:
+        ServiceConfigBuilder.java&#160;<span class="change">(+7&#160;-5)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        RepositoryConfigurationStore.java&#160;<span class="change">(+15&#160;-13)</span>
+      </li>
+      <li>
+        <strong>plugins/aries/geronimo-aries-builder/src/main/java/org/apache/geronimo/aries/builder</strong>:
+        AriesAppConfigBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/axis/geronimo-axis-builder/src/main/java/org/apache/geronimo/axis/builder</strong>:
+        AxisBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/client/geronimo-client-builder/src/main/java/org/apache/geronimo/client/builder</strong>:
+        AppClientModuleBuilder.java&#160;<span class="change">(+9&#160;-8)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/geronimo-deploy-farm/src/main/java/org/apache/geronimo/farm/deployment</strong>:
+        BasicClusterConfigurationStore.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/main/java/org/apache/geronimo/connector/deployment</strong>:
+        ConnectorModuleBuilder.java&#160;<span class="change">(+15&#160;-15)</span>
+      </li>
+      <li>
+        <strong>plugins/connector-1_6/geronimo-connector-builder-1_6/src/test/java/org/apache/geronimo/connector/deployment</strong>:
+        ConnectorModuleBuilderTest.java&#160;<span class="change">(+12&#160;-11)</span>
+      </li>
+      <li>
+        <strong>plugins/hotdeploy/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryHotDeployer.java&#160;<span class="change">(+13&#160;-13)</span>,
+        DirectoryMonitor.java&#160;<span class="change">(+14&#160;-15)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/main/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder.java&#160;<span class="change">(+19&#160;-22)</span>,
+        EARContext.java&#160;<span class="change">(+1&#160;-1)</span>,
+        Module.java&#160;<span class="change">(+13&#160;-13)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-j2ee-builder/src/test/java/org/apache/geronimo/j2ee/deployment</strong>:
+        EARConfigBuilder13NakedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder13Test.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder14AltDDTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder14AltDDUnpackedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder14NakedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder14NakedUnpackedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder14Test.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder14UnpackedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder5AltDDTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder5AltDDUnpackedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder5NakedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder5NakedUnpackedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder5Test.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilder5UnpackedTest.java&#160;<span class="change">(+3&#160;-3)</span>,
+        EARConfigBuilderTestSupport.java&#160;<span class="change">(+38&#160;-38)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/main/java/org/apache/geronimo/web25/deployment</strong>:
+        AbstractWebModuleBuilder.java&#160;<span class="change">(+16&#160;-18)</span>
+      </li>
+      <li>
+        <strong>plugins/j2ee/geronimo-web-2.5-builder/src/test/java/org/apache/geronimo/web25/deployment/security</strong>:
+        SecurityConfigTest.java&#160;<span class="change">(-22)</span>
+      </li>
+      <li>
+        <strong>plugins/jaxws/geronimo-jaxws-builder/src/main/java/org/apache/geronimo/jaxws/builder</strong>:
+        JAXWSServiceBuilder.java&#160;<span class="change">(+4&#160;-5)</span>,
+        WARWebServiceFinder.java&#160;<span class="change">(+9&#160;-8)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/main/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilder.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+      <li>
+        <strong>plugins/jetty8/geronimo-jetty8-builder/src/test/java/org/apache/geronimo/jetty8/deployment</strong>:
+        JettyModuleBuilderTest.java&#160;<span class="change">(+2&#160;-6)</span>,
+        PlanParsingTest.java&#160;<span class="change">(+7&#160;-8)</span>
+      </li>
+      <li>
+        <strong>plugins/myfaces/geronimo-myfaces-builder/src/main/java/org/apache/geronimo/myfaces/deployment</strong>:
+        MyFacesModuleBuilderExtension.java&#160;<span class="change">(+5&#160;-5)</span>
+      </li>
+      <li>
+        <strong>plugins/openejb/geronimo-openejb-builder/src/main/java/org/apache/geronimo/openejb/deployment</strong>:
+        EjbModuleBuilder.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/main/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilder.java&#160;<span class="change">(+5&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7-builder/src/test/java/org/apache/geronimo/tomcat/deployment</strong>:
+        TomcatModuleBuilderTest.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/geronimo-tomcat7/src/main/java/org/apache/geronimo/tomcat</strong>:
+        TomcatContainer.java&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="2"></a>
+    <a href="user_rickmcguire.html" class="author">rickmcguire</a>
+    <span class="date">2010-01-05 09:08</span>
+    <a class="permalink" title="Permalink to this commit" href="#2">#2</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">896029</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-4970 Remove those specs and impl which are shipped by JRE 1.6<br />
+<br />
+saaj removal, patch provided by Shiny Cheng. <br />
+<br />
+
+    </p>
+    <p class="commitdetails"><strong>7</strong> lines of code changed in <span class="files">14 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>plugins/axis/geronimo-axis</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2-ejb-deployer/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-1)</span>
+      </li>
+      <li>
+        <strong>plugins/axis2/axis2/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+5)</span>
+      </li>
+      <li>
+        <strong>plugins/tomcat/tomcat7/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(+1&#160;-6)</span>
+      </li>
+      <li>
+        <strong>plugins/webservices/geronimo-webservices</strong>:
+        pom.xml&#160;<span class="change">(-5)</span>
+      </li>
+      <li>
+        <strong>plugins/webservices/webservices-common/src/main/history</strong>:
+        dependencies.xml&#160;<span class="change">(-5)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-catalog-tests</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-mtom-tests</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-provider-tests</strong>:
+        pom.xml&#160;<span class="change">(-5)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-tests</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/jaxws-wsa-tests</strong>:
+        pom.xml&#160;<span class="change">(-6)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/saaj-tests/saaj-client</strong>:
+        pom.xml&#160;<span class="change">(-8)</span>
+      </li>
+      <li>
+        <strong>testsuite/webservices-testsuite/saaj-tests/saaj-war</strong>:
+        pom.xml&#160;<span class="change">(-5)</span>
+      </li>
+    </ul>
+  </dd>
+
+  <dt><a name="1"></a>
+    <a href="user_xuhaihong.html" class="author">xuhaihong</a>
+    <span class="date">2010-01-04 01:32</span>
+    <a class="permalink" title="Permalink to this commit" href="#1">#1</a>
+    <span class="revisionNumberOuter">Rev.: <span class="revisionNumberInner">895566</span></span>
+  </dt>
+  <dd>
+    <p class="comment">
+GERONIMO-5008 Create util methods for all the Geronimo components
+    </p>
+    <p class="commitdetails"><strong>1113</strong> lines of code changed in <span class="files">18 files</span>:</p>
+    <ul class="commitdetails">
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/classloader</strong>:
+        IoUtil.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/config</strong>:
+        ConfigurationResolver.java&#160;<span class="new">(new)</span>,
+        IOUtil.java&#160;<span class="del">(del)</span>,
+        SelectorUtils.java&#160;<span class="del">(del)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/repository</strong>:
+        AbstractRepository.java&#160;<span class="change">(-1)</span>,
+        UnpackArtifactTypeHandler.java&#160;<span class="change">(changed)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/main/java/org/apache/geronimo/kernel/util</strong>:
+        IOUtils.java&#160;<span class="new">(new&#160;374)</span>,
+        SelectorUtils.java&#160;<span class="new">(new&#160;718)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/test/java/org/apache/geronimo/kernel/config</strong>:
+        SelectorUtilsTest.java&#160;<span class="change">(+2)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-kernel/src/test/java/org/apache/geronimo/kernel/mock</strong>:
+        MockConfigStore.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-plugin/src/main/java/org/apache/geronimo/system/plugin</strong>:
+        ArchiverGBean.java&#160;<span class="change">(+3&#160;-5)</span>
+      </li>
+      <li>
+        <strong>framework/modules/geronimo-system/src/main/java/org/apache/geronimo/system/configuration</strong>:
+        RepositoryConfigurationStore.java&#160;<span class="change">(+14&#160;-14)</span>
+      </li>
+      <li>
+        <strong>plugins/clustering/geronimo-deploy-farm/src/main/java/org/apache/geronimo/farm/deployment</strong>:
+        BasicClusterConfigurationStore.java&#160;<span class="new">(new)</span>
+      </li>
+      <li>
+        <strong>plugins/hotdeploy/geronimo-hot-deploy/src/main/java/org/apache/geronimo/deployment/hot</strong>:
+        DirectoryMonitor.java&#160;<span class="change">(+2&#160;-2)</span>
+      </li>
+    </ul>
+  </dd>
+
+</dl>
+
+<p class="previous"><a href="2009-12.html">December 2009</a> &#187; </p>
+<div id="generatedby">Generated by <a href="http://www.statsvn.org">StatSVN</a> @VERSION@</div>
+</body>
+</html>
